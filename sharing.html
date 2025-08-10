@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharing Tradition</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+        :root {
+            --primary-color: #007bff;
+            --secondary-color: #28a745;
+            --background-color: #f8f9fa;
+            --card-background: #ffffff;
+            --text-color: #343a40;
+            --light-text: #6c757d;
+            --border-color: #dee2e6;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 850px;
+            width: 100%;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            background: linear-gradient(135deg, #e9ecef, var(--card-background));
+            border-radius: 12px;
+            box-shadow: 0 4px 15px var(--shadow-color);
+        }
+
+        .subject-title {
+            font-size: 1rem;
+            color: var(--light-text);
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .chapter-title {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-top: 10px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .chapter-title::after {
+            content: '';
+            width: 100%;
+            height: 4px;
+            background-color: var(--secondary-color);
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            border-radius: 2px;
+        }
+
+        .section {
+            background-color: var(--card-background);
+            border-radius: 12px;
+            box-shadow: 0 4px 20px var(--shadow-color);
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: var(--text-color);
+            margin-bottom: 25px;
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 10px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .question-item {
+            margin-bottom: 30px;
+            border-bottom: 1px dashed var(--border-color);
+            padding-bottom: 20px;
+        }
+
+        .question-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        .question {
+            font-weight: 600;
+            font-size: 1.15rem;
+            color: var(--primary-color);
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .question-marker {
+            font-weight: 700;
+            font-size: 1.3rem;
+            color: var(--secondary-color);
+            margin-right: 15px;
+            background-color: #e2f0e4;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .answer {
+            font-size: 1rem;
+            color: var(--light-text);
+            padding-left: 45px;
+            display: none;
+            opacity: 0;
+            transition: all 0.4s ease-in-out;
+            transform: translateY(10px);
+        }
+
+        .answer.active {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .question.expanded {
+            color: var(--secondary-color);
+        }
+
+        .android-app-section {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .android-app-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            box-shadow: 0 4px 15px rgba(40, 167, 69, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .android-app-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(40, 167, 69, 0.6);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .chapter-title {
+                font-size: 2rem;
+            }
+            .section {
+                padding: 20px;
+            }
+            .section-title {
+                font-size: 1.7rem;
+            }
+            .question {
+                font-size: 1rem;
+            }
+            .question-marker {
+                width: 25px;
+                height: 25px;
+                font-size: 1rem;
+                margin-right: 10px;
+            }
+            .answer {
+                padding-left: 35px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="subject-title">English</div>
+            <h1 class="chapter-title">Sharing Tradition</h1>
+        </header>
+
+        <main>
+            <section class="section" id="understanding-text">
+                <h2 class="section-title">Understanding the text</h2>
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">a.</span> According to LaPena, what is the importance of the oral tradition? To what extent do you agree with his opinions and why?
+                    </div>
+                    <div class="answer">
+                        Frank Lapena, the writer of this essay give more importance in the oral tradition. According to him, the tradition followed by our elders must be passed from generation to generation orally. It helps to maintain our cultural resource.
+                        <br><br>
+                        Yes, I agree with his opinion because oral tradition helps the young generation to know about the lifestyle. Social, cultural environment of our elders in the past moreover, they can know about their family history. Our culture is our identity simply oral tradition helps people to preserve their identity.
+                    </div>
+                </div>
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">b.</span> Who preserve and pass on the oral tradition?
+                    </div>
+                    <div class="answer">
+                        Oral tradition is a form of human communication in which knowledge, culture, traditions, ideas etc. are transmitted orally from one generation to another generation. Its duty of every to preserve and promote to pass on their tradition because they are experienced one.
+                    </div>
+                </div>
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">c.</span> What is the danger of not passing on information from generation to generation?
+                    </div>
+                    <div class="answer">
+                        If the information from one generation to generation is not passed then there will not be perseverance of cultural environment i.e. following festivals, religion etc. our identity and values will be no more left.
+                    </div>
+                </div>
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">d.</span> What is the difference between oral tradition and literary tradition?
+                    </div>
+                    <div class="answer">
+                        The difference between oral tradition and literary tradition is that in an oral tradition information related to culture and values are transmitted from generation to generation through oral means whereas in literary tradition information is transmitted through written means.
+                    </div>
+                </div>
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">e.</span> How does LaPena establish a relationship between art and the oral tradition?
+                    </div>
+                    <div class="answer">
+                        Both art and the oral tradition are the form of communication in which the author or story teller tries to convey a message to the listener/reader. LaPena presents the oral tradition as the source of our inspiration for art. He says that the oral tradition has an impact on how one visualizes the stories, the characters, the designs and color for art.
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="reference-to-context">
+                <h2 class="section-title">Reference to the context</h2>
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">a.</span> LaPena states that the oral tradition helps maintain the values of a culture. If you believe that the oral tradition is important, how would you maintain it?
+                    </div>
+                    <div class="answer">
+                        It is true that oral tradition helps maintain the values of a culture. I would maintain oral tradition in the following ways:-
+                        <ol>
+                            <li>I would save the original tape as well as the transcript of the interview that were given by old peoples.</li>
+                            <li>I would pay much more attention to the things that the elders are willing to share with us.</li>
+                            <li>I may start a project on preserverance of our oral tradition.</li>
+                            <li>I would perform different street dramas about our oral tradition.</li>
+                            <li>In my old age I would try to share my views and ideas that I know about oral tradition. I would like to share it with the next generation.</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">b.</span> “Not everyone is capable of fulfilling the roles of the elders.” Explain this statement with reference to the essay.
+                    </div>
+                    <div class="answer">
+                        Yes, obviously not everyone is capable of fulfilling the rules of elders. Elders are the old aged persons. On the one hand everyone who lives long enough automatically becomes an elder.
+                        <br><br>
+                        According, to my view of point to be an elder one should live for long years. And to fulfill the roles of elders, the elders should have better views, knowledge about the past traditions. We know that all the elders are not of same type. Some may have followed their traditions from their young age and some may not have followed their traditions from their young age which means the one who has not followed traditions from their young age, they do not know much more about the tradition.
+                        <br><br>
+                        So, to fulfill the responsibilities of the elders, the elders should be specialized, they should have to know much more things about past tradition. So, they could pass to us. If they don’t know anything about the tradition than they pass us the knowledge, views and ideas. Hence, “not everyone is capable of fulfilling the rules of elders.”
+                    </div>
+                </div>
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">c.</span> What is the controlling idea or thesis of this essay?
+                    </div>
+                    <div class="answer">
+                        The controlling ideas or thesis of this essay is to preserve and protect our tradition. Whatever our tradition are that we follow always should be preserve. The persons of next to next generation should also follow their tradition, they should be well known about the tradition that we are following and the same type of tradition they should also follow. Coming to present generation, many people does not know some traditions, they already forget and some traditions have already been disappear and stopped. So, to preserve and protect our tradition this essay is written.
+                    </div>
+                </div>
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">d.</span> How do topic sentences guide the reader through the essay? What would be lost without them?
+                    </div>
+                    <div class="answer">
+                        The topic sentence relates to the thesis, or main point of the essay guides the reader by signposting what the paragraph is about. All the sentences in the rest of the paragraph should relate to the topic sentence. An effective topic sentence combines a main idea with the writer’s personal attitude or opinion. It serves to orient the reader and provides an indication of what will follow in the rest of paragraph. If there is no topic sentences then the main point of a paragraph can’t be expressed and hence the reader can understand the main thesis or controlling idea of paragraph.
+                    </div>
+                </div>
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">e.</span> What are the four major problems developed by LaPena with regard to maintaining the oral tradition. How are they used to structure the essay?
+                    </div>
+                    <div class="answer">
+                        The four major problems developed by LaPena with regard to maintaining the oral tradition are as follows:
+                        <ul>
+                            <li>Some of the elders have played ideal and special roles in preserving the values. And it is hard to fill their places.</li>
+                            <li>The youngsters do not show enough interest in listening to and asking the elders.</li>
+                            <li>It is hard to maintain traditions in changing times when new technologies destroy old values.</li>
+                            <li>There is no authentic sharing between the generations. Modern research may not collect true data about the oral contents of tradition. Once wrong information is published, correction is difficult.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="reference-beyond-text">
+                <h2 class="section-title">Reference beyond the text</h2>
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">a.</span> Write a paragraph or two explaining your attitude toward the oral tradition of passing along information.
+                    </div>
+                    <div class="answer">
+                        Oral tradition is one of the effective practices for all the people of this world to maintain and preserve the culture and values of tradition. It is also an art form as it takes its subject matters from our tradition. There is an important role of both the elders and young people perform their vital roles in maintaining and preserving the culture and values of tradition through passing authentic information from generation to generation.
+                        <br><br>
+                        I believe that it helps to share and transmit ancestors’ culture, skill and knowledge to next generation. Next generation gets a chance to know past culture and tradition. They will understand that our culture is our true identity. So my attitude towards the oral tradition is positive. I believe that if we lose our culture, we will lose our identity and existence. We will suffer from the problem of identity crisis. Our culture and tradition are a living experience. Without it, we will lose our true identity. So, we must preserve, follow and transmit it from one generation to next to save its existence.
+                    </div>
+                </div>
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">b.</span> Our culture is our identity. Write a few paragraphs explaining how you intend to preserve your culture, values and norms.
+                    </div>
+                    <div class="answer">
+                        Yes, it is true that our culture is our identity. Cultural traditions and perspectives have shaped who we are. The way we are determined to our cultural values, reveals who we are. If we lose our culture, we will lose our identity and existence. So its our duty to preserve our culture, values and norms.
+                        <br><br>
+                        I intend to preserve my culture, values and norms doing the following activities:
+                        <ol>
+                            <li>Celebrating every ceremony related to my culture.</li>
+                            <li>Making people aware of the importance of our culture, values and norms.</li>
+                            <li>Promoting cultural and traditional events in my community.</li>
+                            <li>Forming an organization related to cultural heritage.</li>
+                            <li>Sharing information related to the culture and values of my tradition.</li>
+                        </ol>
+                        <br>
+                        In conclusion, cultural preservation is vital. It preserves a sense of unity and belonging among people of a specific community. So, the forefathers passed much cultural heritage to the new generation. Cultural preservation’s future is at risk. Because of today’s busy lifestyles and intense social responsibilities. Preservation of cultural heritage requires the protection of our cultural heritage. Above all, sharing your cultural heritage is the best way to preserve it. Future generations can live according to their ancestor’s values by preserving cultural heritage. Cultural heritage is a constitutional right that the constitution should protect.
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <div class="android-app-section">
+            <a href="#" class="android-app-button">Download Android App</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleAnswer(questionElement) {
+            const answer = questionElement.nextElementSibling;
+            const allAnswers = document.querySelectorAll('.answer');
+            const allQuestions = document.querySelectorAll('.question');
+            
+            if (answer.classList.contains('active')) {
+                answer.classList.remove('active');
+                questionElement.classList.remove('expanded');
+            } else {
+                allAnswers.forEach(a => a.classList.remove('active'));
+                allQuestions.forEach(q => q.classList.remove('expanded'));
+                
+                answer.classList.add('active');
+                questionElement.classList.add('expanded');
+            }
+        }
+    </script>
+</body>
+</html>
