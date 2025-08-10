@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Research is a Token of Humankind’s Survival</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+        :root {
+            --primary-color: #004d40;
+            --secondary-color: #2e7d32;
+            --background-color: #e8f5e9;
+            --card-background: #ffffff;
+            --text-color: #212121;
+            --light-text: #616161;
+            --border-color: #cfd8dc;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 850px;
+            width: 100%;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            background: linear-gradient(135deg, #e0f2f1, var(--card-background));
+            border-radius: 12px;
+            box-shadow: 0 4px 15px var(--shadow-color);
+        }
+
+        .subject-title {
+            font-size: 1rem;
+            color: var(--light-text);
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .chapter-title {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-top: 10px;
+            position: relative;
+            display: inline-block;
+            text-transform: uppercase;
+        }
+
+        .chapter-title::after {
+            content: '';
+            width: 100%;
+            height: 4px;
+            background-color: var(--secondary-color);
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            border-radius: 2px;
+        }
+
+        .section {
+            background-color: var(--card-background);
+            border-radius: 12px;
+            box-shadow: 0 4px 20px var(--shadow-color);
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: var(--text-color);
+            margin-bottom: 25px;
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 10px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .question-item {
+            margin-bottom: 30px;
+            border-bottom: 1px dashed var(--border-color);
+            padding-bottom: 20px;
+        }
+
+        .question-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        .question {
+            font-weight: 600;
+            font-size: 1.15rem;
+            color: var(--primary-color);
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .question-marker {
+            font-weight: 700;
+            font-size: 1.3rem;
+            color: var(--secondary-color);
+            margin-right: 15px;
+            background-color: #e8f5e9;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .answer {
+            font-size: 1rem;
+            color: var(--light-text);
+            padding-left: 45px;
+            display: none;
+            opacity: 0;
+            transition: all 0.4s ease-in-out;
+            transform: translateY(10px);
+        }
+
+        .answer.active {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .question.expanded {
+            color: var(--secondary-color);
+        }
+        
+        .answer p {
+            margin-bottom: 15px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .chapter-title {
+                font-size: 2rem;
+            }
+            .section {
+                padding: 20px;
+            }
+            .section-title {
+                font-size: 1.7rem;
+            }
+            .question {
+                font-size: 1rem;
+            }
+            .question-marker {
+                width: 25px;
+                height: 25px;
+                font-size: 1rem;
+                margin-right: 10px;
+            }
+            .answer {
+                padding-left: 35px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="subject-title">English</div>
+            <h1 class="chapter-title">Scientific Research is a Token of Humankind’s Survival</h1>
+        </header>
+
+        <main>
+            <section class="section" id="understanding-text">
+                <h2 class="section-title">Understanding the text</h2>
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">a.</span> What does a scientist get instead of big money?
+                    </div>
+                    <div class="answer">
+                        A scientist gets freedom, camaraderie and independence instead of big money.
+                    </div>
+                </div>
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">b.</span> What was the problem that the nuclear powers had faced?
+                    </div>
+                    <div class="answer">
+                        The nuclear powers had agreed to a moratorium to stop the test of nuclear weapons. But, they had faced the problem that if anyone violated the agreement by secret underground testing of nuclear weapons, they would not be able to detect it.
+                    </div>
+                </div>
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">c.</span> In which area did Keilis Borok’s theoretical knowledge have a direct application?
+                    </div>
+                    <div class="answer">
+                        As a seismologist, he had theoretical knowledge in seismic waves that could easily detect underground nuclear explosions as well as tremors produced by earthquakes. His knowledge could easily detect secret underground nuclear test. Here, his knowledge had a direct application in the survival of the humankind.
+                    </div>
+                </div>
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">d.</span> What was the important decision that the politicians took before Geneva Summit?
+                    </div>
+                    <div class="answer">
+                        The important decision that the politicians took before Geneva Summit was to ban nuclear weapons text for the shake of survival of humanity. According to them, after banning nuclear tests, there would be no competition for developing nuclear weapons.
+                    </div>
+                </div>
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">e.</span> What are the natural and man-made disasters as mentioned by the author?
+                    </div>
+                    <div class="answer">
+                        The natural disasters mentioned by the author are earthquakes, self-inflicted destruction of megacities, environmental catastrophes, economic and social crises, and so on. The man-made disasters mentioned include a massive release of radioactivity from nuclear waste disposal, an outburst of mass violence, war, and so on.
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="reference-to-context">
+                <h2 class="section-title">Reference to the context</h2>
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">a.</span> The professional addressed as ‘you’ in the sentence “If you are clever, why are you so poor?” refers to a…<br>
+                        i. lawyer ii. doctor iii. scientist iv. businessman.<br>
+                        Justify your choice.
+                    </div>
+                    <div class="answer">
+                        Here the ‘you’ refers to a <strong>scientist</strong>. The author wants to know why some people with clever and brilliant mind want to be scientists though other professionals like lawyers, doctors and businessmen earn much more. The author intends to show that although scientists are very wise, their wisdom does not generally help them in generating wealth. Thus, scientists are generally wise but not wealthy.
+                    </div>
+                </div>
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">b.</span> The writer says, “I found myself in Geneva.” What does it express?
+                    </div>
+                    <div class="answer">
+                        It expresses the surprise of the writer. He says the above line because he was summoned all of a sudden to attend the meeting related to nuclear weapons in Geneva.
+                    </div>
+                </div>
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">c.</span> Are the following statements true? Why or why not? Discuss with your partner.<br><br>
+                        i. Money is more powerful than intellectual resources.<br>
+                        ii. Intellectual resources help survival of the mankind.<br>
+                        iii. Basic research is a way of stalling disasters.
+                    </div>
+                    <div class="answer">
+                        <p><strong>i. Money is more powerful than intellectual resources.</strong></p>
+                        This statement is not true. Money can give us the power to make a difference in the lives of others, but not the desire to do so. It can give us the time to develop and nurture our relationships, but not the love and caring necessary to do so. It can just as easily make us jaded, escapist, selfish, and lonely. How much do you need? What is it going to cost you to get it? It is keeping these two questions in mind that gives us a true sense of money’s relationship to happiness. If we have less than what we need, or if what we have is costing us too much, we can never be happy.
+                        <br><br>
+                        <p><strong>ii. Intellectual resources help survival of the mankind.</strong></p>
+                        This statement is true. It is because of the intellectual resources that we have combated many diseases. Though man is not the fittest among all the creations of God, he is able to ensure his safety against the other powerful creatures of nature because of his intellectual resources. Basic research can help our survival by giving us new sources of energy and new mineral deposits. Basic research can also protect us against terrorism.
+                        <br><br>
+                        <p><strong>iii. Basic research is a way of stalling disasters.</strong></p>
+                        This statement is true. People in the world are living their life securely believing in scientific researches. Scientists keep on studying the ecological changes and forewarn people about natural disasters like earthquakes, tsunamis, storms etc. People can be evacuated from the area posed with danger.
+                    </div>
+                </div>
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">d.</span> How does the essayist justify that scientific research is the humankind’s survival?
+                    </div>
+                    <div class="answer">
+                        The essayist justifies that scientific research is the humankind’s survival by presenting his opinions in favour of science and its research-based inventions. As a seismologist, he had theoretical knowledge in seismic waves that could easily detect underground nuclear explosions as well as tremors produced by earthquakes. His knowledge could easily detect secret underground nuclear test. Here, his knowledge had a direct application in the survival of the humankind. According to him, science is the indispensable guardian and caretaker of humankind’s survival. Scientific researchers have found the solutions to the problems of human beings. It has given us new sources of energy, new mineral deposits, medicines and efficient defense from terrorism. Scientific researches can easily predict the upcoming disasters ecological changes and forewarn people. People can be evacuated from the area posed with danger. Thus, the writer has numerous reasons to conclude that scientific research is the hope of humankind’s survival.
+                    </div>
+                </div>
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">e.</span> What can be the purpose of the essayist of using quotations in the essay?
+                    </div>
+                    <div class="answer">
+                        The purpose of the essayist’s use of quotations in the essay is to support the ideas and arguments presented in the essay. He wants to get all of his readers aware to the main points that he wishes to convey. People have many misconceptions about science and scientists so he compares public understanding and the reality of a scientist’s life. So in order to support his ideas, the writer uses quotations.
+                    </div>
+                </div>
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">f.</span> Discuss and illustrate the writer’s stand that scientists are the most practical people in the world.
+                    </div>
+                    <div class="answer">
+                        The writer’s stand here in this essay is that scientists are the most practical people in the world. According to him, all new technologies and new brands of industry from defense to entertainment are the result of scientists’ research. The scientists invent antibiotics, electronics, biotechnology, synthetic fibers, modes of transport, the green revolution, and genetic forensic diagnosis etc. Only the scientific research can provide us new sources of energy and new minerals, efficient defense from terrorism, cure from cancer and new forms of transportation. By this we can say that scientists are the most practical people in the world.
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="reference-beyond-text">
+                <h2 class="section-title">Reference beyond the text</h2>
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">a.</span> Everyone lives under the fear of annihilation by nuclear weapons. Explain this statement.
+                    </div>
+                    <div class="answer">
+                        Nuclear weapons are the most terrifying weapon ever invented: no weapon is more destructive; no weapon causes such unspeakable human suffering; and there is no way to control how far the radioactive fallout will spread or how long the effects will last.
+                        <br><br>
+                        Although the superpowers have already reached an agreement to stop nuclear test, the growing competition for power has increased fear and uncertainty about our future. It is a truth that Soviet Union, the United States and the United Kingdom have more than enough nuclear bombs to destroy the other nations in their first strike. A nuclear bomb detonated in a city would immediately kill tens of thousands of people, and tens of thousands more would suffer horrific injuries and later die from radiation exposure. Hiroshima and Nagasaki always remind people of the bitter truth. Anytime, the global politics can deteriorate and crazy rulers like that of North Korea can forget humanity and the world population can suffer. Therefore, every man, woman, and child on the earth is living under the threat of annihilation by nuclear weapons.
+                    </div>
+                </div>
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">b.</span> The essayist says ‘While there is science, there is hope of survival and wellbeing for all of us.’ Explain it.
+                    </div>
+                    <div class="answer">
+                        According to the essayist, science is our indispensable guardian and caretaker because it is the only science that can ensure that we are moving with time safely. For the survival of humankind, countries have signed the treaty of not testing nuclear weapons secretly. Specialists can invigilate the moves of different countries and make us alert on time. Science can differentiate between the tremors caused by nuclear explosions and natural earthquakes. It gives us new sources of energy, new mineral deposits, efficient defense from terrorism, antibiotics and cure for human diseases. Besides that, science teaches us how to preserve our ecosystem and biosphere correcting our past mistakes. At present, the safety of mankind is threatened by both natural and man-made disasters. Be it a tsunami, be it terrorism, money alone cannot tackle the problem. Scientific solutions are the only hope. Therefore, while there is science, there is hope of survival and wellbeing for all of us.
+                    </div>
+                </div>
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">c.</span> Is science a blessing or a curse? Write an essay on it
+                    </div>
+                    <div class="answer">
+                        <p><strong>Science – A Blessing or A Curse</strong></p>
+                        Science has benefited man in several ways. It has made man’s life more comfortable, more secure and more powerful. But it is not an unmixed blessing. There are several disadvantages of science. However, the advantages far outweigh the disadvantages.
+                        <br><br>
+                        Science has revolutionized the human existence. Take, for instance, electricity which is one of the many gifts of science. All one has to do is to press a button. The room is flooded with light, the fan begins to whirr and give refreshing air, or still more, a desert cooler or an air conditioner turns the room into a hill resort. Thousand types of machines are run by electricity. Room heaters, electric ovens and cooking ranges and several other household appliances are operated by electricity. It runs factories which produce innumerable things of our daily use.
+                        <br><br>
+                        Science has also relieved to a great extent human suffering. Advance in the field of medicine and surgery have reduced the rate of infant mortality. The average life h4 of man has increased. Today, many the dreaded diseases like cholera, small-pox and even tuberculosis are easily curable with the help of medicines. Surgery can remove malignant also proved to be harmful. The machine age made many people unemployed. Now there is no need for so many hands to do a task. Only one person is required to manipulate the machine. Thus, it has led to unemployment.
+                        <br><br>
+                        In the light of all these grave dangers, it is imperative that man tries to make judicious use of machines. After all, man had applied his mind to invent new things not to make his life miserable, but to make it more comfortable and better. Machines should serve mankind. Man should ensure that he does not allow them to destroy his environment and health and put the life of all living things in grave danger beyond a point of no return.
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        function toggleAnswer(questionElement) {
+            const answer = questionElement.nextElementSibling;
+            const allAnswers = document.querySelectorAll('.answer');
+            const allQuestions = document.querySelectorAll('.question');
+            
+            if (answer.classList.contains('active')) {
+                answer.classList.remove('active');
+                questionElement.classList.remove('expanded');
+            } else {
+                allAnswers.forEach(a => a.classList.remove('active'));
+                allQuestions.forEach(q => q.classList.remove('expanded'));
+                
+                answer.classList.add('active');
+                questionElement.classList.add('expanded');
+            }
+        }
+    </script>
+</body>
+</html>
