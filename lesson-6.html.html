@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>त्यो फेरि फर्कला? - नेपाली नोटस्</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&family=Lora:wght@700&display=swap');
+
+        :root {
+            --primary-color: #5d4037; /* Brown */
+            --secondary-color: #ffb74d; /* Amber */
+            --background-color: #efebe9; /* Light Brown */
+            --text-color: #3e2723; /* Dark Brown */
+            --light-text-color: #795548; /* Muted Brown */
+            --card-background: #ffffff;
+            --border-radius: 12px;
+            --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --transition-speed: 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Mukta', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        header {
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary-color), #8d6e63);
+            color: #fff;
+            padding: 40px 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        header h1 {
+            font-family: 'Lora', serif;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .section {
+            background-color: var(--card-background);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .section h2 {
+            font-family: 'Lora', serif;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+
+        .subsection h3 {
+            font-family: 'Lora', serif;
+            font-size: 1.4rem;
+            color: var(--secondary-color);
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+
+        .question {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .question h4 {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .question p, .question ul {
+            font-size: 1rem;
+            color: var(--light-text-color);
+            padding-left: 20px;
+        }
+
+        .question ul {
+            margin-top: 10px;
+            list-style-type: disc;
+        }
+
+        .question li {
+            margin-bottom: 8px;
+        }
+
+        .app-download {
+            text-align: center;
+            padding: 30px;
+            background-color: var(--primary-color);
+            color: #fff;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .app-download p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .app-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .app-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            color: var(--primary-color);
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .pure-text {
+            color: var(--text-color);
+            padding-left: 0;
+            list-style-type: none;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                gap: 20px;
+            }
+            header {
+                padding: 30px 15px;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            .section {
+                padding: 20px;
+            }
+            .section h2 {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+            }
+            .subsection h3 {
+                font-size: 1.2rem;
+            }
+            .question h4 {
+                font-size: 1rem;
+            }
+            .app-download {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>त्यो फेरि फर्कला ? (मनोवैज्ञानिक कथा)</h1>
+            <p>कक्षा ११ - नेपाली</p>
+        </header>
+
+        <main>
+            <div class="section">
+                <h2>शब्दभण्डार</h2>
+                
+                <div class="question">
+                    <h4>१. तल दिइएका शब्दहरुको विपरीत अर्थसँग जोडा मिलाउनुहोस् :</h4>
+                    <ul>
+                        <li>सुदूर = <strong>निकट</strong></li>
+                        <li>कृतज्ञता = <strong>कृतध्नता</strong></li>
+                        <li>वेदना = <strong>खुसी</strong></li>
+                        <li>प्रदीप्त = <strong>अन्धकार</strong></li>
+                        <li>अतीत = <strong>भविष्य</strong></li>
+                        <li>मूक = <strong>सस्वर</strong></li>
+                        <li>प्रवाह = <strong>स्थिर</strong></li>
+                    </ul>
+                </div>
+                
+                <div class="question">
+                    <h4>२. गाढा शब्दको अर्थ पहिचान गरी चिनो लगाउनुहोस् ।</h4>
+                    <p>क) निरन्तर<br>ख) बेवास्ता<br>ग) असजिलोपन<br>घ) मन ठेगानमा नभएको अवस्था<br>ङ) ज्यादै प्रतीक्षा गरिएको<br>च) सुनसान</p>
+                </div>
+                
+                <div class="question">
+                    <h4>३. दिइएका अर्थहरुको पर्यायवाची शब्द पाठबाट खोजेर लेख्नुहोस् ।</h4>
+                    <p>क) असजिलोपन = <strong>सङ्कोच</strong><br>ख) सुक्खा = <strong>शुष्क</strong><br>ग) लजालु = <strong>लज्जावन्त</strong><br>घ) रुवाई = <strong>रुदन</strong><br>ङ) पर्खाइ = <strong>प्रतीक्षा</strong><br>च) धुलोपीठो = <strong>चूर्णविचूर्ण</strong><br>छ) व्यक्त नभएको = <strong>अव्यक्त</strong><br>ज) वज्रभन्दा पनि = <strong>बज्रादपी</strong></p>
+                </div>
+                
+                <div class="question">
+                    <h4>४. पाठमा रहेको " जाने बखतमा ………… त्यो आएन !" कथांश पढी दिइएका प्रश्नहरुको उत्तर दिनुहोस् :</h4>
+                    <ul>
+                        <li><strong>क) "ता" प्रत्यय लागेका चारवटा शब्द खोज्नुहोस् ।</strong><br>उदासिनता, शून्यता, प्रसन्नता र उत्फुल्लता ।</li>
+                        <li><strong>ख) चारवटा उपसर्ग व्युत्पन्न शब्द पहिचान गरी लेख्नुहोस् ।</strong><br>दुष्कल्पना, असुविधा, प्रकार र प्रदीप्त ।</li>
+                        <li><strong>ग) यस अनुच्छेदमा प्रयुक्त दसओटा तत्सम शब्दहरुको सूची बनाउनुहोस् ।</strong><br>यात्री, भयानक, प्रतीक्षा, शून्य, आशा, भावना, दुष्कल्पना, नित्य, प्रकार र प्रदीप्त ।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>बोध र अभिव्यक्ति</h2>
+                
+                <div class="question">
+                    <h4>१. "त्यो फेरि फर्केला ?" कथा पढी दिइएका प्रश्नहरुको उत्तर दिनुहोस् :</h4>
+                    <ul>
+                        <li><strong>क) कथा कति अनुच्छेदमा संरचित छ ?</strong><br>कथा ५२ अनुच्छेदमा संरचित छ ।</li>
+                        <li><strong>ख) कथाको सबैभन्दा लामो अनुच्छेद कुन हो ?</strong><br>कथाको सबैभन्दा लामो अनुच्छेद ३८औ अनुच्छेद हो ।</li>
+                        <li><strong>ग) कथाको कुन अनुच्छेदमा पुग्दा सानी र यात्रीको भेट भएको छ ?</strong><br>कथाको ४४औ अनुच्छेदमा पुग्दा सानी र यात्रीको भेट भएको छ ।</li>
+                        <li><strong>घ) संवादको प्रयोग नभएका अनुच्छेदहरु पाठमा कतिओटा छन् ?</strong><br>संवादको प्रयोग नभएका अनुच्छेदहरु पाठमा १८ ओटा छन् ।</li>
+                    </ul>
+                </div>
+
+                <div class="question">
+                    <h4>२. "त्यो फेरि फर्केला ?"कथा पढी दिइएका घटनाक्रम मिलाई लेख्नुहोस् :</h4>
+                    <ul class="pure-text">
+                        <li>१. एकदिन साझको समयमा एउटा यात्री आएर यहाँ बास पाइन्छ भनेर सानीलाई सोध्नु ।</li>
+                        <li>२. आमाले बास बस्न अनुमति दिनु ।</li>
+                        <li>३. आमाको स्वीकृति र यात्री बाँस बस्ने निश्चिति भएपछि सानी खुसी हुनु ।</li>
+                        <li>४. यात्रीको बासका लागि सानी सक्रिय भएर लाग्नु र भित्रभित्रै यात्रीप्रति आकर्षित हुनु ।</li>
+                        <li>५. यात्री सुतेपछि सानी यात्रीका कल्पनामा डुबुल्की मार्नु ।</li>
+                        <li>६. अनायास सानी यात्री सुतेको ठाँउमा पुग्नु र यात्री निश्चिन्त सुतिरहेको हुनु ।</li>
+                        <li>७. यात्री बिदा भएर गएपछि प्रत्येक दिन यात्रीलाई सम्झिनु ।</li>
+                        <li>८. समयक्रममा सानीको विवाह हुनु ।</li>
+                        <li>९. पन्ध्रौं दिनसम्म उत्साहपूर्वक रुपमा सानी बस्नु तर यात्री नफर्कनु ।</li>
+                        <li>१०. सानीकी आमाको स्वर्गे भएपछि सानी त्यहाँ गएर आमाको पेसा अँगालेर बस्नु ।</li>
+                        <li>११. एकदिन अचानक त्यहीँ यात्री आएर बास माग्नु ।</li>
+                        <li>१२. सानीले प्राणपर्यन्तसम्म पर्खेको यात्रीले कुराकानीको क्रममा तिमी त बुढी भइसकिछ्यौ भन्नू ।</li>
+                        <li>१३. बिहान हुनेबित्तिकै पहिले झैँ यात्री हिड्नु ।</li>
+                        <li>१४. आफुले मात्र यात्रीको प्रतीक्षा गरेको तर यात्रीले त्यस्तो कुनै आग्रह, अनुराग नभएको थाहा पाउनु ।</li>
+                        <li>१५. सानीको दीर्घ प्रतीक्षा समाप्त हुनु ।</li>
+                    </ul>
+                </div>
+                
+                <div class="question">
+                    <h4>५. व्याख्या गर्नुहोस् :</h4>
+                    <ul>
+                        <li><strong>क) समस्त जगतमा …………………………….. रहन जान्थ्यो ।</strong><br>यो अंशले नारीको महानता र त्यागलाई चित्रण गर्दछ। कथाकी पात्र सानीले आफ्नो व्यक्तिगत इच्छा र चाहनालाई थाती राखेर परिवारको जिम्मेवारी पूरा गरेकी छिन्। उनको यस त्याग र ममताले नै संसारलाई एक सुत्रमा बाँधेको छ भन्ने सन्देश यसले दिन्छ।</li>
+                        <li><strong>ख) प्रेम जीवनको …………………………………… अस्तित्वको विलुप्ति ।</strong><br>यो अंशले प्रेमको महत्त्व र त्यसले जीवनमा पार्ने प्रभावको व्याख्या गर्दछ। सानीको एकतर्फी प्रेम र त्यसको निराशाले उनको अस्तित्व नै विलुप्त भएको महसुस हुन्छ। यसले प्रेम बिना जीवनको यात्रा अधुरो हुन्छ र त्याग गर्दा पनि प्रेम प्राप्त नभए व्यक्ति आफ्नो पहिचान गुमाउँदै जान्छ भन्ने भाव प्रकट गर्छ।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>व्याकरण</h2>
+                
+                <div class="subsection">
+                    <h3>३. दिइएका शब्दहरु शुद्ध पारी सार्नुहोस् :</h3>
+                    <p>तापनि, प्रतीक्षा, सम्मुख, भरिया, सुकुल, क्रीडा, चौथाइ, शृङ्खला, सुदूर, निर्जीव, अभीसिप्त, उद्विग्न, अतीत, नैराश्य, समष्टि, नीरव, कष्टप्रद, निस्तब्ध, अविराम, विश्वास, विवाह, चञ्चल, सामञ्जस्य, अङ्ग, चूर्ण, यस्तै, हृदय, क्षीण, प्रत्यक्ष, जिज्ञासा, संस्कृति, भण्डार, दुष्कल्पना, उत्साह, गृहिणी, अनन्तकालीन, वज्रप्रहार, अभ्यन्तर ।</p>
+                </div>
+                
+                <div class="subsection">
+                    <h3>४. दिइएका शब्दहरु कुन कुन शुद्ध र कुन कुन अशुद्ध छन्, पहिचान गर्नुहोस् :</h3>
+                    <p><strong>शुद्ध शब्दहरु :</strong> भाउजू, तनहुँ, कति, कोशी, चरिनङ्ग्रे, शिरीष, क्लिष्ट, राष्ट्रिय, इन्साफ, सङ्घ, सम्बन्ध, क्षत्रिय, कृत्रिम, सन्देश, शुभ ।</p>
+                    <p><strong>अशुद्ध शब्दहरुको शुद्ध रुप :</strong><br>जेठाजू, पुर्वेली, बर्सेनी, उर्दू, हात्ती, जुलुस, विभूति, आशीर्वाद, केन्द्रीय, प्रशंसा, माथि, बाकस, इन्द्रेनी, कीर्तिपुर, विकास, बाधा, बेरुजु, क्षमा, यसरी, कर्तव्य, यस, ऋण, प्रिय, सहिद, लाञ्छना, बृहत्, सभासद् ।</p>
+                </div>
+                
+                <div class="subsection">
+                    <h3>५. वर्णविन्यास मिलाई पुनर्लेखन गर्नुहोस् :</h3>
+                    <p><strong>अ)</strong> वायुमण्डलको संरचनामा भूमिका निर्वाह गर्ने ग्यासहरुको अनुपातमा फेरबदलले र मूलतः कार्बनडाइअक्साइडको मात्रा बढ्नाले पृथ्वीको तापक्रम बढ्न थालेको छ ।</p>
+                    <p><strong>आ)</strong> त्यो तृष्णा, त्यो अनन्तकालीन प्रतीक्षा, त्यो दिनहुुँको अभ्यस्त निराशाको धक्का त्यसको सासमा मिसिएको थियो ।</p>
+                    <p><strong>इ)</strong> यसै प्रकारले नित्य नयाँ नयाँ कल्पनाहरु त्यसको आशालाई प्रदिप्त तुल्याउदै दिनहरु बिताउदै गए। अन्ततः त्यो चिर अभिप्सित पन्ध्रौं दिन पनि आयो ।</p>
+                </div>
+            </div>
+
+            <div class="app-download">
+                <p>यी र यस्ता अन्य नोटहरू अफलाइन हेर्नका लागि हाम्रो एन्ड्रोइड एप डाउनलोड गर्नुहोस्।</p>
+                <a href="#" class="app-button">अहिले नै डाउनलोड गर्नुहोस्</a>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

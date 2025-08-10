@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>सफलताको कथा (रिपोर्ताजमूलक रचना) - नेपाली नोटस्</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&family=Lora:wght@700&display=swap');
+
+        :root {
+            --primary-color: #5d4037; /* Dark Brown */
+            --secondary-color: #d84315; /* Orange */
+            --background-color: #efebe9; /* Light Beige */
+            --text-color: #263238; /* Dark Slate */
+            --light-text-color: #546e7a; /* Muted Slate */
+            --card-background: #ffffff;
+            --border-radius: 12px;
+            --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --transition-speed: 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Mukta', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        header {
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary-color), #795548);
+            color: #fff;
+            padding: 40px 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        header h1 {
+            font-family: 'Lora', serif;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .section {
+            background-color: var(--card-background);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .section h2 {
+            font-family: 'Lora', serif;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+
+        .subsection h3 {
+            font-family: 'Lora', serif;
+            font-size: 1.4rem;
+            color: var(--secondary-color);
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+
+        .question {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .question h4 {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .question p, .question ul {
+            font-size: 1rem;
+            color: var(--light-text-color);
+            padding-left: 20px;
+        }
+
+        .question ul {
+            margin-top: 10px;
+            list-style-type: disc;
+        }
+
+        .question li {
+            margin-bottom: 8px;
+        }
+
+        .app-download {
+            text-align: center;
+            padding: 30px;
+            background-color: var(--primary-color);
+            color: #fff;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .app-download p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .app-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .app-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            color: var(--primary-color);
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                gap: 20px;
+            }
+            header {
+                padding: 30px 15px;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            .section {
+                padding: 20px;
+            }
+            .section h2 {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+            }
+            .subsection h3 {
+                font-size: 1.2rem;
+            }
+            .question h4 {
+                font-size: 1rem;
+            }
+            .app-download {
+                padding: 20px;
+            }
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+            thead tr {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+            tr {
+                border: 1px solid #ccc;
+                margin-bottom: 15px;
+            }
+            td {
+                border: none;
+                border-bottom: 1px solid #eee;
+                position: relative;
+                padding-left: 50%;
+            }
+            td:before {
+                position: absolute;
+                top: 12px;
+                left: 6px;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+                font-weight: bold;
+                color: var(--primary-color);
+            }
+            td:nth-of-type(1):before { content: "शब्द"; }
+            td:nth-of-type(2):before { content: "निर्माण प्रक्रिया"; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>सफलताको कथा (रिपोर्ताजमूलक रचना)</h1>
+            <p>कक्षा ११ - नेपाली</p>
+        </header>
+
+        <main>
+            <div class="section">
+                <h2>शब्दभण्डार</h2>
+                
+                <div class="question">
+                    <h4>१. दिइएका योगसँग सम्बन्धित पारिभाषिक शब्दको अर्थ शब्दकोशका सहायताले लेख्नुहोस् :</h4>
+                    <ul>
+                        <li><strong>यम:</strong> आठवटा योगमध्येको पहिलो चरण।</li>
+                        <li><strong>नियम:</strong> अनुशासन।</li>
+                        <li><strong>आसन:</strong> बस्ने ठाउँ।</li>
+                        <li><strong>प्राणायाम:</strong> श्वासप्रश्वासमा लयवद्धताका साथ गरिने योग।</li>
+                        <li><strong>प्रत्याहार:</strong> अष्टाङ्ग योग मध्यको पाँचौ योग।</li>
+                        <li><strong>धारणा:</strong> विचार।</li>
+                        <li><strong>ध्यान:</strong> चित्त एकाग्र पार्ने योग साधना।</li>
+                        <li><strong>समाधि:</strong> ब्रह्मा चिन्तनमा केन्द्रित हुने योगको अन्तिम अवस्था।</li>
+                    </ul>
+                </div>
+
+                <div class="question">
+                    <h4>२. दिइएका अर्थसँग मिल्ने शब्द पाठबाट खोजेर लेख्नुहोस् :</h4>
+                    <p>हलचल नगर्ने: <strong>स्थिर</strong>, ओइलाएको: <strong>मलिन</strong>, बौद्धस्मारक: <strong>स्तूप</strong>, प्राचीन चिकित्साशास्त्र: <strong>आयुर्वेद</strong>, एकचित्त: <strong>एकाग्रता</strong>, कथाहिनता: <strong>अकथा</strong>, एम.ए. वा सो सरह: <strong>स्नातकोत्तर</strong>।</p>
+                </div>
+                
+                <div class="question">
+                    <h4>३. दिइएका शब्दहरुलाई अर्थ खुल्ने गरी वाक्य बनाउनुहोस् :</h4>
+                    <p>१. <strong>व्यग्र:</strong> परीक्षा परिणाम छिटो सार्वजनिक होस् भनेर विद्यार्थीहरू व्यग्र प्रतीक्षामा छन्।<br>२. <strong>चैत्य:</strong> काठमाडौंको स्वयम्भू स्तूपलाई महत्वपूर्ण बौद्ध चैत्य मानिन्छ।<br>३. <strong>योग:</strong> नियमित योग अभ्यासले शरीर र मन दुवैलाई सन्तुलनमा राख्न मद्दत गर्छ।<br>४. <strong>स्नातक:</strong> स्नातक तहको अध्ययनले विद्यार्थीलाई विशिष्ट क्षेत्रमा विशेषज्ञता हासिल गर्न अवसर प्रदान गर्छ।<br>५. <strong>मनोचिकित्सा:</strong> मनोचिकित्साको सहायताले मानसिक तनावबाट गुज्रिरहेका व्यक्तिहरूले जीवनप्रति सकारात्मक दृष्टिकोण बनाउन सक्छन्।<br>६. <strong>समग्रता:</strong> देशको समग्रता मूल्याङ्कन गर्दा आर्थिक, सामाजिक, र सांस्कृतिक पक्षहरूलाई विचार गर्नुपर्छ।</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>बोध र अभिव्यक्ति</h2>
+                
+                <div class="question">
+                    <h4>१. दिइएका प्रश्नहरूको उत्तर दिनुहोस् :</h4>
+                    <ul>
+                        <li><strong>क) रिपोर्ताज कुन विषयमा लेखिएको छ?</strong><br>रिपोर्ताज योग अभ्यास र यसले मानिसको जीवनमा पुर्‍याउने लाभहरूको बारेमा लेखिएको छ।</li>
+                        <li><strong>ख) रिपोर्ताजमा कति जना व्यक्तिको नाम उल्लेख भएको छ?</strong><br>रिपोर्ताजमा अमित, सुन्दर र युगेन्द्र गरी तीन जना व्यक्तिको नाम उल्लेख गरिएको छ।</li>
+                        <li><strong>ग) रिपोर्ताज कतिओटा अनुच्छेदमा संरचित छ?</strong><br>रिपोर्ताज २५ वटा अनुच्छेदहरूमा विभाजित छ।</li>
+                        <li><strong>घ) रिपोर्ताजमा प्रयुक्त भाषाशैली कस्तो छ?</strong><br>रिपोर्ताजमा प्रयोग भएको भाषाशैली व्यक्तिगत र आत्मीय छ।</li>
+                    </ul>
+                </div>
+                
+                <div class="question">
+                    <h4>३. पाठका आधारमा जोडा मिलाउनुहोस् :</h4>
+                    <p><strong>क) अमित ठाकुर –</strong> पत्रकार<br><strong>ख) सुन्दर छन्त्याल –</strong> योग साधनाबाट पुनर्जीवन र सफलता प्राप्त गर्ने व्यक्ति<br><strong>ग) रत्न राज्यलक्ष्मी –</strong> अमित ठाकुरले पत्रकारिता अध्ययन गरेको क्याम्पस<br><strong>घ) धुलिखेल –</strong> अमित ठाकुरले फिचर स्टोरी खोज्न गएको स्थान<br><strong>ङ) आरुबारी –</strong> काठमाडौंमा सुन्दर छन्त्यालहरूको बसोबास रहेको क्षेत्र<br><strong>च) म्याग्दी –</strong> सुन्दर छन्त्यालको जन्मस्थान<br><strong>छ) हृदयघात –</strong> सुन्दर छन्त्यालका पिताको मृत्युको कारण<br><strong>ज) क्यान्सर –</strong> सुन्दर छन्त्यालकी आमालाई लागेको रोग<br><strong>झ) तौलिहवा –</strong> अमित ठाकुरको जन्मस्थान</p>
+                </div>
+
+                <div class="question">
+                    <h4>४. "योग ध्यान …….. ताँती सुरु भयो" रिपोर्ताजको अंश पढी सोधिएका प्रश्नहरूको उत्तर दिनुहोस् :</h4>
+                    <ul>
+                        <li><strong>क) ध्यान गर्नका लागि म पात्र कहाँ-कहाँ पुगेका थिए?</strong><br>ध्यान गर्नका लागि म पात्र लुम्बिनीको स्तूप, चैत्य, पीपलको बोटमुनि, देवालयको खुला मैदान, पशुपति क्षेत्र, आदि स्थानहरूमा पुगेका थिए।</li>
+                        <li><strong>ख) गोठाटारले म पात्रलाई किन आकर्षित गर्छ?</strong><br>गोठाटारको शान्त वातावरण, एकान्तता, र योग साधनाका लागि उपयुक्त प्रकृतिले म पात्रलाई आकर्षित गर्दछ।</li>
+                        <li><strong>ग) "हजारौं माइलको यात्रा एक सानो पाइलाबाट सुरु हुन्छ" भन्नुको तात्पर्य के हो?</strong><br>यो भनाइले ठूला र महत्वपूर्ण कार्यहरूको सुरुवात सानो योजनाबाट गरिन्छ भन्ने सन्देश दिन्छ।</li>
+                        <li><strong>घ) योगले मानव जीवनलाई कसरी परिवर्तन गर्छ?</strong><br>योगले मनलाई स्थिरता, नयाँ ऊर्जा, र सकारात्मक सोच प्रदान गर्छ, जसले मानिसको जीवनलाई गुणात्मक रूपमा परिवर्तन गर्दछ।</li>
+                    </ul>
+                </div>
+                
+                <div class="question">
+                    <h4>५. दिइएको रिपोर्ताजको अंश पढी सोधिएका प्रश्नहरूको उत्तर दिनुहोस् :</h4>
+                    <ul>
+                        <li><strong>क) सुन्दर छन्त्यालमा कसरी बाँच्ने इच्छाशक्ति जागृत भयो?</strong><br>योग र ध्यानले मनमा रहेका नकारात्मक विचारहरू हटाई नयाँ सोच र चेतना विकास गर्यो। प्राणायाम, धारणा, र ध्यानको अभ्यासबाट उनले जीवनप्रति सकारात्मक दृष्टिकोण बनाए, जसले बाँच्ने इच्छाशक्ति जागृत गरायो।</li>
+                        <li><strong>ख) योग साधनाले मानव स्वास्थ्यमा पार्ने प्रभावहरू के के हुन्?</strong><br>योग साधनाले चिन्तन, मनको एकाग्रता, र समाधितर्फको यात्रा गराउँछ। यसले मनको विकार हटाई आत्मिक शान्ति र भौतिक स्वस्थता प्रदान गर्दछ।</li>
+                    </ul>
+                </div>
+                
+                <div class="question">
+                    <h4>६. म पात्रले सुन्दरको कथा प्राप्त गर्नका लागि गरेका प्रयत्नहरूलाई क्रमबद्ध रूपमा टिपोट गर्नुहोस् :</h4>
+                    <p>– धुलिखेलमा आयोजित कार्यक्रममा सहभागी हुनु।<br>– सुन्दर छन्त्यालको फोन नम्बर प्राप्त गर्नु।<br>– आरुबारी पुगेर सुन्दर छन्त्यालसँग प्रत्यक्ष भेटघाट गर्नु।<br>– सुन्दरसँग विश्वास र सम्बन्ध कायम गर्नु।</p>
+                </div>
+                
+                <div class="question">
+                    <h4>७. उत्तर लेख्नुहोस् :</h4>
+                    <ul>
+                        <li><strong>क) रिपोर्ताजमा प्राकृतिक परिवेशको वर्णन कसरी भएको छ?</strong><br>रिपोर्ताजमा प्राकृतिक परिवेशलाई मानिसको मनको शान्ति र स्थिरतासँग जोडेर वर्णन गरिएको छ। गोठाटारको हरियाली र शान्त वातावरणलाई ध्यानको लागि उपयुक्त मानिएको छ। सुन्दरको घरबाट देखिने पहाडी दृश्य र आरुबारीको प्राकृतिक सौन्दर्यलाई मनमोहक रूपमा चित्रण गरिएको छ।</li>
+                        <li><strong>ख) सुन्दर छन्त्यालको सफलताको कथा सङ्क्षिप्त रूपमा लेख्नुहोस्।</strong><br>सुन्दर छन्त्याल मध्यम वर्गीय परिवारमा जन्मेका हुन्, जहाँ उनले कडा संघर्षको सामना गरे। बुबाको हृदयघात र आमाको क्यान्सरले परिवार आर्थिक समस्यामा पर्‍यो। योग र ध्यानको अभ्यासले उनलाई नयाँ जीवनशैलीमा प्रेरित गर्यो। मानसिक र आर्थिक समस्याको सामना गर्दै, उनले आफ्नो अध्ययन पूरा गरी प्राविधिक अधिकृतको पद हासिल गरे।</li>
+                        <li><strong>ग) पाठको मुख्य उद्देश्य के हो?</strong><br>जीवनमा आउने चुनौतीहरूसँग सामना गर्दै आत्मशक्ति र इच्छाशक्ति विकास गरिनुपर्छ भन्ने पाठको मुख्य उद्देश्य हो। ध्यान र योग अभ्यासले मानिसलाई शारीरिक र मानसिक रूपमा स्वस्थ राख्न सहयोग पुर्‍याउँछ, जसले सुखी र स्वस्थ जीवनका लागि योगको महत्वलाई बुझाउन जोड दिन्छ।</li>
+                    </ul>
+                </div>
+                
+                <div class="question">
+                    <h4>८. व्याख्या गर्नुहोस्:</h4>
+                    <ul>
+                        <li><strong>क) यो स्मृति भन्ने वस्तु पनि रमाइलो छ। स्मृतिले नै शब्दलाई जोड्छ र भत्काउँछ। स्मृतिले मानिसलाई मानिस बनाउँछ र पुनर्जीवित गर्छ।</strong><br>यो अंशमा स्मृतिको महत्त्वलाई व्याख्या गरिएको छ। स्मृतिले विगतका अनुभवबाट शिक्षा लिएर वर्तमानलाई सुधार्न र भविष्यका लागि योजना बनाउन प्रेरणा दिन्छ। यसले मानिसलाई जीवनको सकारात्मक दिशामा उन्मुख गराउन महत्वपूर्ण भूमिका खेल्छ।</li>
+                        <li><strong>ख) मनको शान्ति खोज्न टाढा जानुपर्दैन, यो तपाईं भित्रै छ। योगबाट यो प्राप्त हुन्छ।</strong><br>यो अंशले मनको शान्ति बाह्य स्रोतबाट नभई आत्मसमीक्षा र आत्मज्ञानबाट प्राप्त हुन्छ भन्ने कुरालाई जोड दिएको छ। योग र ध्यानको अभ्यासले मनको विकार हटाएर आन्तरिक शान्ति र शारीरिक स्वास्थ्य प्रदान गर्छ।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>व्याकरण</h2>
+                
+                <div class="subsection">
+                    <h3>१. दिइएको अनुच्छेद पढी रेखंकिन गरिएको शब्दहरु टिपेर तिनको निर्माण प्रक्रिया देखाउनुहोस् :</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>शब्द</th>
+                                <th>निर्माण प्रक्रिया</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>लेखक</td><td>लेख् + अक</td></tr>
+                            <tr><td>पाठक</td><td>पाठ् + अक</td></tr>
+                            <tr><td>भावक</td><td>भू + अक</td></tr>
+                            <tr><td>आदरणीय</td><td>आदृ + अनीय</td></tr>
+                            <tr><td>सम्माननीय</td><td>सम्मान् + अनीय</td></tr>
+                            <tr><td>भौगोलिक</td><td>भूगोल + इक</td></tr>
+                            <tr><td>सम्मानित</td><td>सम्मान + इत</td></tr>
+                            <tr><td>शिक्षित</td><td>शिक्षा + इत</td></tr>
+                            <tr><td>प्राचीन</td><td>प्राच् + ईन</td></tr>
+                            <tr><td>आधुनिक</td><td>अधुना + इक</td></tr>
+                            <tr><td>नविन</td><td>नव + इन</td></tr>
+                            <tr><td>तल्लिन</td><td>तल् + इन</td></tr>
+                            <tr><td>पूजनीय</td><td>पूज् + अनीय</td></tr>
+                            <tr><td>माननीय</td><td>मान् + अनीय</td></tr>
+                            <tr><td>बालक</td><td>बाल + अक</td></tr>
+                            <tr><td>काव्य</td><td>कवि + य</td></tr>
+                            <tr><td>कारण</td><td>कृ + अन</td></tr>
+                            <tr><td>श्रेष्ठतम</td><td>श्रेष्ठ + तम</td></tr>
+                            <tr><td>गन्तव्य</td><td>गम् + तव्य</td></tr>
+                            <tr><td>हास्य</td><td>हास् + य</td></tr>
+                            <tr><td>वक्ता</td><td>वच् + ता</td></tr>
+                            <tr><td>गतिवान्</td><td>गति + वान्</td></tr>
+                            <tr><td>व्यक्तित्व</td><td>व्यक्ति + त्व</td></tr>
+                            <tr><td>कवित्व</td><td>कवि + त्व</td></tr>
+                            <tr><td>लेखकत्व</td><td>लेखक + त्व</td></tr>
+                            <tr><td>सिद्धत्व</td><td>सिद्ध + त्व</td></tr>
+                            <tr><td>क्षमतावान्</td><td>क्षमता + वान्</td></tr>
+                            <tr><td>बुद्धिमान्</td><td>बुद्धि + मान्</td></tr>
+                            <tr><td>किर्तिमान</td><td>कीर्ति + मान्</td></tr>
+                            <tr><td>भावमय</td><td>भाव + मय</td></tr>
+                            <tr><td>रहस्यमय</td><td>रहस्य + मय</td></tr>
+                            <tr><td>लेखकत्व</td><td>लेखक + त्व</td></tr>
+                            <tr><td>दयालु</td><td>दया + आलु</td></tr>
+                            <tr><td>लालित्य</td><td>ललित + य</td></tr>
+                            <tr><td>माधुर्य</td><td>मधुर + य</td></tr>
+                            <tr><td>लेखनी</td><td>लेखन + ई</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="subsection">
+                    <h3>२. ‘सफलताको कथा’ पाठबाट दशओटा शब्दहरु टिप्नुहोस् र ती शब्दहरुको निर्माण प्रक्रिया देखाउनुहोस् :</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>क्र.श.</th>
+                                <th>शब्द</th>
+                                <th>निर्माण प्रक्रिया</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>१.</td><td>जीवनी</td><td>जीवन + ई</td></tr>
+                            <tr><td>२.</td><td>उत्साहित</td><td>उत्साह + इत</td></tr>
+                            <tr><td>३.</td><td>समर्पित</td><td>समर्पण + इत</td></tr>
+                            <tr><td>४.</td><td>थकाइ</td><td>थाक् + आइ</td></tr>
+                            <tr><td>५.</td><td>प्राचीनपन</td><td>प्राचीन + पन</td></tr>
+                            <tr><td>६.</td><td>काटेर</td><td>काट + एर</td></tr>
+                            <tr><td>७.</td><td>कारण</td><td>कृ + अन</td></tr>
+                            <tr><td>८.</td><td>लेखक</td><td>लिख् + अक</td></tr>
+                            <tr><td>९.</td><td>लेखकीय</td><td>लेखक + इय</td></tr>
+                            <tr><td>१०.</td><td>स्मृति</td><td>स्मृ + ति</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="subsection">
+                    <h3>३. दिइएका प्रत्यय लगाई दुई दुईओटा शब्द निर्माण गर्नुहोस् :</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>प्रत्यय</th>
+                                <th>शब्दहरु</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>अक</td><td>लेखक, नर्तक</td></tr>
+                            <tr><td>अन</td><td>दर्शन, भोजन</td></tr>
+                            <tr><td>अनीय</td><td>दर्शनीय, पूजनीय</td></tr>
+                            <tr><td>इक</td><td>शैक्षिक, मौखिक</td></tr>
+                            <tr><td>इत</td><td>लिखित, रचित</td></tr>
+                            <tr><td>ई</td><td>धनी, नेपाली</td></tr>
+                            <tr><td>ईन</td><td>युगीन, कुलीन</td></tr>
+                            <tr><td>ईय</td><td>केन्द्रीय, आत्मीय</td></tr>
+                            <tr><td>क</td><td>बालक, शीर्षक</td></tr>
+                            <tr><td>तर</td><td>बृहत्तर, उत्तर</td></tr>
+                            <tr><td>तम</td><td>उच्चतम, प्रियतम</td></tr>
+                            <tr><td>तव्य</td><td>गन्तव्य, मन्तव्य</td></tr>
+                            <tr><td>ता</td><td>कर्ता, श्रोता</td></tr>
+                            <tr><td>ति</td><td>स्मृति, गति</td></tr>
+                            <tr><td>त्व</td><td>मानवत्व, पुरुषत्व</td></tr>
+                            <tr><td>मय</td><td>जलमय, रहस्यमय</td></tr>
+                            <tr><td>वान</td><td>गुणवान्, बलवान्</td></tr>
+                            <tr><td>मान्</td><td>बुद्धिमान्, कीर्तिमान</td></tr>
+                            <tr><td>य</td><td>काव्य, माधुर्य</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="subsection">
+                    <h3>४. दिइएका शब्दहरुको निर्माण प्रक्रिया देखाउनुहोस् :</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>शब्द</th>
+                                <th>निर्माण प्रक्रिया</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>नायक</td><td>नी + अक</td></tr>
+                            <tr><td>शुद्धता</td><td>शुद्ध + ता</td></tr>
+                            <tr><td>गुरुत्व</td><td>गुरु + त्व</td></tr>
+                            <tr><td>व्यवस्थित</td><td>व्यवस्था + इत</td></tr>
+                            <tr><td>द्विपक्षीय</td><td>द्विपक्ष + ईय</td></tr>
+                            <tr><td>आयुष्मान्</td><td>आयुष् + मान्</td></tr>
+                            <tr><td>वैदेशिक</td><td>विदेश + इक</td></tr>
+                            <tr><td>गरिमामय</td><td>गरिमा + मय</td></tr>
+                            <tr><td>सौन्दर्य</td><td>सुन्दर + य</td></tr>
+                            <tr><td>गति</td><td>गम् + ति</td></tr>
+                            <tr><td>कारक</td><td>कृ + अक</td></tr>
+                            <tr><td>धैर्य</td><td>धीर + य</td></tr>
+                            <tr><td>योगी</td><td>युज् + ई</td></tr>
+                            <tr><td>श्रेष्ठतम</td><td>श्रेष्ठ + तम</td></tr>
+                            <tr><td>पाशविक</td><td>पशु + इक</td></tr>
+                            <tr><td>पञ्चक</td><td>पञ्च + क</td></tr>
+                            <tr><td>सौर्य</td><td>सूर्य + य</td></tr>
+                            <tr><td>वित्तीय</td><td>वित्त + इय</td></tr>
+                            <tr><td>चटनी</td><td>चाट् + अनी</td></tr>
+                            <tr><td>हतियार</td><td>हात + इयार</td></tr>
+                            <tr><td>वोलक्कड</td><td>वोल् + अक्कड</td></tr>
+                            <tr><td>दुधालु</td><td>दुध + आलु</td></tr>
+                            <tr><td>पुर्वेली</td><td>पूर्व + एली</td></tr>
+                            <tr><td>मुख्याइँ</td><td>मूर्ख + याइँ</td></tr>
+                            <tr><td>गँजडी</td><td>गाँजा + अडी</td></tr>
+                            <tr><td>पँधेरो</td><td>पानी + एरो</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="app-download">
+                <p>यी र यस्ता अन्य नोटहरू अफलाइन हेर्नका लागि हाम्रो एन्ड्रोइड एप डाउनलोड गर्नुहोस्।</p>
+                <a href="#" class="app-button">अहिले नै डाउनलोड गर्नुहोस्</a>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

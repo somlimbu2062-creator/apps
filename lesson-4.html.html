@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>योगमाया (राष्ट्रिय जीवनी) - नेपाली नोटस्</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&family=Lora:wght@700&display=swap');
+
+        :root {
+            --primary-color: #5d4037; /* Dark Brown */
+            --secondary-color: #ffb74d; /* Amber */
+            --background-color: #efebe9; /* Light Greyish Brown */
+            --text-color: #3e2723; /* Very Dark Brown */
+            --light-text-color: #795548; /* Medium Brown */
+            --card-background: #ffffff;
+            --border-radius: 12px;
+            --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --transition-speed: 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Mukta', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        header {
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary-color), #8d6e63);
+            color: #fff;
+            padding: 40px 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        header h1 {
+            font-family: 'Lora', serif;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .section {
+            background-color: var(--card-background);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .section h2 {
+            font-family: 'Lora', serif;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+
+        .subsection h3 {
+            font-family: 'Lora', serif;
+            font-size: 1.4rem;
+            color: var(--secondary-color);
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+
+        .question {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .question h4 {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .question p, .question ul {
+            font-size: 1rem;
+            color: var(--light-text-color);
+            padding-left: 20px;
+        }
+
+        .question ul {
+            margin-top: 10px;
+            list-style-type: disc;
+        }
+
+        .question li {
+            margin-bottom: 8px;
+        }
+
+        .app-download {
+            text-align: center;
+            padding: 30px;
+            background-color: var(--primary-color);
+            color: #fff;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .app-download p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .app-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .app-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                gap: 20px;
+            }
+            header {
+                padding: 30px 15px;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            .section {
+                padding: 20px;
+            }
+            .section h2 {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+            }
+            .subsection h3 {
+                font-size: 1.2rem;
+            }
+            .question h4 {
+                font-size: 1rem;
+            }
+            .app-download {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>योगमाया (राष्ट्रिय जीवनी)</h1>
+            <p>कक्षा ११ - नेपाली</p>
+        </header>
+
+        <main>
+            <div class="section">
+                <h2>शब्दभण्डार</h2>
+                
+                <div class="question">
+                    <h4>१. दिइएका शब्द र अर्थ बिच जोडा मिलाउनुहोस् :</h4>
+                    <ul>
+                        <li>क) जलसमाध - <strong>पानीमा डुबेर गरिने प्राणत्याग</strong></li>
+                        <li>ख) बडाहाकिम - <strong>राना शासनका समयमा र त्यसपछि पनि केही समय जिल्लाको सर्वोच्च प्रशाशक</strong></li>
+                        <li>ग) आर्य समाज - <strong>अनातन धर्ममा उदारता ल्याउन चलाइएको एक धार्मिक सम्प्रदाय</strong></li>
+                        <li>घ) वैधव्य - <strong>विधवा हुनाको भाव</strong></li>
+                        <li>ङ) हठयोग - <strong>पतञ्जलिद्वारा प्रतिपदित योग ( यम, नियम आदि) द्वारा शरीरलाई धेरै कष्ट दिएर चित्तवृत्तिलाई अन्तर्मुखी पार्ने योगको एक विधि</strong></li>
+                        <li>च) प्रताडना - <strong>पीडा</strong></li>
+                        <li>छ) विचारी - <strong>मुद्दामामिलाको निचोड खिचेर न्यायाधीशलाई अवगत गराउने व्यक्ति</strong></li>
+                        <li>ज) पञ्चाग्नि - <strong>वरिपरि पाँच किसिमका अग्नि बालेर गरिने तपस्या</strong></li>
+                    </ul>
+                </div>
+
+                <div class="question">
+                    <h4>३. दिइएका शब्द प्रयोग गरी वाक्य बनाउनुहोस् :</h4>
+                    <ul>
+                        <li><strong>स्वसिकाइ:</strong> योगमायाले स्वसिकाइ बाट नै आफ्नो ज्ञानको क्षितिजलाई फराकिलो बनाइन् ।</li>
+                        <li><strong>विद्रोह:</strong> योगमायाले अध्यात्म, मानवता र सामाजिक परिवर्टनका लागि विद्रोह गरिन् ।</li>
+                        <li><strong>सञ्जाल:</strong> योगमायाका विषयमा लेखिएको उपन्यासका बारेमा सामाजिक सञ्जालमा निकै चर्चा भयो ।</li>
+                        <li><strong>धाराप्रवाह:</strong> योगमाया धाराप्रवाहरूपमा बोल्न सक्थिन् ।</li>
+                        <li><strong>योगसाधना:</strong> योगमाया योगसाधना गर्ने महिला हुन् ।</li>
+                        <li><strong>निराहार:</strong> योगमायाले योगसाधना गर्दा निराहार विधिलाई समेत अपनाएकी थिइन् ।</li>
+                        <li><strong>वर्णाश्रम:</strong> योगमायाले छुवाछूत र वर्णाश्रम जस्ता अव्यवहारिक चलनको विरोध गरिन् ।</li>
+                        <li><strong>स्वेच्छिक:</strong> अग्निसमाधि लिन योगमायाका भक्तजनहरूले स्वेच्छिक रूपमा नाम लेखाएका थिए ।</li>
+                        <li><strong>यज्ञस्थल:</strong> यज्ञस्थललाई पवित्र स्थान मानिन्छ ।</li>
+                        <li><strong>स्मृति:</strong> आज योगमाया हाम्रा स्मृतिमा मात्र रहेकी छिन् ।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>बोध र अभिव्यक्ति</h2>
+                
+                <div class="question">
+                    <h4>१. पाठ पढ्नुहोस् र दिइएका प्रश्नहरुको भन्नुहोस् :</h4>
+                    <ul>
+                        <li><strong>क) योगमायाको जीवनी कति अनुच्छेदमा संरचित छ ?</strong><br>योगमायाको जीवनी नौ अनुच्छेदमा संरचित छ ।</li>
+                        <li><strong>ख) चौथो अनुच्छेदमा कतिवटा वाक्य छन् ?</strong><br>चौथो अनुच्छेदमा २५ ओटा वाक्य छन् ।</li>
+                        <li><strong>ग) दोस्रो अनुच्छेदमा योगमायाको जीवनी कुन अवस्थामा वर्णन छ ?</strong><br>दोस्रो अनुच्छेदमा योगमायाको जीवनीको बाल्यकालीन, वैवाहिक र पारिवारिक अवस्थामा वर्णन छ ।</li>
+                        <li><strong>घ) योगमायाको जलसमाधिको सन्दर्भ कुन अनुच्छेदमा छ ?</strong><br>योगमायाको जलसमाधिको सन्दर्भ आठौं अनुच्छेदमा छ ।</li>
+                    </ul>
+                </div>
+
+                <div class="question">
+                    <h4>३. दिएका मितिमा योगमायाको जीवनसंग सम्बन्धित कुन कुन घटना भएको हुन्, भन्नुहोस् :</h4>
+                    <ul>
+                        <li><strong>(क) वि.स १९२५ :</strong> जन्म भएको एक वर्ष पछाडिको समय</li>
+                        <li><strong>(ख) वि.स. १९७३ :</strong> छोरी नैनकला र भाइका साथ मझुवावेंसी पुग्नु</li>
+                        <li><strong>(ग) वि.स. १९८२ :</strong> दास प्रथाको अन्त्य भएको घोषणा</li>
+                        <li><strong>(घ) वि.स. १९८८:</strong> उफ्रौलीटारको योगमायाको कुटी अरुण खोलाले बगाएको</li>
+                        <li><strong>(ङ) वि.सं. १९९२ :</strong> आफ्ना अनुयायीसहित खाम्पालुङ हिमाल पार गरी तपस्या गरेकी</li>
+                        <li><strong>(च) वि.सं १९९३ :</strong> श्री ३ जुद्धसमसेरसंग भेटी आफ्ना माग राखेकी</li>
+                        <li><strong>(छ) वि.सं. १९९५ :</strong> आफ्ना माग पूरा नगरे आफ्ना तमाम भक्तसहित अग्निसमाधि लिने घोषणा गर्नु</li>
+                        <li><strong>(ज) वि.सं. १९९७ :</strong> भोजपुरकै उच्च पहाडी क्षेत्र चायाबोटे सिरान तोरीबारीको छेउको अग्लो थुम्कामा बसेर तेइस दिनसम्म तपस्या गरिन्</li>
+                        <li><strong>(झ) वि.सं. १९९८ :</strong> अरुण नदीमा गई जलसमाधि लिइन्</li>
+                    </ul>
+                </div>
+
+                <div class="question">
+                    <h4>५. पाठको चौथो अनुच्छेद पढ्नुहोस् र सोधिएका प्रश्नहरुको छोटो दिनुहोस् :</h4>
+                    <ul>
+                        <li><strong>क) योगमायाले कुटी बनाएको ठाउँहरुको नाम लेख्नुहोस् ।</strong><br>योगमायाले कुटी बनाएको ठाउँहरुको नाम मझुवावेँसी, उफ्रौलीटार र गौडिनी हो ।</li>
+                        <li><strong>ख) मानिसहरु योगमायासँग प्रभावित हुनुको कारण के हो ?</strong><br>ज्ञान, अनुभवका आधारमा पण्डितहरूसंग शास्त्रार्थ गर्ने, धाराप्रवाह प्रवचन दिनसक्ने खुबी भएका कारण मानिसहरू योगमायासंग प्रभावित हुन्थे ।</li>
+                        <li><strong>ग) योगमायाले किन तपस्या गरेकी हुन् ?</strong><br>साधनाको प्राप्ति र सबै प्रकारका मोहबाट मुक्त हुन योगमायाले तपस्या गरेकी हुन् ।</li>
+                        <li><strong>घ) `उनी कहिले निराहार , कहिले जलाहार , कहिले अल्पहार तपस्यागर्थिन् ´ भन्नुको तात्पर्य के हो ?</strong><br>यसको तात्पर्य योगमायाले जीवनका सबै प्रकारका लोभ र मोहबाट उन्मुक्ति एवं समाज सुधारको चाहना पूरा गर्नका लागि कहिले केही पनि नखाई, कहिले पानी मात्र खाई, कहिले थोरै मात्रै खाई कठोर तपस्या गर्थिन् भन्नू हो ।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>व्याकरण</h2>
+                
+                <div class="subsection">
+                    <h3>नामयोगी</h3>
+                    <h4>१. दिइएका वाक्यमा नामयोगी पहिचान गरी लेख्नुहोस् ।</h4>
+                    <p>क) <strong>सित</strong><br>ख) <strong>माथि</strong><br>ग) <strong>तर्फ</strong><br>घ) <strong>बाट</strong><br>ङ) <strong>वाहेक</strong><br>च) <strong>भरि</strong></p>
+                </div>
+                
+                <div class="subsection">
+                    <h3>क्रियायोगी</h3>
+                    <h4>१. दिइएका क्रियायोगी पहिचान गरी लेख्नुहोस् ।</h4>
+                    <p>हिजो, पारि, भर्खर, त्यता, ढिलो, ज्यादै, बिस्तारै, डराइडराइकन, पढ्न आदि ।</p>
+                </div>
+                
+                <div class="subsection">
+                    <h3>संयोजक</h3>
+                    <h4>१. दिइएका वाक्य पढी संयोजक पहिचान गर्नुहोस् ।</h4>
+                    <p>क) <strong>र</strong><br>ख) <strong>तापनि</strong><br>ग) <strong>एवं</strong><br>घ) <strong>वा</strong><br>ङ) <strong>अनि</strong><br>च) <strong>तर</strong></p>
+                </div>
+
+                <div class="subsection">
+                    <h3>विस्मयादिबोधक</h3>
+                    <h4>१. दिइएका वाक्य पढी विस्मयादिबोधक पहिचान गर्नुहोस् ।</h4>
+                    <p>क) <strong>आहा!</strong><br>ख) <strong>हरे!</strong><br>ग) <strong>छ्या!</strong><br>घ) <strong>आत्था!</strong><br>ङ) <strong>स्याबास!</strong></p>
+                </div>
+                
+                <div class="subsection">
+                    <h3>निपात</h3>
+                    <h4>१. दिइएका वाक्य पढी निपात पहिचान गर्नुहोस् ।</h4>
+                    <p>क) <strong>पो</strong><br>ख) <strong>त</strong><br>ग) <strong>रे</strong><br>घ) <strong>लौ</strong><br>ङ) <strong>क्यार</strong></p>
+                </div>
+                
+                <div class="subsection">
+                    <h3>पदवर्गसम्बन्धि थप अभ्यास</h3>
+                    <h4>१. रेखाङ्कन गरिएका पदहरुको पदवर्ग पहिचान गरी लेख्नुहोस् ।</h4>
+                    <p><strong>क)</strong> स्याबास : <strong>विस्मयादिबोधक</strong>, नै : <strong>निपात</strong>, भन्ने : <strong>संयोजक</strong>, विश्वास : <strong>नाम</strong>, त्यो : <strong>विशेषण</strong>, झलझली : <strong>क्रियायोगी</strong><br><strong>ख)</strong> तिर : <strong>नामयोगी</strong>, फर्केर : <strong>क्रियायोगी</strong>, सक्छ : <strong>क्रियापद</strong>, अरुहरु : <strong>सर्वनाम</strong>, अनौठो : <strong>विशेषण</strong>, र : <strong>निपात</strong><br><strong>ग)</strong> प्रचुर : <strong>विशेषण</strong>, तापनि : <strong>संयोजक</strong>, यिन : <strong>सर्वनाम</strong>, सम्म : <strong>नामयोगी</strong>, राम्ररी : <strong>क्रियायोगी</strong>, शङ्का : <strong>नाम</strong></p>
+                </div>
+            </div>
+
+            <div class="app-download">
+                <p>यी र यस्ता अन्य नोटहरू अफलाइन हेर्नका लागि हाम्रो एन्ड्रोइड एप डाउनलोड गर्नुहोस्।</p>
+                <a href="#" class="app-button">अहिले नै डाउनलोड गर्नुहोस्</a>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

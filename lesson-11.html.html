@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>रारा भ्रमण (दैनिकी) - नेपाली नोटस्</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&family=Lora:wght@700&display=swap');
+
+        :root {
+            --primary-color: #00796b; /* Teal */
+            --secondary-color: #ff5722; /* Deep Orange */
+            --background-color: #f0f4f7; /* Light Grayish Blue */
+            --text-color: #263238; /* Dark Slate */
+            --light-text-color: #546e7a; /* Muted Slate */
+            --card-background: #ffffff;
+            --border-radius: 12px;
+            --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --transition-speed: 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Mukta', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        header {
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary-color), #4db6ac);
+            color: #fff;
+            padding: 40px 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        header h1 {
+            font-family: 'Lora', serif;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .section {
+            background-color: var(--card-background);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .section h2 {
+            font-family: 'Lora', serif;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+
+        .subsection h3 {
+            font-family: 'Lora', serif;
+            font-size: 1.4rem;
+            color: var(--secondary-color);
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+
+        .question {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .question h4 {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .question p, .question ul {
+            font-size: 1rem;
+            color: var(--light-text-color);
+            padding-left: 20px;
+        }
+
+        .question ul {
+            margin-top: 10px;
+            list-style-type: disc;
+        }
+
+        .question li {
+            margin-bottom: 8px;
+        }
+
+        .app-download {
+            text-align: center;
+            padding: 30px;
+            background-color: var(--primary-color);
+            color: #fff;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .app-download p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .app-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .app-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                gap: 20px;
+            }
+            header {
+                padding: 30px 15px;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            .section {
+                padding: 20px;
+            }
+            .section h2 {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+            }
+            .subsection h3 {
+                font-size: 1.2rem;
+            }
+            .question h4 {
+                font-size: 1rem;
+            }
+            .app-download {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>रारा भ्रमण (दैनिकी)</h1>
+            <p>कक्षा ११ - नेपाली</p>
+        </header>
+
+        <main>
+            <div class="section">
+                <h2>शब्दभण्डार</h2>
+                
+                <div class="question">
+                    <h4>१. दिइएका पदावली र अर्थको जोडा मिलाउनु होस् :</h4>
+                    <p>विविधतायुक्त वैभव – भिन्नताले भरिएको सम्पत्ति<br>सञ्जीवनी बुटी – जीवन बचाउने औषधी<br>अवलोकन भ्रमण – विभिन्न दृश्यको अवलोकनका लागि गरिने भ्रमण<br>दिव्य अनुभूति – अलौकिक अनुभूति<br>शुक्ल पक्ष – कृष्णपक्ष पछिको पन्ध्र दिन<br>सदावहार वनस्पति – सधै हरियो हुने रुखविरुवा</p>
+                </div>
+
+                <div class="question">
+                    <h4>२. दिइएका शब्दहरू प्रयोग गरी एउटा अनुच्छेद तयार पार्नुहोस् :</h4>
+                    <p>हामी पोखराबाट रारा तालको अनुपम सौन्दर्यको दृष्टिगोचर गर्नका लागि नेपाली भाषाको उद्गम स्थल सिँजा उपत्यका हुँदै दुई दिनको यात्रापश्चात् रारा पुगेका थियौ । गुल्जाररूपी रारा राष्ट्रिय निकुञ्ज नजिकै बसेर सदावहार वनस्पतिका वनऔषधीहरुको अनुपम रसायन र सम्मिश्रणबाट बनेको राराको जलमा बसले उन्मत्त भै छचल्किएका बेताल लहरहरु हेरी मन्त्रमुग्ध बनी आत्मालाई साक्षी राखी पुनः भेट्न आउने वाचा गरी आफ्नै गन्तब्य पोखरा फक्यौँ ।</p>
+                </div>
+                
+                <div class="question">
+                    <h4>३. दिइएका प्राविधिक तथा पारिभाषिक शब्दको अर्थ खोजेर लेख्नुहोस् :</h4>
+                    <ul>
+                        <li><strong>मानविकी:</strong> दृश्यावलोकन (देख्न वा हेर्न योग्य प्राकृतिक दृश्यहरु अवलोकन गर्ने काम), अनुभूति (मनोदशा, मनस्थिति, मनोरोग), पिरती (माया, प्रेम, स्नेह), कविता (कविको भाव वा कविकर्म,काव्य)</li>
+                        <li><strong>यातायात:</strong> कच्ची (कच्चा, धेरै समयसम्म नटिक्ने), जिप (हलुका र बलियो किसिमको मोटर), राजमार्ग (फराकिलो र लामो पक्की सडक), बसपार्क (बस बिसाउने ठाँउ)</li>
+                        <li><strong>भूगोल:</strong> उपत्यका (पहाडका फेदीमा समथर जमिन), चट्टान (एउटै ठुलो ढुङ्गाको पहाड वा ढिस्को), पर्वत (पहाड, शैल), क्षेत्रफल (कुनै जमिनको लम्बाइ र चौडाइको गुणबाट निस्कने परिमाण), हिमाल (हिउँले ढाकिरहने उँचो पर्वतमाला)</li>
+                        <li><strong>प्रशासन:</strong> खस राज्य (प्राचीन क्षत्रीयको एक जातिको राज्य), बस्ती (घरहरु भएको वा मानिस बस्ने ठाउँ), शासक (शासन गर्ने व्यक्ति), कार्यालय (कुनै विशेष काम वा व्यवसाय गर्ने घर)</li>
+                        <li><strong>पर्यटन:</strong> होटल (मूल्य तिरेर खानपिन गरिने वा बस्ने विश्रामस्थल), खानपान (खाने र पिउने काम), रिसोर्ट (होटेलसहिदको पार्क), भ्रमण (घुमफिर गर्ने काम)</li>
+                        <li><strong>वनविज्ञान:</strong> निकुञ्ज (बोटविरुवा र जनावरको सुरक्षाका लागि निर्माण गरिएको स्थल), संरक्षण (जगेर्ना), सदावहार (सधै हरावरा रहने), वनस्पति (वोटविरुवा)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>बोध र अभिव्यक्ति</h2>
+                
+                <div class="question">
+                    <h4>१. पाठका आधारमा उत्तर भन्नुहोस् :</h4>
+                    <ul>
+                        <li><strong>क) दैनिकीलाई कस्तो ढाँचामा प्रस्तुत गरिएको छ ?</strong><br>दैनिकीलाई यात्रावर्णनको ढाँचामा प्रस्तुत गरिएको छ ।</li>
+                        <li><strong>ख) दैनिकीमा प्रयोग भएको सबैभन्दा ठूलो र सानो अनुच्छेद संरचना कुन कुन हुन् ?</strong><br>सबैभन्दा ठूलो अनुच्छेद १९ औं र सबैभन्दा सानो अनुच्छेद २५ औं हो ।</li>
+                        <li><strong>ग) दैनिकीको सुरुदेखि अन्त्यसम्मका संरचनालाई जोड्ने आधार के हो ?</strong><br>दैनिकीको सुरुदेखि अन्त्यसम्मका संरचनालाई जोड्ने आधार घटनाहरु हुन् ।</li>
+                        <li><strong>घ) दैनिकीको दोस्रो दिनका घटनाहरुको सूची बनाउनुहोस् ।</strong><br>दोस्रो दिनका घटनाहरुको सूची: सुर्खेतबाट बिहान पाँच बजे रारा यात्रा सुरु, कर्णाली नदीको किनारै किनार यात्रा, सिँजा उपत्यका पुग्नु, रारा राष्ट्रिय निकुञ्जको चेकपोस्ट हुँदै रिसोर्टमा पुग्नु, राति आगो तापेर रात्रीकालीन राराको दृश्यावलोकन गर्नु, चिसो हुनु ।</li>
+                    </ul>
+                </div>
+
+                <div class="question">
+                    <h4>४. उत्तर दिनुहोस् :</h4>
+                    <ul>
+                        <li><strong>क) पाठका आधारमा राराको परिचय दिनुहोस् ।</strong><br>रारा ताल समुद्री सतहबाट २८७२ मिटरको उचाइमा छ । यसको लम्बाइ ५ किलोमिटर र चौडाइ ३.२ किलोमिटर छ । १०.८ वर्ग किलोमिटर क्षेत्रफल रहेको यो ताल चारैतिर सदाबहार वनस्पतिले घेरिएकाले हरियो देखिन्छ । यसका बेताल लहरहरु बैँसले छचल्किएका र पिरती गाँस्न हतारिएका देखिन्छन् । यो प्राकृतिक सुन्दरताले भरिएको अनुपम उपहार हो ।</li>
+                        <li><strong>ख) दैनिकी लेखकले पहिलो दिनको यात्रा कसरी पूरा गरे ?</strong><br>लेखकले पहिलो दिन बिहान साढे तीन बजे उठेर पाँच साथीहरूसँग गुल्मीबाट जिपमा यात्रा सुरु गरे । रुद्रवेणी हुँदै रिडी पुगेर खाजा खाए । त्यसपछि पाल्पा हुँदै बुटवल पुगे । साँझ चार बजे कोहलपुर र रातको नौ बजे सुर्खेतको एक होटलमा बास बसेर पहिलो दिनको यात्रा पूरा गरे ।</li>
+                        <li><strong>ग) रारा पुगेर लेखक किन खुसी भए ?</strong><br>यात्राका क्रममा कर्णाली नदी, राजमार्ग र सुन्दर उपत्यकाहरु देखेर लेखकले आनन्दको अनुभूति गरे । रारा पुगेपछि सदाबहार वनस्पतिले घेरिएको ताल र त्यसको गाढा हरियो पानीमा बैंसले छचल्किएका लहरहरु देखेर उनी खुसी भए ।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>व्याकरण</h2>
+                
+                <div class="subsection">
+                    <h3>१. दिइएको अनुच्छेदबाट द्वित्व शब्द छानेर लेख्नुहोस् :</h3>
+                    <p>ससाना, गाडीसाडी, आलीआली, सानासाना, ठुलाठुला, आआफ्ना, धनसन, खानासाना ।</p>
+                </div>
+                
+                <div class="subsection">
+                    <h3>२. दिइएका शब्दहरुबाट द्विरुक्त शब्द बनाउनुहोस् :</h3>
+                    <p>घरघर, बजारसजार, साथीसाथी, मान्छेमान्छे, पानीपानी, फूलसुल, हिमालसिमाल, चित्रमित्र, किताबसिताब, गाडीसाडी, सरसामान, गरगहना, झै-झगडा, सरसापटी, झ-झल्को, ठुलोठुलो, थथर्को, सरासर, बरबर, एकएक, चारचार, ऐचोपैँचो, आनीबानी, पैसापैसा, चियासिया, तरकारीसरकारी, फोनसोन, बोलीसोली, टेबलसेबल, कलेजसलेज, लुगासुगा, बजारबजार ।</p>
+                </div>
+
+                <div class="subsection">
+                    <h3>४. `रारा भ्रमण ´ बाट द्वित्व प्रक्रियाबाट बनेका दशओटा शब्दहरु टिप्नुहोस् र द्वित्व विच्छेद गर्नुहोस् :</h3>
+                    <p>किनारै किनार (किनार + किनार), हर्ल्याङहुर्लुङ (हर्ल्याङ + हर्ल्याङ), आआफ्नो (आफ्नो + आफ्नो), आलोपालो (पालो + पालो), कुट्दाकुट्दै (कुट्दै + कुट्दै), छचल्किनु (छल्किनु + छल्किनु), सँगसँगै (सँगै + सँगै), तलतल (तल + तल), माथि मथि (माथि + माथि), फाट्टफुट्ट (फाट्ट + फाट्ट) ।</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>सन्धि</h2>
+                
+                <div class="subsection">
+                    <h3>१. दिइएका अनुच्छेदबाट सन्धियुक्त शब्द पहिचान गरी सन्धि विच्छेद गर्नुहोस् :</h3>
+                    <ul>
+                        <li>नरेश : नर + ईश</li>
+                        <li>अत्याचार : अति + आचार</li>
+                        <li>सूर्योदय : सूर्य + उदय</li>
+                        <li>निष्काम : निष् + काम</li>
+                        <li>दुराशय : दुर् + आशय</li>
+                        <li>मानवोचित : मानव + उचित</li>
+                    </ul>
+                </div>
+
+                <div class="subsection">
+                    <h3>२. दिइएका शब्दहरुको सन्धि विच्छेद गर्नुहोस् :</h3>
+                    <p>पुस्तकालय (पुस्तक + आलय), चन्द्रोदय (चन्द्र + उदय), सूक्ति (सूक्त + इ), नारीश्वर (नारी + ईश्वर), आज्ञानुसार (आज्ञा + अनुसार), देवर्षि (देव + ऋषि), नरेन्द्र (नर + इन्द्र), धीरेन्द्र (धीर + इन्द्र), उल्लेख (उत् + लेख), संवाद (सम् + वाद), उद्बोध (उत् + बोध), सङ्कीर्ण (सम + कीर्ण), सन्देश (सम् + देश), दिगम्बर (दिग + अम्बर), जगदीश (जगत + ईश), उल्लास (उत् + लास), सद्भावना (सत् + भावना), सन्न्यास (सत् + न्यास), यशोधरा (यस + धरा), पुनर्कथन (पुनर + कथन), मनोरञ्जन (मन + अञ्जन), हतियार (हात + इयार), ढकनी (ढक + अनी), पन्यालो (पानी + आलो), प्रेमर्षि (प्रेम + ऋषि) ।</p>
+                </div>
+            </div>
+
+            <div class="app-download">
+                <p>यी र यस्ता अन्य नोटहरू अफलाइन हेर्नका लागि हाम्रो एन्ड्रोइड एप डाउनलोड गर्नुहोस्।</p>
+                <a href="#" class="app-button">अहिले नै डाउनलोड गर्नुहोस्</a>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

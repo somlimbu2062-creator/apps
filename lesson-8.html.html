@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>लौ आयो ताजा खबर (लघु नाटक) - नेपाली नोटस्</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&family=Lora:wght@700&display=swap');
+
+        :root {
+            --primary-color: #3f51b5; /* Indigo */
+            --secondary-color: #ffc107; /* Amber */
+            --background-color: #e8eaf6; /* Light Indigo */
+            --text-color: #1a237e; /* Dark Indigo */
+            --light-text-color: #5c6bc0; /* Muted Indigo */
+            --card-background: #ffffff;
+            --border-radius: 12px;
+            --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --transition-speed: 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Mukta', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        header {
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary-color), #7986cb);
+            color: #fff;
+            padding: 40px 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        header h1 {
+            font-family: 'Lora', serif;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .section {
+            background-color: var(--card-background);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .section h2 {
+            font-family: 'Lora', serif;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+
+        .subsection h3 {
+            font-family: 'Lora', serif;
+            font-size: 1.4rem;
+            color: var(--secondary-color);
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+
+        .question {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .question h4 {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .question p, .question ul {
+            font-size: 1rem;
+            color: var(--light-text-color);
+            padding-left: 20px;
+        }
+
+        .question ul {
+            margin-top: 10px;
+            list-style-type: disc;
+        }
+
+        .question li {
+            margin-bottom: 8px;
+        }
+
+        .app-download {
+            text-align: center;
+            padding: 30px;
+            background-color: var(--primary-color);
+            color: #fff;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .app-download p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .app-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .app-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            color: var(--primary-color);
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                gap: 20px;
+            }
+            header {
+                padding: 30px 15px;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            .section {
+                padding: 20px;
+            }
+            .section h2 {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+            }
+            .subsection h3 {
+                font-size: 1.2rem;
+            }
+            .question h4 {
+                font-size: 1rem;
+            }
+            .app-download {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>लौ आयो ताजा खबर (लघु नाटक)</h1>
+            <p>कक्षा ११ - नेपाली</p>
+        </header>
+
+        <main>
+            <div class="section">
+                <h2>शब्दभण्डार</h2>
+                
+                <div class="question">
+                    <h4>१. दिइएका अर्थ दिने शब्द पाठबाट खोजेर लेख्नुहोस् :</h4>
+                    <p>क) पत्रपत्रिका = <strong>अखवार</strong><br>ख) मञ्चको छेउछाउको भाग = <strong>नेपथ्य</strong><br>ग) रमित = <strong>तमासा</strong><br>घ) विपत् = <strong>आपत्</strong><br>ङ) एम्बुलेन्सले बजाउने आवाज = <strong>साइरन</strong></p>
+                </div>
+                
+                <div class="question">
+                    <h4>२. दिइएका पदावली र अर्थको जोडा मिलाउनुहोस :</h4>
+                    <p>क) मधुरो प्रकाश – अलि अलि उज्यालो<br>ख) बस बिसौनी – बस चढ्न र ओर्लन रोकिने ठाउँ<br>ग) ताजा खबर – नयाँ समाचार<br>घ) निन्दनीय कार्य – निन्दा गर्नुपर्ने काम<br>ङ) जीवनको अध्याय – जिन्दगीको कालखण्ड<br>च) प्रस्थान गर्नु – बाहिर जानु<br>छ) भविष्यको लठ्ठी – भोलिको सहारा</p>
+                </div>
+                
+                <div class="question">
+                    <h4>३. दिइएका शब्दहरुको विपरीत अर्थ दिने शब्द पाठबाट खोजेर लेख्नुहोस् :</h4>
+                    <p>बासी = <strong>ताजा</strong><br>चहकिलो = <strong>मधुरो</strong><br>दोष = <strong>निर्दोष</strong><br>पराई = <strong>आफन्त</strong><br>भाग्यमानी = <strong>अभागी</strong><br>बन्धन = <strong>मुक्ति</strong><br>अदृश्य = <strong>दृश्य</strong></p>
+                </div>
+                
+                <div class="question">
+                    <h4>४. दिइएका आशय झल्कने उखान लघुनाटकबाट खोजेर लेख्नुहोस् :</h4>
+                    <p>क) इच्छाशक्ति भए जुनसुकै काम गर्न सकिन्छ - <strong>खाने मुखलाई जुँगाले छेक्दैन ।</strong><br>ख) अरुलाई पर्ने समस्या तपाईंलाई पनि पर्छ - <strong>अरुलाई खाने बाघले तपाईंलाई पनि खान्छ ।</strong></p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>बोध र अभिव्यक्ति</h2>
+                
+                <div class="question">
+                    <h4>१. छोटो उत्तर दिनुहोस् :</h4>
+                    <ul>
+                        <li><strong>क) यस लघुनाटकमा कस्तो विषयलाई प्रस्तुत गरिएको छ ?</strong><br>यस लघुनाटकमा दुर्व्यसनीको विषयवस्तुलाई प्रस्तुत गरिएको छ ।</li>
+                        <li><strong>ख) यस लघुनाटकमा कति जना मञ्चीय पात्रहरु छन् ?</strong><br>यस लघुनाटकमा ८ जना मञ्चीय पात्रहरु छन् ।</li>
+                        <li><strong>ग) यस लघुनाटकको पात्रका संवादमा कुन कुन भाषाको प्रभावदेख्न सकिन्छ ?</strong><br>यस लघुनाटकमा शेर्पा, नेवारी र हिन्दी भाषाको प्रभाव देख्न सकिन्छ ।</li>
+                        <li><strong>घ) यस लघुनाटकमा कुन परिवेशलाई समेटिएको छ ?</strong><br>यस लघुनाटकमा सहरिया परिवेशलाई समेटिएको छ ।</li>
+                    </ul>
+                </div>
+
+                <div class="question">
+                    <h4>४. "पर्खनुस् ! जानुभन्दा ……..मिलेर गरौँ "नाट्यांश पढी सोधिएका प्रश्नको उत्तर दिनुहोस् :</h4>
+                    <ul>
+                        <li><strong>क) `देश नबने हामी कोही बन्दैनौ´ भन्ने वाक्यको तात्पर्य खुलाउनुहोस् ।</strong><br>देशको प्रगति, सम्रिधि र विकाश नभएसम्म हामीले सुख र खुसि पाउदैनौ भन्नु नै देश नबने हामी कोही बन्दैनौ भन्नुको तात्पर्य हो ।</li>
+                        <li><strong>ख) खुसी भएर बाँच्न के गर्नुपर्छ ?</strong><br>खुसी भएर बाँच्नका लागि एकाअर्काको सुख दुःखमा मिलेर, साथ दिएर बाँच्नुपर्छ ।</li>
+                        <li><strong>ग) सामूहिक अभियान किन चलाइएको हो ?</strong><br>सामूहिक अभियान दुर्व्यसनको जडलाई उखेली समाजबाट बिकृति विसंगति हटाउनका लागि चलाइएको हो ।</li>
+                        <li><strong>घ) कस्तो अभिभावकलाई कर्तव्यनिष्ठ अभिभावक भनिन्छ ?</strong><br>आफ्नो सन्तान प्रति आफ्नो जिम्मेवारी पूरा गर्ने अभिभावकलाई कर्तव्यनिष्ठ अभिभावक भनिन्छ ।</li>
+                    </ul>
+                </div>
+                
+                <div class="question">
+                    <h4>६. दिइएको नाट्यांश पढी सोधिएका प्रश्नहरुको छोटो उत्तर दिनुहोस् :</h4>
+                    <ul>
+                        <li><strong>अ) यस नाट्यांशमा वक्ताले आफ्ना के कस्ता कमजोरी रहेको स्विकारेका छन् ?</strong><br>यस नाट्यांशमा वक्ताले आफ्ना सन्तानप्रति आफ्नो कर्तव्य र जिम्मेवारी पूरा नगरेको, रेखदेख एवं निगरानी नगरेको, र छोराको पढाइ, साथीसङ्गत र खर्चको बारेमा ख्याल नगरेको कुरा स्विकारेका छन् ।</li>
+                        <li><strong>आ) यस नाट्यांशमा व्यक्त समस्या कसरी समाधान गर्न सकिएला ?</strong><br>सन्तानसँग समय बिताएर उनीहरुको पढाइ, साथीसङ्गत र गतिविधिबारे चासो राख्ने, माया ममता दिने र खर्चको सही सदुपयोगबारे सिकाएर यो समस्या समाधान गर्न सकिन्छ ।</li>
+                    </ul>
+                </div>
+
+                <div class="question">
+                    <h4>७. व्याख्या गर्नुहोस् :</h4>
+                    <ul>
+                        <li><strong>क) दुर्व्यसनको जडलाई उखेल्ने काम एउटा व्यक्तिले मात्र सक्दैन ।</strong><br>यो अंशले दुर्व्यसन समाज र राष्ट्रकै लागि घातक हुने भएकाले यसलाई हटाउन सबैको सामूहिक प्रयास आवश्यक छ भन्ने सन्देश दिन्छ । परिवार, समाज, प्रशासन र राज्य सबै मिलेर सचेतना अभियान चलाएमा मात्र दुर्व्यसनमुक्त समाज निर्माण गर्न सकिन्छ।</li>
+                        <li><strong>ख) जब तिमी हाम्रो देशमा……….स्वच्छ हुन्छ ।</strong><br>यो अंशले पत्रकारिताको मर्मलाई व्यङ्ग्य गर्दै युवापुस्तालाई दुर्व्यसनबाट टाढा राखेर राष्ट्र निर्माणमा लाग्न प्रेरित गर्नुपर्ने सन्देश दिन्छ । पत्रिकाहरूले युवाले गरेका सकारात्मक कामहरूको समाचार सम्प्रेषण गरी समाजमा चेतना फैलाउनुपर्छ भन्ने यसको भाव हो।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>व्याकरण</h2>
+                
+                <div class="subsection">
+                    <h3>१. दिइएको अनुच्छेदबाट प्रत्यय लागेका शब्द पहिचान गरी सूची बनाउनुहोस् :</h3>
+                    <p>केटा, निन्दनीय, कार्य, ढिस्का, लिएर, पुग्ने, हजारौँ, जनता, दैनिक, गरी, गर्दा, चलायमान ।</p>
+                </div>
+                
+                <div class="subsection">
+                    <h3>२. दिइएको अनुच्छेदबाट प्रत्यय व्युत्पन्न शब्द पहिचान गरी निर्माण प्रक्रिया देखाउनुहोस् :</h3>
+                    <ul>
+                        <li>अपनत्व = आफ्नो + त्व</li>
+                        <li>भावना = भाव + ना</li>
+                        <li>होइन = हु + इन</li>
+                        <li>गरी = गर् + ई</li>
+                        <li>मिलेर = मिल् + एर</li>
+                        <li>पेटी = पेट + ई</li>
+                        <li>कर्तव्य = कृ + तव्य</li>
+                        <li>सामूहिक = समूह + इक</li>
+                        <li>नागरिक = नगर + इक</li>
+                        <li>गरौँ = गर् + औँ</li>
+                        <li>भावक = भु + अक</li>
+                    </ul>
+                </div>
+
+                <div class="subsection">
+                    <h3>४. दिइएका प्रत्यय लगाई एक एकओटा नयाँ शब्द निर्माण गर्नुहोस् :</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>प्रत्यय</th>
+                                <th>नयाँ शब्द</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>अक्कड</td><td>भुलक्कड</td></tr>
+                            <tr><td>अत</td><td>लिखत</td></tr>
+                            <tr><td>अन्त</td><td>भिडन्त</td></tr>
+                            <tr><td>अन</td><td>चरन</td></tr>
+                            <tr><td>अनी</td><td>ढकनी</td></tr>
+                            <tr><td>आइँ</td><td>बसाइँ</td></tr>
+                            <tr><td>आइ</td><td>बसाइ</td></tr>
+                            <tr><td>आउ</td><td>घटाउ</td></tr>
+                            <tr><td>आलु</td><td>बढालु</td></tr>
+                            <tr><td>आव</td><td>चुनाव</td></tr>
+                            <tr><td>आवट</td><td>बनावट</td></tr>
+                            <tr><td>आहा</td><td>बसाहा</td></tr>
+                            <tr><td>अन्ते</td><td>उडन्ते</td></tr>
+                            <tr><td>आरु</td><td>सिकारु</td></tr>
+                            <tr><td>एको</td><td>उडेको</td></tr>
+                            <tr><td>एनी</td><td>अगेनी</td></tr>
+                            <tr><td>उवा</td><td>सुतुवा</td></tr>
+                            <tr><td>इलो</td><td>झरिलो</td></tr>
+                            <tr><td>आ</td><td>छापा</td></tr>
+                            <tr><td>दो</td><td>बढ्दो</td></tr>
+                            <tr><td>नु</td><td>पढ्नु</td></tr>
+                            <tr><td>एर</td><td>सिकेर</td></tr>
+                            <tr><td>उन्जेल</td><td>जितुन्जेल</td></tr>
+                            <tr><td>ओट</td><td>छनोट</td></tr>
+                            <tr><td>ओ</td><td>हाँसो</td></tr>
+                            <tr><td>इयार</td><td>हतियार</td></tr>
+                            <tr><td>इलो</td><td>मलिलो</td></tr>
+                            <tr><td>ई</td><td>धनी</td></tr>
+                            <tr><td>ए</td><td>धनकुटे</td></tr>
+                            <tr><td>औली</td><td>पुर्ख्यौली</td></tr>
+                            <tr><td>एली</td><td>पूर्वेली</td></tr>
+                            <tr><td>पना</td><td>तितोपना</td></tr>
+                            <tr><td>ली</td><td>झापाली</td></tr>
+                            <tr><td>ले</td><td>गाउँले</td></tr>
+                            <tr><td>आडी</td><td>गफाडी</td></tr>
+                            <tr><td>अरी</td><td>राम्ररी</td></tr>
+                            <tr><td>आइँ/याइँ</td><td>मुर्खयाइँ</td></tr>
+                            <tr><td>आइ</td><td>कमाइ</td></tr>
+                            <tr><td>आली</td><td>लेकाली</td></tr>
+                            <tr><td>आलु</td><td>मायालु</td></tr>
+                            <tr><td>आन</td><td>सिरान</td></tr>
+                            <tr><td>इङ्गर</td><td>पतिङ्गर</td></tr>
+                            <tr><td>इया</td><td>सहरिया</td></tr>
+                            <tr><td>औटे</td><td>कुरौटे</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="app-download">
+                <p>यी र यस्ता अन्य नोटहरू अफलाइन हेर्नका लागि हाम्रो एन्ड्रोइड एप डाउनलोड गर्नुहोस्।</p>
+                <a href="#" class="app-button">अहिले नै डाउनलोड गर्नुहोस्</a>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

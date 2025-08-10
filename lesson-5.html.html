@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>साथीलाई चिठी (चिठी) - नेपाली नोटस्</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&family=Lora:wght@700&display=swap');
+
+        :root {
+            --primary-color: #00796b; /* Teal */
+            --secondary-color: #ffc107; /* Amber */
+            --background-color: #e0f2f1; /* Light Teal */
+            --text-color: #004d40; /* Dark Teal */
+            --light-text-color: #4db6ac; /* Muted Teal */
+            --card-background: #ffffff;
+            --border-radius: 12px;
+            --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --transition-speed: 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Mukta', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        header {
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary-color), #26a69a);
+            color: #fff;
+            padding: 40px 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        header h1 {
+            font-family: 'Lora', serif;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .section {
+            background-color: var(--card-background);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .section h2 {
+            font-family: 'Lora', serif;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+
+        .subsection h3 {
+            font-family: 'Lora', serif;
+            font-size: 1.4rem;
+            color: var(--secondary-color);
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+
+        .question {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .question h4 {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .question p, .question ul {
+            font-size: 1rem;
+            color: var(--light-text-color);
+            padding-left: 20px;
+        }
+
+        .question ul {
+            margin-top: 10px;
+            list-style-type: disc;
+        }
+
+        .question li {
+            margin-bottom: 8px;
+        }
+
+        .app-download {
+            text-align: center;
+            padding: 30px;
+            background-color: var(--primary-color);
+            color: #fff;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .app-download p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .app-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .app-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                gap: 20px;
+            }
+            header {
+                padding: 30px 15px;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            .section {
+                padding: 20px;
+            }
+            .section h2 {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+            }
+            .subsection h3 {
+                font-size: 1.2rem;
+            }
+            .question h4 {
+                font-size: 1rem;
+            }
+            .app-download {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>साथीलाई चिठी (चिठी)</h1>
+            <p>कक्षा ११ - नेपाली</p>
+        </header>
+
+        <main>
+            <div class="section">
+                <h2>शब्दभण्डार</h2>
+                
+                <div class="question">
+                    <h4>१. दिइएका अर्थसँग मिल्ने शब्द पाठबाट खोजेर लेख्नुहोस्:</h4>
+                    <ul>
+                        <li>क) मलेसियाको मुद्रा: <strong>रिङ्गेट</strong></li>
+                        <li>ख) विदेश: <strong>परदेश</strong></li>
+                        <li>ग) नागरिक नभएको अवस्था: <strong>अनागरिक</strong></li>
+                        <li>घ) मर्न लागेकालाई बचाउने: <strong>मृतसञ्जीवनी</strong></li>
+                        <li>ङ) सफा: <strong>कञ्चन</strong></li>
+                        <li>च) उथलपुथल: <strong>उद्वेलित</strong></li>
+                        <li>छ) कार्य गर्ने क्षमता भएको: <strong>सामर्थ्य</strong></li>
+                        <li>ज) जन्मेको ठाउँ: <strong>जन्मथलो</strong></li>
+                    </ul>
+                </div>
+                
+                <div class="question">
+                    <h4>२. दिइएका शब्दहरूको अर्थ चिनेर जोडा मिलाउनुहोस्:</h4>
+                    <ul>
+                        <li>क) रहर: <strong>इच्छा, एक किसिमको दाल</strong></li>
+                        <li>ख) काम: <strong>कम्प, कार्य</strong></li>
+                        <li>ग) पत्र: <strong>चिठी, तह</strong></li>
+                        <li>घ) कडी: <strong>सानो कडा वा मुन्द्रो, जुक्ती</strong></li>
+                        <li>ङ) अन्तर: <strong>भिन्नता, भित्री हृदय</strong></li>
+                    </ul>
+                </div>
+                
+                <div class="question">
+                    <h4>४. दिइएका पदावलीलाई अर्थ स्पष्ट हुने गरी वाक्यमा प्रयोग गर्नुहोस्:</h4>
+                    <ul>
+                        <li><strong>कहाली लाग्नु:</strong> भूकम्पको त्रासदी सम्झिँदा मानिसको मनमा अझै कहाली लाग्छ।</li>
+                        <li><strong>टपाटप टिप्नु:</strong> आँधीबेहरीले फलफूलका रूखका स्याउ टपाटप टिपेझैं झारिदियो।</li>
+                        <li><strong>महिना मर्नु:</strong> महिनामर्नासाथ सधैंजसो पसलमा नयाँ सामान आउने गर्छ।</li>
+                        <li><strong>रोइकराइ गर्नु:</strong> बालकले खेलौनाका लागि रोइकराइ गर्दै आमासँग जिद्दी गर्‍यो।</li>
+                        <li><strong>वितृष्णा पलाउनु:</strong> बारम्बारको असफलताले उसलाई काममा वितृष्णा पलाउन थाल्यो।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>बोध र अभिव्यक्ति</h2>
+                
+                <div class="question">
+                    <h4>१. पाठ पढी दिइएका प्रश्नहरूको उत्तर लेख्नुहोस्:</h4>
+                    <ul>
+                        <li><strong>क) चिठीमा कति अनुच्छेद रहेका छन्?</strong><br>चिठीमा सातवटा अनुच्छेद रहेका छन्।</li>
+                        <li><strong>ख) चिठीको आदि, मध्य र अन्त्य भागमा के विषयवस्तु छन्?</strong><br>चिठीको आदि भागमा वैदेशिक रोजगारीप्रतिको मोह देखाइएको छ। मध्य भागमा वैदेशिक रोजगारीले दिएको क्षणिक सुखको अनुभव र अन्त्य भागमा स्वदेशप्रतिको प्रेम र मोह व्यक्त गरिएको छ।</li>
+                        <li><strong>ग) पूर्णविक्रमले सुरुका दुई–तीन वर्ष विदेशमा कसरी बिताए?</strong><br>पूर्णविक्रमले विदेशमा सुरुका दुई–तीन वर्ष रमाइलो गर्दै र विलासितामा बिताए।</li>
+                        <li><strong>घ) पूर्णविक्रम कस्तो सपना बोकेर विदेश गएका थिए?</strong><br>पूर्णविक्रम विदेशमा सुनको बोटबाट पैसा टिपेर चाँडै धनी हुने सपना बोकेर गएका थिए।</li>
+                        <li><strong>ङ) चिठीमा के–के अङ्गहरू हुन्छन्? लेख्नुहोस्।</strong><br>चिठीमा मिति, ठेगाना, सम्बोधन, शिष्टाचार, विवरण, समापन, र खामको नमुनाजस्ता अङ्गहरू हुन्छन्।</li>
+                    </ul>
+                </div>
+                
+                <div class="question">
+                    <h4>२. चिठीको अंश पढी खाली ठाउँ भर्नुहोस्:</h4>
+                    <ul>
+                        <li>क) दुई महिनापछि काममा फर्कंदा कम्पनीले पनि <strong>राखेन</strong>।</li>
+                        <li>ख) त्यति बेला मात्र मलाई थाहा भयो, देश र परदेशको अन्तर! नागरिक हुनु र अनागरिक हुनुको अन्तर!</li>
+                        <li>ग) जीवनप्रति <strong>वितृष्णा</strong> पलाइरहेको थियो।</li>
+                        <li>घ) छिट्टै नेपाल फर्केर आफ्नै माटोमा परिश्रम गरी जीवन निर्वाह गर्ने विचारमा छु।</li>
+                        <li>ङ) अबको तीन महिनाभित्र म आफ्नो जन्मथलो, आफ्ना आमाबुबाको काख र प्रियजनहरूको माझमा हुने छु।</li>
+                    </ul>
+                </div>
+                
+                <div class="question">
+                    <h4>३. चिठीको अंश पढी दिइएका प्रश्नहरूको उत्तर लेख्नुहोस्:</h4>
+                    <ul>
+                        <li><strong>क) नेपालको जलराशिमा कस्तो सामर्थ्य छ?</strong><br>नेपालको जलराशिमा विश्वभरका मानिसहरूको प्यास मेटाउने क्षमता छ।</li>
+                        <li><strong>ख) हाम्रो देशको विकासले गति लिन नसक्नुको कारण के हो?</strong><br>जनताको दृढ इच्छाशक्ति र इमानदार प्रयासको कमीले देशको विकासले गति लिन सकेको छैन।</li>
+                        <li><strong>ग) परदेशमा सिकेको सीपले कसरी देश विकास गर्न सकिन्छ?</strong><br>परदेशमा सिकेको सीपलाई देशमै प्रयोग गरी र अरुलाई पनि सिकाएर स्वरोजगारको वातावरण सिर्जना गरेर देशको विकास गर्न सकिन्छ।</li>
+                        <li><strong>घ) देश विकासको मूल मन्त्र के हो?</strong><br>देश विकासको मूल मन्त्र सबै जनताले सहकार्य र हातेमालो गर्दै अघि बढ्नु हो।</li>
+                        <li><strong>ङ) म पात्र किन घर फर्कन चाहन्छ?</strong><br>वैदेशिक रोजगारीको निराशाजनक अनुभवले गर्दा म पात्र स्वदेश फर्कन चाहन्छ।</li>
+                    </ul>
+                </div>
+                
+                <div class="question">
+                    <h4>६. तपाईँ सुरज हुनुभएको भए चिठीको प्रतिउत्तर कसरि दिनुहुन्थ्यो? लेख्नुहोस:</h4>
+                    <p>मिति: २०७७-०१-०७<br>पोखरा, गण्डकी प्रदेश<br>नेपाल<br>प्रिय मित्र पूर्णविक्रम,<br>धेरै माया र सम्झना!<br>म यहाँ कुशल छु, तपाईँ पनि कुशल रहनुभएको आशा गर्दछु। तपाईँको पत्र गत महिना प्राप्त भयो। पत्रमा व्यक्त विचारले मलाई अत्यन्त खुसी बनायो। तपाईँको वैदेशिक रोजगारीप्रतिको दृष्टिकोण परिवर्तन र स्वदेश फर्कने निर्णयले मलाई गर्वान्वित बनायो।<br>तपाईँले विदेशमा सिकेका सिपहरू स्वदेशमा प्रयोग गर्ने योजना राम्रो छ। गाउँका युवाहरूलाई प्रोत्साहित गरेर उनीहरूलाई स्वरोजगार बनाउने योजनामा म तपाईँको साथ दिन तयार छु। म यहाँका युवाहरूलाई नयाँ सीप सिकाउन र रोजगारीको अवसर सिर्जना गर्न प्रयास गर्नेछु। तपाईँ कहिले नेपाल आउनुहुन्छ? प्रतिक्षामा छु।<br>तपाईँको अनुभवले विदेश र स्वदेशबीचको अन्तरलाई राम्ररी बुझेको देखाउँछ। विदेशमा तपाईँले भोग्नुभएको कठिनाइले धेरै कुरा सिकाएको छ। तपाईँको स्वदेश फर्कने निर्णयलाई म हृदयदेखि स्वागत गर्दछु।<br>आजलाई यतिमै कलम रोकिन्छ। तपाईँ चाँडै फर्कनुहुने छ भन्ने विश्वासमा छु। भेटमा थप कुरा गरौँला।<br>उही तपाईंको साथी,<br>सुरज नेपाल</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>व्याकरण</h2>
+                
+                <div class="subsection">
+                    <h3>१. दिइएको अनुच्छेद पढी कुन कुन लेख्य चिह्न प्रयोग भएका छन् , पहिचान गर्नुहोस्:</h3>
+                    <p><strong>उद्धरण चिह्न ( “ ” )</strong><br><strong>अर्धविराम चिह्न ( , )</strong><br><strong>विस्मयसूचक चिह्न ( ! )</strong><br><strong>अल्पविराम चिह्न ( , )</strong><br><strong>प्रश्नचिह्न ( ? )</strong></p>
+                </div>
+                
+                <div class="subsection">
+                    <h3>२. दिइएका वाक्यहरुमा आवश्यक ठाउँमा आवश्यक चिह्न प्रयोग गर्नुहोस्:</h3>
+                    <ul>
+                        <li><strong>मैले घर, बाटो, फूल, मान्छे र गाडीहरुको चित्र बनाएको छु ।</strong></li>
+                        <li><strong>तिमी यहाँ बस, चकचक नगर ।</strong></li>
+                        <li><strong>हामीले सुख–दुःख, रात–दिन, जीवन–मरणजस्ता आइरहने–गइरहने कुरा हुन् भन्ने बुझ्नुपर्छ ।</strong></li>
+                        <li><strong>तिमी र उसले के काम गर्‍यौ?</strong></li>
+                        <li><strong>अहा! कति सुन्दर जीवन ।</strong></li>
+                        <li><strong>अग्लो–होचो, टाढा–नजिक, वर–पर आदि विपरीतार्थी शब्द हुन् ।</strong></li>
+                        <li><strong>“म तुरुन्तै फर्किहाल्छु,” उसले भन्यो ।</strong></li>
+                        <li><strong>मेरो देशको नाम हो – नेपाल ।</strong></li>
+                        <li><strong>क्रियाहरुलाई कर्मप्रधानताका आधारमा दुई किसिममा बाँड्न सकिन्छ: क) सकर्मक, ख) अकर्मक</strong></li>
+                        <li><strong>उक्ति कथन दुई किसिमका हुन्छन् – प्रत्यक्ष र अप्रत्यक्ष कथन ।</strong></li>
+                        <li><strong>ले, बाट, द्वारा प्रथम विभक्ति हुन सक्छन् ।</strong></li>
+                        <li><strong>“मानिस ठुलो दिलले हुन्छ, जातले हुँदैन।” यो सुक्ति देवकोटाको हो ।</strong></li>
+                        <li><strong>हरि! तिमी के गर्दै छौ?</strong></li>
+                    </ul>
+                </div>
+                
+                <div class="subsection">
+                    <h3>३. उचित लेख्य चिह्नहरु प्रयोग गरी दिइएको अनुच्छेद पुनर्लेखन गर्नुहोस्:</h3>
+                    <p>ओहो! भोलि त परीक्षाफल प्रकाशित हुने दिन। मेरो जिपिए कति आउने होला? व्यर्थै परीक्षा आउने बेलामा पनि फुटबल खेल्ने भइटोपलेको। बुबाले त सम्झाउँदै हुनुहुन्थ्यो, “पढाइ पहिलो कुरा अनिमात्र अरु कुरा आउँछन्” भनेर। तर त्यतिबेला वास्ता गरिएन। राम, हरि, गोपाल र शिवले कर गरेपछि खेल्नै पर्यो। न त फुटबल नै जितियो, न त पढाइमा नै ध्यान दिन सकियो। तर के नै बिगारेको छु र! (कोल्टे फेर्दै) धत! अब चिन्ता गरेर के फाइदा र? “निर्णय गर्न गल्ती गरे पछुताउनु पर्छ,” गुरुले भन्नुभएको थियो। त्यस्तै भएजस्तो छ। खैर, जे भयो भयो। अब चाहिँ यस्तो नगर्नुपर्ला। (बत्ती निभाउँछ र सुत्छ)</p>
+                </div>
+            </div>
+
+            <div class="app-download">
+                <p>यी र यस्ता अन्य नोटहरू अफलाइन हेर्नका लागि हाम्रो एन्ड्रोइड एप डाउनलोड गर्नुहोस्।</p>
+                <a href="#" class="app-button">अहिले नै डाउनलोड गर्नुहोस्</a>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

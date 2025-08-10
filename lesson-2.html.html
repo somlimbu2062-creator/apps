@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>गाउँको माया (सामाजिक कथा) - नेपाली नोटस्</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&family=Lora:wght@700&display=swap');
+
+        :root {
+            --primary-color: #2e7d32; /* Green */
+            --secondary-color: #ffeb3b; /* Yellow */
+            --background-color: #e8f5e9; /* Light Green */
+            --text-color: #1b5e20; /* Dark Green */
+            --light-text-color: #4caf50; /* Muted Green */
+            --card-background: #ffffff;
+            --border-radius: 12px;
+            --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --transition-speed: 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Mukta', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        header {
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary-color), #81c784);
+            color: #fff;
+            padding: 40px 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        header h1 {
+            font-family: 'Lora', serif;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .section {
+            background-color: var(--card-background);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .section h2 {
+            font-family: 'Lora', serif;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+
+        .subsection h3 {
+            font-family: 'Lora', serif;
+            font-size: 1.4rem;
+            color: var(--secondary-color);
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+
+        .question {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .question h4 {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .question p, .question ul {
+            font-size: 1rem;
+            color: var(--light-text-color);
+            padding-left: 20px;
+        }
+
+        .question ul {
+            margin-top: 10px;
+            list-style-type: disc;
+        }
+
+        .question li {
+            margin-bottom: 8px;
+        }
+
+        .app-download {
+            text-align: center;
+            padding: 30px;
+            background-color: var(--primary-color);
+            color: #fff;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .app-download p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .app-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .app-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            color: var(--primary-color);
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .list-unstyled {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                gap: 20px;
+            }
+            header {
+                padding: 30px 15px;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            .section {
+                padding: 20px;
+            }
+            .section h2 {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+            }
+            .subsection h3 {
+                font-size: 1.2rem;
+            }
+            .question h4 {
+                font-size: 1rem;
+            }
+            .app-download {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>गाउँको माया (सामाजिक कथा)</h1>
+            <p>कक्षा ११ - नेपाली</p>
+        </header>
+
+        <main>
+            <div class="section">
+                <h2>शब्दभण्डार</h2>
+                
+                <div class="question">
+                    <h4>१. दिइएका शब्द र अर्थबिच जोडा मिलाउनुहोस् ।</h4>
+                    <ul class="list-unstyled">
+                        <li>क) कोला = <strong>खेतको गरो</strong></li>
+                        <li>ख) आर्द्र = <strong>नरम ; रसिलो</strong></li>
+                        <li>ग) क्रीतदास = <strong>पैसा दिएर दास बनाएको</strong></li>
+                        <li>घ) ओरहा = <strong>पूर्ण नपाकेको मकै, गहुँलाई पोलेर तयार पारेको खानेकुरा</strong></li>
+                        <li>ङ) ठालु = <strong>गाउँबस्तीमा आफ्नो हैकम जमाउने मान्छे</strong></li>
+                    </ul>
+                </div>
+                
+                <div class="question">
+                    <h4>२. दिइएका अर्थ दिने शब्द पाठबाट खोजेर लेख्नुहोस् ।</h4>
+                    <ul>
+                        <li>क) स्वतन्त्र = <strong>उन्मुक्त</strong></li>
+                        <li>ख) कपडाको भकुन्डो = <strong>गिर</strong></li>
+                        <li>ग) अड्काउ = <strong>अल्झो</strong></li>
+                        <li>घ) भिन्न हुनाको अभाव = <strong>पृथक्ताबोध</strong></li>
+                        <li>ङ) अर्काको काम गरिदिएबापत पाइने परिश्रमिक = <strong>वनी</strong></li>
+                        <li>च) इज्जत = <strong>अभिमान</strong></li>
+                    </ul>
+                </div>
+                
+                <div class="question">
+                    <h4>३. दिइएका शब्दहरुको अर्थ खुल्ने गरी वाक्यमा प्रयोग गर्नुहोस् ।</h4>
+                    <ul>
+                        <li><strong>नौटङ्की :</strong> विक्रेताको नौटंकी हामीलाई नयाँ सामान किन्ने प्रलोभनमा थियो ।</li>
+                        <li><strong>रिहर्सल :</strong> हामीले ६ दिनको लागि नृत्यको रिहर्सल गरेका थियौं ।</li>
+                        <li><strong>हुटहुटी :</strong> रामलाई आफ्नो परिवार भेट्न पाउँदा हुटहुटी भैरहेको थियो ।</li>
+                        <li><strong>आली :</strong> किसानहरु आलीमा बसेर चिया पिउदै छन् ।</li>
+                        <li><strong>अन्तराल :</strong> छोटो अन्तरालपछि चलचित्र सुरु हुँदै छ ।</li>
+                        <li><strong>कृपापात्र :</strong> परिछन जस्ता धेरै जनताहरू अझै मालिकको कृपापात्र बनेर बसेका छन् ।</li>
+                        <li><strong>नासो :</strong> बाबु बाजेले छोडेर गएको नासोलाई आजपनि परिछन जस्ता व्यक्तिहरूले निरन्तरता दिएका छन् ।</li>
+                        <li><strong>रण :</strong> परिछन जस्ता गरिब र खेत मालिकहरूबीच रण भएको थियो ।</li>
+                        <li><strong>मानसपट :</strong> परिछन, बुधना र रामदरसको मानसपटमा सदा वनी कसरी बढाउन सकिन्छ भन्ने कुरा खेलिरहन्छ ।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>बोध र अभिव्यक्ति</h2>
+                
+                <div class="question">
+                    <h4>१. `गाउँको माया´ कथा पढी दिइएका प्रश्नहरुको उत्तर दिनुहोस् ।</h4>
+                    <ul>
+                        <li><strong>क) यस कथामा कतिओटा अनुच्छेद छन् ?</strong><br>यस कथामा १४ ओटा अनुच्छेद छन् ।</li>
+                        <li><strong>ख) सातौं अनुच्छेदमा कतिओटा वाक्य छन् ?</strong><br>सातौं अनुच्छेदमा २ ओटा वाक्य छन् ।</li>
+                        <li><strong>ग) कृष्णको प्रवेश कुन अनुच्छेदमा भएको छ ?</strong><br>कृष्णको प्रवेश तेस्रो अनुच्छेदमा भएको छ ।</li>
+                        <li><strong>घ) `म´ पात्र किन गाउँ गएको हो ?</strong><br>गाउँको मायाले गर्दा म पात्रा गाउँ गएको हो ।</li>
+                        <li><strong>ङ) कथामा आदि, मध्यम र अन्त्यका मुख्य मुख्य घटना टिपोट गर्नुहोस् ।</strong>
+                            <p><strong>आदि भाग:</strong> दुई वर्षपछि गाउँ फर्केका कृष्णलाई गाउँको मायाले तानेको छ। उनका धेरै साथीहरू गरिबीका कारण अर्काको घरमा हली बसेर जीवन चलाइरहेका छन्। कृष्ण भने राम्रो पढाइका कारण सहरमा बस्न पाएका छन् ।</p>
+                            <p><strong>मध्य भाग:</strong> घर आउँदा बाटोमा पुराना साथी परिछनसँग भेट हुन्छ। परिछनले मालिकविरुद्ध ज्याला बढाउन आवाज उठाउँदा मालिकहरूले उनीहरूलाई फुटाएर ज्याला नबढाएकोमा दुःख व्यक्त गर्छन् ।</p>
+                            <p><strong>अन्त्य भाग:</strong> परिछनले मालिकको अत्याचारविरुद्ध सधैँ लडिरहने कुरा सुनाउँछन्। गाउँमा भएको अन्याय, शोषण र गरिबीलाई समेटेर नाटक लेखिदिन कृष्णलाई अनुरोध गर्छन्। त्यसपछि कृष्ण आफ्नो घरतर्फ लाग्छन् ।</p>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="question">
+                    <h4>२. गाउँको माया कथाका आधारमा दिइएका घटनाक्रमलाई क्रमबद्ध रुपमा लेख्नुहोस् ।</h4>
+                    <ul class="list-unstyled">
+                        <li>१. `म´ पात्र करिब दुई वर्षपछि आफ्नो गाउँले जीवनका अनेक घटना सम्झिदै गाउँतिर फर्किनु ।</li>
+                        <li>२. परिछनले जयरामजीकी भनी बोलाएको आवाजले `म´ पात्र झस्किनु ।</li>
+                        <li>३. परिछनसँग गाउँका अनेक दुखसुखका कुराकानी गर्नु ।</li>
+                        <li>४. परिछन खोला छेउको कुवामा पानी लिन जानु र `म´ पात्रले खोलाका राम्रा नराम्रा पक्षमा सोच्नु ।</li>
+                        <li>५. पानी लिएपछि परिछनले गाउँका ठालुका कारण गाउँमा तीन पाटी भएको कुरा सुनाउनु ।</li>
+                        <li>६. तिमी गाउँमै भए ठालुहरुले यसरी सताउन नसक्ने कुरा परिछनले `म´ पात्रलाई बताउनु ।</li>
+                        <li>७. `म´ पात्राले तिमीहरुकै कारणले गाउँ प्रगतिको पथमा छ भन्दै राम्रो कामको श्रेय परिछनलाई दिएर सम्मान प्रकट गर्नु ।</li>
+                        <li>८. महावीरजीको झन्डा मेलामा गाउँकै घटनाहरु राखेर परिछनले `म´ पात्रलाई नाटक लेख्न अनुरोध गर्नु ।</li>
+                        <li>९. गाउँमा टेक्न नपाउँदै एउटा गहन जिम्मेवारी पाएको कुरा सोच्दै `म´ पात्र घरतिर लाग्नु ।</li>
+                    </ul>
+                </div>
+                
+                <div class="question">
+                    <h4>७. व्याख्या गर्नुहोस् :</h4>
+                    <ul>
+                        <li><strong>क) हाम्रा गाउँमा पनि साच्चैका मान्छेहरु रहेछन् जो जीवनलाई बुझ्दै छन् ।</strong><br>यस कथनले गाउँमा पनि चेतना र परिवर्तनको लहर आउन थालेको कुरालाई व्यक्त गर्दछ। कथाकार इस्मालीले यस कथामा जन्मभूमिप्रतिको प्रेम, युवामा पलाएको समाज परिवर्तनको सोच र ग्रामीण जीवनको यथार्थतालाई प्रस्तुत गरेका छन्।</li>
+                        <li><strong>ख) तिम्रो पाखुरीले खोलाको धारलाई फर्काउँछ भने गाउँको इज्जत माथी नउठाउला त ?</strong><br>यो भनाइले किसान र गरिब वर्गको शक्ति र सामर्थ्यलाई प्रशंसा गर्दछ। कृष्णले परिछनजस्ता परिश्रमी र पौरखी मानिसले आफ्नो मिहिनेतले खोलाको धार मोड्न सक्ने सामर्थ्य राख्छन् भने गाउँको विकास र इज्जत पनि माथि उठाउन सक्छन् भनी उनीहरूलाई हौसला दिएका छन् ।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>व्याकरण</h2>
+                
+                <div class="question">
+                    <h4>१. रेखाङ्कन गरिएका शब्द मूल वा व्युत्पन्न के हुन् , पहिचान गरेर लेख्नुहोस् ।</h4>
+                    <p><strong>क) मूल शब्दहरु :</strong> भाइ, हामी, काम, धोखा, चार, धान, फूल<br><strong>ख) व्युत्पन्न शब्दहरु :</strong> उथलपुथल, रोपाइँ, राम्रै, अगुवा, धनी, केरकार, झगडाफसाद, एकता</p>
+                </div>
+                
+                <div class="question">
+                    <h4>२. दिइएको अनुच्छेदमा मूल र व्युत्पन्न शब्द पहिचान गरी सुची बनाउनु होस् ।</h4>
+                    <p><strong>क) मूल शब्दहरु :</strong> आठ, नौ, वर्ष, उमेर, पुर्खा, काल, पनि, सीप, आफू, गीत<br><strong>ख) व्युत्पन्न शब्दहरु :</strong> बालक, लेखपढ, बाल्यकाल, गाउन, विद्यालय, परिश्रम, मिठा, सङ्गीत</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>शब्दस्रोत</h2>
+                
+                <div class="question">
+                    <h4>१. दिइएको कथांशमा गाढा अक्षरमा लेखिएका शब्दहरु तत्सम, तद्भव र आगन्तुक के हुन् छुट्याउनुहोस् ।</h4>
+                    <p><strong>तत्सम शब्दहरु :</strong> पङ्क्ति, आगन्तुक, एक, शान्ति, भङ्ग<br><strong>तद्भव शब्दहरु :</strong> आँखा, हात, हल्ला, रिस<br><strong>आगन्तुक शब्दहरु :</strong> अखबार, लिफाफा, कागज, वावा</p>
+                </div>
+                
+                <div class="question">
+                    <h4>२. दिइएका शब्दहरु ध्यानपुर्वक पढ्नुहोस् र तत्सम, तद्भव र आगन्तुक शब्दहरुको बेग्लाबेग्लै सुची बनाउनु होस् ।</h4>
+                    <p><strong>तत्सम शब्दहरु :</strong> पृथ्वी, अग्नि, वायु, ऋषि, ज्ञान, प्रज्ञा, ऊर्जा, छात्र<br><strong>तद्भव शब्दहरु :</strong> जेठ, साउन, असार, बाटो, सासू, ससुरा, आगो<br><strong>आगन्तुक शब्दहरु :</strong> पसल, पटुवा, ढाट, कदर, ढेवा, जागिर, दिल, हाकिम, पाइप</p>
+                </div>
+                
+                <div class="question">
+                    <h4>४. दिइएको अनुच्छेद पढी तद्भव र आगन्तुक शब्द छुट्याएर लेख्नुहोस् ।</h4>
+                    <p><strong>तद्भव शब्दहरु :</strong> अँध्यारो, रात, खेत, हात, बाटो, काँध, गाउँ, मानिस, सबै ।<br><strong>आगन्तुक शब्दहरु :</strong> लालटिन, जर्नेल, साहेब, रेडियो, मोबाइल, लाइट, थर्मस, चिया, सिकार, भेल ।</p>
+                </div>
+            </div>
+
+            <div class="app-download">
+                <p>यी र यस्ता अन्य नोटहरू अफलाइन हेर्नका लागि हाम्रो एन्ड्रोइड एप डाउनलोड गर्नुहोस्।</p>
+                <a href="#" class="app-button">अहिले नै डाउनलोड गर्नुहोस्</a>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

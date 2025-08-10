@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>संस्कृतिको नयाँ यात्रा - नेपाली नोटस्</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&family=Lora:wght@700&display=swap');
+
+        :root {
+            --primary-color: #00796b; /* Teal */
+            --secondary-color: #ffb300; /* Amber */
+            --background-color: #e0f2f1; /* Light Teal */
+            --text-color: #004d40; /* Dark Teal */
+            --light-text-color: #4db6ac; /* Muted Teal */
+            --card-background: #ffffff;
+            --border-radius: 12px;
+            --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --transition-speed: 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Mukta', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        header {
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary-color), #4db6ac);
+            color: #fff;
+            padding: 40px 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        header h1 {
+            font-family: 'Lora', serif;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .section {
+            background-color: var(--card-background);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .section h2 {
+            font-family: 'Lora', serif;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+
+        .subsection h3 {
+            font-family: 'Lora', serif;
+            font-size: 1.4rem;
+            color: var(--secondary-color);
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+
+        .question {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .question h4 {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .question p, .question ul {
+            font-size: 1rem;
+            color: var(--light-text-color);
+            padding-left: 20px;
+        }
+
+        .question ul {
+            margin-top: 10px;
+            list-style-type: disc;
+        }
+
+        .question li {
+            margin-bottom: 8px;
+        }
+
+        .app-download {
+            text-align: center;
+            padding: 30px;
+            background-color: var(--primary-color);
+            color: #fff;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .app-download p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .app-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .app-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            color: var(--primary-color);
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                gap: 20px;
+            }
+            header {
+                padding: 30px 15px;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            .section {
+                padding: 20px;
+            }
+            .section h2 {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+            }
+            .subsection h3 {
+                font-size: 1.2rem;
+            }
+            .question h4 {
+                font-size: 1rem;
+            }
+            .app-download {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>संस्कृतिको नयाँ यात्रा (आत्मपरक निबन्ध)</h1>
+            <p>कक्षा ११ - नेपाली</p>
+        </header>
+
+        <main>
+            <div class="section">
+                <h2>शब्दभण्डार</h2>
+                
+                <div class="question">
+                    <h4>१. दिइएका शब्दहरुको अर्थ लेख्नुहोस् र वाक्यमा प्रयोग गर्नुहोस् :</h4>
+                    <ul>
+                        <li><strong>विश्रान्ति :</strong> विश्राम वा आराम ।<br><strong>वाक्यमा प्रयोग:</strong> आजको काम सकेपछि मात्रै मलाई विश्रान्ति मिल्छ ।</li>
+                        <li><strong>आत्मसात :</strong> अरूबाट केही ग्रहण गरी आफ्नै बनाउने काम ।<br><strong>वाक्यमा प्रयोग:</strong> हामीले असल विचारलाई आत्मसात गर्नुपर्छ ।</li>
+                        <li><strong>कथित :</strong> भनिएको वा मानिएको ।<br><strong>वाक्यमा प्रयोग:</strong> कथित उच्च जातका मानिसले तल्लो जातका मानिसलाई भेदभाव गर्नु हुँदैन ।</li>
+                        <li><strong>बहुल :</strong> धेरै वा प्रशस्त ।<br><strong>वाक्यमा प्रयोग:</strong> हाम्रो देशमा प्राकृतिक सम्पदाको बहुल मात्रा छ ।</li>
+                        <li><strong>अवलम्ब :</strong> सहारा, आश्रय ।<br><strong>वाक्यमा प्रयोग:</strong> बूढेसकालमा छोराछोरी नै बाबुआमाको अवलम्ब हुन् ।</li>
+                        <li><strong>प्रचण्ड :</strong> तीव्र, धेरै ठूलो ।<br><strong>वाक्यमा प्रयोग:</strong> प्रचण्ड हावाहुरीले सबै घरका छानो उडायो ।</li>
+                        <li><strong>आमोद :</strong> आनन्द ।<br><strong>वाक्यमा प्रयोग:</strong> पर्वमा रमाउँदै आमोदपूर्वक हिँडेका मानिसहरु देखेर म खुसी भएँ ।</li>
+                        <li><strong>परिमार्जित :</strong> सफा गरिएको, शुद्ध पारिएको ।<br><strong>वाक्यमा प्रयोग:</strong> संस्कृतिको नयाँ यात्रा नामक निबन्धको भाषा परिमार्जित रहेको छ ।</li>
+                    </ul>
+                </div>
+                
+                <div class="question">
+                    <h4>२. दिइएका शब्दहरुको पर्यायवाची शब्द लेख्नुहोस् :</h4>
+                    <ul>
+                        <li>प्रवाह = <strong>बहाव, चाल</strong></li>
+                        <li>परम्परा = <strong>चलन, रीति</strong></li>
+                        <li>उत्साह = <strong>जाँगर, जोस</strong></li>
+                        <li>विश्रान्ति = <strong>आराम, विश्राम</strong></li>
+                        <li>विकृति = <strong>बिग्रेको, खराब</strong></li>
+                        <li>जगत = <strong>संसार, विश्व</strong></li>
+                        <li>धर्ती = <strong>जमिन, भूमि</strong></li>
+                    </ul>
+                </div>
+                
+                <div class="question">
+                    <h4>३. दिइएका विपरितार्थक शब्दहरुसँग जोडा मिलाउनुहोस् :</h4>
+                    <p>उत्थान - <strong>पतन</strong><br>निर्जीव - <strong>सजीव</strong><br>परम्परागत - <strong>आधुनिक</strong><br>जागरण - <strong>निद्रा</strong><br>सभ्य - <strong>असभ्य</strong><br>उल्लास - <strong>विषाद</strong></p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>बोध र अभिव्यक्ति</h2>
+                
+                <div class="question">
+                    <h4>१. छोटो उत्तर लेख्नुहोस् :</h4>
+                    <ul>
+                        <li><strong>क) निबन्धकारले संस्कृतिलाई किन गतिशील भनेका छन् ?</strong><br>संस्कृति समय, परिस्थिति र आवश्यकताअनुसार बदलिँदै जाने भएकाले निबन्धकारले संस्कृतिलाई गतिशील भनेका छन् ।</li>
+                        <li><strong>ख) निबन्धमा कस्ता संस्कृतिलाई पुनरुत्थान गर्ने सन्दर्भ आएको छ ?</strong><br>निबन्धमा लोप हुँदै गएका र समाजमा सकारात्मक प्रभाव पार्ने संस्कृतिलाई पुनरुत्थान गर्ने सन्दर्भ आएको छ ।</li>
+                        <li><strong>ग) निबन्धकारले संस्कृतिमा कस्ता विकृतिहरू आएको बताएका छन् ?</strong><br>निबन्धकारले संस्कृतिमा देखावटी, आडम्बरपूर्ण र अर्थहीन विकृतिहरू आएको बताएका छन् ।</li>
+                        <li><strong>घ) हामीले कस्तो संस्कृतिलाई जोगाउनुपर्छ ?</strong><br>हामीले सबैलाई समेट्ने, समाजलाई सकारात्मक दिशामा डोर्‍याउने र वैज्ञानिक सोच भएको संस्कृतिलाई जोगाउनुपर्छ ।</li>
+                    </ul>
+                </div>
+                
+                <div class="question">
+                    <h4>२. निबन्धका आधारमा जोडा मिलाउनुहोस् :</h4>
+                    <p>पुरानो संस्कृति - <strong>पतन</strong><br>नयाँ यात्रा - <strong>उत्थान</strong><br>विगतको ज्ञान - <strong>उपयोगी</strong><br>मानव जीवन - <strong>परिमार्जित</strong></p>
+                </div>
+                
+                <div class="question">
+                    <h4>३. निबन्धको सारसंक्षेप प्रस्तुत गर्नुहोस् ।</h4>
+                    <p>संस्कृति हाम्रो पहिचान र जीवनशैलीको अभिन्न अङ्ग हो। निबन्धकारले संस्कृतिलाई गतिशील र परिवर्तनशील मानेका छन्, किनकि यो समय र आवश्यकताअनुसार बदलिँदै जान्छ। निबन्धमा समाजमा व्याप्त आडम्बर, देखावटी र अर्थहीन परम्परालाई विकृतिको रूपमा औँल्याइएको छ। यस निबन्धले पुरानो र उपयोगी संस्कृतिको जगेर्ना गर्दै, आधुनिक ज्ञान र विज्ञानलाई आत्मसात गरी नयाँ संस्कृति निर्माण गर्नुपर्नेमा जोड दिएको छ। यसले हाम्रो संस्कृतिले सबैलाई समेट्नुपर्छ, विभेदलाई हटाउनुपर्छ र समाजलाई विकासको बाटोमा लैजानुपर्छ भन्ने सन्देश दिन्छ।</p>
+                </div>
+                
+                <div class="question">
+                    <h4>४. "सत्यका लागि यात्रामा निस्कँदा नै…." व्याख्या गर्नुहोस् ।</h4>
+                    <p>यस अंशमा निबन्धकारले संस्कृतिको विकासलाई यात्रासँग तुलना गरेका छन्। निबन्धकारका अनुसार, संस्कृतिलाई बचाउन त्यसको पुरानो रूपलाई जस्ताको तस्तै नभई, त्यसका असल पक्षहरूलाई मात्र आत्मसात गर्नुपर्छ। यसका लागि समाजका विकृति र अन्धविश्वासलाई हटाएर वैज्ञानिक र सत्यमा आधारित संस्कृतिलाई अवलम्बन गर्नुपर्छ। यो यात्रामा केही कठिनता र चुनौतिहरू आउन सक्छन्, तर पनि सत्यको खोजी गर्दै अगाडि बढेमा मात्र सही संस्कृति स्थापित गर्न सकिन्छ भन्ने यसको सार हो।</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>व्याकरण</h2>
+                
+                <div class="question">
+                    <h4>१. दिइएका शब्दहरुको अर्थ लेख्नुहोस् र वाक्यमा प्रयोग गर्नुहोस् :</h4>
+                    <ul>
+                        <li><strong>अवलम्ब :</strong> सहारा, आश्रय ।<br><strong>वाक्यमा प्रयोग:</strong> बुढेसकालमा छोराछोरी नै बाबुआमाको अवलम्ब हुन् ।</li>
+                        <li><strong>प्रचण्ड :</strong> तीव्र, धेरै ठूलो ।<br><strong>वाक्यमा प्रयोग:</strong> प्रचण्ड हावाहुरीले सबै घरको छानो उडायो ।</li>
+                        <li><strong>आमोद :</strong> आनन्द ।<br><strong>वाक्यमा प्रयोग:</strong> पर्वमा रमाउँदै आमोदपूर्वक हिँडेका मानिसहरु देखेर म खुसी भएँ ।</li>
+                        <li><strong>परिमार्जित :</strong> सफा गरिएको, शुद्ध पारिएको ।<br><strong>वाक्यमा प्रयोग:</strong> संस्कृतिको नयाँ यात्रा नामक निबन्धको भाषा परिमार्जित रहेको छ ।</li>
+                    </ul>
+                </div>
+                
+                <div class="question">
+                    <h4>२. दिइएका शब्दहरुको पर्यायवाची शब्द लेख्नुहोस् :</h4>
+                    <ul>
+                        <li>प्रवाह = <strong>बहाव, चाल</strong></li>
+                        <li>परम्परा = <strong>चलन, रीति</strong></li>
+                        <li>उत्साह = <strong>जाँगर, जोस</strong></li>
+                        <li>विश्रान्ति = <strong>आराम, विश्राम</strong></li>
+                        <li>विकृति = <strong>बिग्रेको, खराब</strong></li>
+                        <li>जगत = <strong>संसार, विश्व</strong></li>
+                        <li>धर्ती = <strong>जमिन, भूमि</strong></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="app-download">
+                <p>यी र यस्ता अन्य नोटहरू अफलाइन हेर्नका लागि हाम्रो एन्ड्रोइड एप डाउनलोड गर्नुहोस्।</p>
+                <a href="#" class="app-button">अहिले नै डाउनलोड गर्नुहोस्</a>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>जलस्रोत र ऊर्जा (वक्तृता) - नेपाली नोटस्</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&family=Lora:wght@700&display=swap');
+
+        :root {
+            --primary-color: #00897b; /* Teal */
+            --secondary-color: #ffc107; /* Amber */
+            --background-color: #e0f7fa; /* Light Cyan */
+            --text-color: #004d40; /* Dark Teal */
+            --light-text-color: #4db6ac; /* Muted Teal */
+            --card-background: #ffffff;
+            --border-radius: 12px;
+            --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --transition-speed: 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Mukta', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        header {
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary-color), #4db6ac);
+            color: #fff;
+            padding: 40px 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        header h1 {
+            font-family: 'Lora', serif;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .section {
+            background-color: var(--card-background);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .section h2 {
+            font-family: 'Lora', serif;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+
+        .subsection h3 {
+            font-family: 'Lora', serif;
+            font-size: 1.4rem;
+            color: var(--secondary-color);
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+
+        .question {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .question h4 {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .question p, .question ul {
+            font-size: 1rem;
+            color: var(--light-text-color);
+            padding-left: 20px;
+        }
+
+        .question ul {
+            margin-top: 10px;
+            list-style-type: disc;
+        }
+
+        .question li {
+            margin-bottom: 8px;
+        }
+
+        .app-download {
+            text-align: center;
+            padding: 30px;
+            background-color: var(--primary-color);
+            color: #fff;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .app-download p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .app-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .app-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            color: var(--primary-color);
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                gap: 20px;
+            }
+            header {
+                padding: 30px 15px;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            .section {
+                padding: 20px;
+            }
+            .section h2 {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+            }
+            .subsection h3 {
+                font-size: 1.2rem;
+            }
+            .question h4 {
+                font-size: 1rem;
+            }
+            .app-download {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>जलस्रोत र ऊर्जा (वक्तृता)</h1>
+            <p>कक्षा ११ - नेपाली</p>
+        </header>
+
+        <main>
+            <div class="section">
+                <h2>शब्दभण्डार</h2>
+                
+                <div class="question">
+                    <h4>१. दिइएका शब्द र अर्थ बीच जोडा मिलाउनुहोस् :</h4>
+                    <ul>
+                        <li>अथाह – <strong>ज्यादै धेरै</strong></li>
+                        <li>नौका – <strong>डुङ्गा</strong></li>
+                        <li>अलावा – <strong>अतिरिक्त</strong></li>
+                        <li>अख्तियार – <strong>नियम कानुनद्वारा दिइएको अधिकार</strong></li>
+                        <li>नित्य – <strong>सधैँ</strong></li>
+                        <li>सर्वेक्षण – <strong>कुनै विषयको तथ्यपूर्ण जानकारीका लागि गरिने निरिक्षण</strong></li>
+                        <li>निकाय – <strong>कुनै संस्था वा सदन</strong></li>
+                    </ul>
+                </div>
+                
+                <div class="question">
+                    <h4>३. दिइएका शब्दहरुको उल्टो अर्थ दिने शब्द पाठबाट खोजेर लेख्नुहोस् :</h4>
+                    <p>कृत्रिम : <strong>प्राकृतिक</strong><br>विपन्न : <strong>सम्पन्न</strong><br>प्राचीन : <strong>आधुनिक</strong><br>साँघुरो : <strong>फराकिलो</strong><br>आन्तरिक : <strong>बाह्य</strong><br>सङ्कुचन : <strong>बिस्तार</strong><br>कुरुप : <strong>सुन्दर</strong><br>सदुपयोग : <strong>दुरुपयोग</strong><br>व्यय : <strong>आय</strong><br>अटुट : <strong>अटल</strong><br>विष : <strong>अमृत</strong></p>
+                </div>
+                
+                <div class="question">
+                    <h4>४. दिइएका शब्दहरुको अर्थ खुल्ने गरी वाक्यमा प्रयोग गर्नुहोस् :</h4>
+                    <ul>
+                        <li><strong>मञ्चासीन :</strong> मञ्चासीन महानुभावहरुको कुरामा मस्त–मगन भएर कतैबाट निकै चिसोपन मन सम्मै छिरेको अनुभुति भयो ।</li>
+                        <li><strong>द्रुततर :</strong> उपराष्ट्रपतिले द्रुततर आर्थिक विकास मुलुकको आवश्यकता रहेको बताएका छन् ।</li>
+                        <li><strong>सामर्थ्य :</strong> बाबुराम भट्टराईले गुट व्यवस्थापन गर्ने सामर्थ्य गुमाइसकेका छन् ।</li>
+                        <li><strong>खपत :</strong> हाम्रो देशमा उत्पादन गरेको विद्युत यहीँ खपत गर्नुपर्छ ।</li>
+                        <li><strong>पैनी :</strong> हामीले पैनीका माध्यमबाट खेतका गरा गरामा पानी पुर्याउनु पर्छ ।</li>
+                        <li><strong>उर्वरा :</strong> पाँगो माटोमा उर्वरा शक्ति बढी हुन्छ ।</li>
+                        <li><strong>अभियान :</strong> मेरो विद्यालयले आउदो हप्ता सरसफाइ अभियानको घोषणा गरेको छ ।</li>
+                        <li><strong>सङ्कट :</strong> कोभिड-१९ सङ्कट व्यवस्थापन सम्बन्धमा सरकारद्वारा अध्यादेश जारी गरिएको छ ।</li>
+                        <li><strong>गगनचुम्बी :</strong> हाम्रो देशका हिमालहरु गगनचुम्बी छन् ।</li>
+                        <li><strong>अन्नामृत :</strong> तराई क्षेत्रका फाँटहरुले हामीलाई अन्नामृत प्रदान गरेका छन् ।</li>
+                        <li><strong>निर्यात :</strong> विविन बैंकहरुले निर्यात कर्जा सुबिधा प्रदान गर्दछन् ।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>बोध र अभिव्यक्ति</h2>
+                
+                <div class="question">
+                    <h4>१. `जलस्रोत र ऊर्जा ´ पाठ पढी दिइएका प्रश्नहरुको उत्तर दिनुहोस् :</h4>
+                    <ul>
+                        <li><strong>क) पहिलो वक्ता र दोस्रो वक्ताले कति कति अनुच्छेदमा आफ्नो प्रस्तुति राखेका छन् ?</strong><br>पहिलो वक्ताले छ अनुच्छेदमा र दोस्रो वक्ताले आठ अनुच्छेदमा आफ्नो प्रस्तुति राखेका छन् ।</li>
+                        <li><strong>ख) वक्तृता सन्चालनको विधिलाई पाठमा कसरी प्रस्तुत गरेको छ ?</strong><br>विद्यालयका प्रधानाध्यापकलाई कार्यक्रमको अध्यक्ष, तीन जना शिक्षकहरु निर्णायक, एक जना शिक्षक समय पालक, एक जना विद्यार्थी कार्यक्रम अनि प्रतियोगी राखेर क्रमशः प्रतियोगी विद्यार्थीहरुलाई उद्घोषकले बोलाएर आफ्नो वक्तृता प्रस्तुत गर्ने, अन्त्यमा निर्णायकले निर्णय सुनाउने र अध्यक्षले पुरस्कृत विद्यार्थीहरुलाई पुरस्कार वितरण गरी कार्यक्रम टुङ्याउने विधिलाई पाठमा प्रस्तुत गरिएको छ ।</li>
+                        <li><strong>ग) पहिलो वक्ताले जलस्रोतसम्बन्धी कुन कुन सन्दर्भलाई समेटेको छ ?</strong><br>पहिलो वक्ताले जलस्रोतमा हिमाल, समुन्द्र, नदीनाला, झरना, तालतलैया, आफै पानी निस्कने मूलहरु, इनार, ट्युबवेल तथा वर्सादलाई समेटेको छ ।</li>
+                        <li><strong>घ) दुवै वक्ताले वक्तृताका समापन कसरी गरेका छन् ?</strong><br>पहिलो वक्ताले सेतो सुनका रुपमा परिचित पानीलाई हामीले सही सदुपयोग गरेमा नेपालको विकास गर्न सकिन्छ भनी वक्तृता समापन गरेका छन् भने दोस्रो वक्ताले जलस्रोतलाई सदुपयोग गर्न सके हामीले बेरोजगार हुनुपर्ने छैन भनी वक्तृता समापन गरेका छन् ।</li>
+                        <li><strong>ङ) नेपालमा उपलब्ध जकस्रोत के के हुन् ?</strong><br>नेपालमा उपलब्ध जलस्रोतहरु हिमाल, नदीनाला, झरना, तालतलैया, आफै पानी निस्कने मूलहरु, इनार, ट्युबवेल, तथा बर्साद आदि हुन् ।</li>
+                    </ul>
+                </div>
+                
+                <div class="question">
+                    <h4>२. `नेपालमा जलस्रोतको ……..वातावरण तयार गर्नुपर्छ´वक्तृतांश पढी सोधिएका प्रश्नहरुको उत्तर दिनुहोस् ;</h4>
+                    <ul>
+                        <li><strong>क) नेपाली जलराशिमा कति मेगावाट विद्युत् उत्पादन गर्ने क्षमता छ ?</strong><br>नेपाली जलराशिमा ८३ हजार मेगावाट भन्दा बढी विद्युत् उत्पादन गर्ने क्षमता छ ।</li>
+                        <li><strong>ख) के गर्न सके देशको आर्थिक समृद्धि हुने सम्भावना छ ?</strong><br>देशमा भएको जलस्रोतको सम्पूर्ण क्षमताको पचास प्रतिशत मात्रै विद्युत् उत्पादन गर्न सके देशको आर्थिक समृद्धि हुने सम्भावना छ ।</li>
+                        <li><strong>ग) विद्युतको खपत कसरी बढाउन सकिन्छ ?</strong><br>राज्यले जलविद्युत्‌सँग सम्बद्ध उद्योग, कलकारखानाहरु खोल्ने वातावरण बनाउने, घरायसी रुपमै विद्युतको खपत बढाउन हौस्याउने नीति अख्तियार गर्ने र आफ्नो देशमा उत्पादित विद्युत विदेश पुर्‍याउन सके विद्युतको खपत बढाउन सकिन्छ ।</li>
+                        <li><strong>घ) जल विद्युतीकरणका लागि नेपालको भूगोल किन उपयुक्त मानिएको छ ?</strong><br>बाह्रै महिना परिरहने हिउँ, नित्यनिरन्तर बगिरहने अथाह जलराशि र भिरालो भौगोलिक बनोटका कारण जल विद्युतीकरणका लागि नेपालको भूगोल उपयुक्त मानिएको छ ।</li>
+                    </ul>
+                </div>
+
+                <div class="question">
+                    <h4>६. नेपालको जलस्रोतले देशको समृद्धिको आधार कसरी तयार पार्छ, लेख्नुहोस् ।</h4>
+                    <p>नेपालमा ६ हजारभन्दा बढी नदीनालाहरू छन्, जसमध्ये ६ सयभन्दा बढी बाह्रै महिना बगिरहन्छन्। यसबाट ८३ हजार मेगावाटभन्दा बढी ऊर्जा उत्पादन गर्न सकिने क्षमता छ। यदि यसको ५०% मात्रै सदुपयोग गर्न सके आर्थिक समृद्धि सुनिश्चित छ। जलविद्युतसँग सम्बन्धित उद्योगहरू खोल्ने, घरायसी खपत बढाउने र विदेश निर्यात गर्न सके देशको अर्थतन्त्र बलियो बन्छ।</p>
+                    <p>सिँचाइको उचित व्यवस्थापन गरेर खेतीयोग्य जमिनमा पानी पुर्याउन सके खाद्यान्न उत्पादन बढ्छ। यसले खाद्यान्नमा आत्मनिर्भर बनाउनुका साथै निर्यातबाट वैदेशिक मुद्रा आर्जन गर्न सकिन्छ। रोजगारका अवसरहरू सिर्जना हुन्छन् र राजस्वमा वृद्धि हुन्छ। तसर्थ, जलस्रोतको सही सदुपयोगले देशको समृद्धिमा महत्त्वपूर्ण भूमिका खेल्छ।</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>व्याकरण</h2>
+                
+                <div class="subsection">
+                    <h3>१. दिइएका वाक्यबाट उद्देश्य र विधेय भाग छुट्याउनुहोस् :</h3>
+                    <p>क) <strong>उद्देश्य:</strong> युवाशक्ति, <strong>विधेय:</strong> छन्<br>ख) <strong>उद्देश्य:</strong> जल, <strong>विधेय:</strong> हुन्छन्<br>ग) <strong>उद्देश्य:</strong> बेरोजगारहरु, <strong>विधेय:</strong> आउने छन्<br>घ) <strong>उद्देश्य:</strong> अन्य वक्ता, <strong>विधेय:</strong> राख्नुहुन्छ<br>ङ) <strong>उद्देश्य:</strong> प्रधानाध्यापक, <strong>विधेय:</strong> टुङ्याउनुहुन्छ</p>
+                </div>
+                
+                <div class="subsection">
+                    <h3>२. दिइएका वाक्यबाट उद्देश्य र उद्देश्य विस्तार, विधेय र विधेय विस्तार खण्ड छुट्याएर देखाउनुहोस् :</h3>
+                    <p><strong>क)</strong> उद्देश्य: <strong>बहिनी</strong>, उद्देश्य विस्तार: <strong>उसकी</strong>, विधेय: <strong>बस्दिनन्</strong>, विधेय विस्तार: <strong>निर्वाचन समितिमा</strong><br><strong>ख)</strong> उद्देश्य: <strong>ऊ</strong>, उद्देश्य विस्तार: <strong>धेरै दिनपछि मनलाई दरो पारी</strong>, विधेय: <strong>गई</strong>, विधेय विस्तार: <strong>आँगनतिर</strong><br><strong>ग)</strong> उद्देश्य: <strong>मान्छे</strong>, उद्देश्य विस्तार: <strong>आज बिहान हिडेको</strong>, विधेय: <strong>पुगेछ</strong>, विधेय विस्तार: <strong>छिटै नै दार्चुला</strong><br><strong>घ)</strong> उद्देश्य: <strong>तिम्रो पहिरन</strong>, उद्देश्य विस्तार: <strong>गाउँमा</strong>, विधेय: <strong>देखिन्छ</strong>, विधेय विस्तार: <strong>गजबको</strong></p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>उक्ति</h2>
+                
+                <div class="subsection">
+                    <h3>१. दिइएका कथनहरु प्रत्यक्ष वा अप्रत्यक्ष के हुन् छुट्याउनुहोस् :</h3>
+                    <p>क) प्रत्यक्ष कथन<br>ख) अप्रत्यक्ष कथन<br>ग) प्रत्यक्ष कथन<br>घ) अप्रत्यक्ष कथन<br>ङ) अप्रत्यक्ष कथन<br>च) प्रत्यक्ष कथन</p>
+                </div>
+                
+                <div class="subsection">
+                    <h3>२. दिइएका वाक्यहरुलाई अप्रत्यक्ष कथनमा बदल्नुहोस् :</h3>
+                    <ul>
+                        <li>क) समाजको अवस्था दयनीय छ भनी पूर्णमानले बतायो ।</li>
+                        <li>ख) सन्तोषले गम्भीर हुँदै नेपालमा विकासको नयाँ परिभाषा चाहिएको छ भन्यो ।</li>
+                        <li>ग) परिभाषा बदल्दैमा समाजको समस्या समाधान हुँदोरहेनछ भनी सन्जीवले चिन्ता व्यक्त गर्‍यो ।</li>
+                        <li>घ) समाज परिवर्तनका लागि आफू पनि खट्ने कुरा विमलाले उत्साहका साथ व्यक्त गरीन् ।</li>
+                    </ul>
+                </div>
+                
+                <div class="subsection">
+                    <h3>३. दिइएको अनुच्छेदलाई प्रत्यक्ष कथनमा बदल्नुहोस् :</h3>
+                    <p>आमाले छोरीलाई भन्नुभयो, "के गर्दैछ्यौ ?" छोरीले भनिन्, " वक्तृताका लागि सामग्री सङ्कलन गरिरहेको छु ।" आमाले भन्नुभयो, " म पनि वक्तृताको विषयमा चासो राख्छु ।" छोरीले आमालाई भनिन्, " नेपालको सिँचाइ स्थिति कस्तो छ ।"</p>
+                </div>
+            </div>
+
+            <div class="app-download">
+                <p>यी र यस्ता अन्य नोटहरू अफलाइन हेर्नका लागि हाम्रो एन्ड्रोइड एप डाउनलोड गर्नुहोस्।</p>
+                <a href="#" class="app-button">अहिले नै डाउनलोड गर्नुहोस्</a>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

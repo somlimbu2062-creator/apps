@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>वीर पुर्खा</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;700&family=Noto+Sans+Devanagari:wght@400;600;700&display=swap');
+
+        :root {
+            --primary-color: #004d40;
+            --secondary-color: #ffb300;
+            --background-color: #e8f5e9;
+            --card-background: #ffffff;
+            --text-color: #212121;
+            --light-text: #424242;
+            --border-color: #c8e6c9;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Mukta', 'Noto Sans Devanagari', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 850px;
+            width: 100%;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            background: linear-gradient(135deg, #f1f8e9, var(--card-background));
+            border-radius: 12px;
+            box-shadow: 0 4px 15px var(--shadow-color);
+        }
+
+        .subject-title {
+            font-size: 1rem;
+            color: var(--light-text);
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .chapter-title {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-top: 10px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .chapter-title::after {
+            content: '';
+            width: 100%;
+            height: 4px;
+            background-color: var(--secondary-color);
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            border-radius: 2px;
+        }
+
+        .section {
+            background-color: var(--card-background);
+            border-radius: 12px;
+            box-shadow: 0 4px 20px var(--shadow-color);
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: var(--text-color);
+            margin-bottom: 25px;
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 10px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .question-item {
+            margin-bottom: 30px;
+            border-bottom: 1px dashed var(--border-color);
+            padding-bottom: 20px;
+        }
+
+        .question-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        .question {
+            font-weight: 600;
+            font-size: 1.15rem;
+            color: var(--primary-color);
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .question-marker {
+            font-weight: 700;
+            font-size: 1.3rem;
+            color: var(--secondary-color);
+            margin-right: 15px;
+            background-color: #fff9c4;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .answer {
+            font-size: 1rem;
+            color: var(--light-text);
+            padding-left: 45px;
+            display: none;
+            opacity: 0;
+            transition: all 0.4s ease-in-out;
+            transform: translateY(10px);
+        }
+
+        .answer.active {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .question.expanded {
+            color: var(--secondary-color);
+        }
+
+        .answer ul, .answer ol {
+            padding-left: 20px;
+        }
+
+        .answer p {
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        table, th, td {
+            border: 1px solid var(--border-color);
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #e0f2f1;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        .android-app-section {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .android-app-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: #000;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            box-shadow: 0 4px 15px rgba(255, 179, 0, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .android-app-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 179, 0, 0.6);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .chapter-title {
+                font-size: 2rem;
+            }
+            .section {
+                padding: 20px;
+            }
+            .section-title {
+                font-size: 1.7rem;
+            }
+            .question {
+                font-size: 1rem;
+            }
+            .question-marker {
+                width: 25px;
+                height: 25px;
+                font-size: 1rem;
+                margin-right: 10px;
+            }
+            .answer {
+                padding-left: 35px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="subject-title">नेपाली</div>
+            <h1 class="chapter-title">वीर पुर्खा (कविता)</h1>
+        </header>
+
+        <main>
+            <section class="section" id="shabdabhandar">
+                <h2 class="section-title">शब्दभण्डार</h2>
+                
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">२.</span> दिइएका अर्थ दिने शब्द पाठबाट छानेर लेख्नुहोस् :
+                    </div>
+                    <div class="answer">
+                        <ul>
+                            <li>गिद्ध प्रजातिको ठूलो पंक्षी विषेश – <strong>गरुड</strong></li>
+                            <li>प्रवाह – <strong>वेग</strong></li>
+                            <li>डाम – <strong>डोब</strong></li>
+                            <li>गौँडा – <strong>नाका</strong></li>
+                            <li>पुरुषार्थ – <strong>पौरख</strong></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">३.</span> तल दिइएका शब्दलाई वाक्यमा प्रयोग गर्नुहोस् :
+                    </div>
+                    <div class="answer">
+                        <ul>
+                            <li><strong>पर्वत:</strong> पर्वत जिल्ला सामान्य पहाडी जिल्ला सरहकै भौगोलिक बनावट भएको सुन्दर जिल्ला हो ।</li>
+                            <li><strong>तिर:</strong> हामी माछा मार्नको लागी तीरमा जान्छौं ।</li>
+                            <li><strong>बहादुर:</strong> तपाईं बहादुर र बलियो हुनुहुन्छ ।</li>
+                            <li><strong>सङ्केत:</strong> दयालु व्यक्तिको अनुहारमा सहानुभूतिको संकेत थियो ।</li>
+                            <li><strong>नभ:</strong> नभको सुन्दर दृश्य हेर्न म कौशीमा गए ।</li>
+                            <li><strong>समुद्र:</strong> समुद्रको पानी नमकीन थियो ।</li>
+                            <li><strong>पाषाण:</strong> पाषाण काललाई ढु्गा युग भनिन्छ ।</li>
+                            <li><strong>झन्डा:</strong> हरेक बिहान झण्डालाई पोल मा उठाइन्छ ।</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">४.</span> दिइएका शब्दसँग मिल्ने अनुप्रासयुक्त शब्द खोज्नुहोस् ।
+                    </div>
+                    <div class="answer">
+                        <ul>
+                            <li>आँधी : <strong>बाँधी</strong></li>
+                            <li>वेग : <strong>भेग</strong></li>
+                            <li>खोला : <strong>होला</strong></li>
+                            <li>तराई : <strong>पराई</strong></li>
+                            <li>धारा : <strong>भारा</strong></li>
+                            <li>माटो : <strong>बाटो</strong></li>
+                            <li>रगत : <strong>जगत</strong></li>
+                            <li>गौरव : <strong>सौरव</strong></li>
+                            <li>यात्रा : <strong>जात्रा</strong></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="bodh-ra-abhiwyakti">
+                <h2 class="section-title">बोध र अभिव्यक्ति</h2>
+                
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">१.</span> कविता पढी दिइएका प्रश्नको उत्तर दिनुहोस् ।
+                    </div>
+                    <div class="answer">
+                        <p><strong>क) कवितामा कतिवटा श्लोक छन् ?</strong><br>
+                        कवितामा चारवटा श्लोक छन् ।</p>
+                        <p><strong>ख) कुन कुन पङ्क्तिमा सबैभन्दा बढी पद रहेका छन् ?</strong><br>
+                        पहिलो पङ्क्तिमा सबैभन्दा बढी पद रहेका छन् ।</p>
+                        <p><strong>ग) समान पदसङ्ख्या भएको श्लोक कुन हो ?</strong><br>
+                        समान पदसङख्या भएको श्लोक दोस्रो हो ।</p>
+                        <p><strong>घ) कुन पङ्क्तिमा सबैभन्दा कम पद रहेका छन् ?</strong><br>
+                        तेस्रो पङ्क्तिमा सबैभन्दा कम पद रहेका छन् ।</p>
+                        <p><strong>ङ) कवितामा प्रयोग भएका नदी र स्थानको सुची बनाउनु होस् ?</strong><br>
+                        <strong>नदी:</strong> टिस्टा, रावी, वेत्रावती, हिमनदी<br>
+                        <strong>स्थान:</strong> हिमाल, पहाड, तराई, काँगडा, डिगर्चा</p>
+                    </div>
+                </div>
+                
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">२.</span> ‘ वीर पुर्खा ‘ कविताको पहिलो श्लोक पढी त्यसलाई गद्यमा रुपान्तरण गर्नुहोस् ।
+                    </div>
+                    <div class="answer">
+                        वीर पुर्खाको साहसलाई विश्वका कुनै पनि शक्तिले रोक्न सकेन । उनीहरुको आइपर्ने कुनै खोला, पहाड एवम्‌ आधीले उनीहरुको वीर यात्रा छेक्न रोक्न सकेन । वीर पुर्खाको वेग गरुडझै थियो जुन कुनै आकाशले बाध्र सकेन । वीर पुर्खाको पौरखले तराई, पहाड र हिमाललाई एक बनाई नेपालको रचना भयो ।
+                    </div>
+                </div>
+                
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">३.</span> कविता पढी विषयको क्रम मिलाएर लेख्नुहोस् ।
+                    </div>
+                    <div class="answer">
+                        <ol type="a">
+                            <li>वीर पुर्खाको गतिलाई खोला र आँधीले रोक्न सक्दैन ।</li>
+                            <li>पुर्खाको पौरखले नेपालको पहाड र तराईलाई जोडेको छ ।</li>
+                            <li>काँगडा र कलङ्गाले नेपालको इतिहास बोलेको छ ।</li>
+                            <li>वेत्रवेतीमा किनारमा नेपालीको पौरखको चिनो छ ।</li>
+                            <li>वीर पुर्खाको रगत नेपालीको नसा नसामा छ ।</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">४.</span> दिइएको कवितांश पढ्नुहोस् र सङ्क्षिप्त उत्तर लेख्नुहोस् ।
+                    </div>
+                    <div class="answer">
+                        <p><strong>क) माथिको कवितांशमा हाम्रा पुर्खाहरुको बारेमा के भनिएको छ ?</strong></p>
+                        <p>नेपाली साहित्यका जाज्वल्यमान प्रतिभा कवि प्रा.डा वासुदेव त्रिपाठीद्वारा लिखित ‘वीर पूर्खा’ नामक कविता राष्ट्रप्रेम र देशभक्तिको भावनाले ओतप्रोता एक ऊकृष्ट रचना हो । यस कवितामा हाम्रा वीर पुर्खाहरूको त्याग, समर्पण र साहसको बारेमा विशेष चर्चा गरिएको छ । हाम्रा पुर्खाहरूले ज्यानको बाजी लगाएर सिङ्गो नेपाल निर्माण गरेका हुन् । उनीहरु शत्रुसँग कहियै पनि डराउन र हार्न जानेनन । शत्रुहक हाम्रा पुर्खाको नाम सुनेर काम्थे । हाम्रा पुर्खाको विजय यात्राको गतिलाई कुनै खोला, पहाड र आँधीले रोक्न सकेन ।</p>
+                        <p>हाम्रो देशको इतिहासको पानामा वीर पुर्खाको तातो रगत बगेको छ । उनीहरू ऊतरमा तिब्बतको डिगन डिगर्चासम्म पुगेका थिए । वेत्रवती किनारमा हाम्रा पुर्खाको चिनो छ । उनीहरूको बहादुरी साँच्चै नै अद्भूत छ । उनीहरुको कौशलता, युद्ध चातुर्य र बाहादुरीको परिणाम स्वरूप विशाल र अखण्ड नेपाल बनेको हो । विदेशीसँग युद्ध गर्ने क्रममा उपाधुनिक मेसिन गन र तरबारका सामु नेपालीहरूले खुकुरी, गुलेली र ढुङ्गाको भरमा युद्ध जितेका थिए । हाम्रा पुर्खाको बहादुरी साँच्चै नै प्रशंसनीय र उल्लेखनीय भएको कुरा कविताँशमा बताइएको छ ।</p>
+                        
+                        <p><strong>ख) हामीले हाम्रा पुर्खाको गौरव कसरी जोगाउन सक्छौ ?</strong></p>
+                        <p>नेपाली साहित्यका विशेष प्रतिभा कवि वासुदेव त्रिपाठी ( वि.सं १९९९) द्वारा रचित ‘वीर पुर्खा’ कवितामा हाम्रा वीर पुर्खाको गौरवगान गरिएको छ । साँच्चै नै उनीहरूको बहादुरी, साहस, समर्पण, बलिदान र देशको रक्षाका लागि योगदान कदरयोग्य र गौरव गर्न लायक थियो ।</p>
+                        <p>हामीले पनि हाम्रा पुर्खाको गौरव जोगाउनु पर्छ। हामी सधै देशको रक्षाका निम्ति एकजुट भएर लाग्नुपर्छ। हामी परिआएको खण्डमा शत्रुको घाटी काट्न पछि पर्नु हुँदैन । हामी नेपालीहरू अहिलेसम्म कसैको सामु घोडा टेकेको छैनौ र टेक्न पनि हुँदैन। हामीले नेपाललाई कहिल्यै पनि खण्ड हुन दिनु हुँदैन । हामीले हाम्रो सार्वभौमिकता र स्वाभिमान सदा कायम गर्नुपर्छ । वीर पुर्खाले देखाएको बाटोमा लाग्नु हाम्रो प्रमुख दायित्व हो । देशद्रोही र भष्टचारीलाई कडा भन्दा कडा सजाय दिनु नै पहिलेको आवश्यकता देखिन्छ । हाम्रो देशका निर्माता वीर पृथ्वीनारयण शाहले घुस लिने र दिने देशका शत्रु हुन् भन्ने भनाइलाई अग्रसर गर्दै देशका भ्रष्ट व्यक्तिलाई देश निकाला गर्नुपर्छ । हामीले एक हात जमिन पनि छिमेकी देशलाई मिच्न दिनु हुँदैन । हाम्रा वीर पुर्खाको बहादुरले आर्जेको जमिन ; लिम्पियाधुरा, कालापानी र नालापानी दिनानुदिन मिचिदा पक्कै पनि पुर्खाको आत्माले शान्ति पाउन सकेको छैन । त्यसकारण वर्तमान परिपक्षमा राजनैतिक, कूटनीतिक र आवश्यक परे युद्ध नै किन नहोस हामीले देशलाई रक्षा र माया गरेर देशको सिमाना जोगएर पुर्खाकी गौरव जोगाउन सकिन्छ।</p>
+                        
+                        <p><strong>ग) `सागर तरी संसारभरि वीर गोर्खा रगत बग्यो ।´ यस कथनको तात्पर्य के हो ?</strong></p>
+                        <p>वासुदेव त्रिपाठीद्वारा रचित ‘वीर पुर्खा’ कवितामा हामा पुर्खाको बलिदान, त्याग र बहादुरीको चर्चा गरिएको छ। हाम्रा वीर पुर्खाको विजय यात्राको गतिलाई कुनै खोला, पहाड र आधीले रोक्न सकेको थिएन। हाम्रा पुर्खामा आकाशमा स्वतन्त्र उड़ने गुरुड़को जस्तो वग थियो । उत्तरमा तिब्बतको डिगर्चा, पश्चिमको राबी नदी र साथसाथै काँगडा, कलङ्गा, टिस्टा, गङ्गा, वेत्रावतीको किनारमा हाम्रा वीर पूर्खाको बहादूरीको गीत गुन्जिरहेको छ। उनीहरूले जहाँ टेक्यो त्यहाँ जीत निश्चत नै हुन्थ्यो । हाम्रा वीर पुर्खाले धेरै टाढासम्म पुगेर तातो रगत बगाउँदै शत्रूलाई परास्त गरेका थिए । प्रथम र दोस्रो युद्धमा हाम्रा वीर पुर्खाको योगदान उल्लेखनीय छ । उनीहरूको साहस बहादुरिको प्रशंसा संसारभरि गरिन्छ ।</p>
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">५.</span> तलको कवितांश पढी सोधिएका प्रश्नहरुको उत्तर दिनुहोस् ।
+                    </div>
+                    <div class="answer">
+                        <p><strong>क) नेपालीहरुको कस्तो पौरखले नेपालको रचना भएको हो ?</strong><br>
+                        नेपालीहरुको अदम्य साहस, देशभक्ति एवम्‌ वीरताले र खोलाको गति जस्तो, आधी र गरुडको वेग जस्तो नेपालीहरूको पौरखले पहाड, हिमाल र तराइलाई एक वनाई नेपालको रचना भएको हो ।</p>
+                        <p><strong>ख) कवितांशका आधारमा हाम्रा वीर पुर्खाको गौरव गाथाको वर्णन गर्नुहोस् ?</strong><br>
+                        कुनै पहाड वा खोलाले हाम्रा वीर पुर्खाको पाइलालाई रोक्न सकेन । आँधीको वेगले पनि उनीहरूको यात्रालाई रोक्न सकेन । गरुडको वेग जस्तो पुर्खाको यात्रालाई कसैले छेक्न सकेन आफ्ना अगाडि बढेका पाइलालाई नरोकी आफ्नै पौरखले यस देशको निर्माण हाम्रा पुर्खाले गरेका हुन् भनी उनीहरूको गौरव गायाको वर्णन गरिएको छ ।</p>
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">६.</span> `वीर पुर्खा´ कविताको चौथो श्लोकलाई मुख्य आधार बनाई दिइएका प्रश्नहरुको उत्तर दिनुहोस् ।
+                    </div>
+                    <div class="answer">
+                        <p><strong>क) नेपालीहरुको वीरता कसरी गुन्जिएको छ ?</strong><br>
+                        सत्रुहरूले नाका थुनेर पनि वीर नेपालीहरूलाई छेक्न सकेका छैनन्। आफ्नो देश र जनताका लागि वीर नेपालीले आफ्नो रगत बगाउन पछि हटेका छैनन् भन्दै नेपालीहरूको वीरताको प्रशंसा गरेका छन्।</p>
+                        <p><strong>ख) चन्द्रसूर्य ध्वजामा कस्तो गौरव अङ्कित छ ?</strong><br>
+                        नेपाल राष्ट्र निर्माण गर्ने वीर गोर्खालीहरूले आफ्नो रगत बगाएका थिए भन्ने गौरव गाथा चन्द्रसूर्य ध्वजामा अक्ति छ ।</p>
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">७.</span> दिइएको कवितांशको व्याख्या गर्नुहोस् ।
+                    </div>
+                    <div class="answer">
+                        प्रस्तुत कवितांश कक्षा ११ अनिवार्य नेपाली किताबको वीर पर्खा कविताबाट साभार गरिएको हो । यस कविताका रचनाकार कवि वासुदेव त्रिपाठी (वि.स १९९९) हुन् । हाम्रा वीर पुर्खाको बलिदान, साहस, बहादूरी र पौरखको कारणले नै सिंगो नेपाल जुट्न सकेको कुरा बताउने क्रममा माथिको अशं आएको हो।
+                        <br><br>
+                        हाम्रा वीर पुर्खाको विजय यात्राको गतिलाई कुनै खोला, पहाड र आधौले रोक्न सकेको थिएन । उनीहरूमा आकाशमा स्वच्छ्न्द उड़ने गरुडको जस्तो वेग थियो । उनीहरूलाई देखेर शत्रुको पनि खुट्टा काम्ने गर्थ्यो । उनीहरू मर्न तयार भए तर हार्न कहिल्यै जानेनन् । नेपालको इतिहास फर्केर हेर्दा यो देशमा कुनै पनि शक्तिले आफ्नो साम्राज्य खडा गर्न सकेन। न त कुनै साम्राज्यवादी शक्ति सामु घुँडा टेवन पयो । हाम्रो देश नेपाल यतिकै निर्माण भएको होइन । पृथ्वीनारायण शाह, बलभद्र कुँवर लगाप्तका हजारौ नेपालीको त्याग, बलिदान र सत्प्रयासबाट बनेको हो । शुरवीर पौरखी पुर्खाले हिमाल, पहाड र तराईलाई जोडेर नेपाल बनाएका हुन् ।
+                        <br><br>
+                        अतः हाम्रा पुर्खाले देशलाई जुटाउन पुऱ्याएको योगदान साच्चै नै उल्लेखनीय थियो । उनीहरुको वेग गतिका सामु सत्रुहरू फिक्का रहेको विचारा प्रकट भएको प्रस्तुत कविता, देशप्रेमको भावनाले ओतप्रोत भएको ऊकृष्ट कविता हो।
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">८.</span> दिइएका बुँदाका आधारमा ‘वीर पुर्खा” कविताको समीक्षात्मक टिप्पणी गर्नुहोस्‌ ।
+                    </div>
+                    <div class="answer">
+                        <p><strong>टिप्पणी</strong></p>
+                        ‘वीर पुर्खा’ कविता कवि वासुदेव त्रिपाठी (वि.सं १९९९) द्वारा रचिएको कविता हो । उनले यस कवितामा राष्ट्रप्रेमको भावनाले ओतप्रोत भएर अथवा देशभक्तिको भावनाले अभिप्रेरित भइ यो कविता रचना गरेका हुन।
+                        <br><br>
+                        हाम्रा पुर्खामा आकाशमा स्वच्छन्द उड़ने गरुडको जस्तो वेग थियो । उनीहरुको यात्रालाई कुनै खोला, पहाड आँधीले रोक्न सकेको थिएन । हाम्रा शुरवीर पौरखी पुर्खाले तराई, पहाड र हिमाललाई जोडेर नेपाल बनाएका हुन् । उनीहरुकै कारणले आज नेपाल विश्वमानचित्रमा अट्न सफल भएको छ । हाम्रा वीर पुर्खाको बहादूरीको गीत टिस्टा र राबी नदी तथा काँगडा, कलागी र गंगा सम्म अहिले पनि गुन्जिरहेको छ । उनीहरुको पौरखी पाइला ऊतरमा तिब्बतसम्म पुगेको थियो । उनीहरूको विजय यात्रालाई मित्रताले मात्र रोकेको थियो । छिमेकी मुलुकसँगक व्यापारलाई मजबूत बनाउन हाम्रा पुर्खाले मितेरी साइनो र विभिन्न सन्धिहक गरेका थिए । हाम्रा पुर्खाको सामर्थ्य कसैले रोवन सकेनन । नेपाली भूमिमा मात्र नभएर विश्वयुद्धमा समेत विश्वका अकृष्ट वीर गोर्खालीका रूपमा आफ्नो पहिचान बनाएका थिए। आज पनि वीर पुर्खाको रगत हाम्रो नसा नसामा बगिरहेको छ।
+                        <br><br>
+                        यस कविताको शीर्षक ‘वीर पूर्वां’ अभ्यन्त सार्थक देखिएको छ किनभने यस कवितामा हाम्रा वीर पुरवले हाम्रो स्वाभिमान, सार्वभौमिकता र अखण्डता रक्षाका लागि पुर्याएको विशेष योगदानको चर्चा गरिएको छ। चार श्लोक रहेको कवितामा प्रत्येक श्लोक असाध्यै राम्रा छन् । तृतीय पुरुषमा लेखिएको कविताको यात्रा भाषा अत्यन्त सरल छ। राष्ट्रप्रेम र देशभक्तिको भावनाले ओतप्रोत यस कविता अत्यन्त उत्कृष्ट रचना हो ।
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">९.</span> दिइएको अनुच्छेद पढी मुख्य मुख्य बुँदाहरु टिप्नुहोस् ।
+                    </div>
+                    <div class="answer">
+                        <ul>
+                            <li>इतिहासकारले सत्य घटनालाई रोचक बनाउन काल्पनिक कुरालाई जोड्नु ।</li>
+                            <li>मानिसलाई मनोरञ्जन दिलाउने साधनको रूपमा पहिले इतिहासलाई साहित्यको एक अंग मान्नु ।</li>
+                            <li>इसापूर्व पाँचौँ शताब्दीतिर केही चिन्तकहरू इतिहासलाई तथ्यपूर्ण बनाउन प्रयत्नशील हुनु ।</li>
+                            <li>प्रथम इतिहासकार हेरोडोटसले इतिहासलाई कथा र दन्त्यकथाभन्दा अलग ढङ्गले लेख्ने प्रयत्न गर्नु ।</li>
+                            <li>अरिस्टोटलले इतिहासलाई दार्शनिक चिन्तनका रूपमा लिनु, मध्यकालमा इतिहासलाई धर्मसंग गासेर अध्ययन र परिभाषा गर्नु ।</li>
+                            <li>सोह्रौ सत्रौं शताब्दीमा युरोपमा आएको पुनर्जागरणले इतिहास लेखनलाई तथ्यपूर्ण बनाउनु ।</li>
+                            <li>आधुनिक युगमा प्राचीन इतिहासको खोजीको प्रक्रिया तीव्र भई इतिहास एउटा छुट्टै विधाका रूपमा स्थापित हुनु।</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">१०.</span> दिइएको अनुच्छेद पढी सोधिएका प्रश्नहरुको जवाफ दिनुहोस् ।
+                    </div>
+                    <div class="answer">
+                        <p><strong>क) भाषा भनेको के हो ?</strong><br>
+                        भाषा भनेको त्यस्तो व्यवस्था हो, जसका सहायताले समाजका व्यक्तिहरु आफ्नो विचार विनिमय गर्दछन् ।</p>
+                        <p><strong>ख) भाषाका विशेषताहरु बताउनुहोस् ।</strong><br>
+                        भाषाका विशेषताहरु सिर्जनात्मकता, यादृच्छिकता, सान्दर्भिकता, द्वैधता, मौखिकता, श्रावणिकता आदि हुन् ।</p>
+                        <p><strong>ग) `वाक्प्रतिक´ र `यादृच्छिक´ शब्दको अर्थ लेखी वाक्यमा प्रयोग गर्नुहोस् ।</strong></p>
+                        <p><strong>वाक्प्रतिक:</strong> बोलीले कुनै वस्तुलाई चिनाउने काम<br>
+                        वाक्यमा प्रयोग: भाषा वाक्प्रतिकको व्यवस्था हो।</p>
+                        <p><strong>यादृच्छिक:</strong> स्वतः विकसित र स्थापित हुने<br>
+                        वाक्यमा प्रयोग: भाषा यादृच्छिक हुन्छ ।</p>
+                        <p><strong>घ) यस अनुच्छेदको पहिलो वाक्यलाई संयुक्त वाक्यमा बदल्नुहोस् ।</strong><br>
+                        भाषा यादृच्छिक वाक्प्रतिहरुको व्यवस्था हो त्यसैले यसको सहायताले समाजका व्यक्तिहरु आफ्नो विचार विनिमय गर्दछन् ।</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="byakaran">
+                <h2 class="section-title">व्याकरण</h2>
+                
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">१.</span> कथ्य नेपालीमा नभएका वर्णहरु कुन कुन हुन् लेख्नुहोस् ।
+                    </div>
+                    <div class="answer">
+                        <p><strong>क) कथ्य नेपालीमा नभएका स्वर वर्णहरु :</strong> ई, ऋ, ऎ, औ, अं, अ: हुन् ।</p>
+                        <p><strong>ख) कथ्य नेपालीमा नभएका व्यञ्जन वर्णहरु :</strong> ञ, ण, ष, श, क्ष, त्र, ज्ञ हुन् ।</p>
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">२.</span> दिइएका लेख्य वर्णहरुको उच्चारण कस्तो हुन्छ, लेख्नुहोस् :
+                    </div>
+                    <div class="answer">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>वर्ण</th>
+                                    <th>उच्चारण</th>
+                                    <th>वर्ण</th>
+                                    <th>उच्चारण</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>ई</td>
+                                    <td>इ</td>
+                                    <td>ऊ</td>
+                                    <td>उ</td>
+                                </tr>
+                                <tr>
+                                    <td>ऋ</td>
+                                    <td>रि</td>
+                                    <td>ऐ</td>
+                                    <td>अइ</td>
+                                </tr>
+                                <tr>
+                                    <td>औ</td>
+                                    <td>अउ</td>
+                                    <td>अं</td>
+                                    <td>अम्</td>
+                                </tr>
+                                <tr>
+                                    <td>अ:</td>
+                                    <td>अ</td>
+                                    <td>त्र</td>
+                                    <td>तर</td>
+                                </tr>
+                                <tr>
+                                    <td>ञ</td>
+                                    <td>न</td>
+                                    <td>ण</td>
+                                    <td>अँड</td>
+                                </tr>
+                                <tr>
+                                    <td>श</td>
+                                    <td>स</td>
+                                    <td>ष</td>
+                                    <td>स</td>
+                                </tr>
+                                <tr>
+                                    <td>क्ष</td>
+                                    <td>छ</td>
+                                    <td>ज्ञ</td>
+                                    <td>ग्यँ</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">३.</span> दिइएको कवितांशबाट गाढा वर्ण टिपी तिनको उच्चारण स्थान छुट्टाउनुहोस् ।
+                    </div>
+                    <div class="answer">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>वर्ण</th>
+                                    <th>उच्चारण स्थान</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>म,ब,व</td>
+                                    <td>ओष्ठ्य</td>
+                                </tr>
+                                <tr>
+                                    <td>ग,क</td>
+                                    <td>कण्ठ्य</td>
+                                </tr>
+                                <tr>
+                                    <td>छ,र, झ ,ल,ज</td>
+                                    <td>दन्तमूलीय</td>
+                                </tr>
+                                <tr>
+                                    <td>त</td>
+                                    <td>दन्त्य</td>
+                                </tr>
+                                <tr>
+                                    <td>य</td>
+                                    <td>तालब्य</td>
+                                </tr>
+                                <tr>
+                                    <td>ह</td>
+                                    <td>स्वरयन्त्रमुखी</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">४.</span>`काँगडा र कलङ्गाको ढुङ्गा माटो बोल्छ होला´पङ्क्तिमा रहेका सग्ला व्यञ्जन वर्णलाई उच्चारण स्थानका आधारमा पहिचान गरि सुचीबद्ध गर्नुहोस् ।
+                    </div>
+                    <div class="answer">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>वर्ण</th>
+                                    <th>उच्चारण स्थान</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>क,ग</td>
+                                    <td>कण्ठ्य</td>
+                                </tr>
+                                <tr>
+                                    <td>ड,ल,ढ,ट,छ</td>
+                                    <td>दन्तमूलीय</td>
+                                </tr>
+                                <tr>
+                                    <td>म,ब</td>
+                                    <td>ओष्ठ्य</td>
+                                </tr>
+                                <tr>
+                                    <td>ह</td>
+                                    <td>स्वरयन्त्रमुखी</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">५.</span> दिइएको अनुच्छेदबाट पाँचवटा सघोष र पाँचवटा अघोष वर्ण खोजी लेख्नुहोस् ।
+                    </div>
+                    <div class="answer">
+                        <p><strong>सघोष वर्ण :</strong> य, र, ल, भ, म ।</p>
+                        <p><strong>अघोष वर्ण :</strong> क, थ, त, ख, प ।</p>
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">६.</span> दिइएको पङ्क्तिबाट पाँचवटा अल्पप्राण र पाँचवटा महाप्राण पहिचान गर्नुहोस् ।
+                    </div>
+                    <div class="answer">
+                        <p><strong>अल्पप्राण :</strong> ग, व, त, च, ल ।</p>
+                        <p><strong>महाप्राण :</strong> स, ह, ख, भ, घ ।</p>
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">७.</span> दिइएका वर्णहरुको उच्चारण स्थान र प्राणत्वको पहिचान गर्नुहोस् । (क, झ, ट, त, फ, ह)
+                    </div>
+                    <div class="answer">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>वर्ण</th>
+                                    <th>उच्चारण स्थान</th>
+                                    <th>प्राणत्व</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>क</td>
+                                    <td>कण्ठ्य</td>
+                                    <td>अल्पप्राण</td>
+                                </tr>
+                                <tr>
+                                    <td>झ</td>
+                                    <td>दन्तमूलीय</td>
+                                    <td>महाप्राण</td>
+                                </tr>
+                                <tr>
+                                    <td>ट</td>
+                                    <td>दन्तमूलीय</td>
+                                    <td>अल्पप्राण</td>
+                                </tr>
+                                <tr>
+                                    <td>त</td>
+                                    <td>दन्त्य</td>
+                                    <td>अल्पप्राण</td>
+                                </tr>
+                                <tr>
+                                    <td>फ</td>
+                                    <td>ओष्ठ्य</td>
+                                    <td>महाप्राण</td>
+                                </tr>
+                                <tr>
+                                    <td>ह</td>
+                                    <td>स्वरयन्त्रमुखी</td>
+                                    <td>महाप्राण</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">८.</span> उच्चारण प्रयत्न र घोषत्वका आधारमा दिइएका वर्णहरुको पहिचान गरी लेख्नुहोस् । (ख, छ, स, न, य, ब)
+                    </div>
+                    <div class="answer">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>वर्ण</th>
+                                    <th>उच्चारण प्रयत्न</th>
+                                    <th>घोषत्व</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>ख</td>
+                                    <td>स्पर्शी</td>
+                                    <td>अघोष</td>
+                                </tr>
+                                <tr>
+                                    <td>छ</td>
+                                    <td>स्पर्शसङ्घर्षी</td>
+                                    <td>अघोष</td>
+                                </tr>
+                                <tr>
+                                    <td>स</td>
+                                    <td>सङ्घर्षी</td>
+                                    <td>अघोष</td>
+                                </tr>
+                                <tr>
+                                    <td>न</td>
+                                    <td>नासिक्य</td>
+                                    <td>घोष</td>
+                                </tr>
+                                <tr>
+                                    <td>य</td>
+                                    <td>अर्धस्वर</td>
+                                    <td>घोष</td>
+                                </tr>
+                                <tr>
+                                    <td>ब</td>
+                                    <td>स्पर्शी</td>
+                                    <td>घोष</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">९.</span> उच्चारण स्थान र घोषत्वका आधारमा दिइएका व्यञ्जन वर्गको वर्गीकरण गर्नुहोस् । (घ, द, छ, ह, फ, य)
+                    </div>
+                    <div class="answer">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>वर्ण</th>
+                                    <th>उच्चारण स्थान</th>
+                                    <th>घोषत्व</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>घ</td>
+                                    <td>कण्ठ्य</td>
+                                    <td>घोष</td>
+                                </tr>
+                                <tr>
+                                    <td>द</td>
+                                    <td>दन्त</td>
+                                    <td>घोष</td>
+                                </tr>
+                                <tr>
+                                    <td>छ</td>
+                                    <td>दन्तमूलीय</td>
+                                    <td>अघोष</td>
+                                </tr>
+                                <tr>
+                                    <td>ह</td>
+                                    <td>स्वरयन्त्रमुखी</td>
+                                    <td>घोष</td>
+                                </tr>
+                                <tr>
+                                    <td>फ</td>
+                                    <td>ओष्ठ्य</td>
+                                    <td>अघोष</td>
+                                </tr>
+                                <tr>
+                                    <td>य</td>
+                                    <td>तालब्य</td>
+                                    <td>घोष</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">१०.</span> उच्चारण प्रयत्न र प्राणत्वका आधारमा दिइएका व्यञ्जन वर्णको वर्गीकरण गर्नुहोस् । (म, स, ठ, ज, थ, र )
+                    </div>
+                    <div class="answer">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>वर्ण</th>
+                                    <th>उच्चारण प्रयत्न</th>
+                                    <th>प्राणत्व</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>म</td>
+                                    <td>नासिक्य</td>
+                                    <td>अल्पप्राण</td>
+                                </tr>
+                                <tr>
+                                    <td>स</td>
+                                    <td>सङ्घर्षी</td>
+                                    <td>महाप्राण</td>
+                                </tr>
+                                <tr>
+                                    <td>ठ</td>
+                                    <td>स्पर्शी</td>
+                                    <td>महाप्राण</td>
+                                </tr>
+                                <tr>
+                                    <td>ज</td>
+                                    <td>स्पर्शसङ्घर्षी</td>
+                                    <td>अल्पप्राण</td>
+                                </tr>
+                                <tr>
+                                    <td>थ</td>
+                                    <td>स्पर्शी</td>
+                                    <td>महाप्राण</td>
+                                </tr>
+                                <tr>
+                                    <td>र</td>
+                                    <td>कम्पित</td>
+                                    <td>अल्पप्राण</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+        
+        <div class="android-app-section">
+            <a href="#" class="android-app-button">Android App डाउनलोड गर्नुहोस्</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleAnswer(questionElement) {
+            const answer = questionElement.nextElementSibling;
+            const allAnswers = document.querySelectorAll('.answer');
+            const allQuestions = document.querySelectorAll('.question');
+            
+            if (answer.classList.contains('active')) {
+                answer.classList.remove('active');
+                questionElement.classList.remove('expanded');
+            } else {
+                allAnswers.forEach(a => a.classList.remove('active'));
+                allQuestions.forEach(q => q.classList.remove('expanded'));
+                
+                answer.classList.add('active');
+                questionElement.classList.add('expanded');
+            }
+        }
+    </script>
+</body>
+</html>
