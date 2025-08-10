@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What I Require from Life</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+        :root {
+            --primary-color: #0d47a1;
+            --secondary-color: #f57f17;
+            --background-color: #e3f2fd;
+            --card-background: #ffffff;
+            --text-color: #263238;
+            --light-text: #546e7a;
+            --border-color: #bbdefb;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 850px;
+            width: 100%;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            background: linear-gradient(135deg, #e3f2fd, var(--card-background));
+            border-radius: 12px;
+            box-shadow: 0 4px 15px var(--shadow-color);
+        }
+
+        .subject-title {
+            font-size: 1rem;
+            color: var(--light-text);
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .chapter-title {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-top: 10px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .chapter-title::after {
+            content: '';
+            width: 100%;
+            height: 4px;
+            background-color: var(--secondary-color);
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            border-radius: 2px;
+        }
+
+        .section {
+            background-color: var(--card-background);
+            border-radius: 12px;
+            box-shadow: 0 4px 20px var(--shadow-color);
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: var(--text-color);
+            margin-bottom: 25px;
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 10px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .question-item {
+            margin-bottom: 30px;
+            border-bottom: 1px dashed var(--border-color);
+            padding-bottom: 20px;
+        }
+
+        .question-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        .question {
+            font-weight: 600;
+            font-size: 1.15rem;
+            color: var(--primary-color);
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .question-marker {
+            font-weight: 700;
+            font-size: 1.3rem;
+            color: var(--secondary-color);
+            margin-right: 15px;
+            background-color: #fffde7;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .answer {
+            font-size: 1rem;
+            color: var(--light-text);
+            padding-left: 45px;
+            display: none;
+            opacity: 0;
+            transition: all 0.4s ease-in-out;
+            transform: translateY(10px);
+        }
+
+        .answer.active {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .question.expanded {
+            color: var(--secondary-color);
+        }
+
+        .android-app-section {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .android-app-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            box-shadow: 0 4px 15px rgba(245, 127, 23, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .android-app-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(245, 127, 23, 0.6);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .chapter-title {
+                font-size: 2rem;
+            }
+            .section {
+                padding: 20px;
+            }
+            .section-title {
+                font-size: 1.7rem;
+            }
+            .question {
+                font-size: 1rem;
+            }
+            .question-marker {
+                width: 25px;
+                height: 25px;
+                font-size: 1rem;
+                margin-right: 10px;
+            }
+            .answer {
+                padding-left: 35px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="subject-title">English</div>
+            <h1 class="chapter-title">What I Require from Life</h1>
+        </header>
+
+        <main>
+            <section class="section" id="understanding-text">
+                <h2 class="section-title">Understanding the text</h2>
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">a.</span> How does the writer distinguish between a peaceful age and a heroic age?
+                    </div>
+                    <div class="answer">
+                        The writer distinguishes between a peaceful age and a heroic age by making a comparison between them. He recalls his birth time a peaceful age and the time of 1914, when the First World War took place as heroic age.
+                    </div>
+                </div>
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">b.</span> Why does the writer want more freedom of speech than most people?
+                    </div>
+                    <div class="answer">
+                        The writer wants more freedom of speech than most people to express and explain what he feels about the society. He wants freedom of speech to tell the public about the issues like medicines, newspapers and drinks do not maintain quality.
+                    </div>
+                </div>
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">c.</span> According to the writer, what are the four general human needs?
+                    </div>
+                    <div class="answer">
+                        According to the writer the four general human needs are work, freedom of speech, health and friendship.
+                    </div>
+                </div>
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">d.</span> What is the difference between desire and demand according to the writer?
+                    </div>
+                    <div class="answer">
+                        According to the writer the difference between desire and demand is that the demand is related with the basic needs of life like food, clothes and shelter but desire includes things which improve living standard. The writer talks about car, garden, bathing pool and nearby beach as desires.
+                    </div>
+                </div>
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">e.</span> Why does the writer demand security?
+                    </div>
+                    <div class="answer">
+                        The writer demands security because it is an important need for a person to live a happy life. He lived in the age of war and chaos due to which the lives of many peoples was in risk. So he demands security.
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="reference-to-context">
+                <h2 class="section-title">Reference to the context</h2>
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">a.</span> Explain the following lines with reference to the context:<br>
+                        "The satisfaction of adventure is something much more solid than a thrill."
+                    </div>
+                    <div class="answer">
+                        The author believes that adventure is not only about emotions, but also about satisfaction in performing a creative activity. It enriches people with solid experience. He compares thrill with amusement he has got from reading Rimbaud’s poetry. He served on the war front in Madrid for six months and looked forward to read a book of Rimbaud’s poetry for a thrill.
+                    </div>
+                </div>
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">b.</span> “I want the workers to see the fruit of their own work not in profits for others, but in their own and their friends’ well-being.”
+                    </div>
+                    <div class="answer">
+                        The line shows the writer’s support for socialism. He asserts the hardworking should be rewarded directly to a considerable extent. He wants democracy within the working environment. He is a socialist who wants industry to be controlled by the workers. They should be free to work and share profit among themselves too. He compares the nature of industrial work with hunting and gardening like of paleothitic and neolithitic. To create an even and pleasing working atmosphere the profits of work should remain among working people.
+                    </div>
+                </div>
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">c.</span> Why do you think the essayist has taken reference from the ancient philosophers?
+                    </div>
+                    <div class="answer">
+                        I think the essayist has taken reference from the ancient philosopher like Aristotle, Lord Blan, Mr. Dash, and Sir John Asterisk to support his ideas and convince the readers about his idea of decent work and death.
+                    </div>
+                </div>
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">d.</span> Discuss the essay in terms of its language, purpose, subject, point of view and mode of writing.
+                    </div>
+                    <div class="answer">
+                        The language is simple and lucid in the essay. Haldane’s style is typically straight forward and vigorous. As a science popularize, he is accustomed to write about complex maters in a simple language so that any reader can understand. Here, when writing on a non- technical subject, he retains this simplicity, with short, forceful, declarative sentences and clear explanations.
+                        <br><br>
+                        His subject at first appears to be personal and thus made of writing descriptive. However, in the second part of his essay, it becomes clear that he is putting forward a political argument freedom, for instance not merely a personal preference of Haldane’s but a universal requirement. This means that society should be structured in such a way as to maximize freedom for everyone.
+                        <br><br>
+                        His viewpoint is that of a social critic, setting forth a general program of the principles that should underlie to a civilized society.
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="reference-beyond-text">
+                <h2 class="section-title">Reference beyond the text</h2>
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">a.</span> What do you require from your life to be happy and satisfied?
+                    </div>
+                    <div class="answer">
+                        I require good health, a job, friendship, freedom & security from my life to be happy and satisfied.
+                    </div>
+                </div>
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">b.</span> What is socialism? How is it different from capitalism?
+                    </div>
+                    <div class="answer">
+                        Socialism is a system of social and economic equality in which private property and ownership are not prioritized. It differs from capitalism because capitalism does not provide economic equality. Unlike socialism, capitalism ignores people’s needs and does not promote equal opportunity.
+                    </div>
+                </div>
+                <div class="question-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span class="question-marker">c.</span> Write an essay about your dream house.
+                    </div>
+                    <div class="answer">
+                        <p><strong>My Dream House</strong></p>
+                        My dream house is an ideal house that I always imagine. House becomes home when we pour love to our family members. It is a place where different generation live together in a single bond. So, my dream house will be full of love and happiness.
+                        <br><br>
+                        I always dream of a mountainous wooden home. My ideal home should be facing a river. Through the windows, I could watch the mountains sunset and vanish. It should be facing East direction because I want to enjoy cool air as well as rising sun view. My ideal home would include a little garden with my own veggies and fruits.
+                        <br><br>
+                        I would like to maintain my house neat and clean. There will be a meditation room for myself to do Yoga and meditation. I will also make one library room for my family and visitors. I will make a special room for my parents and visitors.I won’t add too much amenities in my dream house because it creates laziness. I believe that physical exercises are necessary to be healthy and fit. There will be solar panel in my house to maintain regular light. I will also add a big smart TV for my parents and visitors. My house’s wall will be decorated with beautiful wall paintings capturing nature’s true beauty. I also have a 1 year old pet dog named Puppy. I also want a modest but cozy area in Puppy’s home where he may sleep and rest when he gets old.
+                        <br><br>
+                        My dream home is a place of joy, peace and beauty. Right now it exists only in my dreams. But someday, it will become a reality.
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <div class="android-app-section">
+            <a href="#" class="android-app-button">Download Android App</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleAnswer(questionElement) {
+            const answer = questionElement.nextElementSibling;
+            const allAnswers = document.querySelectorAll('.answer');
+            const allQuestions = document.querySelectorAll('.question');
+            
+            if (answer.classList.contains('active')) {
+                answer.classList.remove('active');
+                questionElement.classList.remove('expanded');
+            } else {
+                allAnswers.forEach(a => a.classList.remove('active'));
+                allQuestions.forEach(q => q.classList.remove('expanded'));
+                
+                answer.classList.add('active');
+                questionElement.classList.add('expanded');
+            }
+        }
+    </script>
+</body>
+</html>
