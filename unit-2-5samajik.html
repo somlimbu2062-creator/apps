@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>इन्टरनेट र सामाजिक सञ्जालको उत्तरदायी प्रयोग</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #5E60CE;
+            --secondary-color: #48BFE3;
+            --background-color: #F0F4F8;
+            --card-background: #FFFFFF;
+            --text-color: #3B4A6B;
+            --heading-color: #1A237E;
+            --border-radius: 16px;
+            --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            --transition-speed: 0.4s;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Mukta', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            padding: 20px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #8338EC 100%);
+            color: white;
+            padding: 50px 30px;
+            text-align: center;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            clip-path: polygon(0 0, 100% 0, 100% 30%, 0 70%);
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            position: relative;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        header p {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            position: relative;
+        }
+
+        .card {
+            background-color: var(--card-background);
+            padding: 35px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+            position: relative;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .question-title {
+            font-size: 1.6rem;
+            color: var(--heading-color);
+            margin-bottom: 20px;
+            position: relative;
+            padding-left: 35px;
+            border-bottom: 2px solid #EAECEF;
+            padding-bottom: 15px;
+        }
+
+        .question-title::before {
+            content: 'प्रश्न';
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-weight: 700;
+            color: var(--primary-color);
+            background-color: #E6F0FF;
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+        
+        .answer-content {
+            font-size: 1.05rem;
+            color: var(--text-color);
+            line-height: 2;
+            border-left: 5px solid var(--secondary-color);
+            padding-left: 25px;
+            margin-top: 25px;
+            background-color: #FDFEFE;
+            padding: 20px 25px;
+            border-radius: 0 var(--border-radius) var(--border-radius) 0;
+        }
+
+        .answer-content p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .answer-content p:last-child {
+            margin-bottom: 0;
+        }
+
+        .answer-content ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 20px;
+        }
+
+        .answer-content ul li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 15px;
+        }
+
+        .answer-content ul li::before {
+            content: '✓';
+            color: var(--secondary-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 1.2em;
+        }
+        
+        .answer-content .negative-list li::before {
+            content: '✗';
+            color: #FF6347;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+
+            .container {
+                gap: 20px;
+            }
+
+            header {
+                padding: 40px 20px;
+            }
+
+            header h1 {
+                font-size: 2.2rem;
+            }
+
+            header p {
+                font-size: 1.1rem;
+            }
+
+            .card {
+                padding: 25px;
+            }
+
+            .question-title {
+                font-size: 1.4rem;
+                padding-left: 30px;
+                padding-bottom: 10px;
+            }
+            
+            .question-title::before {
+                font-size: 0.9rem;
+                padding: 3px 6px;
+            }
+
+            .answer-content {
+                padding: 15px 20px;
+                line-height: 1.8;
+                font-size: 1rem;
+            }
+
+            .answer-content ul li {
+                padding-left: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>पाठ-५</h1>
+        <p>इन्टरनेट र सामाजिक सञ्जालको उत्तरदायी प्रयोग</p>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2 class="question-title">साइबर नैतिकता भनेको के हो?</h2>
+            <div class="answer-content">
+                <p>इन्टरनेट वा सामाजिक सञ्जालमा गरिने असल, जिम्मेवार र सही व्यवहारलाई <strong>साइबर नैतिकता</strong> भनिन्छ। यसले इन्टरनेटको सुरक्षित र सकारात्मक प्रयोग सुनिश्चित गर्छ।</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2 class="question-title">साइबर नैतिकताअनुसार गर्न नहुने कार्यहरु उल्लेख गर्नुहोस्।</h2>
+            <div class="answer-content">
+                <p>साइबर नैतिकताअनुसार गर्न नहुने कार्यहरू निम्नलिखित छन्:</p>
+                <ul class="negative-list">
+                    <li>अरूको विवरण हेर्नु, बिगार्नु, हटाउनु वा प्रयोग गर्नु।</li>
+                    <li>अरूको पासवर्ड चोरी गर्नु वा प्रयोग गर्नु।</li>
+                    <li>भाइरस बनाएर प्रयोग गर्नु।</li>
+                    <li>कम्प्युटरको गोपनीयता भङ्ग गर्नु।</li>
+                    <li>झुटा व्यहोरा प्रेरित गर्नु।</li>
+                    <li>कुनै पनि व्यक्ति वा संघसंस्थाको व्यक्तिगत वा सामूहिक विवरण चोर्नु वा बिना अनुमति हेर्नु।</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2 class="question-title">साइबर अपराधबाट बच्न तपाईं के के कुरामा सचेत हुनुहुन्छ, सचेतताका उपायहरु बुँदागत रूपमा उल्लेख गर्नुहोस्।</h2>
+            <div class="answer-content">
+                <p>साइबर अपराधबाट बच्न निम्न कुराहरूमा सचेत हुनुपर्छ:</p>
+                <ul>
+                    <li>कम्प्युटरमा प्रेरित समाचार वा सूचना नबिगार्ने।</li>
+                    <li>कसैप्रति रिस, द्वेष वा घृणा फैलाउने सामग्री नराख्ने।</li>
+                    <li>कसैको व्यक्तिगत विवरण वा अभिलेखको गोपनीयता भङ्ग नगर्ने।</li>
+                    <li>झुटा सूचना प्रेषित नगर्ने।</li>
+                    <li>जालसाजी गरी लाभ नउठाउने।</li>
+                    <li>सङ्गठित अपराधीलाई सहयोग नगर्ने।</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2 class="question-title">सामाजिक सञ्जालका फाइदाहरु उल्लेख गर्नुहोस्।</h2>
+            <div class="answer-content">
+                <p>सामाजिक सञ्जालका फाइदाहरू निम्नलिखित छन्:</p>
+                <ul>
+                    <li>विचार आदानप्रदान गर्न र सहकार्य गर्न सहज हुन्छ।</li>
+                    <li>व्यापारका लागि बजार प्रवर्द्धन गर्न सहयोग मिल्छ।</li>
+                    <li>निःशुल्क रूपमा व्यक्तिगत र सामूहिक कुराकानी गर्न सकिन्छ।</li>
+                    <li>समाचार वा सूचना सम्प्रेषण गर्न सकिन्छ।</li>
+                    <li>विश्वभर सञ्चार सम्बन्ध राख्न सकिन्छ।</li>
+                    <li>सामाजिक एवम् राजनैतिक सचेतना तथा दबाब दिन सकिन्छ।</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</div>
+
+</body>
+</html>
