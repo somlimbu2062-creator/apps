@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>सामाजिक अध्ययनका सिप र जीवनोपयोगी सिपको अवधारणा</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #6A11CB;
+            --secondary-color: #2575FC;
+            --background-color: #F0F4F8;
+            --card-background: #FFFFFF;
+            --text-color: #3B4A6B;
+            --heading-color: #1A237E;
+            --border-radius: 16px;
+            --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            --transition-speed: 0.4s;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Mukta', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            padding: 20px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 50px 30px;
+            text-align: center;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            clip-path: polygon(0 0, 100% 0, 100% 30%, 0 70%);
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            position: relative;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        header p {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            position: relative;
+        }
+
+        .card {
+            background-color: var(--card-background);
+            padding: 35px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+            position: relative;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .question-title {
+            font-size: 1.6rem;
+            color: var(--heading-color);
+            margin-bottom: 20px;
+            position: relative;
+            padding-left: 35px;
+            border-bottom: 2px solid #EAECEF;
+            padding-bottom: 15px;
+        }
+
+        .question-title::before {
+            content: 'प्रश्न';
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-weight: 700;
+            color: var(--primary-color);
+            background-color: #E6F0FF;
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+        
+        .answer-content {
+            font-size: 1.05rem;
+            color: var(--text-color);
+            line-height: 2;
+            border-left: 5px solid var(--secondary-color);
+            padding-left: 25px;
+            margin-top: 25px;
+            background-color: #FDFEFE;
+            padding: 20px 25px;
+            border-radius: 0 var(--border-radius) var(--border-radius) 0;
+        }
+
+        .answer-content p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .answer-content p:last-child {
+            margin-bottom: 0;
+        }
+
+        .answer-content ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .answer-content ul li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 15px;
+        }
+
+        .answer-content ul li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--secondary-color);
+            font-weight: bold;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+
+            .container {
+                gap: 20px;
+            }
+
+            header {
+                padding: 40px 20px;
+            }
+
+            header h1 {
+                font-size: 2.2rem;
+            }
+
+            header p {
+                font-size: 1.1rem;
+            }
+
+            .card {
+                padding: 25px;
+            }
+
+            .question-title {
+                font-size: 1.4rem;
+                padding-left: 30px;
+                padding-bottom: 10px;
+            }
+            
+            .question-title::before {
+                font-size: 0.9rem;
+                padding: 3px 6px;
+            }
+
+            .answer-content {
+                padding: 15px 20px;
+                line-height: 1.8;
+                font-size: 1rem;
+            }
+
+            .answer-content ul li {
+                padding-left: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>पाठ-३</h1>
+        <p>सामाजिक अध्ययनका सिप र जीवनोपयोगी सिपको अवधारणा</p>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2 class="question-title">कुनै एक स्थानीय घटना वा गतिविधिमा आधारित समाचार तयार गर्नुहोस्।</h2>
+            <div class="answer-content">
+                <p>धारापानी, जेष्ठ १२। कोभिड-१९ को सङ्क्रमण फैलिँदै गएपछि स्थानीय गाउँपालिकाका सदस्यहरू, स्वास्थ्य कार्यकर्ता तथा समाजसेवीहरूले कोभिड-१९ को सङ्क्रमण नियन्त्रण गर्न सचेतनामूलक कार्यक्रमको आयोजना गरे। गाउँपालिका सदस्यहरू, स्वास्थ्य कार्यकर्ताहरू तथा समाजसेवीहरूले विभिन्न नारा लेखेका प्लेकार्ड बोकी मास्क लगाई बजार परिक्रमा गरे। “भौतिक दुरी कायम राखौँ, मास्क लगाऔं, हात मिचिमिचि धोऔं र भीडभाडमा नजाऔं” भन्ने पङ्क्तिहरू प्लेकार्डमा लेखिएका थिए। सहभागीहरूले आफूले पनि “बाचौँ र अरूलाई पनि बचाऔं” लेखेका ब्यानरहरू बोकेका थिए।</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2 class="question-title">पाठमा उल्लिखित कुनै एक सिपसँग सम्बन्धित हुने गरी कथा, कविता, गीत, संवाद, चिठी र चित्रमध्ये कुनै एकको रचना गरी कक्षामा प्रस्तुत गर्नुहोस्।</h2>
+            <div class="answer-content">
+                <h3>सिप: क्षेत्रभ्रमण (दन्तकाली मन्दिर, धरान)</h3>
+                <p>दुहवी<br>१२/५/२०७५<br>साथी सुजाता<br>मिठो सम्झना</p>
+                <p>हिजो तिमीले गएको शनिबार के गर्यौ भनेर सोधेकी थियौ। म गएको शनिबार धरानको दन्तकाली मन्दिर हेर्न गएकी थिएँ। दन्तकाली मन्दिरको छोटो चिनारी म यहाँ लेख्दैछु। यो मन्दिर धेरै पुरानो हो। यो शक्तिपीठ हो। यहाँ कुनै देवीदेवताको मूर्ति छैन। भनिन्छ सतीदेवीको दाँत यहाँ झरेको हुनाले यहाँ मन्दिर बनाइएको हो। यस मन्दिरमा सानो बट्टाभित्र सतीदेवीको दाँत भनी सुरक्षित राखिएको छ। उहिले शाहवंशीय राजाहरूले पश्चिम नेपालबाट ब्राह्मण ल्याई पुजारी राखेका थिए। हालसम्म उनैका सन्तानले यो मन्दिरमा पूजाआजा गरी काम सम्हाली रहेका छन्। यो मन्दिर सञ्चालनका लागि गुठीको रूपमा जग्गा राखिएको छ। दशैँमा यहाँ पूजाआजा गरिन्छ। अष्टमी र नवमीका दिन पशु बलि दिइन्छ। आजकल छेउछाउमा पूजासामाग्री बेच्ने मानिसहरूको पसल प्रशस्तै देखिन्छन्। बजारबाट यहाँसम्म आउने मोटर गुड्ने सडक छ। यहाँबाट धरानको राम्रो दृश्य देखिन्छ। यहाँ धर्मशाला पनि रहेको छ। भक्तजनको भीड प्रायः भइरहन्छ।</p>
+                <p>तिमी पनि बिदामा आऊ र सँगै मन्दिर हेर्न जाऔंला। तिम्रो आमाबुबालाई मेरो सादर प्रणाम।</p>
+                <p>उही तिम्रो साथी<br>बिना</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2 class="question-title">सामाजिक अध्ययमा प्रयोग हुने सिपहरु उल्लेख गर्नुहोस्।</h2>
+            <div class="answer-content">
+                <p>सामाजिक अध्ययनमा प्रयोग हुने सिपहरु निम्नलिखित छन्:</p>
+                <ul>
+                    <li>नक्सा अध्ययन गर्ने र नक्सा उतार्ने सिप।</li>
+                    <li>विभिन्न विधाका माध्यम (गीत, कविता, चित्र, निबन्ध, संवाद, नाटक, चिठी, आदि) बाट भाव अभिव्यक्त गर्ने सिर्जनात्मक सिप।</li>
+                    <li>समाचार, सम्पादकीय लेखन, सम्पादकलाई चिठी, सामाजिक सञ्जालबाट विचार व्यक्त गर्ने, समाचार सङ्कलन र लेखन प्रस्तुति गर्ने सिप।</li>
+                    <li>छलफल, सहयोग, सहकार्य, मेलमिलाप, आदि सिप।</li>
+                    <li>स्तम्भ चित्र, चक्रचित्र, रेखाचित्र आदिमार्फत् तथ्याङ्क प्रस्तुति गर्ने सिप।</li>
+                    <li>समयरेखा, वंशावली, व्यक्तिवृत आदि ऐतिहासिक घटनालाई प्रस्तुतिकरण गर्ने सिप।</li>
+                    <li>सर्वेक्षण, क्षेत्रभ्रमण, अन्तर्वार्ता, अवलोकनको योजना बनाउने, कार्यसम्पादन गर्ने र प्रतिवेदन तयार गर्ने सिप।</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</div>
+
+</body>
+</html>
