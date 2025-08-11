@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>डिजिटल साक्षरता</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #007BFF;
+            --secondary-color: #28A745;
+            --background-color: #F8F9FA;
+            --card-background: #FFFFFF;
+            --text-color: #343A40;
+            --heading-color: #002B5C;
+            --border-radius: 12px;
+            --box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            --transition-speed: 0.3s;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Mukta', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            padding: 20px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #0056b3 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .card {
+            background-color: var(--card-background);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .question-title {
+            font-size: 1.5rem;
+            color: var(--heading-color);
+            margin-bottom: 15px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .question-title::before {
+            content: 'Q';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            font-weight: 700;
+            color: var(--primary-color);
+            font-size: 1.2rem;
+        }
+
+        .answer-content {
+            font-size: 1rem;
+            color: var(--text-color);
+            line-height: 1.8;
+            padding-left: 20px;
+            border-left: 4px solid var(--secondary-color);
+            margin-top: 15px;
+        }
+
+        .answer-content p, .answer-content ul {
+            margin-bottom: 15px;
+        }
+
+        .answer-content ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .answer-content ul li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 8px;
+        }
+
+        .answer-content ul li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            line-height: 1;
+            top: 5px;
+        }
+
+        .answer-content strong {
+            color: var(--heading-color);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                gap: 15px;
+            }
+
+            header {
+                padding: 30px 15px;
+                margin-bottom: 15px;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            .card {
+                padding: 20px;
+            }
+
+            .question-title {
+                font-size: 1.3rem;
+                padding-left: 20px;
+            }
+
+            .answer-content {
+                padding-left: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>पाठ-१</h1>
+        <p>डिजिटल साक्षरता</p>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2 class="question-title">कम्प्युटर प्रयोग भइरहेको कुनै दुई क्षेत्रहरूको नाम लेख्नुहोस्।</h2>
+            <div class="answer-content">
+                <p>कम्प्युटर प्रयोग भइरहेको क्षेत्र निम्नलिखित छन्:</p>
+                <ul>
+                    <li>चिकित्सा क्षेत्र</li>
+                    <li>बैङ्क क्षेत्र</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2 class="question-title">डिजिटल साक्षरता भन्नाले के बुझिन्छ?</h2>
+            <div class="answer-content">
+                <p>सूचना तथा सञ्चार प्रविधि प्रयोग गरी कुनै पनि सूचना प्राप्त गर्ने, मूल्याङ्कन गर्ने, सिर्जना गर्ने र सञ्चार गर्ने क्षमतालाई <strong>डिजिटल साक्षरता</strong> भनिन्छ।</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2 class="question-title">सूचना तथा सञ्चार प्रविधि भनेको के हो?</h2>
+            <div class="answer-content">
+                <p>कम्प्युटर, इन्टरनेट तथा अन्य माध्यमको प्रयोग गरेर तथ्याङ्क सङ्कलन गर्ने, सङ्कलित तथ्याङ्कलाई प्रशोधन गरी सूचनामा परिवर्तन गर्ने, प्रशोधित सूचनालाई भण्डारण गर्ने र उक्त सूचना प्रयोगकर्तालाई उपलब्ध गराउने कार्यलाई <strong>सूचना र प्रविधि</strong> भनिन्छ।</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2 class="question-title">कम्प्युटर हार्डवेयरलाई उदाहरणसहित वर्गीकरण गर्नुहोस्।</h2>
+            <div class="answer-content">
+                <p>कम्प्युटरका भौतिक यन्त्रहरू, जुन विद्युतीय शक्तिबाट चल्छन्, तिनीहरूलाई <strong>हार्डवेयर</strong> भनिन्छ। हार्डवेयरलाई <strong>इन्पुट उपकरण, प्रशोधन उपकरण, आउटपुट उपकरण र भण्डारण उपकरण</strong> गरी चार भागमा बाँडिएको छ:</p>
+                <ul>
+                    <li><strong>इन्पुट उपकरण:</strong> कम्प्युटरमा कुनै तथ्याङ्क वा निर्देशन प्रविष्ट गराउन प्रयोग हुने उपकरणलाई इन्पुट उपकरण भनिन्छ। जस्तै: माउस, किबोर्ड, क्यामेरा, माइक्रोफोन आदि।</li>
+                    <li><strong>प्रशोधन उपकरण:</strong> कम्प्युटरमा प्रविष्ट भएका कुनै तथ्याङ्कलाई निर्देशन अनुसार गणना वा प्रशोधन गर्न प्रयोग गरिन्छ। त्यसलाई प्रशोधन उपकरण भनिन्छ। जस्तै: Central Processing Unit (CPU)।</li>
+                    <li><strong>आउटपुट उपकरण:</strong> कम्प्युटरमा भएका कुनै तथ्याङ्क वा सूचनालाई देखाउन प्रयोग हुने उपकरणहरूलाई आउटपुट उपकरण भनिन्छ। जस्तै: मोनिटर, प्रोजेक्टर, स्पिकर, प्रिन्टर आदि।</li>
+                    <li><strong>भण्डारण उपकरण:</strong> कम्प्युटरमा भएका कुनै तथ्याङ्क वा सूचनालाई लामो समयसम्म सुरक्षित राखी आवश्यक परेको समय पुनः प्रयोग गर्न उपलब्ध गराउने उपकरणलाई भण्डारण उपकरण भनिन्छ। जस्तै: सि.डी., हार्डडिस्क, पेनड्राइभ, आदि।</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2 class="question-title">‘कम्प्युटरको प्रयोग आज विश्वव्यापी भएको छ ।’ यस भनाइलाई पुष्टि गर्नुहोस्।</h2>
+            <div class="answer-content">
+                <p>कम्प्युटरको प्रयोग आज विश्वमा बढ्दै गएको छ। आज आवश्यकताअनुसार विभिन्न थरीका कम्प्युटरको आविष्कार पनि भइरहेको छ। कम्प्युटरले धेरै चाँडो काम गर्छ। यसले कुनै पनि तथ्याङ्कलाई सुरक्षित राख्न सक्छ। यसको काम गराइ विश्वसनीय छ। जस्तो कामको निर्देशन गर्‍यो त्यस्तै गर्छ। एकपटक निर्देशन दिएर काममा लगाइयो भने यसबाट गल्ती हुँदैन। थोरै श्रम खर्च गरी बढी काम लिन सकिन्छ। एउटै यन्त्रबाट धेरै काम लिन सकिन्छ। कागजपत्रको खर्च घटाएको छ, भण्डारणको समस्या हटेको छ। यसकारण आज कम्प्युटरको प्रयोग शिक्षा, सञ्चार, बैंक, इन्जिनियरिङ, चिकित्साक्षेत्र, बिमा, उद्योग, व्यापार, मनोरञ्जन, आदि विभिन्न क्षेत्रहरूमा भइरहेको छ।</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2 class="question-title">Microsoft Word मा के के काम गर्न सकिन्छ, उदाहरणसहित लेख्नुहोस्।</h2>
+            <div class="answer-content">
+                <p>Microsoft Word मा गर्न सकिने कामहरू निम्नलिखित छन्:</p>
+                <ul>
+                    <li>कुनै पनि तथ्याङ्क टाइप गर्न सकिन्छ।</li>
+                    <li>टाइप गरेको तथ्याङ्क (Document) को हिज्जे तथा व्याकरण सम्बन्धी शुद्धि गर्न सकिन्छ।</li>
+                    <li>टाइप गरिएको वस्तुलाई आकर्षक रूपमा मिलाउन सकिन्छ‌।</li>
+                    <li>टाइप गरिएको वस्तुलाई प्रिन्ट गर्न सकिन्छ साथै सो वस्तुलाई सुरक्षित साथ राख्न सकिन्छ।</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</div>
+
+</body>
+</html>
