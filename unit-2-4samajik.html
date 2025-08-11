@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>इन्टरनेटबाट सूचना तथा अध्ययन सामग्रीको खोजी र प्रयोग</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #0F52BA;
+            --secondary-color: #3B72C7;
+            --background-color: #F8F9FA;
+            --card-background: #FFFFFF;
+            --text-color: #343A40;
+            --heading-color: #002B5C;
+            --border-radius: 12px;
+            --box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            --transition-speed: 0.3s;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Mukta', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            padding: 20px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .card {
+            background-color: var(--card-background);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .question-title {
+            font-size: 1.5rem;
+            color: var(--heading-color);
+            margin-bottom: 15px;
+            padding-left: 20px;
+            position: relative;
+            border-bottom: 2px solid #EAECEF;
+            padding-bottom: 10px;
+        }
+        
+        .question-title::before {
+            content: 'प्रश्न';
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-weight: 700;
+            color: var(--primary-color);
+            background-color: #E6F0FF;
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+
+        .answer-content {
+            font-size: 1rem;
+            color: var(--text-color);
+            line-height: 1.8;
+            padding-left: 20px;
+            border-left: 4px solid var(--secondary-color);
+            margin-top: 15px;
+        }
+
+        .answer-content p, .answer-content ul {
+            margin-bottom: 15px;
+        }
+
+        .answer-content ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .answer-content ul li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 8px;
+        }
+
+        .answer-content ul li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            line-height: 1;
+            top: 5px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                gap: 15px;
+            }
+
+            header {
+                padding: 30px 15px;
+                margin-bottom: 15px;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            .card {
+                padding: 20px;
+            }
+
+            .question-title {
+                font-size: 1.3rem;
+                padding-left: 30px;
+            }
+
+            .question-title::before {
+                font-size: 0.9rem;
+                padding: 3px 6px;
+            }
+
+            .answer-content {
+                padding-left: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>पाठ-४</h1>
+        <p>इन्टरनेटबाट सूचना तथा अध्ययन सामग्रीको खोजी र प्रयोग</p>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2 class="question-title">सर्च इन्जिन भनेको के हो, यसको महत्व उल्लेख गर्नुहोस्।</h2>
+            <div class="answer-content">
+                <p>विभिन्न किसिमका जानकारी वा सूचनाहरूलाई इन्टरनेटको वेब (Web) मा भण्डारण गरिन्छ। वेबमा भण्डारण गरिएका सूचना पाउनका लागि विभिन्न माध्यमको विकास गरिएको हुन्छ। यसरी वेबबाट सूचना प्राप्त गर्ने इन्टरनेट माध्यमलाई <strong>सर्च इन्जिन</strong> भनिन्छ।</p>
+                <p>यसको मुख्य महत्त्व भनेको इन्टरनेटमा राखिएका विशाल जानकारीहरूबाट सहज रूपमा आफूलाई चाहिएको जानकारी प्राप्त गर्न सकिन्छ। आफूलाई चाहिएको जानकारी पाउन धेरै झन्झट बेहोर्नु पर्दैन। यसले समय र श्रमको बचत गर्दछ।</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2 class="question-title">कुनै दुई सर्च इन्जिनहरूको नाम लेखी यिनका विशेषतासमेत लेख्नुहोस्।</h2>
+            <div class="answer-content">
+                <p>दुई सर्च इन्जिनहरूको नाम <strong>गुगल (Google)</strong> र <strong>याहु (Yahoo)</strong> हुन्।</p>
+                <p>यिनका विशेषताहरू:</p>
+                <ul>
+                    <li>यी सर्च इन्जिनहरूले इन्टरनेटको वेबसाइट (Website) मा राखिएका जानकारी भण्डारबाट आफूलाई चाहिएको जानकारी पाउन मदत गर्छ।</li>
+                    <li>यस्ता सर्च इन्जिनहरूको प्रयोगले हामीलाई श्रम र समयको बचत गर्दछ।</li>
+                    <li>यिनीहरूले शब्द वा वाक्यांशको आधारमा लाखौं जानकारीहरू मध्येबाट सही र सान्दर्भिक नतिजा देखाउँछन्।</li>
+                    <li>गुगल र याहु दुवैले टेक्स्ट, तस्बिर, भिडियो, समाचार र नक्सा जस्ता विभिन्न प्रकारका सामग्री खोज्न अनुमति दिन्छन्।</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</div>
+
+</body>
+</html>
