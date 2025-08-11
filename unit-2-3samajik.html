@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>अनलाइन भुक्तानी</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #0081A7;
+            --secondary-color: #00AFB9;
+            --background-color: #F6F8FA;
+            --card-background: #FFFFFF;
+            --text-color: #333A42;
+            --heading-color: #011627;
+            --border-radius: 16px;
+            --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            --transition-speed: 0.4s;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Mukta', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            padding: 20px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #4682B4 100%);
+            color: white;
+            padding: 50px 30px;
+            text-align: center;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::before {
+            content: '';
+            position: absolute;
+            bottom: -70px;
+            right: -70px;
+            width: 140px;
+            height: 140px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            position: relative;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header p {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            position: relative;
+        }
+
+        .card {
+            background-color: var(--card-background);
+            padding: 35px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+            position: relative;
+            border-left: 6px solid var(--secondary-color);
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .question-title {
+            font-size: 1.6rem;
+            color: var(--heading-color);
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #EAECEF;
+        }
+        
+        .answer-content {
+            font-size: 1.05rem;
+            color: var(--text-color);
+            line-height: 2;
+            padding-left: 20px;
+            margin-top: 25px;
+        }
+
+        .answer-content p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .answer-content p:last-child {
+            margin-bottom: 0;
+        }
+
+        .answer-content ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 20px;
+        }
+
+        .answer-content ul li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 15px;
+        }
+
+        .answer-content ul li::before {
+            content: '✓';
+            color: var(--secondary-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 1.2em;
+        }
+        
+        .answer-content .challenge-list li::before {
+            content: '✗';
+            color: #FF6347;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+
+            .container {
+                gap: 20px;
+            }
+
+            header {
+                padding: 40px 20px;
+                margin-bottom: 20px;
+            }
+
+            header h1 {
+                font-size: 2.2rem;
+            }
+
+            header p {
+                font-size: 1.1rem;
+            }
+
+            .card {
+                padding: 25px;
+            }
+
+            .question-title {
+                font-size: 1.4rem;
+                padding-bottom: 10px;
+            }
+
+            .answer-content {
+                padding: 15px 20px;
+                line-height: 1.8;
+                font-size: 1rem;
+            }
+
+            .answer-content ul li {
+                padding-left: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>पाठ-३</h1>
+        <p>अनलाइन भुक्तानी</p>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2 class="question-title">अनलाइन भुक्तानीका फाइदाहरु उल्लेख गर्नुहोस्।</h2>
+            <div class="answer-content">
+                <p>अनलाइन भुक्तानीका फाइदाहरू निम्नलिखित छन्:</p>
+                <ul>
+                    <li>व्यक्तिले आफैं भुक्तानी दिने हुनाले जनशक्तिमा लाग्ने खर्च बचत हुन्छ।</li>
+                    <li>विभिन्न बिलहरू तिर्न लाइनमा बस्नु पर्दैन, समयको बचत हुन्छ।</li>
+                    <li>अनलाइनबाट सामान किन्न र बेच्न सकिन्छ।</li>
+                    <li>छिटो, छरितो र विश्वसनीय रूपमा रकमान्तर गर्न सकिन्छ।</li>
+                    <li>नगद बोकेर हिँड्नु नपर्ने साथै चोरीको डर पनि हुँदैन।</li>
+                    <li>नगद कारोबार नहुने भएकोले नोट र मुद्राको आयु लामो हुन्छ।</li>
+                    <li>कारोबारको विवरण स्वतः रहने हुनाले हिसाबकिताब राख्न सजिलो हुन्छ।</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2 class="question-title">अनलाइन भुक्तानीका चुनौतीहरुको सूची तयार पार्नुहोस्।</h2>
+            <div class="answer-content">
+                <p>अनलाइन भुक्तानीका चुनौतीहरू यसप्रकार छन्:</p>
+                <ul class="challenge-list">
+                    <li>डिजिटल साक्षरता नभएका व्यक्तिलाई यो प्रक्रिया काम लाग्दैन।</li>
+                    <li>साइबर अपराधीहरूले यसको दुरुपयोग गर्न सक्छन्।</li>
+                    <li>कहिलेकाहीँ इन्टरनेट वा सर्भरले काम नगरेमा अनलाइन भुक्तानी गर्न सकिँदैन।</li>
+                    <li>सबै कारोबारहरूमा यो प्रक्रिया काम लाग्दैन।</li>
+                    <li>इन्टरनेट सेवा नपुगेका ठाउँमा यो प्रक्रिया लाग्दैन।</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2 class="question-title">‘डिजिटल एप्लिकेसनको प्रयोगले समय र श्रमको बचत हुन्छ’, यस भनाइलाई पुष्टि गर्नुहोस्।</h2>
+            <div class="answer-content">
+                <p>आजको जमानामा डिजिटल साक्षरताको विकास भइरहेको छ। कामको व्यस्तता बढेको छ र समयको महत्त्व पनि बढेको छ। थोरै श्रम गरेर काम हुन्छ भने किन बढी श्रम खर्च गर्ने? डिजिटल एप्लिकेसनले हामीलाई धेरै सुविधा प्रदान गरेको छ।</p>
+                <p>अनलाइन कारोबारले श्रमको बचत भएको छ। हिसाब राख्ने झन्झट हटेको छ। कारोबार चाँडै हुने हुँदा समयको बचत भएको छ। कारोबार आफैंले गर्नुपर्ने भएकाले अरूको भर पर्नु पर्दैन। डिजिटल एप्लिकेसनको प्रयोग घरमा, कार्यालयमा, अस्पतालमा आदि विभिन्न ठाउँहरूमा हुँदै गरेको छ। लाइनमा बस्ने झन्झटबाट मुक्ति मिलेको छ। कागजपत्रको प्रयोग घटेको छ। घरमा समेत माइक्रोवेभ, लुगा धुने वासिङ मेसिन, स्मार्ट टेलिभिजन आदिले हामीलाई सुविधा थपेको छ। डिजिटल एप्लिकेसनको प्रयोगबाट आफूले गरेको कारोबार पनि गोप्य रहन्छ। यसरी कारोबारको गोपनीयता पनि कायम भएको छ।</p>
+            </div>
+        </div>
+    </main>
+</div>
+
+</body>
+</html>
