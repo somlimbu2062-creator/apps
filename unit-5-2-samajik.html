@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>मानव र वातावरण - नेपाली नोटस्</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&family=Lora:wght@700&display=swap');
+
+        :root {
+            --primary-color: #388e3c; /* Dark Green */
+            --secondary-color: #ffd600; /* Gold */
+            --background-color: #e8f5e9; /* Light Green */
+            --text-color: #1b5e20; /* Darker Green */
+            --light-text-color: #66bb6a; /* Muted Green */
+            --card-background: #ffffff;
+            --border-radius: 12px;
+            --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --transition-speed: 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Mukta', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        header {
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary-color), #81c784);
+            color: #fff;
+            padding: 40px 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        header h1 {
+            font-family: 'Lora', serif;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .section {
+            background-color: var(--card-background);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .section h2 {
+            font-family: 'Lora', serif;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+
+        .subsection h3 {
+            font-family: 'Lora', serif;
+            font-size: 1.4rem;
+            color: var(--secondary-color);
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+
+        .question {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .question h4 {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .question p, .question ul {
+            font-size: 1rem;
+            color: var(--light-text-color);
+            padding-left: 20px;
+        }
+
+        .question ul {
+            margin-top: 10px;
+            list-style-type: disc;
+        }
+
+        .question li {
+            margin-bottom: 8px;
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: white;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        .app-download {
+            text-align: center;
+            padding: 30px;
+            background-color: var(--primary-color);
+            color: #fff;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .app-download p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .app-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .app-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                gap: 20px;
+            }
+            header {
+                padding: 30px 15px;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            .section {
+                padding: 20px;
+            }
+            .section h2 {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+            }
+            .subsection h3 {
+                font-size: 1.2rem;
+            }
+            .question h4 {
+                font-size: 1rem;
+            }
+            .app-download {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>मानव र वातावरण</h1>
+            <p>कक्षा ११ - नेपाली</p>
+        </header>
+
+        <main>
+            <div class="section">
+                <h2>अभ्यास</h2>
+                
+                <div class="question">
+                    <h4>१. वातावरण संरक्षण गर्दा हुने फाइदा र विनाश गर्दा आइपर्ने समस्याहरूलाई तालिकामा प्रस्तुत गर्नुहोस् ।</h4>
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>वातावरण संरक्षणबाट फाइदा</th>
+                                    <th>वातावरण विनासबाट पर्ने समस्याहरू</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>i. वनजङ्गलको विनाश नहुने ।</td>
+                                    <td>i. वायु प्रदूषण, जलप्रदुषण तथा ध्वनि प्रदूषण बढ्ने ।</td>
+                                </tr>
+                                <tr>
+                                    <td>ii. वायु प्रदूषण तथा जल प्रदूषणमा कमी आउने ।</td>
+                                    <td>ii. रोगव्याधि, हावाहुरी तथा बाढी पैरो आदि प्राकृतिक प्रकोपमा वृद्धि हुने ।</td>
+                                </tr>
+                                <tr>
+                                    <td>iii. वन्यजन्तुको संरक्षण हुने ।</td>
+                                    <td>iii. वायुमण्डलको ओजोन तहमा नकारात्मक प्रभाव परी सूर्यको परावैजनी किरणको नकारात्मक प्रभाव प्राणीहरूमा पर्ने ।</td>
+                                </tr>
+                                <tr>
+                                    <td>iv. नदीको प्रवाहमा परिवर्तन नहुने तथा जलस्तर यथावत्‌ रहने ।</td>
+                                    <td>iv. नदीको जलस्तर घट्ने, नदीको प्रवाहमा परिवर्तन हुन सक्ने ।</td>
+                                </tr>
+                                <tr>
+                                    <td>v. जलजीवको संरक्षण हुने ।</td>
+                                    <td>v. मरूभूमिकरण बढ्ने ।</td>
+                                </tr>
+                                <tr>
+                                    <td>vi. ओजोन तहको तह पातलिने कार्य घटेर सूर्यको परावैजनी किरणको नकारात्मक प्रभाव घट्ने ।</td>
+                                    <td>vi. खाद्यान्न उत्पादनमा कमी हुन सक्ने ।</td>
+                                </tr>
+                                <tr>
+                                    <td>vii. रोगव्याधि, बाढी पैरो तथा हावाहुरी आदि प्राकृतिक प्रकोपमा कमी आउने ।</td>
+                                    <td>vii. अनावृष्टि तथा अतिवृष्टिको सम्भावना बढ्ने ।</td>
+                                </tr>
+                                <tr>
+                                    <td>viii. मरुभूमिकरण घट्ने, माटोको मलिलोपना वृद्धि हुने ।</td>
+                                    <td>viii. कतिपय वनस्पति तथा जीवजन्तुहरू लोप हुने अवस्था सिर्जना हुन सक्ने ।</td>
+                                </tr>
+                                <tr>
+                                    <td>ix. पर्यावरण प्रणालीमा बाधा नपुग्ने ।</td>
+                                    <td>ix. मानिसको स्वास्थ्यमा नकारात्मक प्रभाव पर्ने ।</td>
+                                </tr>
+                                <tr>
+                                    <td>x. अनावृष्टि, अतिवृद्धिमा कमी आउने तथा समयमा नै वर्षा हुने ।</td>
+                                    <td>x. जलवायुमा परिवर्तन भई नकारात्मक प्रभाव वातावरणमा पर्ने ।</td>
+                                </tr>
+                                <tr>
+                                    <td>xi. खाद्यान्न उत्पादनमा वृद्धि हुने साथै खाद्यान्नको गुणस्तर कायम हुने ।</td>
+                                    <td>xi. भावी सन्ततिको जीवनमा नकारात्मक प्रभाव पर्न सक्ने ।</td>
+                                </tr>
+                                <tr>
+                                    <td>xii. भावी सन्ततिको जीवनमा नकारात्मक प्रभाव नपर्ने ।</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>xiii. प्राकृतिक वातावरण संरक्षित हुने ।</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <div class="question">
+                    <h4>२. वातावरण संरक्षणमा मानिसको भूमिका बढी जिम्मेवार हुन्छ, आफ्ना विचारहरू प्रस्तुत गर्नुहोस् ।</h4>
+                    <p>वातावरणमा आफै परिवर्तन आउँदैन । जीवजन्तुले परिवर्तन ल्याउन सक्दैन । वातावरणमा परिवर्तन ल्याउने क्षमता मानिसमा छ । मानिसमा बुद्धि र चेतना छ । मानिसबाट विश्वमा नयाँ नयाँ आविष्कारहरू भएका छन् । मानिसलाई सुख सुविधा पुर्याउने देखि घातक हतियारहरूको निर्माण समेत भएको छ । मानिसले आफ्नो बुद्धिले गर्दा चन्द्रमामा खुट्टा टेकेका छन् । हाल अझ नयाँ नयाँ अन्वेषणतिर मानिसले ध्यान पुर्याइरहेका छन् ।</p>
+                    <p>मानिसहरूले गरेका केही कार्यहरूले गर्दा वातावरणमा नकारात्मक प्रभाव परेको छ । नयाँ खेती, बाटोघाटो बनाउन तथा वस्ती बसाल्न वनविनास भएको छ । यसबाट वायुमा अक्सिजनको मात्रा घटन गएको छ । वनविनासले गर्दा वन्यजन्तुको बासस्थानमा नकारात्मक प्रभाव परी कतिपय वन्यजन्तु लोप भएका छन् । कतिपयको अस्तित्वमा खतरा उत्पन्न भएको छ । ठूला ठूला उद्योगहरूबाट विर्सजित ग्याँसहरूले वायु प्रदूषण बढाएको छ । ठूला ठूला वाहन तथा ठूला ठूला उद्योगहरूको आवाजले ध्वनि प्रदूषण बढेको छ । त्यस्तै नदीको दोहन तथा फोहोरमैला नदीमा फाल्नाले जलप्रदूषण बढेको छ ।</p>
+                    <p>यी कामहरू मानिसहरूबाट नै भएका छन् । यसकारण यसलाई सपार्ने जिम्मेवारी पनि मानिसहरूकै हो । यसैले मानिसहरूले वातावरण संरक्षणका लागि उपयुक्त कदमहरू चाल्नु पर्छ । वातावरणको संरक्षण भए मात्र मानिसको अस्तित्वमा आइपर्ने खतरा न्यून हुन्छ । नयाँ नयाँ आविष्कार गर्दा तथा विकास निर्माणका कार्य गर्दा वातावरण संरक्षणको पक्षलाई बिर्सिनु हुँदैन । खाद्दान्न उत्पादन गर्दा जैविक मलको प्रयोग गर्नुपर्छ । यसबाट जीवजन्तुको संरक्षण पनि हुन्छ । वनजङ्गल जोगाउन वृक्षारोपण कार्य गर्नुपर्छ । नाङ्गा डाँडामा घासपात तथा रुखबिरुवा रोप्नाले पहिरो नियन्त्रण हुन्छ । मानिसहरूलाई वातावरण संरक्षणप्रति चेतना वृद्धि गर्ने कार्य पनि मानिसकै हो । आजका मानिसहरूले गरेको वातावरण संरक्षणले भावी पुस्ताले सुखपूर्वक जीवन यापन गर्न पाउँछन् । यसैले संयुक्त राष्ट्रसङ्घले दिगो विकासको अवधारणा ल्याएको हो । नेपालले दिगो विकास अवधारणालाई अङ्गालेर सोको लक्ष्यहरु प्राप्ति गर्न कदम चालेको छ । नेपालमा पनि दिगो विकास अन्तर्गत साक्षरता प्रतिशत वृद्धि गर्ने, बाल मृत्युदर घटाउने, कृषि विकास गर्ने, खाद्यान्न उत्पादनका लागि पकेट क्षेत्र निर्धारण गर्ने, कृषिमा अनुदान दिने, जैविक मलको प्रयोग बढाउने, वृक्षारोपण गर्ने, राष्ट्रिय उधानको स्थापना गर्ने, वन्यजन्तु प्रजन्न केन्द्रको स्थापना गर्ने आदि कार्यहरु भइरहेका छन् ।</p>
+                </div>
+                
+                <div class="question">
+                    <h4>परियोजना कार्य: साथीहरूबिच समूह बनाई वातावरण संरक्षणका लागि कुनै योजना बनाई कार्यन्वयन गर्नुहोस्‌ र अन्तिममा तपाईको योजना र कार्यप्रगति समेटी एक प्रतिवेदन समेत तयार पार्नुहोस्‌।</h4>
+                    <h3>प्रतिवेदन</h3>
+                    <p>हामीहरूले खाली भएको सरकारी जग्गामा वृक्षारोपण गर्ने योजना बनायौं । त्यस जग्गाको रुखबिरुवा, घाँसपात मानिसहरूले मासेर सखाप बनाएका छन्‌ । हामी साथीहरू मिली ११ जनाको एउटा समूह बनायौँ । प्रत्येक शनिवारका दिन प्रत्येकले १/१ वटा विरुवा रोप्ने विचार गर्यौं । ६ महिना पछि हामीले त्यहाँ सयभन्दा बढी विरुवाहरू सप्रेको देख्यौँ । चराचुरुङ्गीहरू झुम्मेको पनि देख्यौँ ।</p>
+                    <p>वातावरण संरक्षणप्रति हाम्रो पनि जिम्मेवारी छ भन्ने सोचेर हामीहरूले कक्षाका ११ जनाको एउटा समूह बनाई खाली भएको सरकारी जग्गामा वृक्षारोपण गर्ने योजना बनायौं । हरेक शनिवारका दिन प्रत्येक जनाले घटीमा एक एक वटा बिरुवा ल्याएर रोप्ने योजना बनायौं । त्यसपछि प्रत्येक शनिवार हामीले १/१ विरुवा रोप्न थाल्यौं । हप्ताका बिचमा समय निकालेर पानी हाल्ने र रेखदेख गर्ने काम गरियो । त्यस छेउकै वस्तीका मानिसहरूलाई हेरचाह गर्न अनुरोध गर्यौं । ६ महिना पछि रुख विरुवाहरू बढेछन्‌ । केटाकेटीहरू खेल्न थालेका छन्‌ । चराचुरुङ्गीहरू रमाउन थालेको देखियो । हेर्दा पनि कति रमाइलो मनै आनन्द हुने वातावरण पाइयो ।</p>
+                </div>
+            </div>
+
+            <div class="app-download">
+                <p>यी र यस्ता अन्य नोटहरू अफलाइन हेर्नका लागि हाम्रो एन्ड्रोइड एप डाउनलोड गर्नुहोस्।</p>
+                <a href="#" class="app-button">अहिले नै डाउनलोड गर्नुहोस्</a>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
