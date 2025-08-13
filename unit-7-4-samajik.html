@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>बहुसांस्कृतिक र सामाजिक एकता - नेपाली नोटस्</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&family=Lora:wght@700&display=swap');
+
+        :root {
+            --primary-color: #004d40; /* Dark Teal */
+            --secondary-color: #ff9800; /* Orange */
+            --background-color: #e0f2f1; /* Light Cyan */
+            --text-color: #00332e; /* Very Dark Teal */
+            --light-text-color: #26a69a; /* Medium Teal */
+            --card-background: #ffffff;
+            --border-radius: 12px;
+            --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --transition-speed: 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Mukta', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        header {
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary-color), #4db6ac);
+            color: #fff;
+            padding: 40px 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        header h1 {
+            font-family: 'Lora', serif;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .section {
+            background-color: var(--card-background);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            font-family: 'Lora', serif;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+        
+        .question {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+        
+        .question h4 {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .question p, .question ul {
+            font-size: 1rem;
+            color: var(--light-text-color);
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .question ul {
+            margin-top: 10px;
+            list-style-type: disc;
+        }
+
+        .question li {
+            margin-bottom: 8px;
+        }
+
+        .sub-heading {
+            font-family: 'Lora', serif;
+            font-size: 1.2rem;
+            color: var(--text-color);
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+
+        .app-download {
+            text-align: center;
+            padding: 30px;
+            background-color: var(--primary-color);
+            color: #fff;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .app-download p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .app-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .app-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                gap: 20px;
+            }
+            header {
+                padding: 30px 15px;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            .section {
+                padding: 20px;
+            }
+            .section h2 {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+            }
+            .question h4 {
+                font-size: 1rem;
+            }
+            .app-download {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>बहुसांस्कृतिक र सामाजिक एकता</h1>
+            <p>कक्षा ११ - नेपाली</p>
+        </header>
+
+        <main>
+            <div class="section">
+                <h2>अभ्यास</h2>
+                
+                <div class="question">
+                    <h4>१. तपाईंको समुदायमा भएका विविधताको सूची बनाई त्यहाँ भएको एकताको उदाहरणहरू प्रस्तुत गर्नुहोस् ।</h4>
+                    <p>हाम्रो समुदायमा भएका विविधताहरू:</p>
+                    <p>हाम्रो समुदायमा विभिन्न जातजातिहरू जस्तै ब्राह्मण, क्षेत्रीय, नेवार, राई, लिम्बू, मुसलमान, यादव, हजाम, थारु, लामा, सन्यासी आदिको बसोबास छ। यहाँ कृष्णमन्दिर, शिवमन्दिर, मस्जिद, चर्चहरू लगायत विभिन्न धार्मिक स्थलहरू छन्। दशैं, तिहार, माघे सङ्क्रान्ति, इद, ल्होसार, बुद्ध पूर्णिमा, शिवरात्री जस्ता अनेकौं चाडपर्वहरू मनाइन्छ।</p>
+                    <p>हाम्रो समुदायमा भएको एकताको उदाहरणहरू:</p>
+                    <p>हाम्रो समुदायमा मन्दिरकै छेउमा मस्जिद र चर्च छन्। चर्चमा प्रार्थना गरिरहँदा मन्दिरमा शंख बजिरहन्छ। हिन्दू धर्मावलम्बीहरूले आफ्नो प्रवचन कार्यक्रम गर्दा, मुसलमानका मौलवीहरूले मस्जिदमा आफ्नो धर्मबारे प्रवचन दिन्छन्। इसाईहरूले क्रिसमस मनाउँछन्। कुनै पनि धर्मावलम्बीले अर्को धर्मावलम्बीको कार्यक्रममा बाधा पुर्याउँदैनन्। कुनै पनि कार्यक्रम आयोजना गर्दा सबैको सहयोग लिइन्छ। समाजमा हुने न्वारान, पास्नी, ब्रतबन्ध, विवाह जस्ता संस्कारहरूमा छिमेकीहरूलाई जात हेरेर होइन, छिमेकीको नाताले निमन्त्रणा दिइन्छ। मलामी जाँदा छिमेकीहरूले जात हेर्दैनन्। छिमेकी भनेको सधैं चाहिने कुरा हो भन्ने भावना हामीमा छ। यसैले हामी सबै मिलेर शान्तिपूर्वक, एकआपसमा सद्भाव र समानुभूति राखी बसेका छौं।</p>
+                </div>
+                
+                <div class="question">
+                    <h4>२. बहुसांस्कृतिकता नै नेपालीको पहिचान हो यस भनाइलाई पुष्टि गर्नुहोस् ।</h4>
+                    <p>नेपाल एक बहुल जाति, बहुभाषी, बहुसंस्कृति र बहुधार्मिक सम्प्रदाय भएको देश हो। यस देशको पहिचान नेपालको राष्ट्रिय गीतले नै गराउँछ। मेचीदेखि महाकालीसम्म फैलिएको हाम्रो देशमा हिमाल, पहाड र तराई गरी बहु भौगोलिक क्षेत्र छन्। यहाँ ब्राह्मण, क्षेत्री, नेवार, राई, मगर, लिम्बू, थारु, यादव, मुसलमान, छत्याल आदि बहुजातिको बसोबास छ। जसरी फूलैफूल गुँथेर एउटा सुन्दर माला बन्छ, त्यसरी नै यहाँका बहुजातीय संस्कृति मिलेर नेपाल बनेको छ।</p>
+                    <p>जसरी मालामा गुँथिएका फूलहरूको आफ्नै पहिचान हुन्छ र समग्रमा मिलेर पनि अलग पहिचान, त्यसरी नै विभिन्न जातिको संस्कृतिको आफ्नै पहिचान छ तर समग्रमा मिलेर नेपालीको पहिचान बनेको छ। भक्तपुरमा मनाइने गाईजात्राको रौनक, काठमाडौँको घोडेजात्रा, किराँतीहरूको उधौँली र उभौँलीमा झ्यालीझ्याम्टाको स्वर, ब्राह्मणहरूले गाएको वालन, तराईमा मनाइने होली, हिमाली भेगमा मनाइने ल्होसार, बुद्ध जयन्ती लगायतका चाडपर्वहरूले नेपालको विविधतापूर्ण संस्कृतिलाई झल्काउँछन्। होलीले भिन्न भिन्न रङ्गहरू मिलेर एउटै रङ्ग बन्छ, जसले सबै मिलेर समाज सुखमय बनाउनुपर्छ भन्ने सन्देश दिन्छ। यी सबै नेपालमा बसोबास गर्ने नेपालीका संस्कृति हुन्। विभिन्न जातिका फूल उनिएर एउटै माला बनेझैं विभिन्न क्षेत्रमा रहने जातजातिको आफ्नो मौलिक परम्परा, रीतिरिवाज, संस्कृति मिलेर एउटै नेपालीको पहिचान दर्शाउँछ। यसैले भन्छन् बहुसंस्कृति नै नेपालीको पहिचान हो।</p>
+                </div>
+            </div>
+
+            <div class="app-download">
+                <p>यी र यस्ता अन्य नोटहरू अफलाइन हेर्नका लागि हाम्रो एन्ड्रोइड एप डाउनलोड गर्नुहोस्।</p>
+                <a href="#" class="app-button">अहिले नै डाउनलोड गर्नुहोस्</a>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
