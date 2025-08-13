@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>नेपालका पर्यावरणीय क्षेत्रहरु - नेपाली नोटस्</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&family=Lora:wght@700&display=swap');
+
+        :root {
+            --primary-color: #004d40; /* Dark Teal */
+            --secondary-color: #ff9800; /* Orange */
+            --background-color: #e0f2f1; /* Light Teal */
+            --text-color: #00251a; /* Very Dark Teal */
+            --light-text-color: #4db6ac; /* Muted Teal */
+            --card-background: #ffffff;
+            --border-radius: 12px;
+            --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --transition-speed: 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Mukta', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        header {
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary-color), #26a69a);
+            color: #fff;
+            padding: 40px 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        header h1 {
+            font-family: 'Lora', serif;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .section {
+            background-color: var(--card-background);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .section h2 {
+            font-family: 'Lora', serif;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+
+        .subsection h3 {
+            font-family: 'Lora', serif;
+            font-size: 1.4rem;
+            color: var(--secondary-color);
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+
+        .question {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .question h4 {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .question p, .question ul {
+            font-size: 1rem;
+            color: var(--light-text-color);
+            padding-left: 20px;
+        }
+
+        .question ul {
+            margin-top: 10px;
+            list-style-type: disc;
+        }
+
+        .question li {
+            margin-bottom: 8px;
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: white;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .app-download {
+            text-align: center;
+            padding: 30px;
+            background-color: var(--primary-color);
+            color: #fff;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .app-download p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .app-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .app-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                gap: 20px;
+            }
+            header {
+                padding: 30px 15px;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            .section {
+                padding: 20px;
+            }
+            .section h2 {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+            }
+            .subsection h3 {
+                font-size: 1.2rem;
+            }
+            .question h4 {
+                font-size: 1rem;
+            }
+            .app-download {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>नेपालका पर्यावरणीय क्षेत्रहरु</h1>
+            <p>कक्षा ११ - नेपाली</p>
+        </header>
+
+        <main>
+            <div class="section">
+                <h2>अभ्यास</h2>
+                
+                <div class="question">
+                    <h4>१. नेपालको भौगोलिक प्रदेश अनुसारका बिशेषताहरु तलको तालिकामा भर्नुहोस् ।</h4>
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>प्रदेश</th>
+                                    <th>भौगोलिक</th>
+                                    <th>जन्संखियक</th>
+                                    <th>आर्थिक</th>
+                                    <th>सामाजिक तथा सांस्कृतिक</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>हिमाली</td>
+                                    <td>उच्च पर्वतीय क्षेत्र, अग्ला पर्वतमा हिउँ पर्ने, बढी चिसो हुने, २८०० मि. देखि ८८४८.८६ मि. सम्म अग्लो भूभाग रहेको ।</td>
+                                    <td>शेर्पा, भोटे, मुगाली, डोल्पालीको बसोबास पातलो बस्ती ।</td>
+                                    <td>कोदो, फापर, उवा आदिको खेती, कृषि विकासको सम्भावना न्यून, चौरी, भेडा पाल्ने काम, च्याउ खेतीको विकास हुँदै ।</td>
+                                    <td>शेर्पा, भोटे, मुस्ताङ्गी, मनाङ्गी आदि जातिको बसोबास, बौद्ध जन्ती, ल्होसार, मनिरिम्दु, दसैं तिहार आदि चाडपर्व मनाइने ।</td>
+                                </tr>
+                                <tr>
+                                    <td>पहाडी</td>
+                                    <td>६०० मि. देखि २८०० मि. सम्मको अग्लो भूभाग होचो अग्लो पर्वतीय क्षेत्र । कहिँ कहिँ वेंसी र उपत्यका भएको, गर्मीमा कम गर्मी तर जाडो मा केही बढी जाडो ।</td>
+                                    <td>पूर्वी पहाडमा राई, लिम्बु, मध्य भागमा तामाङ, नेवार, गुरुङ, पश्चिममा मगर बढी । बाहुन, क्षेत्री, दलित आदि सबैतिर छरिएर रहेका ।</td>
+                                    <td>तरकारी खेती, गहुँ, फापर, कोदो, मकै, भटमास, सुन्तला आदिको खेती, घरेलु उद्योग, पशुपालन, व्यापार तथा सेवा व्यवसाय चलेको ।</td>
+                                    <td>विभिन्न जातिहरूको बसोबास भएकोले बहुसांस्कृतिक समाज, हिन्दु धर्म, बौद्ध धर्म बढी प्रचलन, दशैं-तिहार, उभौली उधौली, शिवरात्री, तिज आदि चाड पर्व मनाइने साथै विभिन्न थरिका नाच र जात्रा प्रचलनमा रहेको ।</td>
+                                </tr>
+                                <tr>
+                                    <td>तराई</td>
+                                    <td>५९ मि. देखि ६०० मि. सम्म अग्लो भूभाग । समथर क्षेत्र गर्मीमा केही गर्मी तर जाडोमा बढी जाडो नहुने कतै कतै शितलहर चल्ने ।</td>
+                                    <td>यातायात, सञ्चार, उद्योग आदिको विकासले बाक्लो वस्ती भएको । बाक्लो जनघनत्व भएको क्षेत्र ।</td>
+                                    <td>प्रशस्त खेतीपाती हुने, खाद्यान्न तथा नगदे बालीको उत्पादन, ठूलाठूला कलकारखाना सञ्चालन, व्यापार र सेवा व्यवसाय चलेको, पशुपालन पनि रहेको छ ।</td>
+                                    <td>बाहुन, क्षेत्री, मुसल्मान, दलित, राइ, लिम्बु, यादव, मारवाडी आदि विभिन्न जातिको बसोबास । हिन्दूधर्म, बौद्ध धर्म र हाल इसाई धर्म पनि प्रचलित रहेको । दशैं, तिहार, छठ, इद, लाखेजात्रा आदिको प्रचलन, जातिगत सांस्कृतिक कार्यक्रम हुने गरेको ।</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <div class="question">
+                    <h4>२. ‘नेपालको भौगोलिक अवस्थाको उपयोग गर्न सके नेपाल विश्वकै सम्पन्न देश बन्न सक्छ ।‘ यस भनाइलाई उदाहरण दिएर पुष्टि गर्नुहोस् ।</h4>
+                    <p>नेपालमा विकासको सम्भावना बढी छ । हाम्रो देशमा रहेको विभिन्न भौगोलिक अवस्थाको सदुपयोग गर्न योजना चाहिएको छ ।</p>
+                    <p><strong>हिमाली प्रदेश:</strong> पर्वतारोहण, पदयात्रा आदि पर्यटनको सम्भावना छ । विदेशीहरु हिमाली दृश्य अवलोकन गर्न चाहन्छन्, त्यसलाई प्रोत्साहित गर्नुपर्छ । हिमाली क्षेत्रमा जडीबुटी खेती व्यवसायिक रुपमा विकास गर्न सकिन्छ । यार्सागुम्बा जस्ता अन्य महङ्गा जडीबुटीको खेती विस्तार गर्न सकिन्छ । लेकाली घाँस पाइने ठाउँमा चौरी, भेडा तथा च्याङ्ग्रा पाल्न सकिन्छ । कतै कतै अलपाका पाल्न थालिएको पनि समाचार सुनिन्छ । चौरीको दूधबाट चीज र छुर्पी बनाई निर्यात गर्न सकिन्छ । ठण्डा प्रदेश भएकाले यहाँ स्याउ, केशर, अङ्गुर आदिको फलफूल खेती गर्न सकिन्छ । हिमाली छाँगो र नदीबाट प्रशस्त जलविद्युत उत्पादन गर्न सकिन्छ । जलविद्युत् छिमेकी देशहरूमा निर्यात गरी हामी प्रशस्त आयआर्जन गर्न सक्छौं ।</p>
+                    <p><strong>पहाडी क्षेत्र:</strong> चिया, अलैंची, भटमास, कफी, किवी आदि खेतीको विकास गर्न सकिन्छ । रमणीय प्राकृतिक दृश्य अवलोकनका लागि पदयात्रा कार्यक्रम सञ्चालन गर्न सकिन्छ । कतिपय ठाउँबाट सूर्योदयको दृश्य हेर्नका लागि भ्यूटावर बनाई पर्यटक आकर्षित गर्न सकिन्छ । र्याफ्टिङ, प्याराग्लाइडिङ, बन्जी जम्प, क्यानोइङ्ग जस्ता साहसिक पर्यटनको सम्भावना पनि प्रशस्त छ । विभिन्न स्थानमा रहेका धार्मिक स्थान अवलोकनका लागि धार्मिक पर्यटन विकास गर्न सकिन्छ । पहाडी भूभागमा गाई वस्तु र बाख्रा पालन पनि आयस्रोत बन्न सक्छ । यहाँ उम्रने लोक्ताबाट कागज तयार गरिँदैछ र यसलाई अझ विकास गर्न सकिन्छ । कतिपय औषधिजन्य तथा मसलाजन्य रुख विरुवाहरूको खेती विकास गर्न सकिन्छ ।</p>
+                    <p><strong>तराई क्षेत्र:</strong> तराई क्षेत्र समथर छ । यहाँ नदीले ओछ्याएको मलिलो माटो पाइन्छ । यहाँ प्रशस्त खेतीपाती हुन्छ । यहाँ खाद्यान्न र नगदेबालीको खेती हुन्छ । कृषि विकासका लागि योजनाहरू कार्यान्वयन गरिएमा तराईमा प्रशस्त खाद्यान्न उत्पादन गरी देशलाई खाद्यान्नमा आत्मनिर्भर बनाउन सकिन्छ । यसबाट खाद्यान्न आयातबाट हुने नोक्सानी जोगाउन सकिन्छ । तराईमा बगेका नदीनालाका पानीलाई सिंचाइमा प्रयोग गरी खेती विकास गर्न सकिन्छ । नदी तथा पोखरीमा माछा पालन विकास गर्न सकिन्छ । तराई क्षेत्रमा कुखुरा पालन, गाईवस्तु पालन, बाख्रापालन आदि पनि विकास गर्न सकिन्छ । तराईमा बाक्लो जनसङ्ख्या भएकाले उत्पादित वस्तुको खपत सजिलै हुन सक्छ । उखु, जुट, चिया जस्ता नगदे बालीको उत्पादनमा वृद्धि गरी चिनी मिल, जुट मिल र चिया उद्योग बढाई रोजगारी सृजना गर्न सकिन्छ । तराई र भित्री मधेशमा रहेका वनहरूलाई उपयोग गरी राष्ट्रिय उधान स्थापित गरी स्वदेशी तथा विदेशी पर्यटकहरू आकर्षित गर्न सकिन्छ । उद्योगलाई व्यवस्थित गरी गुणस्तरमा सुधार गर्दै लगेमा हामी उत्पादित सामानहरू निर्यात गर्न पनि सक्छौं । तराईमा रहेका जानकी मन्दिर, गढीमाई, छिन्नमस्ता जस्ता धार्मिक स्थलहरूमा धार्मिक पर्यटक विकास गर्न सकिन्छ ।</p>
+                </div>
+                
+                <div class="question">
+                    <h4>परियोजना कार्य: आफू बसेको भौगोलिक क्षेत्रका विशेषताहरू उल्लेख गर्दै एक लेख तयार पार्नुहोस्‌ ।</h4>
+                    <p>म तराई प्रदेशमा बस्छु । म बसेको ठाउँको केही भौगोलिक विशेषताहरू निम्नलिखित छन्:</p>
+                    <ul>
+                        <li>म बसेको ठाउँ समथर छ । यहाँ हिडडुल गर्न सजिलो छ ।</li>
+                        <li>समथर क्षेत्र भएको र मलिलो माटो भएकोले यहाँ प्रशस्त खाद्यान्न उत्पादन हुन्छ । यहाँ धान, मकै, कोदो, गहुँ र थरिथरिका दालहरूको उत्पादन गरिन्छ।</li>
+                        <li>यहाँ गर्मीमा बढी गर्मी हुन्छ र प्रशस्त पानी पर्छ । वर्षायाममा बाढीको सम्भावना भइरहन्छ ।</li>
+                        <li>जाडोमा बढी जाडो त हुँदैन तर हुस्सु लाग्छ र कहिलेकाहिँ शीतलहरले दु:ख दिन्छ ।</li>
+                        <li>भूमिगत पानी सजिलै उपलब्ध हुने हुँदा यहाँ खानेपानीको अभाव हुँदैन ।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="app-download">
+                <p>यी र यस्ता अन्य नोटहरू अफलाइन हेर्नका लागि हाम्रो एन्ड्रोइड एप डाउनलोड गर्नुहोस्।</p>
+                <a href="#" class="app-button">अहिले नै डाउनलोड गर्नुहोस्</a>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
