@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>जात, जनजाति - नेपाली नोटस्</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&family=Lora:wght@700&display=swap');
+
+        :root {
+            --primary-color: #4a148c; /* Purple */
+            --secondary-color: #ffc107; /* Amber */
+            --background-color: #f3e5f5; /* Light Purple */
+            --text-color: #311b92; /* Darker Purple */
+            --light-text-color: #673ab7; /* Medium Purple */
+            --card-background: #ffffff;
+            --border-radius: 12px;
+            --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --transition-speed: 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Mukta', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        header {
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary-color), #ab47bc);
+            color: #fff;
+            padding: 40px 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        header h1 {
+            font-family: 'Lora', serif;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .section {
+            background-color: var(--card-background);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            font-family: 'Lora', serif;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+        
+        .question {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+        
+        .question h4 {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .question p, .question ul {
+            font-size: 1rem;
+            color: var(--light-text-color);
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .question ul {
+            margin-top: 10px;
+            list-style-type: disc;
+        }
+
+        .question li {
+            margin-bottom: 8px;
+        }
+        
+        .sub-heading {
+            font-family: 'Lora', serif;
+            font-size: 1.2rem;
+            color: var(--text-color);
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+
+        .app-download {
+            text-align: center;
+            padding: 30px;
+            background-color: var(--primary-color);
+            color: #fff;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .app-download p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .app-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .app-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                gap: 20px;
+            }
+            header {
+                padding: 30px 15px;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            .section {
+                padding: 20px;
+            }
+            .section h2 {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+            }
+            .question h4 {
+                font-size: 1rem;
+            }
+            .app-download {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>जात, जनजाति</h1>
+            <p>कक्षा ११ - नेपाली</p>
+        </header>
+
+        <main>
+            <div class="section">
+                <h2>अभ्यास</h2>
+                
+                <div class="question">
+                    <h4>१. नेपाल बहुजातीय, बहुभाषिक र बहुसांस्कृतिक मुलुक हो ।’ यस भनाइलाई पुष्टि गर्नुहोस् ।</h4>
+                    <p>नेपाल एक बहुजातीय, बहुभाषिक र बहुसांस्कृतिक देश हो भन्ने कुरालाई निम्न बुँदाहरूले पुष्टि गर्दछन्:</p>
+                    <p><strong>बहुजातीय:</strong></p>
+                    <p>यस देशमा सयभन्दा बढी जातजातिका मानिसहरू शान्तिपूर्वक बसोबास गरिरहेका छन् । यहाँ शेर्पा, नेवार, थकाली, ब्राह्मण, क्षेत्री, सुनुवार, यादव, धानुक, राई, लिम्बू, मगर, गुरुङ आदि जस्ता धेरै जातिहरू छन् । यसै कारण नेपाललाई बहुजातीय देश भनिन्छ।</p>
+                    <p><strong>बहुभाषिक:</strong></p>
+                    <p>नेपालमा बसोबास गरिरहेका विभिन्न जातजातिहरूको आफ्नै भाषा छ । राई, लिम्बू, नेवार, मगर, गुरुङ, थकाली, भोटे, शेर्पा, चेपाङ, आदि लगायतका जातिहरूबाट नेपालमा सयभन्दा बढी भाषाहरू बोलिन्छन् । यसले नेपाल एक बहुभाषिक मुलुक हो भन्ने कुरालाई प्रमाणित गर्दछ।</p>
+                    <p><strong>बहुसांस्कृतिक:</strong></p>
+                    <p>नेपालमा बसोबास गरिरहेका विभिन्न जातजातिहरूको आ-आफ्नै सांस्कृतिक परम्परा छ । नेवारहरूले भोटो जात्रा, बिस्केट जात्रा, लाखे जात्रा, गाईजात्रा जस्ता चाडपर्वहरू मनाउँछन् । यसबाहेक दशैं, तिहार, माघे सङ्क्रान्ति, फागु, ल्होसार, गौरा पर्व आदि विभिन्न चाडपर्वहरू पनि मनाइन्छ । यहाँ हिन्दू, बौद्ध, इस्लाम लगायतका अन्य धर्मावलम्बीहरू पनि बसोबास गर्छन् र एकले अर्काको धर्मप्रति सम्मान गर्ने गरेका छन् । यहाँ शैव, शाक्त, वैष्णव, जैन, बौद्ध आदि विभिन्न सम्प्रदायका मानिसहरूको बसोबास छ । यसैले नेपाल बहुसांस्कृतिक देश हो।</p>
+                </div>
+                
+                <div class="question">
+                    <h4>२. समाजमा जातीय र क्षेत्रीय विविधताका कारण प्राप्त हुने अवसरहरूको सूची तयार पार्नुहोस् ।</h4>
+                    <p>नेपाली समाजमा विभिन्न जातीय र क्षेत्रीय विविधताका कारण प्राप्त हुने अवसरहरूलाई तल सूचीबद्ध गरिएको छ:</p>
+                    <h5 class="sub-heading">जातीय विविधताका कारण प्राप्त हुने अवसर:</h5>
+                    <ul>
+                        <li>जातीय विविधताले नेपाललाई बहुजातीय मुलुक बनाएको छ।</li>
+                        <li>विविध जातिको आ-आफ्नो पेशाले गर्दा हाम्रो सामाजिक तथा धार्मिक आवश्यकताहरू पूरा भएका छन्।</li>
+                        <li>पहाडी क्षेत्रका निडर तथा परिश्रमी जातजातिहरूले सुरक्षा कार्यमा सेनामा अवसर पाएका छन्।</li>
+                        <li>हिमाली क्षेत्रका शेर्पा जातिहरू पर्वतारोहणमा सहयोग गरी जीविका उपार्जन गर्ने गरेका छन्।</li>
+                        <li>विविध सांस्कृतिक गतिविधिहरूले विदेशी पर्यटकहरूलाई आकर्षित गर्न सकेको छ।</li>
+                        <li>सुनचाँदीका गरगहना बनाउने कालीगढहरूको सीपलाई तालिम दिएमा नेपालबाट गरगहना निर्यात गरी विदेशी मुद्रा आर्जन गर्न सकिन्छ।</li>
+                        <li>विविध जातिहरूको सांस्कृतिक परम्पराले गर्दा नेपाल विदेशी पर्यटकहरूको गन्तव्य स्थान बनेको छ।</li>
+                    </ul>
+                    <h5 class="sub-heading">क्षेत्रीय विविधताबाट प्राप्त हुने अवसर:</h5>
+                    <ul>
+                        <li>क्षेत्रीय विविधताले गर्दा यहाँ विभिन्न हावापानी पाइन्छ, जसले विविध प्रकारका अन्नबालीहरू उत्पादन हुन सहज भएको छ।</li>
+                        <li>तराईमा बढी उत्पादन भएको अन्न देशको सबै भागमा पुगेको छ, जसले भोकमरी हटेको छ।</li>
+                        <li>पहाडी क्षेत्रमा उत्पादन हुने नगदे बाली (चिया, अलैँची, अम्रिसो आदि) तथा फलफूलले देशको तराई भागसम्म ठाउँ पाएको छ र बढी बाली निर्यात पनि गरिन्छ।</li>
+                        <li>अग्ला हिमाली क्षेत्रले स्वदेशी तथा विदेशी पर्वतारोहीहरूलाई आकर्षित गरेको छ।</li>
+                        <li>क्षेत्रीय विविधताले गर्दा भएको प्राकृतिक सुन्दरता अवलोकन गर्न विदेशीहरू समेत आउने गरेका छन्।</li>
+                        <li>पहाडी क्षेत्रबाट बगेका नदीहरूले जलविद्युत् उत्पादनमा सहयोग गरेको छ।</li>
+                        <li>पहाडी क्षेत्रमा पाइएका खनिज वस्तुले उद्योग सञ्चालन (सिमेन्ट) मा सहयोग गरेको छ।</li>
+                        <li>तराईमा उत्पादन भएको नगदेबाली (जुट, चिया, सुर्ती, उखु, कफी आदि) ले उद्योगहरूको स्थापना भएको छ।</li>
+                        <li>पहाडी क्षेत्रमा उत्पादन हुने जडीबुटीहरूले औषधि निर्माणमा सहयोग गरेका छन्।</li>
+                        <li>पहाडी तथा तराई क्षेत्रको कृषिलाई आधुनिकीकरण गरी देशलाई खाद्यान्नमा आत्मनिर्भर बनाउन सकिन्छ।</li>
+                        <li>तराईमा यातायात, स्वास्थ्य, सञ्चार, विद्युत्, उद्योग सेवाको विकास गरी रोजगारीको अवसर सृजना गर्न सकिन्छ।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="app-download">
+                <p>यी र यस्ता अन्य नोटहरू अफलाइन हेर्नका लागि हाम्रो एन्ड्रोइड एप डाउनलोड गर्नुहोस्।</p>
+                <a href="#" class="app-button">अहिले नै डाउनलोड गर्नुहोस्</a>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
