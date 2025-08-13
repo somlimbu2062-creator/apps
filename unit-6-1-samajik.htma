@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>विश्व इतिहासको लेखन र मूल प्रवृत्ति - नेपाली नोटस्</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&family=Lora:wght@700&display=swap');
+
+        :root {
+            --primary-color: #4a148c; /* Deep Purple */
+            --secondary-color: #ffeb3b; /* Yellow */
+            --background-color: #f3e5f5; /* Light Purple */
+            --text-color: #311b92; /* Darker Purple */
+            --light-text-color: #7e57c2; /* Muted Purple */
+            --card-background: #ffffff;
+            --border-radius: 12px;
+            --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --transition-speed: 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Mukta', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        header {
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary-color), #ab47bc);
+            color: #fff;
+            padding: 40px 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        header h1 {
+            font-family: 'Lora', serif;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .section {
+            background-color: var(--card-background);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .section h2 {
+            font-family: 'Lora', serif;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+
+        .question {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .question h4 {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .question p, .question ul {
+            font-size: 1rem;
+            color: var(--light-text-color);
+            padding-left: 20px;
+        }
+
+        .question ul {
+            margin-top: 10px;
+            list-style-type: disc;
+        }
+
+        .question li {
+            margin-bottom: 8px;
+        }
+        
+        .app-download {
+            text-align: center;
+            padding: 30px;
+            background-color: var(--primary-color);
+            color: #fff;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .app-download p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .app-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .app-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                gap: 20px;
+            }
+            header {
+                padding: 30px 15px;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            .section {
+                padding: 20px;
+            }
+            .section h2 {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+            }
+            .question h4 {
+                font-size: 1rem;
+            }
+            .app-download {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>विश्व इतिहासको लेखन र मूल प्रवृत्ति</h1>
+            <p>कक्षा ११ - नेपाली</p>
+        </header>
+
+        <main>
+            <div class="section">
+                <h2>अभ्यास</h2>
+                
+                <div class="question">
+                    <h4>१. इतिहास कसरी लेखिन्छ, उल्लेख गर्नुहोस् ।</h4>
+                    <p>इतिहास भनेको विगतको घटना हो । विगतका यथार्थ घटनाहरूलाई समेटेर इतिहास लेखिन्छ । इतिहास लेख्दा निम्नलिखित कुराहरू क्रमिक रूपमा मिलाई इतिहासकारले आवश्यक परेमा विज्ञहरूसँग सल्लाह लिई इतिहास लेख्छन्:</p>
+                    <ul>
+                        <li>पहिले घटेका घटनाहरूको स्थान, घटनाको प्रवृत्ति र घटनाको वर्णन ।</li>
+                        <li>घटेको घटनाको समय (तिथि वा मिति) ।</li>
+                        <li>घटेका घटनाहरूको क्रम मिलाउने ।</li>
+                        <li>घटनासँग सम्बन्धित पक्षहरू ।</li>
+                        <li>घटना हुने सत्यतथ्य कारण ।</li>
+                        <li>घटनाबाट परेको प्रभाव ।</li>
+                        <li>घटना सम्बन्धित चित्र तथा अन्य लिखित मौखिक जानकारी ।</li>
+                    </ul>
+                </div>
+                
+                <div class="question">
+                    <h4>२. इतिहास लेखनका मूल प्रवृत्तिहरूका बारेमा छोटकरीमा उल्लेख गर्नुहोस् ।</h4>
+                    <p>समयको प्रवाहमा मानिससँग सम्बन्धित घटनाहरू वा जानकारीहरू मेटिएर वा बिर्सिएर नजाओस् भनी इतिहास लेखिन्छ । भावी पुस्ताले विगतमा भएका घटनाबारेमा जानकारी पाउँछन् । आफ्ना पूर्वजहरूको कामबारे थाहा पाउँछन् । उनीहरूले स्थापित गरेका मूल्य र मान्यताहरूबाट सिको लिन्छन् । असल कामको गौरव गर्छन् । उनीहरूबाट भएको गल्तीलाई भविष्यमा आफूहरूले नगर्ने सिको सिक्छन् । अग्रजहरूले दिएको प्रेरणाबाट असल बाटोमा हिड्न सचेत हुन्छन् ।</p>
+                    <p>इतिहास लेख्ने निम्न प्रवृत्तिहरू देखिएका छन्:</p>
+                    <ul>
+                        <li><strong>पहिलेका घटनाहरूको सङ्ग्रहको रूपमा (Antecedents Trend):</strong> यो प्रवृत्तिमा विगतका घटनाहरूलाई समयको क्रमअनुसार विवरण मात्र टिपेर जस्ताको तस्तै सङ्ग्रह गरी इतिहास तयार गरिन्छ। यसमा घटनाप्रति कुनै विश्लेषण गरिएको हुँदैन ।</li>
+                        <li><strong>विश्लेषणात्मक इतिहास लेखन (Annalistic Trend):</strong> यो प्रवृत्तिका जन्मदाता रोमन इतिहासकार ग्नायस जेलियस हुन् । यो प्रवृत्तिमा कुनै घटना वा तथ्य जहिलेसम्म र जसरी विकसित हुँदै जान्छ तबसम्म त्यसको अध्ययन र विश्लेषण गर्दै त्यसका बारेमा विस्तारमा इतिहास लेख्ने क्रम भइरहन्छ।</li>
+                        <li><strong>प्रबन्धात्मक लेखन प्रवृत्ति (Monographic Trend):</strong> यो प्रवृत्ति विश्वभरि प्रचलित छ । यो प्रवृत्तिमा इतिहास लेख्दा ऐतिहासिक घटना वा विषयवस्तुलाई विशेष लेखका रूपमा इतिहासकारको धारणा पनि मिसाएर प्रस्तुत गरिन्छ । यसबाट इतिहास पढ्ने पाठकले इतिहास लेख्ने इतिहासकारको धारणा अनुसार नै आफ्नो धारणा विकसित गर्छ ।</li>
+                        <li><strong>वैज्ञानिक प्रवृत्ति (Scientific Trend):</strong> यो प्रवृत्तिमा तथ्य तथा प्रमाणहरू खोजी गरी सोका आधारमा विषयवस्तुको व्याख्या गरी विश्लेषण गर्दै इतिहास लेख्ने गरिन्छ ।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="app-download">
+                <p>यी र यस्ता अन्य नोटहरू अफलाइन हेर्नका लागि हाम्रो एन्ड्रोइड एप डाउनलोड गर्नुहोस्।</p>
+                <a href="#" class="app-button">अहिले नै डाउनलोड गर्नुहोस्</a>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
