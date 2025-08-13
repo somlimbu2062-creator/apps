@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>लोकतन्त्र - नेपाली नोटस्</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&family=Lora:wght@700&display=swap');
+
+        :root {
+            --primary-color: #1b5e20; /* Dark Green */
+            --secondary-color: #fdd835; /* Yellow */
+            --background-color: #e8f5e9; /* Light Green */
+            --text-color: #004d40; /* Dark Teal */
+            --light-text-color: #4caf50; /* Muted Green */
+            --card-background: #ffffff;
+            --border-radius: 12px;
+            --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --transition-speed: 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Mukta', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        header {
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary-color), #81c784);
+            color: #fff;
+            padding: 40px 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        header h1 {
+            font-family: 'Lora', serif;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .section {
+            background-color: var(--card-background);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .section h2 {
+            font-family: 'Lora', serif;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+
+        .question {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .question h4 {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .question p, .question ul {
+            font-size: 1rem;
+            color: var(--light-text-color);
+            padding-left: 20px;
+        }
+
+        .question ul {
+            margin-top: 10px;
+            list-style-type: disc;
+        }
+
+        .question li {
+            margin-bottom: 8px;
+        }
+        
+        .app-download {
+            text-align: center;
+            padding: 30px;
+            background-color: var(--primary-color);
+            color: #fff;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .app-download p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .app-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .app-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                gap: 20px;
+            }
+            header {
+                padding: 30px 15px;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            .section {
+                padding: 20px;
+            }
+            .section h2 {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+            }
+            .question h4 {
+                font-size: 1rem;
+            }
+            .app-download {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>लोकतन्त्र</h1>
+            <p>कक्षा ११ - नेपाली</p>
+        </header>
+
+        <main>
+            <div class="section">
+                <h2>अभ्यास</h2>
+                
+                <div class="question">
+                    <h4>१. विश्वमा लोकतान्त्रिक आन्दोलन हुनुका कारणहरू उल्लेख गर्नुहोस् ।</h4>
+                    <p>विश्वमा विभिन्न मुलुकमा भएका लोकतान्त्रिक आन्दोलनहरूका कारण देशअनुसार फरक-फरक हुन सक्छन्, तापनि केही समान कारणहरू यस प्रकार छन्:</p>
+                    <ul>
+                        <li><strong>निरङ्कुश शासन:</strong> कतिपय देशमा प्रचलित शासन व्यवस्थाले जनताको हकहितलाई कुण्ठित पारेको थियो । शासकको स्वेच्छाचारी शासनले जनतालाई पीरमार्का परेको थियो । जनताले अत्यावश्यक मानव अधिकारको उपयोग गर्न पाएका थिएनन् । यस्तो असह्य निरङ्कुश शासनको विरुद्धमा जनता सङ्गठित भई लोकतन्त्रको स्थापनाका लागि आन्दोलन गरेका थिए । रुसमा जार, फ्रान्समा लुई सोह्रौं र नेपालमा राणाशासनको विरुद्धमा भएका आन्दोलनहरू यसैका उदाहरण हुन् ।</li>
+                        <li><strong>उपनिवेशवाद:</strong> युरोपीय औद्योगिक मुलुकहरूले विश्वमा कतिपय स्थानमा उपनिवेश खडा गरेका थिए । ती उपनिवेशहरूमा जनतालाई कुनै मौलिक हक थिएन र देशको आर्थिक तथा राजनैतिक शोषण हुन्थ्यो । शासकहरू आफ्नो देशको आर्थिक उन्नतिमा बढी ध्यान दिन्थे । यसैले औपनिवेशिक शासनबाट आजित भई जनताले प्रजातन्त्रका लागि जनआन्दोलन गरे । संयुक्त राज्य अमेरिकाको स्वतन्त्रता सङ्ग्राम, भारतको स्वतन्त्रता सङ्ग्राम, श्रीलङ्काको स्वतन्त्रता सङ्ग्राम आदि यस्तै आन्दोलनहरू हुन् ।</li>
+                        <li><strong>शिक्षाको प्रचार:</strong> नयाँ शिक्षा पद्धतिको विकासले शिक्षाको प्रचार भयो । अङ्ग्रेजी साहित्यका पुस्तकहरू अन्य स्थानीय भाषामा अनुवाद गरिए । शिक्षाको प्रचारप्रसारले जनताहरू आफ्ना अधिकारप्रति सचेत भए र निरङ्कुश शासन विरुद्ध सङ्गठित हुन प्रेरणा दियो । नेपालमा राणा शासनको विरुद्धमा जनआन्दोलन गर्न शिक्षाको प्रचारले पनि सघायो ।</li>
+                        <li><strong>विदेशी घटनाको प्रभाव:</strong> अन्य देशमा भएका जनआन्दोलनको प्रभावले पनि अन्य देशमा जनआन्दोलन गर्न प्रेरित गर्यो । अमेरिकी स्वतन्त्रता सङ्ग्राममा सहभागी भई फ्रान्स फर्केका फ्रान्सेली सिपाहीहरूले त्यहाँको निरङ्कुश शासनविरुद्ध आन्दोलन गर्न हौसला दिए । नेपालमा पनि राणाशासन विरुद्ध चलेको आन्दोलनलाई भारतीय नेताहरूले नैतिक समर्थन दिएका थिए ।</li>
+                        <li><strong>जनअधिकार:</strong> प्रत्येक देशका नागरिकहरूले सरकारबाट कल्याणकारी राज्य, सुखसुविधा, न्याय, शान्ति, रोजगारी आदि जस्ता अधिकारको अपेक्षा राखेका हुन्छन् । यस्ता मानव अधिकारमाथि प्रहार भएमा जनताहरू आन्दोलित हुन्छन् । नेपालमा वि.सं. २०४६ र वि.सं. २०६२/६३ मा भएका जनआन्दोलनहरू यिनै जनअधिकारको चाहनाका परिणाम हुन् ।</li>
+                    </ul>
+                </div>
+                
+                <div class="question">
+                    <h4>२. एक देशमा भएको परिवर्तनको प्रभाव अरू देशमा पनि पर्दछ भन्ने सन्दर्भलाई उदाहरणसहित प्रस्तुत गर्नुहोस् ।</h4>
+                    <p>एउटा देशमा भएको घटनाले अर्को देशमा पनि प्रभाव पार्छ । यस्ता प्रभाव सामाजिक, राजनैतिक तथा सांस्कृतिक रूपमा पनि हुनसक्छन् । यसका केही उदाहरणहरू यस प्रकार छन्:</p>
+                    <ul>
+                        <li><strong>फ्रान्सेली राज्यक्रान्ति:</strong> अमेरिकी स्वतन्त्रता सङ्ग्राममा फ्रान्सले आफ्नो सेना अमेरिकीहरूलाई सघाउन पठाएको थियो । अमेरिकीहरू स्वतन्त्र भएपछि फ्रान्सेली सेनाहरू आफ्नै देश फर्किए । उनीहरूले अमेरिकीहरूले बेलायतको औपनिवेशिक नीतिको विरुद्धमा आवाज उठाएको अनुभव बाँडे । त्यसबेला फ्रान्समा लुई सोह्रौंको निरङ्कुश शासन थियो र जनताले कुनै अधिकार पाएका थिएनन् । यसबाट जनताहरूले आन्दोलन सुरु गरे । फ्रान्सेली राज्यक्रान्तिले दिएको स्वतन्त्रता, समानता र भातृत्वको भावनाले अन्य मुलुकहरूमा पनि निरङ्कुश शासन विरुद्ध आन्दोलन गर्न प्रेरणा दियो।</li>
+                        <li><strong>नेपालको प्रजातन्त्र:</strong> सन् १९४७ मा भारत बेलायती उपनिवेशबाट स्वतन्त्र भयो । यसको प्रत्यक्ष प्रभाव नेपालमा पर्यो । नेपालमा निरङ्कुश राणाशासनको विरुद्धमा जनताहरू सङ्गठित हुन थाले । भारतीय नेताहरूले प्रजातन्त्रका लागि नेपालमा सङ्घर्ष गर्ने जनतालाई नैतिक समर्थन दिए । यसबाट राणाशासन कमजोर भयो र अन्तमा २००७ सालमा राणाशासन ढल्यो र नेपालमा प्रजातन्त्रको स्थापना भयो ।</li>
+                    </ul>
+                </div>
+                
+                <div class="question">
+                    <h4>३. नेपालमा लोकतन्त्रले ल्याएको प्रभावको विश्लेषण गर्नुहोस् ।</h4>
+                    <p>नेपालमा लोकतन्त्रको स्थापना भएपछि केही महत्त्वपूर्ण परिवर्तनहरू देखा परेका छन् । यसका केही सकारात्मक प्रभावहरू यसप्रकार छन्:</p>
+                    <ul>
+                        <li>जनताले मौलिक हक अधिकारहरू पाएका छन् ।</li>
+                        <li>जनताले आफूलाई चित्त नबुझेका कुराहरूमा आफ्नो आवाज उठाउन पाएका छन् ।</li>
+                        <li>विकासका लागि नयाँ सोच र अवधारणाले महत्त्व पाएको छ ।</li>
+                        <li>विकासमा जनताको सहभागिता र समान सहभागिता सुनिश्चित गर्नुपर्ने मान्यताले स्थान पाएको छ ।</li>
+                        <li>सामाजिक समावेशिता र विकासमा समताको अवधारणाले प्रवेश पाएको छ ।</li>
+                        <li>नागरिकले विकासमा आफ्ना आवश्यकतालाई उजागर गर्ने र प्राथमिकता दिने (Voice and choice) अधिकार पाएका छन् ।</li>
+                        <li>राज्यको आर्थिक गतिविधिमा राज्यको एकाधिकार नरही निजी तथा सहकारीले पनि उचित स्थान पाएका छन् ।</li>
+                        <li>विकासमा सुशासन र जनउत्तरदायित्वको बहसले पनि ठाउँ पाएको छ ।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="app-download">
+                <p>यी र यस्ता अन्य नोटहरू अफलाइन हेर्नका लागि हाम्रो एन्ड्रोइड एप डाउनलोड गर्नुहोस्।</p>
+                <a href="#" class="app-button">अहिले नै डाउनलोड गर्नुहोस्</a>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
