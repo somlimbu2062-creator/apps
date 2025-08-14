@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>स्वस्थ जीवनशैली र सामाजिक जीवन</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&family=Lora:wght@700&display=swap');
+
+        :root {
+            --primary-color: #d32f2f; /* Dark Red */
+            --secondary-color: #ef9a9a; /* Light Red */
+            --background-color: #ffebee; /* Very Light Red */
+            --text-color: #c62828; /* Darker Red */
+            --light-text-color: #e53935; /* Medium Red */
+            --card-background: #ffffff;
+            --list-bullet-color: #e57373;
+            --border-radius: 12px;
+            --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --transition-speed: 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Mukta', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        header {
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary-color), var(--light-text-color));
+            color: #fff;
+            padding: 40px 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        header h1 {
+            font-family: 'Lora', serif;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .section {
+            background-color: var(--card-background);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            font-family: 'Lora', serif;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+
+        .question {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .question h4 {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        .question p, .question ul, .question table {
+            font-size: 1rem;
+            color: var(--text-color);
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .question ul {
+            margin-top: 10px;
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .question li {
+            position: relative;
+            margin-bottom: 8px;
+            padding-left: 25px;
+        }
+
+        .question li::before {
+            content: "•";
+            color: var(--list-bullet-color);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+            position: absolute;
+            left: 0;
+        }
+        
+        .question p strong {
+            color: var(--primary-color);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 0.95rem;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: #fff;
+            font-family: 'Lora', serif;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .app-download {
+            text-align: center;
+            padding: 30px;
+            background-color: var(--primary-color);
+            color: #fff;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .app-download p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .app-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .app-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                gap: 20px;
+            }
+            header {
+                padding: 30px 15px;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            .section {
+                padding: 20px;
+            }
+            .section h2 {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+            }
+            .question h4 {
+                font-size: 1rem;
+            }
+            .app-download {
+                padding: 20px;
+            }
+            th, td {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>स्वस्थ जीवनशैली र सामाजिक जीवन</h1>
+            <p>कक्षा ११ - अर्थशास्त्र</p>
+        </header>
+
+        <main>
+            <div class="section">
+                <h2>अभ्यास</h2>
+
+                <div class="question">
+                    <h4>१. शारीरिक, मानसिक र आत्मिक स्वस्थता कायम राख्ने उपायहरू तालिकामा देखाउनुहोस् ।</h4>
+                    <p>शारीरिक, मानसिक र आत्मिक स्वस्थता कायम राख्ने उपायहरू तलको तालिकामा देखाइएको छ:</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>शारीरिक</th>
+                                <th>मानसिक</th>
+                                <th>आत्मिक</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>नियमित स्वास्थ्य जाँच गराउने।</td>
+                                <td>तनाव व्यवस्थापन गर्ने।</td>
+                                <td>रिस, राग र वैरभाव नराख्ने।</td>
+                            </tr>
+                            <tr>
+                                <td>नियमित योग र व्यायाम गर्ने।</td>
+                                <td>आफूलाई व्यस्त राख्ने।</td>
+                                <td>सबैप्रति प्रेमभाव राख्ने।</td>
+                            </tr>
+                            <tr>
+                                <td>स्वस्थ जीवनशैली अपनाउने।</td>
+                                <td>सकारात्मक सोच राख्ने।</td>
+                                <td>मनलाई शान्त राख्ने।</td>
+                            </tr>
+                            <tr>
+                                <td>सन्तुलित र पौष्टिक खाना खाने।</td>
+                                <td>समयको सदुपयोग गर्ने।</td>
+                                <td>घमण्ड नगर्ने।</td>
+                            </tr>
+                            <tr>
+                                <td>पर्याप्त आराम गर्ने।</td>
+                                <td>आफ्नो क्षमता अनुसार काम गर्ने।</td>
+                                <td>क्षमाशील हुने।</td>
+                            </tr>
+                            <tr>
+                                <td>नशालु पदार्थ सेवन नगर्ने।</td>
+                                <td>सामाजिक मूल्य र मान्यताको सम्मान गर्ने।</td>
+                                <td>प्राणी हिंसा नगर्ने।</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="question">
+                    <h4>२. ‘स्वस्थ जीवनशैलीमा खानपानको भूमिका महत्त्वपूर्ण हुन्छ’ यस भनाइलाई पुष्टि गर्नुहोस् ।</h4>
+                    <p>स्वस्थ जीवनशैली कायम राख्नको लागि खानपानको भूमिका अत्यन्तै महत्त्वपूर्ण हुन्छ। हाम्रो शरीर र मनलाई स्वस्थ राख्न सन्तुलित र पौष्टिक खाना अपरिहार्य छ। हामीले खाने खानाले शरीरलाई आवश्यक ऊर्जा प्रदान गर्नुका साथै रोग प्रतिरोधात्मक क्षमता बढाउँछ र विभिन्न रोगबाट बचाउँछ।</p>
+                    <p>हाम्रो दैनिक खानामा प्रोटिन, कार्बोहाइड्रेट, चिल्लो पदार्थ, भिटामिन, खनिज र पानीको सन्तुलित मात्रा हुनुपर्छ। स्वस्थ खानेकुरा, जस्तै फलफूल, तरकारी, दूध, दही, गेडागुडी र खाद्यान्नले शरीरलाई आवश्यक पोषण प्रदान गर्छन्। तर, प्रशोधित खाना र गुलियो पेय पदार्थहरूमा विभिन्न हानिकारक रासायनिक पदार्थ हुने भएकाले यस्ता खानेकुराबाट टाढा रहनुपर्छ।</p>
+                    <p>खानाको प्रकृति, मनको इच्छा र शरीरको अवस्थालाई ध्यान दिएर खाना छनोट गर्नुपर्छ। खानालाई खुसी भएर र राम्रोसँग चपाएर खाँदा पाचन प्रणाली स्वस्थ रहन्छ। यसका अतिरिक्त, पानी पनि स्वस्थ जीवनका लागि उत्तिकै महत्त्वपूर्ण हुन्छ। खाना खानु एक घण्टा पहिले र एक घण्टा पछि पानी पिउँदा पाचन प्रणालीलाई सफा राख्न मद्दत पुग्छ। यसरी, उचित खानपानले नै हामीलाई शारीरिक र मानसिक रूपमा स्वस्थ राख्न ठूलो भूमिका खेल्छ।</p>
+                </div>
+            </div>
+
+            <div class="app-download">
+                <p>यी र यस्ता अन्य नोटहरू अफलाइन हेर्नका लागि हाम्रो एन्ड्रोइड एप डाउनलोड गर्नुहोस्।</p>
+                <a href="#" class="app-button">अहिले नै डाउनलोड गर्नुहोस्</a>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
