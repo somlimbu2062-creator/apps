@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>योग तथा ध्यान</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&family=Lora:wght@700&display=swap');
+
+        :root {
+            --primary-color: #512da8; /* Deep Purple */
+            --secondary-color: #b39ddb; /* Light Purple */
+            --background-color: #ede7f6; /* Very Light Purple */
+            --text-color: #311b92; /* Very Dark Purple */
+            --light-text-color: #673ab7; /* Medium Purple */
+            --card-background: #ffffff;
+            --list-bullet-color: #9575cd;
+            --border-radius: 12px;
+            --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --transition-speed: 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Mukta', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        header {
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary-color), var(--light-text-color));
+            color: #fff;
+            padding: 40px 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        header h1 {
+            font-family: 'Lora', serif;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .section {
+            background-color: var(--card-background);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            font-family: 'Lora', serif;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+
+        .question {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .question h4 {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        .question p, .question ul {
+            font-size: 1rem;
+            color: var(--text-color);
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .question ul {
+            margin-top: 10px;
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .question li {
+            position: relative;
+            margin-bottom: 8px;
+            padding-left: 25px;
+        }
+
+        .question li::before {
+            content: "•";
+            color: var(--list-bullet-color);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+            position: absolute;
+            left: 0;
+        }
+        
+        .question p strong {
+            color: var(--primary-color);
+        }
+        
+        .app-download {
+            text-align: center;
+            padding: 30px;
+            background-color: var(--primary-color);
+            color: #fff;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .app-download p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .app-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .app-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                gap: 20px;
+            }
+            header {
+                padding: 30px 15px;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            .section {
+                padding: 20px;
+            }
+            .section h2 {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+            }
+            .question h4 {
+                font-size: 1rem;
+            }
+            .app-download {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>योग तथा ध्यान</h1>
+            <p>कक्षा ११ - अर्थशास्त्र</p>
+        </header>
+
+        <main>
+            <div class="section">
+                <h2>अभ्यास</h2>
+
+                <div class="question">
+                    <h4>१. प्राणायाम भनेको के हो?</h4>
+                    <p><strong>प्राण</strong> र <strong>आयाम</strong> दुई शब्द मिलेर बनेको प्राणायामको अर्थ हो **'श्वासलाई नियन्त्रणका साथ सञ्चालन गर्ने तरिका'**। 'प्राण'को अर्थ जीवनदायी ऊर्जा र 'आयाम'को अर्थ निश्चित दिशा प्रदान गर्नु हो। प्राणायामको नियमित अभ्यासले श्वासबाट प्राप्त हुने ऊर्जालाई बढाउन र शरीरभरि फैलाउन मद्दत गर्छ, जसले शरीरलाई स्वस्थ र स्फूर्त राख्छ।</p>
+                </div>
+
+                <div class="question">
+                    <h4>२. योग र ध्यानको महत्त्व बताउनुहोस् ।</h4>
+                    <p>स्वस्थ जीवनशैलीका लागि योग र ध्यानको ठूलो महत्त्व छ। यी दुई अभ्यासले हाम्रो शारीरिक, मानसिक र आत्मिक स्वास्थ्यलाई बलियो बनाउँछ। योग र ध्यानले रोग प्रतिरोधात्मक क्षमता बढाउँछ र शरीरलाई रोग लाग्नबाट जोगाउँछ। यसका केही मुख्य महत्त्वहरू यस प्रकार छन्:</p>
+                    <ul>
+                        <li>शरीरको अवस्थामा सुधार ल्याई सन्तुलन कायम गर्छ।</li>
+                        <li>तनाव व्यवस्थापन गर्न मद्दत गर्छ र मनलाई शान्त राख्छ।</li>
+                        <li>गहिरो र आरामदायी निद्रा लाग्न सहयोग गर्छ।</li>
+                        <li>आन्तरिक शान्ति र आत्म-सचेतना बढाउँछ।</li>
+                        <li>यो एक प्राकृतिक र निरोधात्मक उपचार पद्धति हो जसले रोगको उपचारभन्दा रोकथाममा जोड दिन्छ।</li>
+                    </ul>
+                </div>
+
+                <div class="question">
+                    <h4>३. योग र ध्यानले शरीर र मनलाई स्वस्थ राख्दै व्यक्तित्व विकासमा मदत गर्दछ, यस भनाइलाई पुष्टि गर्नुहोस् ।</h4>
+                    <p>योग र ध्यानले हाम्रो शरीर र मनलाई स्वस्थ राखेर व्यक्तित्व विकासमा महत्त्वपूर्ण भूमिका खेल्छ। यसले कसरी मद्दत गर्छ भन्ने कुरा तल उल्लेख गरिएको छ:</p>
+                    <ul>
+                        <li><strong>शारीरिक स्वास्थ्य:</strong> योगका विभिन्न आसनहरूले शरीरलाई लचिलो बनाउँछ, मांसपेशी र हड्डीहरूलाई बलियो बनाउँछ। यसले रक्तसञ्चारमा सुधार ल्याउँछ र शरीरको पाचन प्रणालीलाई पनि सन्तुलित बनाउँछ, जसले गर्दा शरीर स्वस्थ रहन्छ।</li>
+                        <li><strong>मानसिक र आत्मिक स्वास्थ्य:</strong> ध्यानले मनलाई शान्त बनाउँछ र जीवनमा आउने समस्याहरूलाई सहजै सामना गर्न सक्ने शक्ति दिन्छ। यसले नकारात्मक सोच र तनावलाई नियन्त्रण गरी सकारात्मकता ल्याउँछ।</li>
+                        <li><strong>व्यक्तित्व विकास:</strong> शारीरिक र मानसिक रूपमा स्वस्थ व्यक्तिमा आत्मविश्वास बढ्छ। शान्त मन र सकारात्मक सोचले अरूसँगको सम्बन्ध राम्रो बनाउन मद्दत गर्छ। यसले निर्णय क्षमता बढाउँछ र जीवनलाई अझै व्यवस्थित बनाउँछ।</li>
+                    </ul>
+                    <p>यसरी, योग र ध्यानले हाम्रो समग्र व्यक्तित्वलाई निखार्न र जीवनलाई सफल बनाउन सहयोग गर्छ।</p>
+                </div>
+            </div>
+
+            <div class="app-download">
+                <p>यी र यस्ता अन्य नोटहरू अफलाइन हेर्नका लागि हाम्रो एन्ड्रोइड एप डाउनलोड गर्नुहोस्।</p>
+                <a href="#" class="app-button">अहिले नै डाउनलोड गर्नुहोस्</a>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
