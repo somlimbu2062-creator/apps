@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>नेपालको अर्थतन्त्रका आधार र विशेषताहरु</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&family=Lora:wght@700&display=swap');
+
+        :root {
+            --primary-color: #004d40; /* Very Dark Teal */
+            --secondary-color: #a7ffeb; /* Very Light Cyan */
+            --background-color: #e0f2f1; /* Lighter Teal */
+            --text-color: #004d40;
+            --light-text-color: #00695c;
+            --card-background: #ffffff;
+            --list-bullet-color: #00897b;
+            --border-radius: 12px;
+            --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --transition-speed: 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Mukta', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        header {
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary-color), #4db6ac);
+            color: #fff;
+            padding: 40px 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        header h1 {
+            font-family: 'Lora', serif;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .section {
+            background-color: var(--card-background);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            font-family: 'Lora', serif;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+
+        .question {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .question h4 {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        .question p, .question ul {
+            font-size: 1rem;
+            color: var(--light-text-color);
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .question ul {
+            margin-top: 10px;
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .question li {
+            position: relative;
+            margin-bottom: 8px;
+            padding-left: 25px;
+        }
+
+        .question li::before {
+            content: "•";
+            color: var(--list-bullet-color);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+            position: absolute;
+            left: 0;
+        }
+        
+        .question p strong {
+            color: var(--primary-color);
+        }
+
+        .app-download {
+            text-align: center;
+            padding: 30px;
+            background-color: var(--primary-color);
+            color: #fff;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .app-download p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .app-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .app-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                gap: 20px;
+            }
+            header {
+                padding: 30px 15px;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            .section {
+                padding: 20px;
+            }
+            .section h2 {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+            }
+            .question h4 {
+                font-size: 1rem;
+            }
+            .app-download {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>नेपालको अर्थतन्त्रका आधार र विशेषताहरु</h1>
+            <p>कक्षा ११ - अर्थशास्त्र</p>
+        </header>
+
+        <main>
+            <div class="section">
+                <h2>अभ्यास</h2>
+
+                <div class="question">
+                    <h4>१. धेरैओटा आर्थिक विकासको प्रयासका बाबजुद पनि नेपालको अर्थतन्त्रले गति लिन सकेको देखिँदैन। यसका कारणहरू पहिल्याउनुहोस् ।</h4>
+                    <p>नेपालमा आर्थिक विकासका लागि धेरै योजनाहरू बने पनि अपेक्षित गति लिन सकेको छैन। यसका मुख्य कारणहरू निम्न छन्:</p>
+                    <ul>
+                        <li><strong>योजना कार्यान्वयनको कमजोरी:</strong> विकासका लागि बनेका योजनाहरूको कार्यान्वयन पक्ष कमजोर छ। कतिपय योजनाहरू बीचमै छोडिन्छन् वा पूरा हुन धेरै समय लाग्छ।</li>
+                        <li><strong>उद्योगहरूको अस्थिरता:</strong> देशमा भएका उद्योगहरूले निरन्तरता पाउन सकेका छैनन्। सरकारी संरक्षणको अभाव र प्रतिस्पर्धात्मक क्षमता कमजोर भएकाले धेरै उद्योग बन्द भइसकेका छन्।</li>
+                        <li><strong>भूपरिवेष्ठित अवस्था:</strong> नेपाल भूपरिवेष्ठित मुलुक भएकाले समुद्रपारका देशहरूसँग सीधा व्यापार गर्न असहज छ। यसका लागि भारतमाथि निर्भर रहनुपर्छ।</li>
+                        <li><strong>प्राकृतिक स्रोतको अनुचित उपयोग:</strong> देशमा उपलब्ध जलस्रोत, पर्यटन र अन्य प्राकृतिक सम्पदाको समुचित उपयोग हुन सकेको छैन, जसले गर्दा रोजगारी सिर्जना हुन सकेको छैन।</li>
+                        <li><strong>विप्रेषणको अनुत्पादक प्रयोग:</strong> विदेशमा गएका युवाहरूले पठाएको पैसा उत्पादनमूलक कार्यमा भन्दा बढी विलासी वस्तुको खरिद वा अचल सम्पत्तिमा लगानी हुन्छ, जसले आर्थिक विकासमा खासै योगदान पुर्‍याएको छैन।</li>
+                        <li><strong>बढ्दो व्यापार घाटा:</strong> देशले ठूलो व्यापार घाटा व्यहोरीरहेको छ। आयात बढ्दै गएको छ र निर्यात कम भएकाले देशको पैसा विदेश गइरहेको छ।</li>
+                        <li><strong>नीति परिवर्तनको समस्या:</strong> सरकारहरू फेरिने र नीतिहरू पनि बारम्बार परिवर्तन भइरहने हुँदा आर्थिक योजनाहरू प्रभावित हुन्छन्।</li>
+                    </ul>
+                </div>
+
+                <div class="question">
+                    <h4>२. नेपालको अर्थतन्त्रका सबल र कमजोर पक्षहरू पहिल्याई नेपालको अर्थतन्त्रलाई सुदृढ गर्ने उपायहरू लेख्नुहोस् ।</h4>
+                    
+                    <p><strong>नेपालको अर्थतन्त्रका सबल पक्षहरू:</strong></p>
+                    <ul>
+                        <li><strong>जलस्रोत:</strong> नेपालमा जलविद्युत उत्पादनको ठूलो सम्भावना छ। जलस्रोतको सही उपयोग गर्न सकेमा देशको माग पूरा हुनुका साथै छिमेकी देशहरूमा निर्यात गरेर ठूलो आम्दानी गर्न सकिन्छ।</li>
+                        <li><strong>पर्यटन:</strong> नेपाल धार्मिक, सांस्कृतिक र प्राकृतिक सौन्दर्यले भरिपूर्ण छ। पर्वतारोहण, पदयात्रा र सांस्कृतिक पर्यटनको विकास गरेर विदेशी पर्यटकहरूलाई आकर्षित गर्न सकिन्छ।</li>
+                        <li><strong>मानव संसाधन:</strong> देशमा ठूलो सङ्ख्यामा युवा जनशक्ति छ। यसलाई प्राविधिक शिक्षा र व्यावसायिक तालिम दिएर स्वदेशमै रोजगारी सिर्जना गर्न सकिन्छ।</li>
+                    </ul>
+
+                    <p><strong>नेपालको अर्थतन्त्रका कमजोर पक्षहरू:</strong></p>
+                    <ul>
+                        <li><strong>कृषि र उद्योगको अवस्था:</strong> नेपालको कृषि निर्वाहमुखी छ र उद्योगहरू पनि कृषिमा नै आधारित छन्। उन्नत बिउ, मल र सिँचाइको अभाव छ। खनिज पदार्थको उत्खनन पनि भएको छैन।</li>
+                        <li><strong>औद्योगिक विकासको कमी:</strong> पूँजीको अभाव, अस्थिर नीति र संरक्षणको कमीका कारण औद्योगिक विकास हुन सकेको छैन।</li>
+                    </ul>
+
+                    <p><strong>नेपालको अर्थतन्त्र सुदृढ गर्ने उपायहरू:</strong></p>
+                    <ul>
+                        <li>कृषिलाई व्यवसायीकरण र आधुनिकीकरण गर्ने। निर्यातयोग्य बालीहरूको उत्पादन र प्रशोधनमा जोड दिने।</li>
+                        <li>कृषिमा आधारित उद्योगलाई संरक्षण दिने र आयात घटाउनका लागि स्वदेशी उत्पादन बढाउने।</li>
+                        <li>पर्यटन उद्योगको विकासका लागि प्रचारप्रसार गर्ने र पर्यटकहरूलाई उत्तम आवास र सुविधा प्रदान गर्ने।</li>
+                        <li>जलविद्युत उत्पादनका लागि विदेशी लगानी आकर्षित गर्ने र उत्पादन बढी भएमा निर्यातको व्यवस्था मिलाउने।</li>
+                        <li>युवा जनशक्तिलाई प्राविधिक शिक्षा र व्यावसायिक तालिम दिएर स्वदेशमै रोजगारी सिर्जना गर्ने।</li>
+                        <li>घरेलु र साना उद्योगहरूलाई प्रोत्साहन दिने।</li>
+                        <li>व्यापार घाटा कम गर्न निर्यात बढाउने र अनावश्यक आयात घटाउने।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="app-download">
+                <p>यी र यस्ता अन्य नोटहरू अफलाइन हेर्नका लागि हाम्रो एन्ड्रोइड एप डाउनलोड गर्नुहोस्।</p>
+                <a href="#" class="app-button">अहिले नै डाउनलोड गर्नुहोस्</a>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
