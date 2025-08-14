@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>उमेर संरचनाको सङ्क्रमण र जनसाङ्ख्यिक लाभांशको उपयोग</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&family=Lora:wght@700&display=swap');
+
+        :root {
+            --primary-color: #00796b; /* Dark Teal */
+            --secondary-color: #80cbc4; /* Light Teal */
+            --background-color: #e0f2f1; /* Lighter Teal */
+            --text-color: #004d40; /* Very Dark Teal */
+            --light-text-color: #26a69a; /* Medium Teal */
+            --card-background: #ffffff;
+            --table-header-bg: #4db6ac;
+            --table-border: #b2dfdb;
+            --border-radius: 12px;
+            --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --transition-speed: 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Mukta', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        header {
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary-color), #4db6ac);
+            color: #fff;
+            padding: 40px 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        header h1 {
+            font-family: 'Lora', serif;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .section {
+            background-color: var(--card-background);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            font-family: 'Lora', serif;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+
+        .question {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .question h4 {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .question p, .question ul {
+            font-size: 1rem;
+            color: var(--light-text-color);
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .question ul {
+            margin-top: 10px;
+            list-style-type: disc;
+        }
+
+        .question li {
+            margin-bottom: 8px;
+        }
+        
+        .app-download {
+            text-align: center;
+            padding: 30px;
+            background-color: var(--primary-color);
+            color: #fff;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .app-download p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .app-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .app-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                gap: 20px;
+            }
+            header {
+                padding: 30px 15px;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            .section {
+                padding: 20px;
+            }
+            .section h2 {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+            }
+            .question h4 {
+                font-size: 1rem;
+            }
+            .app-download {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>उमेर संरचनाको सङ्क्रमण र जनसाङ्ख्यिक लाभांशको उपयोग</h1>
+            <p>कक्षा ११ - नेपाली</p>
+        </header>
+
+        <main>
+            <div class="section">
+                <h2>अभ्यास</h2>
+
+                <div class="question">
+                    <h4>१. जनसाङ्ख्यिक सङ्क्रमण र उमेर संरचनाको सङ्क्रमणको छोटो परिचय लेख्नुहोस् ।</h4>
+                    <p><strong>जनसाङ्ख्यिक सङ्क्रमण (Demographic Transition)</strong> सामाजिक र आर्थिक विकासका कारण समाजमा हुने जन्मदर र मृत्युदरको परिवर्तन हो। यो प्रक्रियाले उच्च जन्मदर र उच्च मृत्युदर भएको अवस्थाबाट न्यून जन्मदर र न्यून मृत्युदर भएको अवस्थामा पुर्‍याउँछ। यसले गर्दा जनसङ्ख्या वृद्धिदरमा पनि परिवर्तन आउँछ।</p>
+                    <p><strong>उमेर संरचनाको सङ्क्रमण (Age Structural Transition)</strong> जनसाङ्ख्यिक सङ्क्रमणको प्रत्यक्ष परिणाम हो। यसमा जनसङ्ख्याको उमेरअनुसारको वितरणमा परिवर्तन आउँछ। यो प्रक्रियामा बाल आश्रित जनसङ्ख्या (०-१४ वर्ष) बाट आर्थिक रूपमा सक्रिय जनसङ्ख्या (१५-५९ वर्ष) मा र पछि वृद्ध आश्रित जनसङ्ख्या (६० वर्षभन्दा माथि) मा परिवर्तन हुन्छ। यो एउटा लामो प्रक्रिया हो, जसमा स्वास्थ्य सुधारले मृत्युदर घट्छ, तर सुरुमा प्रजननदर उच्च नै रहन्छ। पछि शिक्षा र जीवनस्तरमा सुधार आएसँगै मानिसहरू सानो परिवारतर्फ आकर्षित हुँदा प्रजननदर पनि घट्छ।</p>
+                </div>
+
+                <div class="question">
+                    <h4>२. जनसाङ्ख्यिक सङ्क्रमणले जनसङ्ख्याको उमेर संरचनालाई कसरी प्रभाव पार्दछ, आफ्नो विचार लेख्नुहोस् ।</h4>
+                    <p>जनसाङ्ख्यिक सङ्क्रमणले जनसङ्ख्याको उमेर संरचनालाई प्रत्यक्ष रूपमा प्रभावित गर्छ। यसले उमेर समूहअनुसार मानिसको सङ्ख्यामा हेरफेर ल्याउँछ।</p>
+                    <ul>
+                        <li><strong>उच्च जन्मदरको अवस्थामा:</strong> यदि कुनै समाजमा जन्मदर बढी भयो भने बालबालिकाको सङ्ख्या बढ्छ र आश्रित जनसङ्ख्याको भार पनि बढ्छ।</li>
+                        <li><strong>कम जन्मदरको अवस्थामा:</strong> जब जन्मदर घट्न थाल्छ, बालबालिकाको सङ्ख्यामा कमी आउँछ र आर्थिक रूपमा सक्रिय (काम गर्ने) जनसङ्ख्याको हिस्सा बढ्छ।</li>
+                        <li><strong>कम मृत्युदरको अवस्थामा:</strong> स्वास्थ्य सेवामा सुधार भई मृत्युदर कम हुँदा मानिसहरूको औसत आयु बढ्छ, जसले गर्दा वृद्धवृद्धाको सङ्ख्या पनि बढ्दै जान्छ।</li>
+                    </ul>
+                    <p>यसरी, जन्म र मृत्युदरमा हुने परिवर्तनले जनसङ्ख्याको पिरामिडलाई परिवर्तन गर्छ। यसले समाजमा बालबालिका, युवा, र वृद्धवृद्धाको अनुपातलाई सन्तुलित वा असन्तुलित बनाउन सक्छ।</p>
+                </div>
+
+                <div class="question">
+                    <h4>३. जनसाङ्ख्यिक लाभांश र जनसाङ्ख्यिक अवसरको झ्यालबीचको सम्बन्ध आफ्नै शब्दमा व्याख्या गर्नुहोस् ।</h4>
+                    <p><strong>जनसाङ्ख्यिक लाभांश (Demographic Dividend)</strong> भनेको यस्तो अवस्था हो, जब कुनै देशमा आर्थिक रूपमा सक्रिय (१५-५९ वर्ष) जनसङ्ख्याको सङ्ख्या आश्रित (०-१४ वर्ष र ६०+ वर्ष) जनसङ्ख्याभन्दा बढी हुन्छ। यो अवस्थामा काम गर्ने मानिसहरूको सङ्ख्या धेरै हुने भएकाले आर्थिक वृद्धि र विकासको ठूलो सम्भावना रहन्छ।</p>
+                    <p>यही अवस्थालाई **जनसाङ्ख्यिक अवसरको झ्याल (Demographic Window of Opportunity)** पनि भनिन्छ। यो एक निश्चित समयको लागि मात्र उपलब्ध हुने अवसर हो। यो समयमा देशले आफ्नो ठूलो युवाशक्तिलाई शिक्षा, सीप र रोजगारीमा सही तरिकाले लगानी गर्न सकेमा तीव्र आर्थिक प्रगति गर्न सक्छ। यसको उदाहरणका रूपमा सन् १९६० को दशकमा सिंगापुर, दक्षिण कोरिया, र मलेसियाले यो अवसरको सदुपयोग गरेर ठूलो आर्थिक विकास गरेका थिए। त्यसैले, जनसाङ्ख्यिक लाभांश भनेको एउटा अवस्था हो र जनसाङ्ख्यिक अवसरको झ्याल भनेको त्यस अवस्थालाई सदुपयोग गरेर विकास गर्ने मौका हो।</p>
+                </div>
+            </div>
+
+            <div class="app-download">
+                <p>यी र यस्ता अन्य नोटहरू अफलाइन हेर्नका लागि हाम्रो एन्ड्रोइड एप डाउनलोड गर्नुहोस्।</p>
+                <a href="#" class="app-button">अहिले नै डाउनलोड गर्नुहोस्</a>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
