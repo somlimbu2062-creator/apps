@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>सार्वजनिक, निजी तथा सहकारी क्षेत्र</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&family=Lora:wght@700&display=swap');
+
+        :root {
+            --primary-color: #5D4037; /* Dark Brown */
+            --secondary-color: #A1887F; /* Lighter Brown */
+            --background-color: #efebe9; /* Off-White */
+            --text-color: #3e2723; /* Very Dark Brown */
+            --light-text-color: #6d4c41; /* Medium Brown */
+            --card-background: #ffffff;
+            --list-bullet-color: #8d6e63;
+            --border-radius: 12px;
+            --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --transition-speed: 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Mukta', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        header {
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: #fff;
+            padding: 40px 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        header h1 {
+            font-family: 'Lora', serif;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .section {
+            background-color: var(--card-background);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            font-family: 'Lora', serif;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+
+        .question {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .question h4 {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        .question p, .question ul {
+            font-size: 1rem;
+            color: var(--light-text-color);
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .question ul {
+            margin-top: 10px;
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .question li {
+            position: relative;
+            margin-bottom: 8px;
+            padding-left: 25px;
+        }
+
+        .question li::before {
+            content: "•";
+            color: var(--list-bullet-color);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+            position: absolute;
+            left: 0;
+        }
+        
+        .question p strong {
+            color: var(--primary-color);
+        }
+
+        .app-download {
+            text-align: center;
+            padding: 30px;
+            background-color: var(--primary-color);
+            color: #fff;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .app-download p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .app-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .app-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                gap: 20px;
+            }
+            header {
+                padding: 30px 15px;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            .section {
+                padding: 20px;
+            }
+            .section h2 {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+            }
+            .question h4 {
+                font-size: 1rem;
+            }
+            .app-download {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>सार्वजनिक, निजी तथा सहकारी क्षेत्र</h1>
+            <p>कक्षा ११ - अर्थशास्त्र</p>
+        </header>
+
+        <main>
+            <div class="section">
+                <h2>अभ्यास</h2>
+
+                <div class="question">
+                    <h4>१. ‘आर्थिक विकासमा सार्वजनिक, निजी र सहकारी क्षेत्र एकअर्काका परिपूरक हुन् ।’ यस भनाइलाई पुष्टि गर्नुहोस् ।</h4>
+                    <p>आर्थिक विकासका लागि सार्वजनिक, निजी र सहकारी क्षेत्रहरू एकअर्काका परिपूरक हुन्। नेपालले पनि यही तीनखम्बे नीतिलाई अँगालेको छ। प्रत्येक क्षेत्रको आ-आफ्नो भूमिका र कार्यक्षेत्र हुन्छ, जसले समग्र अर्थतन्त्रलाई टेवा पुर्‍याउँछ।</p>
+                    <ul>
+                        <li><strong>सार्वजनिक क्षेत्र:</strong> सरकारले देशको समग्र विकासका लागि ठूला र राष्ट्रिय महत्त्वका पूर्वाधार आयोजनाहरू (जस्तै: सडक, विद्युत, शिक्षा, स्वास्थ्य, सुरक्षा) मा लगानी गर्छ। यी सेवाहरू नाफाभन्दा पनि जनहितका लागि प्रदान गरिन्छन्।</li>
+                        <li><strong>निजी क्षेत्र:</strong> सरकारले लगानी गर्न नसकेका वा नाफामूलक क्षेत्रहरूमा निजी क्षेत्रले लगानी गर्छ। उद्योग, व्यापार, होटल, र अन्य सेवाहरूको उत्पादन तथा वितरणमा निजी क्षेत्रको सक्रियताले रोजगारी सिर्जना हुन्छ, आयात घट्छ र देशको आर्थिक क्रियाकलाप बढ्छ।</li>
+                        <li><strong>सहकारी क्षेत्र:</strong> सहकारी क्षेत्रले साना बचतलाई एकीकृत गरी ग्रामीण र निम्न आय भएका वर्गहरूलाई स्वरोजगारका लागि ऋण प्रवाह गर्छ। यसले समुदायमा पूँजी निर्माण, बचत गर्ने बानीको विकास र उत्पादन तथा बजारीकरणमा सहयोग पुर्‍याउँछ।</li>
+                    </ul>
+                    <p>यसरी, सरकारले बाटो बनाउँछ, निजी क्षेत्रले सवारी साधन चलाएर आवागमन सहज बनाउँछ, र सहकारीले किसानलाई उत्पादनदेखि बजारसम्म पुर्‍याउन सहयोग गर्छ। यी तीनै क्षेत्रको समन्वय र सहकार्यबाट मात्र देशको समग्र आर्थिक विकास सम्भव हुन्छ।</p>
+                </div>
+
+                <div class="question">
+                    <h4>२. के सहकारीहरूले सहकारीको मूल्य, मान्यता र सिद्धान्तहरूको पूर्णपालना गरेका छन् ? समीक्षा गरी सुझाव दिनुहोस् ।</h4>
+                    <p>नेपालमा धेरैजसो सहकारी संस्थाहरूले आफ्ना मूल्य, मान्यता र सिद्धान्त अनुरूप नै काम गरिरहेका छन्। तर, केही ठाउँमा भने सहकारीको दुरुपयोग भएको र रकम हिनामिनाका समाचारहरू पनि सुन्न पाइन्छ। निम्न आय भएका वर्गको जीवनस्तर सुधार गर्ने र स्वरोजगार प्रवर्द्धन गर्ने सहकारीको मुख्य उद्देश्य हो। यसलाई अझ प्रभावकारी बनाउन निम्न सुझावहरू दिन सकिन्छ:</p>
+                    <ul>
+                        <li>ग्रामीण वा सहरी क्षेत्रका साना बचतकर्ताहरूलाई बचत गर्न प्रेरित गर्नुपर्छ।</li>
+                        <li>निम्न आय भएका सदस्यहरूलाई सामूहिक जमानीमा स-साना ऋण प्रवाह गरी स्वरोजगार बनाउन प्रोत्साहन दिनुपर्छ।</li>
+                        <li>सहकारीको रकम अचल सम्पत्तिमा लगानी गर्नु हुँदैन, यसले पूँजीलाई निष्क्रिय बनाउँछ र धेरै सदस्यलाई ऋण दिन बाधा पुर्‍याउँछ।</li>
+                        <li>ठूलो रकम विना धितो ऋण दिनु हुँदैन, यसले खराब ऋण बढाउँछ।</li>
+                        <li>सहकारीको सञ्चालनमा एकलौटीपन हुन दिनु हुँदैन, सबै सदस्यको सक्रिय सहभागिता हुनुपर्छ।</li>
+                        <li>ग्रामीण क्षेत्रका सहकारीले दैनिक उपभोग्य वस्तुहरू उचित मूल्यमा उपलब्ध गराउने र ग्रामीण उत्पादनलाई बजारसम्म पुर्‍याउन सहयोग गर्नुपर्छ।</li>
+                    </ul>
+                </div>
+
+                <div class="question">
+                    <h4>३. ‘निजी क्षेत्र, सहकारी र सार्वजनिक क्षेत्रबिनको साझेदारीबाट नै आर्थिक विकास हुन सक्छ ।’ यस भनाइप्रति आफ्नो धारणा प्रस्तुत गर्नुहोस् ।</h4>
+                    <p>कुनै पनि देशको आर्थिक विकासका लागि निजी, सहकारी र सार्वजनिक क्षेत्रको साझेदारी अपरिहार्य हुन्छ। धेरैजसो प्रजातान्त्रिक मुलुकहरूले मिश्रित आर्थिक प्रणाली अपनाएका छन्, जहाँ यी तीनै क्षेत्रले सँगै काम गर्छन्।</p>
+                    <ul>
+                        <li><strong>सार्वजनिक क्षेत्र:</strong> सरकारले कर मार्फत राजस्व सङ्कलन गरी राष्ट्रिय गौरवका ठूला परियोजनाहरू (जस्तै: जलविद्युत, सडक, शिक्षा, स्वास्थ्य) मा लगानी गर्छ। यसको उद्देश्य नाफा कमाउनु भन्दा पनि जनतालाई आधारभूत सेवा प्रदान गर्नु हो।</li>
+                        <li><strong>निजी क्षेत्र:</strong> सरकारले उपलब्ध गराएको सहज वातावरणमा निजी क्षेत्रले दैनिक उपभोग्य वस्तुहरू र अन्य सेवाहरू उत्पादन गर्छ। यसले रोजगारी सिर्जना गर्छ र सरकारलाई राजस्व पनि तिर्छ।</li>
+                        <li><strong>सहकारी क्षेत्र:</strong> यो क्षेत्रले छरिएर रहेको सानो पूँजीलाई जम्मा गरी समुदायका सदस्यहरूलाई आर्थिक रूपमा आत्मनिर्भर बन्न सहयोग गर्छ। यसले बचत गर्ने बानीको विकास गर्छ र स्वरोजगारका अवसरहरू बढाउँछ।</li>
+                    </ul>
+                    <p>यसरी, प्रत्येक क्षेत्रले आ-आफ्नो भूमिका निभाउँदै एकअर्कालाई सहयोग गर्छन्। सरकारको लगानीबाट बनेका पूर्वाधारमा निजी क्षेत्रले व्यवसाय विस्तार गर्छ र सहकारीले समुदायमा आर्थिक क्रियाकलाप बढाउँछ। यी तीनै क्षेत्रको एकीकृत र सन्तुलित विकास बिना कुनै पनि देशको आर्थिक उन्नति सम्भव छैन।</p>
+                </div>
+            </div>
+
+            <div class="app-download">
+                <p>यी र यस्ता अन्य नोटहरू अफलाइन हेर्नका लागि हाम्रो एन्ड्रोइड एप डाउनलोड गर्नुहोस्।</p>
+                <a href="#" class="app-button">अहिले नै डाउनलोड गर्नुहोस्</a>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
