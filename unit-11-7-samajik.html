@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>मितव्ययी जीवनशैली र आर्थिक व्यवस्थापन</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&family=Lora:wght@700&display=swap');
+
+        :root {
+            --primary-color: #f57c00; /* Deep Orange */
+            --secondary-color: #ffcc80; /* Light Orange */
+            --background-color: #fff3e0; /* Very Light Orange */
+            --text-color: #e65100; /* Very Dark Orange */
+            --light-text-color: #ff9800; /* Medium Orange */
+            --card-background: #ffffff;
+            --list-bullet-color: #ffb74d;
+            --border-radius: 12px;
+            --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --transition-speed: 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Mukta', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        header {
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary-color), var(--light-text-color));
+            color: #fff;
+            padding: 40px 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        header h1 {
+            font-family: 'Lora', serif;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .section {
+            background-color: var(--card-background);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            font-family: 'Lora', serif;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+
+        .question {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .question h4 {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        .question p, .question ul {
+            font-size: 1rem;
+            color: var(--text-color);
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .question ul {
+            margin-top: 10px;
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .question li {
+            position: relative;
+            margin-bottom: 8px;
+            padding-left: 25px;
+        }
+
+        .question li::before {
+            content: "•";
+            color: var(--list-bullet-color);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+            position: absolute;
+            left: 0;
+        }
+        
+        .question p strong {
+            color: var(--primary-color);
+        }
+        
+        .app-download {
+            text-align: center;
+            padding: 30px;
+            background-color: var(--primary-color);
+            color: #fff;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .app-download p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .app-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .app-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                gap: 20px;
+            }
+            header {
+                padding: 30px 15px;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            .section {
+                padding: 20px;
+            }
+            .section h2 {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+            }
+            .question h4 {
+                font-size: 1rem;
+            }
+            .app-download {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>मितव्ययी जीवनशैली र आर्थिक व्यवस्थापन</h1>
+            <p>कक्षा ११ - अर्थशास्त्र</p>
+        </header>
+
+        <main>
+            <div class="section">
+                <h2>अभ्यास</h2>
+
+                <div class="question">
+                    <h4>१. मितव्ययी जीवनशैलीको परिचय दिनुहोस् ।</h4>
+                    <p>मानिसका आवश्यकताहरू ठाउँ, समय, परिस्थिति र व्यक्तिअनुसार फरक-फरक हुन्छन्। यी आवश्यकताहरू पूरा गर्न सीमित प्राकृतिक तथा भौतिक स्रोतहरूको उपयोग गर्नुपर्छ। <strong>मितव्ययी जीवनशैली</strong> भन्नाले उपलब्ध सीमित स्रोत र साधनको उचित उपयोग गरी अधिकतम लाभ लिने बानी र व्यवहार हो। यसले अनावश्यक खर्च नगर्ने, धनको बुद्धिमत्तापूर्ण उपयोग गर्ने, र भविष्यका लागि बचत गर्ने कुरालाई जोड दिन्छ। यस प्रकारको जीवनशैलीले वर्तमानका आवश्यकताहरू पूरा गर्दै भावी पुस्ताका लागि पनि स्रोतसाधनको संरक्षण गर्न मद्दत गर्छ।</p>
+                </div>
+
+                <div class="question">
+                    <h4>२. तपाईंले कुन कुन पक्षमा मितव्ययितालाई व्यवहारमा अवलम्बन गर्दै आउनुभएको छ, उल्लेख गर्नुहोस् ।</h4>
+                    <p>मैले आफ्नो जीवनमा मितव्ययितालाई विभिन्न पक्षमा अपनाएको छु:</p>
+                    <ul>
+                        <li><strong>खानपिनमा:</strong> मैले खाना खाँदा जुठो छोड्ने गरेको छैन। साथै, बजारमा पाइने तयारी खाना वा महँगा रेस्टुरेन्टमा खानुको सट्टा घरमै पकाएको खाना खाने गर्छु।</li>
+                        <li><strong>लवाइमा:</strong> मैले स्वदेशी उत्पादनहरूलाई बढी प्राथमिकता दिने गरेको छु र आवश्यकता अनुसार मात्र कपडा किन्ने गर्छु। अनावश्यक फेसनको पछि लागेर खर्च गर्दिनँ।</li>
+                        <li><strong>बचतमा:</strong> मैले हरेक महिना आम्दानीको केही अंश बचत गर्ने गरेको छु, जसले भविष्यमा आउन सक्ने आकस्मिक खर्च वा आवश्यकताका लागि आर्थिक सुरक्षा प्रदान गर्छ।</li>
+                        <li><strong>उपभोगमा:</strong> कुनै पनि वस्तु वा सेवा किन्दा त्यसको आवश्यकता र मूल्यलाई राम्ररी विचार गरेर मात्र निर्णय लिने गर्छु।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="app-download">
+                <p>यी र यस्ता अन्य नोटहरू अफलाइन हेर्नका लागि हाम्रो एन्ड्रोइड एप डाउनलोड गर्नुहोस्।</p>
+                <a href="#" class="app-button">अहिले नै डाउनलोड गर्नुहोस्</a>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
