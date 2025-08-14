@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>नेपालमा स्वास्थ्य सेवा</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&family=Lora:wght@700&display=swap');
+
+        :root {
+            --primary-color: #00796b; /* Dark Teal */
+            --secondary-color: #80cbc4; /* Light Teal */
+            --background-color: #e0f2f1; /* Very Light Teal */
+            --text-color: #004d40; /* Very Dark Teal */
+            --light-text-color: #26a69a; /* Medium Teal */
+            --card-background: #ffffff;
+            --list-bullet-color: #4db6ac;
+            --border-radius: 12px;
+            --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --transition-speed: 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Mukta', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        header {
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary-color), var(--light-text-color));
+            color: #fff;
+            padding: 40px 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        header h1 {
+            font-family: 'Lora', serif;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .section {
+            background-color: var(--card-background);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            font-family: 'Lora', serif;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+
+        .question {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .question h4 {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        .question p, .question ul {
+            font-size: 1rem;
+            color: var(--text-color);
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .question ul {
+            margin-top: 10px;
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .question li {
+            position: relative;
+            margin-bottom: 8px;
+            padding-left: 25px;
+        }
+
+        .question li::before {
+            content: "•";
+            color: var(--list-bullet-color);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+            position: absolute;
+            left: 0;
+        }
+        
+        .question p strong {
+            color: var(--primary-color);
+        }
+
+        .project-report {
+            background-color: #fff;
+            border: 2px solid var(--secondary-color);
+            border-radius: var(--border-radius);
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .project-report h5 {
+            color: var(--primary-color);
+            text-align: center;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+
+        .app-download {
+            text-align: center;
+            padding: 30px;
+            background-color: var(--primary-color);
+            color: #fff;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .app-download p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .app-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .app-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                gap: 20px;
+            }
+            header {
+                padding: 30px 15px;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            .section {
+                padding: 20px;
+            }
+            .section h2 {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+            }
+            .question h4 {
+                font-size: 1rem;
+            }
+            .app-download {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>नेपालमा स्वास्थ्य सेवा</h1>
+            <p>कक्षा ११ - अर्थशास्त्र</p>
+        </header>
+
+        <main>
+            <div class="section">
+                <h2>अभ्यास</h2>
+
+                <div class="question">
+                    <h4>१. नेपालको संविधानको भाग ३ धारा ३५ मा उल्लिखित स्वास्थ्यसम्बन्धी हकहरू अध्ययन गरी समीक्षा गर्नुहोस् ।</h4>
+                    <p>नेपालको संविधानको भाग ३, धारा ३५ मा सबै नागरिकका लागि स्वास्थ्यसम्बन्धी महत्त्वपूर्ण हकहरूको व्यवस्था गरिएको छ:</p>
+                    <ul>
+                        <li>प्रत्येक नागरिकलाई राज्यबाट आधारभूत स्वास्थ्य सेवा निःशुल्क प्राप्त गर्ने र कसैलाई पनि आकस्मिक स्वास्थ्य सेवाबाट वञ्चित नगरिने हक।</li>
+                        <li>प्रत्येक व्यक्तिलाई आफ्नो स्वास्थ्य उपचारको सम्बन्धमा जानकारी पाउने हक।</li>
+                        <li>प्रत्येक नागरिकलाई स्वास्थ्य सेवामा समान पहुँचको हक।</li>
+                        <li>प्रत्येक नागरिकलाई स्वच्छ खानेपानी तथा सरसफाइमा पहुँचको हक।</li>
+                    </ul>
+                    <p>संविधानले व्यवस्था गरेका यी हकहरूले स्वास्थ्य सेवालाई राज्यको दायित्व र नागरिकको अधिकारको रूपमा स्थापित गरेको छ। यद्यपि, स्रोतसाधनको सीमितताका कारण ग्रामीण क्षेत्रका गरिब जनतामा अझै पनि स्वास्थ्य सेवाको पहुँच पूर्ण रूपमा पुग्न सकेको छैन। तर सरकारले क्रमिक रूपमा चिकित्सक र स्वास्थ्य उपकरणहरूको सङ्ख्या बढाउँदै लगेको छ र केही सेवाहरूलाई निःशुल्क पनि गरेको छ। यसले भविष्यमा सबै नागरिकका लागि गुणस्तरीय स्वास्थ्य सेवा उपलब्ध हुने आशा गर्न सकिन्छ।</p>
+                </div>
+
+                <div class="question">
+                    <h4>२. ‘नेपालमा स्वास्थ्य सेवामा पहुँच’ का बारेमा विभिन्न स्रोतहरूको अध्ययन गरी एक अनुच्छेद लेख्नुहोस् ।</h4>
+                    <p>नेपालमा स्वास्थ्य सेवामा पहुँच विगतको तुलनामा बढ्दै गएको छ, तर अझै पनि धेरै चुनौतीहरू बाँकी छन्। सरकारी अस्पतालहरूमा बढ्दो भीडले सेवामा पहुँच बढेको संकेत गरे पनि दुर्गम ग्रामीण क्षेत्रमा बसोबास गर्ने गरिब र सीमान्तकृत समुदायका लागि अझै पनि स्वास्थ्य सेवा पाउन कठिन छ। गरिबीका कारण कुपोषण र अन्य रोगहरूको जोखिममा रहेका उनीहरूले उपचारको खर्च धान्न सक्दैनन्। साथै, कतिपय ठाउँमा परम्परागत उपचार पद्धतिमा विश्वास गर्नेहरूको सङ्ख्या पनि ठूलो छ। यद्यपि, राज्यले विभिन्न स्वास्थ्य कार्यक्रमहरू, खोप अभियानहरू र स्वास्थ्य शिविरहरू सञ्चालन गरी स्वास्थ्य सेवा विस्तार गर्ने प्रयास गरिरहेको छ।</p>
+                </div>
+
+                <div class="question">
+                    <h4>३. ‘रोग र दुर्बलताबाट मुक्त हुनु मात्र नभई शारीरिक, मानसिक तथा सामाजिक तवरले पूर्ण तन्दुरुस्त हुनुलाई नै स्वास्थ्य भनिन्छ।’ यस परिभाषालाई उदाहरणसहित प्रस्ट पार्नुहोस् ।</h4>
+                    <p>विश्व स्वास्थ्य संगठनले दिएको यो परिभाषाले स्वास्थ्यलाई एउटा समग्र अवधारणाको रूपमा व्याख्या गर्छ। यसअनुसार, स्वस्थ हुनका लागि रोग नलाग्नु मात्र पर्याप्त हुँदैन, बरु व्यक्ति शारीरिक, मानसिक र सामाजिक रूपमा पनि तन्दुरुस्त हुनुपर्छ।</p>
+                    <ul>
+                        <li><strong>शारीरिक स्वास्थ्य:</strong> यसको अर्थ व्यक्तिमा कुनै पनि रोग वा शारीरिक कमजोरी नहुनु हो। शरीरका सबै अंगहरूले राम्रोसँग काम गरिरहेको अवस्था नै शारीरिक स्वास्थ्य हो। उदाहरणका लागि, नियमित व्यायाम गर्ने र सन्तुलित भोजन खाने व्यक्ति शारीरिक रूपमा स्वस्थ हुन्छ।</li>
+                        <li><strong>मानसिक स्वास्थ्य:</strong> यसको अर्थ व्यक्ति मानसिक रूपमा सन्तुलित र तनावमुक्त हुनु हो। उसलाई कुनै मानसिक रोग वा चिन्ता नहुनुपर्छ। उदाहरणका लागि, समस्याहरूको सामना गर्न सक्ने र सकारात्मक सोच राख्ने व्यक्ति मानसिक रूपमा स्वस्थ मानिन्छ।</li>
+                        <li><strong>सामाजिक स्वास्थ्य:</strong> यसको अर्थ व्यक्ति घरपरिवार, छिमेकी र समाजसँग मैत्रीपूर्ण सम्बन्ध कायम राख्न सक्नु हो। उसमा कसैप्रति पनि द्वेष, ईर्ष्या वा घृणाको भावना नहुनुपर्छ। उदाहरणका लागि, आफ्नो समुदायमा घुलमिल हुने र अरूको सहयोग गर्ने व्यक्ति सामाजिक रूपमा स्वस्थ हुन्छ।</li>
+                    </ul>
+                    <p>त्यसैले, एउटा व्यक्ति शारीरिक, मानसिक र सामाजिक तीनै पक्षबाट स्वस्थ भए मात्र उसलाई पूर्ण रूपमा स्वस्थ मान्न सकिन्छ।</p>
+                </div>
+
+                <div class="question">
+                    <h2>परियोजना कार्य</h2>
+                    <h4>१. तपाईंको समुदायमा सञ्चालित स्वास्थ्यसँग सम्बन्धित विभिन्न कार्यक्रमहरूको अवलोकन गरी ती कार्यक्रमहरूको महत्त्व, औचित्य र उपलब्धिका बारेमा एक प्रतिवेदन तयार गर्नुहोस् ।</h4>
+                    <div class="project-report">
+                        <h5>समुदायमा सञ्चालित स्वास्थ्य कार्यक्रमहरूको प्रतिवेदन</h5>
+                        <p>मेरो समुदायमा हाल विभिन्न स्वास्थ्य कार्यक्रमहरू सञ्चालनमा छन्। तीमध्ये केही प्रमुख कार्यक्रमहरू र तिनको महत्त्व निम्न प्रकार छन्:</p>
+                        <ul>
+                            <li><strong>पोलियो खोप कार्यक्रम:</strong> यसले बालबालिकालाई जीवनभरका लागि अपाङ्ग बनाउन सक्ने पोलियो रोगबाट बचाउँछ। यो रोगको उपचार नहुने भएकाले खोप नै यसबाट बच्ने एक मात्र उपाय हो।</li>
+                            <li><strong>भिटामिन ‘ए’ र जुकाको औषधि वितरण:</strong> भिटामिन ‘ए’ को कमीले आँखाको ज्योति कमजोर हुने भएकाले यसले बालबालिकाको आँखाको सुरक्षा गर्छ। जुकाको औषधिले पेटका रोगहरूबाट बचाएर उनीहरूको शारीरिक विकासमा सहयोग पुर्‍याउँछ।</li>
+                            <li><strong>आँखा जाँच तथा स्वास्थ्य परीक्षण शिविर:</strong> यस्ता शिविरहरूले समुदायका मानिसहरूको स्वास्थ्य अवस्थाबारे जानकारी दिन्छ र रोगको समयमै पहिचान तथा उपचार गर्न मद्दत गर्छ।</li>
+                            <li><strong>औंलो र डेङ्गु नियन्त्रण कार्यक्रम:</strong> लामखुट्टेको टोकाइबाट सर्ने औंलो र डेङ्गु रोगबाट बच्नका लागि कीटनाशक औषधि छर्केर र कुलदानीको वितरण गरेर समुदायलाई सुरक्षित राखिन्छ।</li>
+                            <li><strong>हात्तीपाइले रोग नियन्त्रण कार्यक्रम:</strong> यो रोग लागेमा उपचार गर्न गाह्रो हुने भएकाले यसका विरुद्ध औषधि वितरण गरी समुदायलाई रोगबाट बचाउन सहयोग पुर्‍याउँछ।</li>
+                        </ul>
+                        <p>यी सबै कार्यक्रमहरूको मुख्य उद्देश्य समुदायका मानिसहरूलाई रोगबाट जोगाएर स्वस्थ राख्नु हो। जब मानिसहरू स्वस्थ हुन्छन्, तब उनीहरूले आफ्नो परिवार, समुदाय र देशको विकासमा सक्रिय योगदान दिन सक्छन्।</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="app-download">
+                <p>यी र यस्ता अन्य नोटहरू अफलाइन हेर्नका लागि हाम्रो एन्ड्रोइड एप डाउनलोड गर्नुहोस्।</p>
+                <a href="#" class="app-button">अहिले नै डाउनलोड गर्नुहोस्</a>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
