@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>सरकारी वित्त</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&family=Lora:wght@700&display=swap');
+
+        :root {
+            --primary-color: #0d47a1; /* Dark Blue */
+            --secondary-color: #90caf9; /* Light Blue */
+            --background-color: #e3f2fd; /* Very Light Blue */
+            --text-color: #002766; /* Very Dark Blue */
+            --light-text-color: #2196f3; /* Medium Blue */
+            --card-background: #ffffff;
+            --list-bullet-color: #42a5f5;
+            --border-radius: 12px;
+            --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --transition-speed: 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Mukta', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        header {
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary-color), var(--light-text-color));
+            color: #fff;
+            padding: 40px 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        header h1 {
+            font-family: 'Lora', serif;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .section {
+            background-color: var(--card-background);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            font-family: 'Lora', serif;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+
+        .question {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .question h4 {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        .question p, .question ul {
+            font-size: 1rem;
+            color: var(--text-color);
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .question ul {
+            margin-top: 10px;
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .question li {
+            position: relative;
+            margin-bottom: 8px;
+            padding-left: 25px;
+        }
+
+        .question li::before {
+            content: "•";
+            color: var(--list-bullet-color);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+            position: absolute;
+            left: 0;
+        }
+        
+        .question p strong {
+            color: var(--primary-color);
+        }
+
+        .letter-format {
+            background-color: #f9f9f9;
+            padding: 25px;
+            border: 1px solid #e0e0e0;
+            border-radius: var(--border-radius);
+            margin-top: 20px;
+        }
+
+        .letter-format p {
+            padding-left: 0;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .letter-format .date, .letter-format .sender {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+
+        .letter-format .subject {
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .app-download {
+            text-align: center;
+            padding: 30px;
+            background-color: var(--primary-color);
+            color: #fff;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .app-download p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .app-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .app-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                gap: 20px;
+            }
+            header {
+                padding: 30px 15px;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            .section {
+                padding: 20px;
+            }
+            .section h2 {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+            }
+            .question h4 {
+                font-size: 1rem;
+            }
+            .app-download {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>सरकारी वित्त</h1>
+            <p>कक्षा ११ - अर्थशास्त्र</p>
+        </header>
+
+        <main>
+            <div class="section">
+                <h2>अभ्यास</h2>
+
+                <div class="question">
+                    <h4>१. सरकारी खर्चको उपयोग पारदर्शी र न्यायोचित रूपमा गर्नुपर्दछ भन्ने आशयको सुझावपत्र तयार पारी स्थानीय तहमा पठाउनुहोस् ।</h4>
+                    <div class="letter-format">
+                        <p class="date">विनितापुर<br>२०७७/०३/१०</p>
+                        <p>श्रीमान् अध्यक्ष महोदय,<br>विनितापुर गाउँपालिका, बिनितापुर</p>
+                        <p class="subject"><strong>विषय: सरकारी खर्चको पारदर्शिता सम्बन्धमा सुझाव बारे।</strong></p>
+                        <p>महोदय,</p>
+                        <p>पत्रपत्रिकामा सरकारी खर्चमा पारदर्शिता नभएको, भ्रष्टाचार भएको, सामान खरिद र मर्मतसम्भारमा अनियमितता भएको खबरहरू आइरहन्छन्। यसले जनतामा सरकारी कामप्रति अविश्वास बढाउँछ। त्यसैले, सरकारी खर्चलाई पारदर्शी र न्यायोचित बनाउन निम्न सुझावहरू प्रस्तुत गर्दछु:</p>
+                        <ul>
+                            <li>सामान खरिद गर्दा खरिद आदेशका आधारमा गुणस्तरीय वस्तु उचित मूल्यमा खरिद गर्ने र सक्कली बिल लिने।</li>
+                            <li>ठूलो मात्रामा सामान खरिद गर्दा टेन्डर आह्वान गरी सबैभन्दा कम मूल्य प्रस्ताव गर्ने कम्पनीलाई छान्ने।</li>
+                            <li>मर्मतसम्भारको काममा प्रतिष्ठित निर्माण व्यवसायीलाई लगाउने र काम समयमा सम्पन्न नगरेमा दण्डको व्यवस्था गर्ने।</li>
+                            <li>सरकारी खर्चको सम्पूर्ण विवरण दुरुस्त राख्ने र सकेसम्म सार्वजनिक गर्ने।</li>
+                            <li>आन्तरिक लेखापरीक्षण गर्ने र गाउँसभामा यस्ता खर्चको विवरण सार्वजनिक गर्ने।</li>
+                            <li>निर्माण कार्यको सुपरिवेक्षण गर्न अनुभवी व्यक्तिहरू सम्मिलित समिति गठन गर्ने।</li>
+                        </ul>
+                        <p>मलाई आशा छ, तपाईंले यी सुझावहरूमाथि विचार गरी जनताको करबाट संकलन भएको रकम पारदर्शी र न्यायोचित ढंगले खर्च गर्नुहुनेछ र जनतामा सरकारी कामप्रति विश्वास बढाउनुहुनेछ।</p>
+                        <p>भवदीय,<br>लालबहादुर<br>वडा नं. ३</p>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <h4>२. देश निर्माणमा सरकारी खर्चको भूमिका विषयमा एक लेख तयार पार्नुहोस् ।</h4>
+                    <p><strong>देश निर्माणमा सरकारी खर्च</strong></p>
+                    <p>कुनै पनि देशको आर्थिक, सामाजिक र सांस्कृतिक विकासमा सरकारको खर्चको महत्त्वपूर्ण भूमिका हुन्छ। सरकारले विभिन्न क्षेत्रमा गर्ने लगानीले देशको समग्र निर्माण प्रक्रियालाई अगाडि बढाउँछ। सरकारी खर्चलाई मुख्यतया विकास निर्माण र चालु खर्च गरी दुई भागमा बाँड्न सकिन्छ।</p>
+                    <p>सरकारले शिक्षा, स्वास्थ्य, यातायात, सञ्चार, विद्युत् जस्ता क्षेत्रमा गर्ने लगानीले जनताको जीवनस्तर सुधार्छ। उदाहरणका लागि, सडक, रेल र हवाई सेवाको विस्तारले आवतजावत सहज बनाउँछ। विद्यालय र विश्वविद्यालयको स्थापनाले दक्ष जनशक्ति उत्पादनमा सहयोग पुर्‍याउँछ। स्वास्थ्य संस्थाको निर्माणले जनतालाई आधारभूत स्वास्थ्य सेवा उपलब्ध गराउँछ। यी सबै विकासका कामहरूमा सरकारी खर्चको ठूलो योगदान हुन्छ।</p>
+                    <p>यसका साथै, सरकारले कृषिमा अनुदान दिएर उत्पादन बढाउन, गरिब र योग्य विद्यार्थीलाई छात्रवृत्ति दिएर शिक्षामा पहुँच बढाउन र पर्यटन क्षेत्रको विकास गर्न पनि खर्च गर्छ। यस्ता खर्चहरूले रोजगारी सिर्जना गर्छ, उद्योगधन्दालाई प्रोत्साहन दिन्छ र राष्ट्रिय आयमा वृद्धि गराउँछ। त्यसैले, सरकारी खर्चले निजी र सहकारी क्षेत्रलाई पनि सहकार्य गर्न प्रेरित गर्दै देशको आर्थिक विकासलाई गति दिन्छ।</p>
+                    <p>संक्षेपमा भन्नुपर्दा, सरकारी खर्च देश निर्माणको मेरुदण्ड हो। जति सरकारी खर्चलाई योजनाबद्ध र प्रभावकारी बनाइन्छ, त्यति नै देशको विकास हुन्छ र जनताको जीवनस्तरमा सुधार आउँछ।</p>
+                </div>
+            </div>
+
+            <div class="app-download">
+                <p>यी र यस्ता अन्य नोटहरू अफलाइन हेर्नका लागि हाम्रो एन्ड्रोइड एप डाउनलोड गर्नुहोस्।</p>
+                <a href="#" class="app-button">अहिले नै डाउनलोड गर्नुहोस्</a>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
