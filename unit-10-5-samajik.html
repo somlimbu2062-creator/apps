@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कृषि, उद्योग र निर्माण</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&family=Lora:wght@700&display=swap');
+
+        :root {
+            --primary-color: #006064; /* Dark Cyan */
+            --secondary-color: #b2ebf2; /* Light Cyan */
+            --background-color: #e0f7fa; /* Very Light Cyan */
+            --text-color: #004d40; /* Very Dark Teal */
+            --light-text-color: #00838f; /* Medium Cyan */
+            --card-background: #ffffff;
+            --list-bullet-color: #26c6da;
+            --border-radius: 12px;
+            --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --transition-speed: 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Mukta', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        header {
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary-color), var(--light-text-color));
+            color: #fff;
+            padding: 40px 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        header h1 {
+            font-family: 'Lora', serif;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .section {
+            background-color: var(--card-background);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            font-family: 'Lora', serif;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+
+        .question {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .question h4 {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        .question p, .question ul {
+            font-size: 1rem;
+            color: var(--light-text-color);
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .question ul {
+            margin-top: 10px;
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .question li {
+            position: relative;
+            margin-bottom: 8px;
+            padding-left: 25px;
+        }
+
+        .question li::before {
+            content: "•";
+            color: var(--list-bullet-color);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+            position: absolute;
+            left: 0;
+        }
+        
+        .question p strong {
+            color: var(--primary-color);
+        }
+
+        .app-download {
+            text-align: center;
+            padding: 30px;
+            background-color: var(--primary-color);
+            color: #fff;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .app-download p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .app-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .app-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                gap: 20px;
+            }
+            header {
+                padding: 30px 15px;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            .section {
+                padding: 20px;
+            }
+            .section h2 {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+            }
+            .question h4 {
+                font-size: 1rem;
+            }
+            .app-download {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>कृषि, उद्योग र निर्माण</h1>
+            <p>कक्षा ११ - अर्थशास्त्र</p>
+        </header>
+
+        <main>
+            <div class="section">
+                <h2>अभ्यास</h2>
+
+                <div class="question">
+                    <h4>१. “नेपालमा कृषि र उद्योग एकअर्काका परिपूरक हुन् ।” यस भनाइलाई पुष्टि गर्दै कृषिको व्यवसायीकरण र औद्योगिक विकासका उपायहरू प्रस्तुत गर्नुहोस् ।</h4>
+                    <p>नेपालमा कृषि र उद्योग एकअर्काका परिपूरक हुन्। हाम्रो देशका अधिकांश उद्योगहरू कृषिमा आधारित छन्। धानबाट चामल, उखुबाट चिनी, तोरीबाट तेल, चियाबाट चियापत्ति, आदि बनाइन्छ। यदि कृषि उत्पादन बढ्यो भने यी उद्योगहरू फस्टाउँछन्, रोजगारी बढ्छ, राजस्व बढ्छ र आयात घट्छ। तर, यदि कृषि उत्पादन घट्यो भने उद्योगहरूलाई आवश्यक कच्चा पदार्थको अभाव हुन्छ, जसले आर्थिक अवस्थामा नकारात्मक प्रभाव पार्छ। त्यसैले, कृषिलाई व्यवसायीकरण र औद्योगिक विकास गर्न निम्न उपायहरू अपनाउनुपर्छ।</p>
+                    
+                    <p><strong>कृषिको व्यवसायीकरणका उपायहरू:</strong></p>
+                    <ul>
+                        <li>किसानहरूलाई आधुनिक कृषि प्रविधिको तालिम दिने।</li>
+                        <li>विद्यालयहरूमा कृषि शिक्षालाई ऐच्छिक विषयको रूपमा लागू गर्ने।</li>
+                        <li>किसानहरूलाई उन्नत बीउबिजन, मलखाद र कृषि उपकरणहरूमा सहुलियत प्रदान गर्ने।</li>
+                        <li>सिँचाइ सुविधाको व्यवस्था गर्ने।</li>
+                        <li>कृषि उत्पादनको भण्डारणका लागि गोदामघरहरू निर्माण गर्ने।</li>
+                        <li>बाली बिमाको प्रचलन ल्याउने।</li>
+                        <li>मुख्य बालीहरूको न्यूनतम बिक्री मूल्य अग्रिम रूपमा तोक्ने।</li>
+                        <li>चर्को ब्याजमा ऋण दिने साहु महाजनलाई कारबाही गर्ने।</li>
+                    </ul>
+
+                    <p><strong>औद्योगिक विकासका उपायहरू:</strong></p>
+                    <ul>
+                        <li>प्राविधिक शिक्षालयहरूको स्थापना गरी दक्ष कामदार उत्पादन गर्ने।</li>
+                        <li>उद्योगलाई आवश्यक कच्चा पदार्थ र बजारको व्यवस्थापन गर्न यातायात र सञ्चारको विकास गर्ने।</li>
+                        <li>उद्योगका उत्पादनहरूलाई बजारमा प्रतिस्पर्धी बनाउन संरक्षण नीति अपनाउने।</li>
+                        <li>पूँजीका लागि वित्तीय संस्थाहरूमा बचत बढाउन प्रोत्साहन गर्ने।</li>
+                        <li>उद्योगमा उद्यमी र कामदारबीच सुमधुर सम्बन्ध कायम गर्ने।</li>
+                        <li>स्थानीय हावापानी र माटो अनुसारको कृषि बाली उत्पादनमा जोड दिने।</li>
+                        <li>बहुराष्ट्रिय कम्पनीहरूलाई ठूला उद्योग स्थापनाका लागि लगानीको वातावरण बनाउने।</li>
+                    </ul>
+                </div>
+
+                <div class="question">
+                    <h4>२. पढेलेखेका शिक्षित व्यक्तिले जागिर नै खानुपर्छ, खेती र उद्यम व्यवसाय गर्नुहुँदैन भन्ने धारणा धेरै जसो व्यक्तिहरूमा रहेको पाइन्छ । अर्कोतर्फ व्यावसायिक कृषक र उद्यमीहरू भने आधुनिक प्रविधिको प्रयोग गरी व्यवसाय गर्ने र अरूलाई जागिर खुवाउने हो नि कहाँ आफैँ जागिर खोज्दै हिँड्ने हो र भन्छन् । तपाईं कसको पक्षमा हुनुहुन्छ, आफ्ना तर्कहरू प्रस्तुत गर्नुहोस् ।</h4>
+                    <p>म व्यावसायिक कृषक र उद्यमीहरूको पक्षमा छु। जागिर खानुलाई सुरक्षित मानिए पनि उद्यमशीलताका धेरै फाइदाहरू छन्। मेरा तर्कहरू यस प्रकार छन्:</p>
+                    <ul>
+                        <li><strong>उमेरको हदबन्दी छैन:</strong> जागिरको निश्चित उमेर हद हुन्छ, तर खेती वा उद्यमशीलतामा उमेरको कुनै सीमा हुँदैन। जबसम्म आफू सक्षम हुन्छ, काम गर्न सकिन्छ।</li>
+                        <li><strong>आयको सीमा छैन:</strong> जागिरमा निश्चित तलब हुन्छ, तर उद्यममा आयको सीमा हुँदैन। जति बढी मेहनत गर्‍यो, त्यति नै बढी कमाइ हुन्छ। विश्वका धेरै सफल व्यक्तिहरू जागिरे भन्दा उद्यमी नै छन्।</li>
+                        <li><strong>परिवारलाई हस्तान्तरण:</strong> जागिर छोडेपछि त्यो पद परिवारका सदस्यले पाउने सम्भावना हुँदैन, तर उद्यम व्यवसाय सन्तानले पनि निरन्तरता दिन सक्छन्।</li>
+                        <li><strong>काममा स्वतन्त्रता:</strong> जागिरमा निश्चित समय र हाकिमको मातहतमा काम गर्नुपर्छ। तर, खेती र उद्यममा आफूखुसी काम गर्न पाइन्छ र कसैलाई खुसी पार्नुपर्ने बाध्यता हुँदैन।</li>
+                        <li><strong>आर्थिक सुरक्षा:</strong> जागिरमा निश्चित तलब र पेन्सन हुन्छ, तर उद्यममा पनि लगानी र मेहनत अनुसार राम्रो प्रतिफल प्राप्त गरेर भविष्य सुरक्षित बनाउन सकिन्छ।</li>
+                        <li><strong>रोजगारदाता बन्ने अवसर:</strong> सबैभन्दा महत्त्वपूर्ण कुरा, जागिर खोज्नुको सट्टा उद्यमी बनेर अरूलाई रोजगारी दिने अवसर प्राप्त हुन्छ, जसले देशको आर्थिक विकासमा प्रत्यक्ष योगदान पुर्‍याउँछ।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="app-download">
+                <p>यी र यस्ता अन्य नोटहरू अफलाइन हेर्नका लागि हाम्रो एन्ड्रोइड एप डाउनलोड गर्नुहोस्।</p>
+                <a href="#" class="app-button">अहिले नै डाउनलोड गर्नुहोस्</a>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
