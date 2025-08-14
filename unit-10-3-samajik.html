@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>विप्रेषण र नेपाली अर्थतन्त्र</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&family=Lora:wght@700&display=swap');
+
+        :root {
+            --primary-color: #3f51b5; /* Indigo */
+            --secondary-color: #c5cae9; /* Light Indigo */
+            --background-color: #e8eaf6; /* Lighter Indigo */
+            --text-color: #1a237e; /* Very Dark Indigo */
+            --light-text-color: #3949ab; /* Medium Indigo */
+            --card-background: #ffffff;
+            --list-bullet-color: #5c6bc0;
+            --border-radius: 12px;
+            --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --transition-speed: 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Mukta', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        header {
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: #fff;
+            padding: 40px 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        header h1 {
+            font-family: 'Lora', serif;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .section {
+            background-color: var(--card-background);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            font-family: 'Lora', serif;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+
+        .question {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .question h4 {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        .question p, .question ul {
+            font-size: 1rem;
+            color: var(--light-text-color);
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .question ul {
+            margin-top: 10px;
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .question li {
+            position: relative;
+            margin-bottom: 8px;
+            padding-left: 25px;
+        }
+
+        .question li::before {
+            content: "•";
+            color: var(--list-bullet-color);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+            position: absolute;
+            left: 0;
+        }
+        
+        .question p strong {
+            color: var(--primary-color);
+        }
+
+        .app-download {
+            text-align: center;
+            padding: 30px;
+            background-color: var(--primary-color);
+            color: #fff;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .app-download p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .app-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .app-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                gap: 20px;
+            }
+            header {
+                padding: 30px 15px;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            .section {
+                padding: 20px;
+            }
+            .section h2 {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+            }
+            .question h4 {
+                font-size: 1rem;
+            }
+            .app-download {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>विप्रेषण र नेपाली अर्थतन्त्र</h1>
+            <p>कक्षा ११ - अर्थशास्त्र</p>
+        </header>
+
+        <main>
+            <div class="section">
+                <h2>अभ्यास</h2>
+
+                <div class="question">
+                    <h4>१. नेपालको अर्थतन्त्रमा विप्रेषणको महत्त्वपूर्ण भूमिका रहेको छ। विप्रेषण रकम नभए नेपालको आर्थिक अवस्था कस्तो हुन्थ्यो होला, आफ्ना तर्कहरू दिनुहोस् ।</h4>
+                    <p>नेपालको अर्थतन्त्रमा विप्रेषणको ठूलो महत्त्व छ किनकि देशमा रोजगारीका अवसरहरू सीमित छन्। यदि विप्रेषण रकम नभएको भए नेपालको आर्थिक अवस्था अझ नाजुक हुन्थ्यो। यसका मुख्य कारणहरू यस प्रकार छन्:</p>
+                    <ul>
+                        <li><strong>कमजोर आर्थिक स्थिति:</strong> धेरै परिवारहरूको आर्थिक स्थिति दयनीय हुन्थ्यो, जसले गरिबी अझ बढाउँथ्यो।</li>
+                        <li><strong>विदेशी मुद्रा सञ्चितिमा कमी:</strong> देशमा विदेशी मुद्राको सञ्चिति निकै कम हुन्थ्यो, जसले गर्दा अत्यावश्यक वस्तुहरूको आयात गर्न समस्या हुन्थ्यो।</li>
+                        <li><strong>बढ्दो बेरोजगारी:</strong> देशको युवा जनशक्तिले स्वदेशमा रोजगारी नपाउँदा बेरोजगारी दर अझ उच्च हुन्थ्यो र यसले सामाजिक विकृतिहरूलाई बढावा दिन्थ्यो।</li>
+                        <li><strong>पूर्वाधार विकासमा बाधा:</strong> विप्रेषणबाट हुने खर्चले अप्रत्यक्ष रूपमा पूर्वाधार विकासमा सहयोग पुर्‍याएको छ। यो रकम नभएको भए विकासका कामहरू अझ ढिला हुन्थे।</li>
+                        <li><strong>घरेलु उत्पादनमा नकारात्मक असर:</strong> आयातित कच्चा पदार्थको अभावमा उद्योग व्यवसायहरू कमजोर हुन्थ्यो।</li>
+                        <li><strong>कम राष्ट्रिय आय:</strong> देशको कुल गार्हस्थ उत्पादन र राष्ट्रिय आयमा नकारात्मक प्रभाव पर्थ्यो।</li>
+                    </ul>
+                </div>
+
+                <div class="question">
+                    <h4>२. विप्रेषण रकम उत्पादनभन्दा उपभोगमा खर्च भएको अवस्थामा यसको सदुपयोग कसरी गर्न सकिन्छ, बुँदागत रूपमा सुझाव दिनुहोस् ।</h4>
+                    <p>नेपालमा विप्रेषणको अधिकांश रकम उपभोग्य वस्तुमा खर्च हुने भएकाले यसले दीर्घकालीन आर्थिक विकासमा ठूलो भूमिका खेल्न सकेको छैन। यसलाई उत्पादनमूलक क्षेत्रमा लगानी गरी सदुपयोग गर्न निम्न सुझावहरू दिन सकिन्छ:</p>
+                    <ul>
+                        <li><strong>उत्पादनमूलक उद्योगमा लगानी:</strong> दैनिक उपभोगका वस्तुहरू उत्पादन गर्ने साना तथा मझौला उद्योगहरूको स्थापनामा विप्रेषणको रकम लगानी गर्नुपर्छ। यसबाट आयात घट्छ र स्वदेशी उत्पादन बढ्छ।</li>
+                        <li><strong>सीप विकास र तालिम:</strong> युवा जनशक्तिलाई प्राविधिक सीप र व्यावसायिक तालिम दिन यो रकम प्रयोग गर्नुपर्छ, जसले गर्दा उनीहरू स्वरोजगार हुन सक्छन्।</li>
+                        <li><strong>कृषिको आधुनिकीकरण:</strong> कृषि क्षेत्रको आधुनिकीकरण र व्यवसायीकरण गर्न विप्रेषणको रकम प्रयोग गर्न सकिन्छ। यसबाट खाद्यान्न उत्पादन बढेर देश आत्मनिर्भर बन्न सक्छ।</li>
+                        <li><strong>निर्यात प्रवर्द्धन:</strong> चिया, कफी, अलैँची, अदुवा जस्ता कृषि उत्पादनहरूलाई प्रशोधन गरी गुणस्तरीय बनाउने र निर्यात गर्ने योजनामा लगानी गर्नुपर्छ।</li>
+                        <li><strong>जलविद्युत आयोजना:</strong> साना जलविद्युत आयोजनाहरूको निर्माणमा लगानी गर्न सकिन्छ, जसले ऊर्जाको सहज आपूर्ति गरी उद्योगहरूलाई सहयोग पुर्‍याउँछ।</li>
+                        <li><strong>पर्यटन र मनोरञ्जन:</strong> साहसिक पर्यटन र मनोरञ्जन केन्द्रहरूको स्थापनामा लगानी गर्नाले पर्यटकहरू आकर्षित हुन्छन् र आम्दानी बढ्छ।</li>
+                        <li><strong>स्वास्थ्य सेवा र जडीबुटी:</strong> स्वास्थ्य सेवालाई सुदृढ पार्ने, औषधि निर्माण गर्ने र जडीबुटी उत्पादन बढाउने कार्यमा पनि यो रकम लगानी गर्न सकिन्छ।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="app-download">
+                <p>यी र यस्ता अन्य नोटहरू अफलाइन हेर्नका लागि हाम्रो एन्ड्रोइड एप डाउनलोड गर्नुहोस्।</p>
+                <a href="#" class="app-button">अहिले नै डाउनलोड गर्नुहोस्</a>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
