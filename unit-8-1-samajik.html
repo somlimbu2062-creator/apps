@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>नेपालको संविधान - विगत र वर्तमान</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&family=Lora:wght@700&display=swap');
+
+        :root {
+            --primary-color: #d32f2f; /* Red */
+            --secondary-color: #ffb74d; /* Light Orange */
+            --background-color: #fce4ec; /* Pink */
+            --text-color: #424242; /* Grey */
+            --light-text-color: #757575; /* Lighter Grey */
+            --card-background: #ffffff;
+            --table-header-bg: #e57373;
+            --table-border: #ef9a9a;
+            --border-radius: 12px;
+            --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --transition-speed: 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Mukta', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        header {
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary-color), #ff8a65);
+            color: #fff;
+            padding: 40px 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        header h1 {
+            font-family: 'Lora', serif;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .section {
+            background-color: var(--card-background);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            font-family: 'Lora', serif;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+
+        .question {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .question h4 {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .question p, .question ul, .question table {
+            font-size: 1rem;
+            color: var(--light-text-color);
+            margin-bottom: 15px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            overflow-x: auto;
+            display: block;
+        }
+
+        th, td {
+            border: 1px solid var(--table-border);
+            padding: 12px;
+            text-align: left;
+            white-space: nowrap;
+        }
+
+        th {
+            background-color: var(--table-header-bg);
+            color: #fff;
+            font-weight: bold;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #ffebee;
+        }
+
+        tr:hover {
+            background-color: #ffcdd2;
+        }
+        
+        .check-mark {
+            color: #4caf50;
+            font-weight: bold;
+            font-size: 1.2em;
+            text-align: center;
+        }
+
+        .question ul {
+            margin-top: 10px;
+            list-style-type: disc;
+            padding-left: 40px;
+        }
+
+        .question li {
+            margin-bottom: 8px;
+        }
+
+        .app-download {
+            text-align: center;
+            padding: 30px;
+            background-color: var(--primary-color);
+            color: #fff;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .app-download p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .app-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .app-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                gap: 20px;
+            }
+            header {
+                padding: 30px 15px;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            .section {
+                padding: 20px;
+            }
+            .section h2 {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+            }
+            .question h4 {
+                font-size: 1rem;
+            }
+            .app-download {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>नेपालको संविधान: विगत र वर्तमान</h1>
+            <p>कक्षा ११ - नेपाली</p>
+        </header>
+
+        <main>
+            <div class="section">
+                <h2>अभ्यास</h2>
+                
+                <div class="question">
+                    <h4>१. नेपाल अधिराज्यको संविधान २०४७ र २०७२ सालमा जारी भएको नेपालको संविधानका प्रस्तावनामा मिल्ने र नमिल्ने विषयवस्तु पहिचान गरी तालिकामा प्रस्तुत गर्नुहोस् ।</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>क्र. सं.</th>
+                                <th>नेपाल अधिराज्यको संविधान २०४७</th>
+                                <th>नेपालको संविधान २०७२</th>
+                                <th>मिल्छ</th>
+                                <th>मिल्दैन</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>१.</td>
+                                <td>हिन्दू अधिराज्य</td>
+                                <td>धर्म निरपेक्ष राज्य</td>
+                                <td></td>
+                                <td class="check-mark">✓</td>
+                            </tr>
+                            <tr>
+                                <td>२.</td>
+                                <td>जनआन्दोलनको माध्यम</td>
+                                <td>जनआन्दोलनको माध्यम</td>
+                                <td class="check-mark">✓</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>३.</td>
+                                <td>संवैधानिक राजतन्त्र</td>
+                                <td>गणतन्त्रात्मक शासन</td>
+                                <td></td>
+                                <td class="check-mark">✓</td>
+                            </tr>
+                            <tr>
+                                <td>४.</td>
+                                <td>स्वतन्त्र, निष्पक्ष, सक्षम न्यायपालिका</td>
+                                <td>स्वतन्त्र, निष्पक्ष, सक्षम न्यायपालिका</td>
+                                <td class="check-mark">✓</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>५.</td>
+                                <td>कानुनी राज्यको अवधारणा</td>
+                                <td>कानुनी राज्यको अवधारणा</td>
+                                <td class="check-mark">✓</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>६.</td>
+                                <td>एकात्मक</td>
+                                <td>संघात्मक</td>
+                                <td></td>
+                                <td class="check-mark">✓</td>
+                            </tr>
+                            <tr>
+                                <td>७.</td>
+                                <td>समतामूलक समाजको निर्माण उल्लेख नभएको</td>
+                                <td>समतामूलक समाजको निर्माण उल्लेख भएको</td>
+                                <td></td>
+                                <td class="check-mark">✓</td>
+                            </tr>
+                            <tr>
+                                <td>८.</td>
+                                <td>राजाबाट जारी</td>
+                                <td>संविधान सभाबाट जारी</td>
+                                <td></td>
+                                <td class="check-mark">✓</td>
+                            </tr>
+                            <tr>
+                                <td>९.</td>
+                                <td>वालिग मताधिकार</td>
+                                <td>वालिग मताधिकार</td>
+                                <td class="check-mark">✓</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>१०.</td>
+                                <td>राजकीय सत्ता र सार्वभौम अधिकार राजामा</td>
+                                <td>राजकीय सत्ता र सार्वभौम अधिकार जनतामा</td>
+                                <td></td>
+                                <td class="check-mark">✓</td>
+                            </tr>
+                            <tr>
+                                <td>११.</td>
+                                <td>छुवाछुतको अन्त्य गरी उल्लेख नभएको</td>
+                                <td>छुवाछुतको अन्त्य गरी उल्लेख भएको</td>
+                                <td></td>
+                                <td class="check-mark">✓</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="question">
+                    <h4>२. नेपालको संविधानको प्रारम्भिक खण्डमा दिइएका विषयवस्तु अध्ययन गरी कक्षामा छलफल गर्नुहोस् ।</h4>
+                    <p>नेपालको संविधान २०७२ को प्रारम्भिक खण्ड (प्रस्तावना) मा उल्लेख भएका मूलभूत पक्षहरू निम्न छन्:</p>
+                    <ul>
+                        <li>प्रारम्भमा नै सार्वभौमसत्ता सम्पन्न नेपाली जनताको उल्लेख छ।</li>
+                        <li>नेपालको स्वतन्त्रता, स्वाधीनता, सार्वभौमिकता, भौगोलिक अखण्डता, राष्ट्रिय एकता र स्वाभिमानलाई अक्षुण्ण राख्ने कुरामा जोड दिइएको छ।</li>
+                        <li>जनतालाई सार्वभौम अधिकार, स्वायत्तता र स्वशासनको अधिकार प्रदान गरिएको छ।</li>
+                        <li>संविधान जनआन्दोलनको माध्यमबाट प्राप्त भएको उल्लेख छ।</li>
+                        <li>एकात्मक र केन्द्रीकृत राज्यव्यवस्थाले सिर्जना गरेका विभेद हटाउने संकल्प गरिएको छ।</li>
+                        <li>नेपाललाई बहुजातीय, बहुभाषिक, बहुधार्मिक, बहुसांस्कृतिक तथा भौगोलिक विविधतायुक्त देशका रूपमा स्वीकार गरिएको छ।</li>
+                        <li>जातीय छुवाछुतको अन्त्य गर्ने प्रतिबद्धता व्यक्त गरिएको छ।</li>
+                        <li>वर्गीय, जातीय, क्षेत्रीय, भाषिक, लैङ्गिक लगायतका सबै प्रकारका विभेद हटाउने लक्ष्य राखिएको छ।</li>
+                        <li>समानुपातिक, समावेशी, सहभागितामूलक सिद्धान्तमा आधारित समतामूलक समाजको निर्माण गर्ने उद्देश्य छ।</li>
+                        <li>प्रतिस्पर्धात्मक बहुदलीय लोकतान्त्रिक शासन प्रणाली, नागरिक स्वतन्त्रता, मौलिक अधिकार र मानव अधिकारको व्यवस्था गरिएको छ।</li>
+                        <li>निष्पक्ष, स्वतन्त्र र सक्षम न्यायपालिकाको परिकल्पना गरिएको छ।</li>
+                        <li>वालिग मताधिकारको प्रत्याभूति दिइएको छ।</li>
+                        <li>कानुनी राज्यको अवधारणालाई आत्मसात गरिएको छ।</li>
+                        <li>देशमा संघीय शासन व्यवस्था हुने उल्लेख छ।</li>
+                        <li>यो संविधान संविधानसभाबाट पारित भएको हो।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="app-download">
+                <p>यी र यस्ता अन्य नोटहरू अफलाइन हेर्नका लागि हाम्रो एन्ड्रोइड एप डाउनलोड गर्नुहोस्।</p>
+                <a href="#" class="app-button">अहिले नै डाउनलोड गर्नुहोस्</a>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
