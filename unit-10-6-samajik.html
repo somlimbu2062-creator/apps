@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>नेपालमा श्रमशक्ति, रोजगारी र उद्यमशीलता</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&family=Lora:wght@700&display=swap');
+
+        :root {
+            --primary-color: #f57c00; /* Orange */
+            --secondary-color: #ffcc80; /* Light Orange */
+            --background-color: #fff3e0; /* Very Light Orange */
+            --text-color: #e65100; /* Dark Orange */
+            --light-text-color: #ff9800; /* Medium Orange */
+            --card-background: #ffffff;
+            --list-bullet-color: #ffb74d;
+            --border-radius: 12px;
+            --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --transition-speed: 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Mukta', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        header {
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary-color), var(--light-text-color));
+            color: #fff;
+            padding: 40px 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        header h1 {
+            font-family: 'Lora', serif;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .section {
+            background-color: var(--card-background);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            font-family: 'Lora', serif;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+
+        .question {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .question h4 {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        .question p, .question ul {
+            font-size: 1rem;
+            color: var(--text-color);
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .question ul {
+            margin-top: 10px;
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .question li {
+            position: relative;
+            margin-bottom: 8px;
+            padding-left: 25px;
+        }
+
+        .question li::before {
+            content: "•";
+            color: var(--list-bullet-color);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+            position: absolute;
+            left: 0;
+        }
+        
+        .question p strong {
+            color: var(--primary-color);
+        }
+
+        .story-box {
+            background-color: #fff;
+            border: 2px solid var(--secondary-color);
+            border-radius: var(--border-radius);
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .story-box h5 {
+            color: var(--primary-color);
+            text-align: center;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+        
+        .app-download {
+            text-align: center;
+            padding: 30px;
+            background-color: var(--primary-color);
+            color: #fff;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .app-download p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .app-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .app-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                gap: 20px;
+            }
+            header {
+                padding: 30px 15px;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            .section {
+                padding: 20px;
+            }
+            .section h2 {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+            }
+            .question h4 {
+                font-size: 1rem;
+            }
+            .app-download {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>नेपालमा श्रमशक्ति, रोजगारी र उद्यमशीलता</h1>
+            <p>कक्षा ११ - अर्थशास्त्र</p>
+        </header>
+
+        <main>
+            <div class="section">
+                <h2>अभ्यास</h2>
+
+                <div class="question">
+                    <h4>१. नेपालमा रोजगार प्रवर्धन गर्ने उपायहरूको खोजी गरी बुँदागत रूपमा सूची तयार पार्नुहोस्।</h4>
+                    <p>नेपालमा रोजगार प्रवर्द्धन गर्न निम्न उपायहरू अपनाउन सकिन्छ:</p>
+                    <ul>
+                        <li>कृषिलाई आधुनिकीकरण र व्यवसायीकरण गर्ने तथा पशुपालन व्यवसायलाई प्रोत्साहन दिने।</li>
+                        <li>शिक्षा तथा स्वास्थ्य सेवालाई विस्तार गर्ने।</li>
+                        <li>कृषिमा आधारित उद्योगहरूलाई विस्तार गर्न नीतिगत सुधार ल्याउने।</li>
+                        <li>दैनिक उपभोगका वस्तु र सेवा उत्पादन गर्ने घरेलु उद्योगलाई प्रोत्साहित गर्ने।</li>
+                        <li>विप्रेषण रकमलाई उपभोगमा भन्दा उत्पादनमूलक कार्यमा खर्च गर्ने वातावरण बनाउने।</li>
+                        <li>सरकारको पूँजीगत खर्च वृद्धि गर्ने।</li>
+                        <li>ऊर्जा क्षेत्रमा विदेशी लगानी आकर्षित गर्ने।</li>
+                        <li>निर्माण व्यवसायलाई प्रोत्साहित गर्ने।</li>
+                    </ul>
+                </div>
+
+                <div class="question">
+                    <h4>२. यहाँ नेपालको रोजगारीको अवस्था झल्काइएको छ । यसमा कसरी सुधार ल्याउन सकिएला ?</h4>
+                    <p>नेपालमा बर्सेनि ४ लाख ५० हजार श्रमशक्ति थपिन्छ, जसमध्ये २.३% पूर्ण बेरोजगार र ३०% अर्ध-बेरोजगार छन्। धेरैजसो कृषिमा आश्रित भए पनि यो क्षेत्रको आधुनिकीकरण नहुँदा अर्ध-बेरोजगारी बढेको छ। यस अवस्थामा सुधार ल्याउन निम्न उपायहरू अपनाउनुपर्छ:</p>
+                    <ul>
+                        <li>जनसंख्या वृद्धिदर नियन्त्रण गर्दै जाने।</li>
+                        <li>वैदेशिक रोजगारीलाई व्यवस्थित र सुरक्षित बनाउने।</li>
+                        <li>कृषिलाई आधुनिकीकरण, यान्त्रीकरण र व्यवसायीकरण गर्ने।</li>
+                        <li>प्राविधिक शिक्षालयको स्थापना गरी दक्ष कामदार तयार गर्ने।</li>
+                        <li>आयात प्रतिस्थापन गर्ने साना तथा मझौला उद्योग स्थापना गर्न निजी क्षेत्रलाई प्रोत्साहित गर्ने।</li>
+                        <li>विदेशी लगानी आकर्षित गर्न सुरक्षित र स्थिर राजनीतिक वातावरण बनाउने।</li>
+                        <li>बचत गर्ने बानीलाई प्रोत्साहित गरी उत्पादनमूलक कार्यमा लगानी गर्ने।</li>
+                    </ul>
+                </div>
+
+                <div class="question">
+                    <h4>३. प्रस्तुत सफल उद्यमीहरूका भनाइहरूको अध्ययन गरी ‘मेरो सपना’ शीर्षकमा एक सामग्री प्रस्तुत गर्नुहोस्।</h4>
+                    <div class="story-box">
+                        <h5>मेरो सपना</h5>
+                        <p>मलाई पनि एउटा राम्रो पसल चलाएर राम्रो आम्दानी गर्ने सपना थियो। घरको आर्थिक अवस्था कमजोर भएकाले मैले कक्षा १० सम्म मात्रै पढ्न पाएँ। त्यसपछि मैले एउटा मोटरसाइकल मर्मत गर्ने वर्कसपमा काम गर्न थालें। त्यहाँ ३ वर्ष काम गरेपछि मैले आफैंले सीप सिकेर घरछेउमै वर्कसप खोलें। मैले ग्राहकसँग राम्रो व्यवहार गरें, गुणस्तरीय सेवा दिएँ र आवश्यक सामानहरू सिमापारिबाट मगाएँ। पुराना मोटरसाइकलहरू मर्मत गरेर बेच्नका लागि छुट्टै पसल पनि खोलेँ। आज मैले १५ जनालाई रोजगारी दिएको छु र राम्रो आम्दानी पनि गरिरहेको छु। यो मेरो सपनाको यथार्थ रूप हो।</p>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <h4>४. हामी पनि नेपाली उद्यमीको सूचीमा दर्ता किन नहुने ? यस शीर्षकमा एक लेख तयार पार्नुहोस् ।</h4>
+                    <p>दैनिक जीवनमा हामीलाई चाहिने धेरै वस्तुहरू विदेशबाट आयात हुन्छन्। यसले गर्दा हाम्रो देशको पैसा बाहिर जान्छ। हामीले पनि यस्ता वस्तुहरू स्वदेशमै उत्पादन गरेर आत्मनिर्भर बन्न सक्छौँ। यसका लागि हामीलाई जोखिम मोल्ने क्षमता र काम गर्ने जागर चाहिन्छ। उद्यमशीलताका लागि सबैभन्दा पहिले बजारको आवश्यकता पहिचान गर्नुपर्छ। उपभोक्तालाई के चाहिएको छ भन्ने कुरा बुझेर त्यसको उत्पादन गर्ने वातावरण खोज्नुपर्छ। यदि अनुकूल वातावरण छ भने आवश्यक सीप र पूँजीको व्यवस्था गरी उत्पादन सुरु गर्नुपर्छ। जब हाम्रो उत्पादनले बजारमा स्थान पाउँछ, तब हाम्रो नाम पनि नेपाली उद्यमीहरूको सूचीमा दर्ता हुन्छ। त्यसैले, हामी सबैले जागिरको पछाडि मात्र नदौडिकन आफैं उद्यमी बन्ने हिम्मत गर्नुपर्छ।</p>
+                </div>
+
+                <div class="question">
+                    <h4>५. चाणक्य नीतिको एक भनाइलाई पुष्टि गर्ने एउटा दृष्टान्त तयार पार्नुहोस् ।</h4>
+                    <p>चाणक्य नीतिमा भनिएको छ, 'आलश्य कार्यनाशाय, बुद्धिनाशाय निर्धनी' अर्थात् अल्छी गर्ने व्यक्तिको काम नष्ट हुन्छ, काम नष्ट भएपछि बुद्धि पनि नष्ट हुन्छ र त्यसपछि त्यो व्यक्ति गरिब हुन्छ। यो भनाइलाई पुष्टि गर्ने एउटा कथा यस प्रकार छ:</p>
+                    <div class="story-box">
+                        <h5>रामबहादुर र उनका दुई छोराहरू</h5>
+                        <p>कुनै गाउँमा रामबहादुर साहुको पसल र जग्गाजमिन थियो। उनका दुई छोराहरू, हरि र रमेश थिए। हरि मेहनती र ज्ञानी थिए भने रमेश अल्छी र रमाइलोमा रमाउने खालका थिए। रामबहादुरले आफ्नो सम्पत्ति दुवै छोरालाई बराबर बाँडिदिए - एक-एक घर, पाँच-पाँच बिघा खेत र पाँच-पाँच लाख रुपैयाँ नगद।</p>
+                        <p>रामबहादुरको निधनपछि हरिले आफ्नो घरमै पसल थापेर परिश्रम गर्न थाले। उनी खेतीपातीको पनि हेरचाह गर्थे। तर रमेशले बैङ्कबाट ऋण लिएर बस किने, जसले राम्रै आम्दानी पनि दियो। तर रमेश आफ्ना साथीहरूसँग मोजमस्तीमा लागे र बसबाट कमाएको पैसा खर्च गरे। बैङ्कको ऋण तिर्न नसकेपछि उनले आफ्नो खेत बेच्नुपर्यो। आज रमेशसँग एउटा मात्र घर बाँकी छ।</p>
+                        <p>उता, हरि कहिल्यै कुलतमा लागेनन्। उनले आफ्नो व्यवसाय र खेतीमा निरन्तर मेहनत गरे। फलस्वरूप, उनले अर्को एउटा घर किन्नुका साथै बैङ्कमा ३ लाख रुपैयाँ बचत पनि गर्न सफल भए। यस कथाले आलस्य र मोजमस्तीले कसरी मानिसलाई गरिब बनाउँछ र मेहनतले कसरी सफलता दिलाउँछ भन्ने कुरा पुष्टि गर्छ।</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="app-download">
+                <p>यी र यस्ता अन्य नोटहरू अफलाइन हेर्नका लागि हाम्रो एन्ड्रोइड एप डाउनलोड गर्नुहोस्।</p>
+                <a href="#" class="app-button">अहिले नै डाउनलोड गर्नुहोस्</a>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
