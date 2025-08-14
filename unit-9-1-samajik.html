@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>मानव बस्ती - कक्षा ११</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&family=Lora:wght@700&display=swap');
+
+        :root {
+            --primary-color: #388e3c; /* Green */
+            --secondary-color: #ffb74d; /* Light Orange */
+            --background-color: #e8f5e9; /* Lighter Green */
+            --text-color: #1b5e20; /* Darker Green */
+            --light-text-color: #4caf50; /* Medium Green */
+            --card-background: #ffffff;
+            --table-header-bg: #66bb6a;
+            --table-border: #a5d6a7;
+            --border-radius: 12px;
+            --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --transition-speed: 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Mukta', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        header {
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary-color), #81c784);
+            color: #fff;
+            padding: 40px 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        header h1 {
+            font-family: 'Lora', serif;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .section {
+            background-color: var(--card-background);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            font-family: 'Lora', serif;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+
+        .question {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .question h4 {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .question p, .question ul, .question table {
+            font-size: 1rem;
+            color: var(--light-text-color);
+            margin-bottom: 15px;
+        }
+
+        .question ul {
+            margin-top: 10px;
+            list-style-type: disc;
+            padding-left: 40px;
+        }
+
+        .question li {
+            margin-bottom: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid var(--table-border);
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: var(--table-header-bg);
+            color: #fff;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #e8f5e9;
+        }
+
+        tr:hover {
+            background-color: #c8e6c9;
+        }
+
+        .app-download {
+            text-align: center;
+            padding: 30px;
+            background-color: var(--primary-color);
+            color: #fff;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .app-download p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .app-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .app-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                gap: 20px;
+            }
+            header {
+                padding: 30px 15px;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            .section {
+                padding: 20px;
+            }
+            .section h2 {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+            }
+            .question h4 {
+                font-size: 1rem;
+            }
+            .app-download {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>मानव बस्ती</h1>
+            <p>कक्षा ११ - नेपाली</p>
+        </header>
+
+        <main>
+            <div class="section">
+                <h2>अभ्यास</h2>
+
+                <div class="question">
+                    <h4>१. ‘बस्ती’ भनेको के हो, बस्तीको वर्गीकरणका आधारहरू लेख्नुहोस् ।</h4>
+                    <p>मानिसको बसोबास भएको ठाउँ, टोल, गाउँ, सहर आदिलाई **बस्ती** भनिन्छ। बस्ती सानो वा ठूलो हुन सक्छ। आर. एल. सिंहका अनुसार, बस्न, प्रयोग गर्न वा कुनै कुरा सञ्चित गर्न जुनसुकै उद्देश्यका लागि निर्माण गरिएका घर तथा सडक गल्लीहरू नै बस्ती हुन्।</p>
+                    <p>बस्तीको वर्गीकरण निम्न आधारमा गरिएको छ:</p>
+                    <ul>
+                        <li><strong>अवस्थितिका आधारमा:</strong> मैदानी बस्ती, पर्वतीय बस्ती, ताल किनारको बस्ती, मरुभूमिको बस्ती आदि।</li>
+                        <li><strong>दुरीका आधारमा:</strong> एक्लो बस्ती, छरिएको बस्ती, गुजुमुज्ज बस्ती आदि।</li>
+                        <li><strong>समयका आधारमा:</strong> अस्थायी बस्ती, स्थायी बस्ती, मौसम अनुसारको बस्ती आदि।</li>
+                        <li><strong>कामको आधारमा:</strong> कृषि बस्ती, औद्योगिक बस्ती, व्यापारिक बस्ती आदि।</li>
+                        <li><strong>आकारको आधारमा:</strong> कृषि गृह, गाउँ, बजार, सहर आदि।</li>
+                        <li><strong>आकृतिका आधारमा:</strong> रेखाकार, वृत्ताकार, तीन आकार, पंखा आकार, तारा आकार आदि।</li>
+                    </ul>
+                    <p>मानव बस्तीलाई मुख्यगरी **ग्रामीण बस्ती** र **सहरी बस्ती** गरी दुई प्रकारमा पनि विभाजन गर्न सकिन्छ।</p>
+                </div>
+
+                <div class="question">
+                    <h4>२. तपाईं बसेको ठाउँको बस्तीको विकासक्रमका बारेमा छोटो अनुच्छेद लेखी कक्षामा प्रस्तुत गर्नुहोस् ।</h4>
+                    <p>म बसेको सहरलाई आजको स्वरूपमा आउन करिब ७० वर्ष लाग्यो। पहिला यो घना जङ्गल थियो। रुख काट्न मानिसहरू आउन थालेपछि विस्तारै जङ्गल फडानी हुँदै गयो। पहाडी भेगका मानिसहरू बसाइँ सर्न थालेपछि बस्ती बढ्न थाल्यो। सुरुमा साना घर र पसलहरू थिए, पछि राजमार्ग बनेपछि व्यापार बढ्यो र औद्योगिक क्षेत्र पनि स्थापना भयो।</p>
+                    <p>समयसँगै यहाँ प्राथमिक र माध्यमिक विद्यालयहरू खुले, त्यसपछि अस्पताल र कलेजहरू पनि बने। सडकहरू फराकिला बनाइए र कालोपत्रे गरियो। दूरसञ्चारको विकास भयो। आज यो सहरमा थुप्रै सरकारी र निजी विद्यालयहरू छन्, साथै डिग्रीसम्म पढाइ हुने महाविद्यालयहरू पनि छन्। दुईवटा ठूला अस्पताल र अन्य सुविधाको विकासले गर्दा यो सहर एक विकसित बस्ती बनेको छ। मानिसहरूले राम्रो शिक्षा, स्वास्थ्य र रोजगारका अवसर पाएका छन्।</p>
+                </div>
+
+                <div class="question">
+                    <h4>३. ग्रामीण र सहरी बस्तीका बिचमा फरक छुट्याउनुहोस् ।</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ग्रामीण बस्ती</th>
+                                <th>सहरी बस्ती</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>जनसङ्ख्या कम हुन्छ।</td>
+                                <td>जनसङ्ख्या बढी हुन्छ।</td>
+                            </tr>
+                            <tr>
+                                <td>अधिकांश मानिस कृषिमा आधारित हुन्छन्।</td>
+                                <td>अधिकांश मानिस गैर-कृषि कार्यमा संलग्न हुन्छन्।</td>
+                            </tr>
+                            <tr>
+                                <td>प्रदूषण कम हुन्छ।</td>
+                                <td>प्रदूषण बढी हुन्छ।</td>
+                            </tr>
+                            <tr>
+                                <td>यातायात, शिक्षा, स्वास्थ्य जस्ता पूर्वाधारको विकास कम हुन्छ।</td>
+                                <td>यातायात, शिक्षा, स्वास्थ्य जस्ता पूर्वाधारको विकास बढी हुन्छ।</td>
+                            </tr>
+                            <tr>
+                                <td>फोहोरमैला व्यवस्थापनको समस्या ठूलो हुँदैन।</td>
+                                <td>फोहोरमैला व्यवस्थापनको समस्या ठूलो हुन्छ।</td>
+                            </tr>
+                            <tr>
+                                <td>प्राय: कुटिर उद्योग चल्छन्।</td>
+                                <td>कुटिर, मध्यम तथा ठूला उद्योगहरू चल्छन्।</td>
+                            </tr>
+                            <tr>
+                                <td>विलासिताका सामानको प्रयोग कम हुन्छ।</td>
+                                <td>विलासिताका सामानको प्रयोग बढी हुन्छ।</td>
+                            </tr>
+                            <tr>
+                                <td>प्राकृतिक वातावरण बढी उपलब्ध हुन्छ।</td>
+                                <td>प्राकृतिक वातावरण कम उपलब्ध हुन्छ।</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="question">
+                    <h4>४. जनसङ्ख्याका आधारमा मात्र बस्तीलाई वर्गीकरण गर्नु उचित हुन्छ ? यदि हुँदैन भने किन हुँदैन कारण उल्लेख गर्नुहोस् ।</h4>
+                    <p>जनसङ्ख्याको आधारमा मात्रै बस्तीलाई वर्गीकरण गर्नु **उचित हुँदैन**। बस्तीको वर्गीकरण र विकासमा अन्य धेरै कुराहरूले प्रभाव पार्छन्। जस्तै, हिमाली क्षेत्रमा चिसो हावापानी, यातायात र अन्य पूर्वाधारको अभावले गर्दा जनसङ्ख्या कम हुन्छ। त्यसैले त्यहाँ जनसङ्ख्या कम भए पनि त्यसलाई सहरी बस्ती भन्न मिल्दैन।</p>
+                    <p>यसैगरी, भौगोलिक बनोट, हावापानी, रोजगारीका अवसर, सुरक्षा, यातायात, उद्योग, स्वास्थ्य सेवा, सञ्चार जस्ता पूर्वाधारहरूले बस्तीको स्वरूप निर्धारण गर्छन्। काठमाडौँ उपत्यकामा यी सबै सुविधा उपलब्ध भएकाले यहाँ घना बस्ती पाइन्छ। अर्कोतिर, सीमावर्ती वा दुर्गम क्षेत्रमा सुरक्षाको समस्या र पूर्वाधारको कमीले गर्दा जनसङ्ख्या कम हुन्छ। त्यसैले बस्तीको वर्गीकरण गर्दा जनसङ्ख्यासँगै यी सबै कारक तत्वहरूको पनि मूल्याङ्कन गर्नु जरुरी हुन्छ।</p>
+                </div>
+            </div>
+
+            <div class="app-download">
+                <p>यी र यस्ता अन्य नोटहरू अफलाइन हेर्नका लागि हाम्रो एन्ड्रोइड एप डाउनलोड गर्नुहोस्।</p>
+                <a href="#" class="app-button">अहिले नै डाउनलोड गर्नुहोस्</a>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
