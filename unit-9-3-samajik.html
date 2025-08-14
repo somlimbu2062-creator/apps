@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>जनसङ्ख्या र विकास - कक्षा ११</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&family=Lora:wght@700&display=swap');
+
+        :root {
+            --primary-color: #0d47a1; /* Dark Blue */
+            --secondary-color: #90caf9; /* Light Blue */
+            --background-color: #e3f2fd; /* Lighter Blue */
+            --text-color: #1a237e; /* Very Dark Blue */
+            --light-text-color: #42a5f5; /* Medium Blue */
+            --card-background: #ffffff;
+            --table-header-bg: #42a5f5;
+            --table-border: #bbdefb;
+            --border-radius: 12px;
+            --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --transition-speed: 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Mukta', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        header {
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary-color), #64b5f6);
+            color: #fff;
+            padding: 40px 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        header h1 {
+            font-family: 'Lora', serif;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .section {
+            background-color: var(--card-background);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            font-family: 'Lora', serif;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+
+        .question {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .question h4 {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .question p, .question ul, .question table {
+            font-size: 1rem;
+            color: var(--light-text-color);
+            margin-bottom: 15px;
+        }
+
+        .question ul {
+            margin-top: 10px;
+            list-style-type: disc;
+            padding-left: 40px;
+        }
+
+        .question li {
+            margin-bottom: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid var(--table-border);
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: var(--table-header-bg);
+            color: #fff;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f5faff;
+        }
+
+        tr:hover {
+            background-color: #cfe2f3;
+        }
+
+        .app-download {
+            text-align: center;
+            padding: 30px;
+            background-color: var(--primary-color);
+            color: #fff;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .app-download p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .app-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .app-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                gap: 20px;
+            }
+            header {
+                padding: 30px 15px;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            .section {
+                padding: 20px;
+            }
+            .section h2 {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+            }
+            .question h4 {
+                font-size: 1rem;
+            }
+            .app-download {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>जनसङ्ख्या र विकास</h1>
+            <p>कक्षा ११ - नेपाली</p>
+        </header>
+
+        <main>
+            <div class="section">
+                <h2>अभ्यास</h2>
+
+                <div class="question">
+                    <h4>१. जनसङ्ख्या भनेको के हो?</h4>
+                    <p>कुनै निश्चित भूभागमा, कुनै निश्चित समयमा बसोबास गरिरहेका मानिसहरूको कुल सङ्ख्यालाई **जनसङ्ख्या** भनिन्छ। यसमा बालबालिका, युवायुवती, र वृद्धवृद्धा सबैको गणना गरिन्छ। जनसङ्ख्याले त्यस ठाउँको मानव स्रोतलाई प्रतिनिधित्व गर्छ।</p>
+                </div>
+
+                <div class="question">
+                    <h4>२. जनसङ्ख्या र विकासबिचको सम्बन्ध उदाहरणसहित व्याख्या गर्नुहोस् ।</h4>
+                    <p>जनसङ्ख्या र विकासबीच गहिरो र घनिष्ट सम्बन्ध छ। जनसङ्ख्याले नै देशमा उपलब्ध स्रोतसाधनको उपयोग गरी विकासको गतिलाई अगाडि बढाउँछ। मानिसहरू आफ्नो जीवन सहज बनाउन नयाँ-नयाँ उपाय र प्रविधिहरूको खोजी गर्छन्। उदाहरणका लागि, आवातजावत गर्न सजिलो बनाउन बाटो बनाउने, पाङ्ग्राको आविष्कार गर्ने, र उद्योगधन्दा खोल्ने काम मानिसले नै गरेको हो।</p>
+                    <p>विकासका लागि गरिने निर्माण कार्यहरू पनि जनसङ्ख्याले नै गर्छ र ती सबै विकासका कार्यहरू जनसङ्ख्याकै लागि लक्षित हुन्छन्। शिक्षा, स्वास्थ्य, सञ्चार, यातायात, र विद्युत जस्ता सुविधाहरू मानव जीवनलाई सहज बनाउनका लागि विकास गरिएका हुन्। आज हामीले घरमै बसेर संसारभरको खबर हेर्न र आफन्तसँग कुरा गर्न सक्छौं। यो सबै जनसङ्ख्याको नयाँ सोच र त्यसलाई कार्यान्वयन गर्ने क्षमताका कारण सम्भव भएको हो। तसर्थ, विकास जनसङ्ख्याले गर्छ र विकास जनसङ्ख्याकै लागि हुन्छ।</p>
+                </div>
+
+                <div class="question">
+                    <h4>३. भौगोलिक क्षेत्रअनुसार जनसङ्ख्याको वितरण छोटकरीमा वर्णन गर्नुहोस् ।</h4>
+                    <p>नेपाललाई तीन भौगोलिक क्षेत्रहरूमा विभाजन गरिएको छ: हिमाल, पहाड, र तराई। वि.सं. २०६८ को जनगणना अनुसार, यी क्षेत्रहरूमा जनसङ्ख्याको वितरण यसप्रकार छ:</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>क्षेत्र</th>
+                                <th>जनसङ्ख्या</th>
+                                <th>प्रतिशत</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>हिमाल</td>
+                                <td>१७,८१,७९२</td>
+                                <td>६.७३%</td>
+                            </tr>
+                            <tr>
+                                <td>पहाड</td>
+                                <td>१,१३,९४,००७</td>
+                                <td>४३.०१%</td>
+                            </tr>
+                            <tr>
+                                <td>तराई</td>
+                                <td>१,३३,१८,७०५</td>
+                                <td>५०.२७%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>माथिको तालिकाले **तराई क्षेत्रमा सबैभन्दा बढी** जनसङ्ख्याको चाप देखाउँछ। यहाँको समथर भूभाग, मलिलो माटो, र यातायात, शिक्षा, स्वास्थ्य, रोजगारी जस्ता सुविधाहरूको उपलब्धताका कारण मानिसहरू आकर्षित हुन्छन्। त्यसैले हिमाल र पहाडबाट पनि बसाइँसराइको क्रम जारी छ।</p>
+                    <p>**पहाडी क्षेत्रमा** जनसङ्ख्या मध्यम छ। यहाँको विषम भूबनोट, कम उर्वर माटो, र रोजगारीको कमीले गर्दा मानिसहरू सहरी क्षेत्रमा बसाइँ सर्ने गर्छन्।</p>
+                    <p>**हिमाली क्षेत्रमा** सबैभन्दा कम जनसङ्ख्या छ। यहाँको कठिन भूबनोट, अत्यधिक चिसो, कम खाद्यान्न उत्पादन, र पूर्वाधारको अभावले गर्दा जीवनयापन कठिन हुन्छ।</p>
+                </div>
+
+                <div class="question">
+                    <h4>४. ‘नेपालको बाग्मती प्रदेशमा सबैभन्दा बढी जनसङ्ख्या र कर्णाली प्रदेशमा सबैभन्दा कम जनसङ्ख्या हुनुको कारण पत्ता लगाउनुहोस्।</h4>
+                    <p>नेपालमा **बाग्मती प्रदेशमा सबैभन्दा बढी** जनसङ्ख्या हुनुका मुख्य कारणहरू:</p>
+                    <ul>
+                        <li><strong>राजनीतिक र प्रशासनिक केन्द्र:</strong> देशको राजधानी काठमाडौं यहीँ छ, जसले गर्दा सबै सरकारी र राजनीतिक कार्यहरू यहीँबाट सञ्चालन हुन्छन्।</li>
+                        <li><strong>आर्थिक विकास:</strong> यहाँ मलिलो माटो, उद्योगधन्दाको विकास, र रोजगारीका प्रशस्त अवसरहरू छन्।</li>
+                        <li><strong>पर्यटन र संस्कृति:</strong> पशुपतिनाथ, बौद्धनाथ जस्ता धार्मिक स्थलहरू, राष्ट्रिय निकुञ्ज, र अन्तर्राष्ट्रिय विमानस्थलले यहाँ पर्यटकहरूलाई आकर्षित गर्छन्।</li>
+                        <li><strong>पूर्वाधारको विकास:</strong> यातायात, शिक्षा, स्वास्थ्य, सञ्चार, र विद्युत जस्ता सुविधाहरूको राम्रो विकास भएको छ।</li>
+                    </ul>
+                    <p>अर्कोतिर, **कर्णाली प्रदेशमा सबैभन्दा कम** जनसङ्ख्या हुनुका कारणहरू:</p>
+                    <ul>
+                        <li><strong>कठिन भूगोल:</strong> यहाँको भूबनोट विषम र पहाडी भएकाले यातायात र पूर्वाधारको विकास हुन सकेको छैन।</li>
+                        <li><strong>कृषि उत्पादनको कमी:</strong> माटो कम उर्वर भएकाले खाद्यान्नको उत्पादन कम हुन्छ, जसले गर्दा प्रायः खाद्य अभावको समस्या हुन्छ।</li>
+                        <li><strong>मौसम र वातावरण:</strong> हावापानी चिसो र हिउँदमा हिमपात हुने भएकाले जीवनयापन कठिन छ।</li>
+                        <li><strong>रोजगारीको अभाव:</strong> उद्योग र व्यवसायको कमीले गर्दा रोजगारीका अवसरहरू न्यून छन्, जसले गर्दा मानिसहरू बसाइँ सर्ने गर्छन्।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="app-download">
+                <p>यी र यस्ता अन्य नोटहरू अफलाइन हेर्नका लागि हाम्रो एन्ड्रोइड एप डाउनलोड गर्नुहोस्।</p>
+                <a href="#" class="app-button">अहिले नै डाउनलोड गर्नुहोस्</a>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
