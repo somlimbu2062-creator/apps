@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>बस्ती विकास - कक्षा ११</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&family=Lora:wght@700&display=swap');
+
+        :root {
+            --primary-color: #5d4037; /* Dark Brown */
+            --secondary-color: #bcaaa4; /* Light Greyish Brown */
+            --background-color: #efebe9; /* Off-White */
+            --text-color: #3e2723; /* Very Dark Brown */
+            --light-text-color: #6d4c41; /* Medium Brown */
+            --card-background: #ffffff;
+            --table-header-bg: #8d6e63;
+            --table-border: #d7ccc8;
+            --border-radius: 12px;
+            --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --transition-speed: 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Mukta', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        header {
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary-color), #a1887f);
+            color: #fff;
+            padding: 40px 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        header h1 {
+            font-family: 'Lora', serif;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .section {
+            background-color: var(--card-background);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            font-family: 'Lora', serif;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+
+        .question {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .question h4 {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .question p, .question ul, .question table {
+            font-size: 1rem;
+            color: var(--light-text-color);
+            margin-bottom: 15px;
+        }
+
+        .question ul {
+            margin-top: 10px;
+            list-style-type: disc;
+            padding-left: 40px;
+        }
+
+        .question li {
+            margin-bottom: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid var(--table-border);
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: var(--table-header-bg);
+            color: #fff;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f5f5f5;
+        }
+
+        tr:hover {
+            background-color: #ebebeb;
+        }
+
+        .app-download {
+            text-align: center;
+            padding: 30px;
+            background-color: var(--primary-color);
+            color: #fff;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .app-download p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .app-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .app-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                gap: 20px;
+            }
+            header {
+                padding: 30px 15px;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            .section {
+                padding: 20px;
+            }
+            .section h2 {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+            }
+            .question h4 {
+                font-size: 1rem;
+            }
+            .app-download {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>बस्ती विकास</h1>
+            <p>कक्षा ११ - नेपाली</p>
+        </header>
+
+        <main>
+            <div class="section">
+                <h2>अभ्यास</h2>
+
+                <div class="question">
+                    <h4>१. हाम्लेट र गाउँका बिचको फरक छुट्याउनुहोस् ।</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>हाम्लेट</th>
+                                <th>गाउँ</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>गाउँको पूर्वअवस्था हो।</td>
+                                <td>हाम्लेटको विकसित अवस्था हो।</td>
+                            </tr>
+                            <tr>
+                                <td>एउटै जातिको बसोबास हुन्छ।</td>
+                                <td>विभिन्न जातिका मानिसको बसोबास हुन्छ।</td>
+                            </tr>
+                            <tr>
+                                <td>एउटै वृहत परिवारका सदस्यहरू बस्छन्।</td>
+                                <td>विभिन्न परिवारहरू मिलेर बस्छन्।</td>
+                            </tr>
+                            <tr>
+                                <td>जाति अनुसारको मात्र धार्मिक गतिविधि हुन्छ।</td>
+                                <td>विभिन्न धर्म अनुसार धार्मिक गतिविधि हुन्छ।</td>
+                            </tr>
+                            <tr>
+                                <td>आर्थिक गतिविधि सीमित हुन्छ।</td>
+                                <td>विभिन्न किसिमका आर्थिक गतिविधि हुन्छन्।</td>
+                            </tr>
+                            <tr>
+                                <td>सामाजिक सेवाको विकास कम हुन्छ।</td>
+                                <td>सामाजिक सेवाको विकास हुँदै गएको हुन्छ।</td>
+                            </tr>
+                            <tr>
+                                <td>हाटबजारको सुविधा हुँदैन।</td>
+                                <td>हाटबजारको सुविधा हुन्छ।</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="question">
+                    <h4>२. “बस्तीको प्रकृति र सामाजिक सेवाबीच गहिरो सम्बन्ध हुन्छ।” यस भनाइलाई उदाहरणसहित पुष्टि गर्नुहोस्।</h4>
+                    <p>बस्तीको प्रकृति र सामाजिक सेवाबीच गहिरो सम्बन्ध हुन्छ। बस्तीको आकार र जनसङ्ख्या बढ्दै जाँदा सामाजिक सेवाको आवश्यकता पनि बढ्दै जान्छ। मानिसको जीवन निर्वाहका लागि खाना, बासबाहेक पनि अन्य दैनिक उपभोग्य वस्तु, शिक्षा, स्वास्थ्य, यातायात र सुरक्षा जस्ता सेवाहरू आवश्यक हुन्छन्।</p>
+                    <p>उदाहरणका लागि, सानो बस्तीमा कम जनसङ्ख्या हुने भएकाले त्यहाँ सामाजिक सेवाहरूको आवश्यकता कम हुन्छ। तर, जब बस्ती बढ्दै गएर गाउँ वा सहरको रूप लिन्छ, तब मानिसका आवश्यकताहरू पनि बढ्छन्। विद्यालय, अस्पताल, पसलहरू, बैंक, यातायातको सुविधा र अन्य सामाजिक सेवाहरू विस्तार हुँदै जान्छन्। ठूलो बस्तीमा धेरै उद्योग, व्यापार र व्यवसाय सञ्चालन हुन्छन्, जसले गर्दा थप सामाजिक सेवाहरूको माग सिर्जना हुन्छ। यसरी, बस्तीको प्रकृति जति विकसित र ठूलो हुन्छ, त्यति नै सामाजिक सेवाहरूको उपलब्धता र विस्तार पनि बढ्दै जान्छ।</p>
+                </div>
+
+                <div class="question">
+                    <h4>३. बस्ती विकास भनेको के हो, मानव जीवनमा यसको महत्त्व उल्लेख गर्नुहोस् ।</h4>
+                    <p>कुनै पनि भूखण्डमा मानिसहरू बसोबास गरेको क्षेत्रलाई **बस्ती** भनिन्छ। बस्तीको विकास आदिम कालदेखि नै हुँदै आएको छ। सुरुमा मानिसहरू नदी, ताल वा समुद्रको किनारामा बस्ती बसाल्थे, किनभने त्यहाँ पानी, उर्वर भूमि, र शिकारका लागि सजिलो हुन्थ्यो। सिन्धुघाटी, नील नदी र मेसोपोटामिया जस्ता प्राचीन सभ्यताहरू नदी किनारमा विकास भएका उदाहरण हुन्। आधुनिक समयमा भने यातायात, उद्योग, शिक्षा, स्वास्थ्य, र सुरक्षा जस्ता पूर्वाधारको विकासले गर्दा बस्तीहरू घना र ठूला हुँदै गएका छन्।</p>
+                    <p>मानव जीवनमा बस्तीको ठूलो महत्त्व छ। मानिसले जन्मदेखि मृत्युसम्म बस्तीमै जीवनयापन गर्छ। बस्तीले मानिसलाई जीवनका आधारभूत आवश्यकता (खाना, बास, कपडा) पूरा गर्न सहयोग गर्छ। यहाँ मानिसले रोजगार, शिक्षा, स्वास्थ्य, यातायात, सञ्चार र मनोरञ्जनका सुविधाहरू प्राप्त गर्छ। बस्तीमा सामाजिक सम्बन्ध र भावनात्मक आवश्यकताहरू पनि पूरा हुन्छन्। एक्लो जीवन बिताउनुको साटो मानिसले सामूहिक रूपमा जीवनयापन गर्न पाउँछ। बस्तीको विकासले नै मानवीय आवश्यकताहरू पूरा गर्न नयाँ-नयाँ आविष्कार र अनुसन्धानलाई प्रेरित गरेको छ।</p>
+                </div>
+
+                <div class="question">
+                    <h4>४. “मानव बस्तीको पर्यावरणीय क्षेत्रसँग गहिरो सम्बन्ध रहेको छ।” यस भनाइलाई उदाहरणसहित प्रस्ट पार्नुहोस् ।</h4>
+                    <p>मानव बस्ती र पर्यावरणबीच गहिरो सम्बन्ध हुन्छ। कुनै पनि क्षेत्रको पर्यावरणले त्यहाँको बस्तीको स्वरूप, घरको बनावट, र मानिसको जीवनशैलीलाई प्रत्यक्ष रूपमा प्रभाव पार्छ।</p>
+                    <p>उदाहरणका लागि:</p>
+                    <ul>
+                        <li><strong>हिमाली क्षेत्र:</strong> नेपालको हिमाली क्षेत्रमा चिसो हावापानी हुने भएकाले त्यहाँका घरहरू ढुङ्गा र काठले बनेका हुन्छन्। चिसोबाट बच्नका लागि घरहरू होचा र सानो झ्याल भएका हुन्छन्।</li>
+                        <li><strong>तराई क्षेत्र:</strong> तराईमा गर्मी बढी हुने हुँदा पुराना बस्तीका घरहरू माटो वा बाँसले बनेका र ठूला झ्याल भएका हुन्थे। जङ्गली जनावरबाट बच्नका लागि बस्तीहरू एकीकृत रूपमा बसोबास गर्थे।</li>
+                        <li><strong>मरुस्थलीय क्षेत्र:</strong> मरुभूमिमा पानीको स्रोत (मरुद्यान) को वरिपरि वृत्ताकार बस्ती विकास भएको पाइन्छ।</li>
+                        <li><strong>वर्षा क्षेत्र:</strong> धेरै वर्षा हुने ठाउँमा पानीबाट बच्न घरहरू भुइँबाट केही माथि र भिरालो छाना भएका हुन्छन्।</li>
+                    </ul>
+                    <p>यसरी, मानव बस्तीको विकासमा त्यहाँको हावापानी, भौगोलिक बनावट, उपलब्ध स्रोतसाधन र प्राकृतिक प्रकोपको प्रभाव देखिन्छ। मानिसले आफ्नो जीवनशैली र घरको बनावटलाई पर्यावरणसँग मिल्दो बनाउँदै आएको छ।</p>
+                </div>
+            </div>
+
+            <div class="app-download">
+                <p>यी र यस्ता अन्य नोटहरू अफलाइन हेर्नका लागि हाम्रो एन्ड्रोइड एप डाउनलोड गर्नुहोस्।</p>
+                <a href="#" class="app-button">अहिले नै डाउनलोड गर्नुहोस्</a>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
