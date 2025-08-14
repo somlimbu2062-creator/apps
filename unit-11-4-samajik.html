@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>किशोरावस्था र स्वास्थ्य जीवनशैली</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&family=Lora:wght@700&display=swap');
+
+        :root {
+            --primary-color: #6a1b9a; /* Dark Purple */
+            --secondary-color: #ce93d8; /* Light Purple */
+            --background-color: #f3e5f5; /* Very Light Purple */
+            --text-color: #4a148c; /* Very Dark Purple */
+            --light-text-color: #9c27b0; /* Medium Purple */
+            --card-background: #ffffff;
+            --list-bullet-color: #ba68c8;
+            --border-radius: 12px;
+            --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --transition-speed: 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Mukta', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        header {
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary-color), var(--light-text-color));
+            color: #fff;
+            padding: 40px 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        header h1 {
+            font-family: 'Lora', serif;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .section {
+            background-color: var(--card-background);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            font-family: 'Lora', serif;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+
+        .question {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .question h4 {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        .question p, .question ul {
+            font-size: 1rem;
+            color: var(--text-color);
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .question ul {
+            margin-top: 10px;
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .question li {
+            position: relative;
+            margin-bottom: 8px;
+            padding-left: 25px;
+        }
+
+        .question li::before {
+            content: "•";
+            color: var(--list-bullet-color);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+            position: absolute;
+            left: 0;
+        }
+        
+        .question p strong {
+            color: var(--primary-color);
+        }
+
+        .app-download {
+            text-align: center;
+            padding: 30px;
+            background-color: var(--primary-color);
+            color: #fff;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .app-download p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .app-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .app-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                gap: 20px;
+            }
+            header {
+                padding: 30px 15px;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            .section {
+                padding: 20px;
+            }
+            .section h2 {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+            }
+            .question h4 {
+                font-size: 1rem;
+            }
+            .app-download {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>किशोरावस्था र स्वास्थ्य जीवनशैली</h1>
+            <p>कक्षा ११ - अर्थशास्त्र</p>
+        </header>
+
+        <main>
+            <div class="section">
+                <h2>अभ्यास</h2>
+
+                <div class="question">
+                    <h4>१. किशोरावस्थाको परिचय दिनुहोस् ।</h4>
+                    <p>विश्व स्वास्थ्य संगठनका अनुसार, **१० वर्षदेखि १९ वर्षसम्मको उमेर**लाई किशोरावस्था भनिन्छ। यो बाल्यकाल र वयस्क अवस्था बीचको संक्रमणकालीन समय हो। यो उमेरमा व्यक्तिमा शारीरिक, मानसिक र मनोवैज्ञानिक परिवर्तनहरू तीव्र गतिमा हुन्छन्। शरीरमा हर्मोनको परिवर्तनसँगै सोच, विचार र बुद्धिको विकास हुन्छ। यस अवस्थामा व्यक्तिले नयाँ कुराहरू सिक्ने, बुझ्ने र आफ्नो पहिचान बनाउने प्रयास गर्छ, त्यसैले यसलाई 'जागरणको विकासको अवस्था' पनि भन्न सकिन्छ।</p>
+                </div>
+
+                <div class="question">
+                    <h4>२. किशोरावस्था जीवनको महत्त्वपूर्ण अवस्था हो, किन?</h4>
+                    <p>किशोरावस्थालाई जीवनको महत्त्वपूर्ण अवस्था मानिन्छ किनभने यही समयमा व्यक्तिको भविष्यको जग बस्छ। यो अवस्थामा धेरै परिवर्तनहरू हुन्छन्:</p>
+                    <ul>
+                        <li><strong>शारीरिक तथा मानसिक विकास:</strong> यो उमेरमा शरीरमा हर्मोनल परिवर्तन आउँछ, जसले शारीरिक र मानसिक विकासमा ठूलो प्रभाव पार्छ।</li>
+                        <li><strong>व्यवाहारिक परिवर्तन:</strong> किशोरकिशोरीहरूमा जोश-जाँगर, छिट्टै खुसी हुने वा रिसाउने, अभिभावकका विचारप्रति विमति राख्ने जस्ता व्यवहारहरू देखिन्छ।</li>
+                        <li><strong>भविष्यको आधार:</strong> यो समयमा असल व्यवहार, चरित्र र संगतको विकास गर्न सकिन्छ। कुनै पनि काममा दक्षता हासिल गर्ने र आफ्नो सपना वा महत्त्वाकांक्षा पूरा गर्नका लागि प्रयास गर्ने यो उपयुक्त समय हो।</li>
+                    </ul>
+                    <p>यदि यो उमेरमा सही बाटो र मार्गदर्शन पाइएन भने व्यक्ति गलत बाटोमा जान सक्छ। त्यसैले, यो अवस्थामा गरिएका हरेक निर्णय र प्रयासले भविष्यको मार्ग निर्धारण गर्छ।</p>
+                </div>
+
+                <div class="question">
+                    <h4>३. किशोरावस्थाका मुख्य चुनौतीहरूको सूची तयार पार्नुहोस् ।</h4>
+                    <p>किशोरावस्थामा किशोरकिशोरीहरूले सामना गर्नुपर्ने केही मुख्य चुनौतीहरू:</p>
+                    <ul>
+                        <li>समयलाई सही रूपमा व्यवस्थापन गर्ने।</li>
+                        <li>असल साथीहरूको संगत कायम राख्ने।</li>
+                        <li>लागुपदार्थ, रक्सी वा अन्य कुलतबाट टाढा रहने।</li>
+                        <li>पढाइलाई निरन्तरता दिने र काममा दक्षता हासिल गर्ने।</li>
+                        <li>भविष्यलाई उज्ज्वल बनाउनका लागि स्पष्ट सोच राख्ने।</li>
+                        <li>असफलताबाट निराश नभई जोश र जाँगरका साथ काम गर्ने।</li>
+                        <li>सधैं सकारात्मक सोच राख्ने।</li>
+                        <li>अभिभावक तथा समुदायप्रति संवेदनशील र जिम्मेवार हुने।</li>
+                    </ul>
+                </div>
+
+                <div class="question">
+                    <h4>४. किशोरकिशोरीहरूले स्वस्थ जीवनशैली अपनाउन किन जरुरी छ, कारणहरू उल्लेख गर्नुहोस् ।</h4>
+                    <p>किशोरकिशोरीहरूका लागि स्वस्थ जीवनशैली अपनाउनु अति आवश्यक छ। यसका केही प्रमुख कारणहरू यस प्रकार छन्:</p>
+                    <ul>
+                        <li><strong>दीर्घकालीन स्वास्थ्य लाभ:</strong> यो उमेरमा अपनाएको स्वस्थ बानी जीवनभर रहन्छ, जसले भविष्यमा रोग लाग्ने सम्भावना कम हुन्छ र स्वस्थ जीवन बिताउन मद्दत गर्छ।</li>
+                        <li><strong>भविष्य निर्माण:</strong> स्वस्थ शरीर र सकारात्मक सोचले पढाइ र करियरमा ध्यान केन्द्रित गर्न सजिलो हुन्छ। यसले गर्दा भविष्य उज्ज्वल बनाउन सकिन्छ।</li>
+                        <li><strong>समस्याबाट मुक्ति:</strong> स्वस्थ जीवनशैलीले अस्वस्थ खानपान, कुलत र खराब बानीहरूबाट टाढा राख्छ, जसले गर्दा जीवनमा आउने धेरै समस्याबाट बच्न सकिन्छ।</li>
+                        <li><strong>सकारात्मक दृष्टिकोण:</strong> व्यायाम, सन्तुलित आहार र रचनात्मक कामहरूमा संलग्न हुँदा मन खुसी र शान्त रहन्छ, जसले सकारात्मक सोचको विकास गर्छ।</li>
+                    </ul>
+                    <p>अहिले नै स्वस्थ जीवनशैली अपनाएर किशोरकिशोरीहरूले आफ्नो जीवनलाई सफल र समुदायमा आफ्नो प्रतिष्ठालाई उँचो बनाउन सक्छन्।</p>
+                </div>
+            </div>
+
+            <div class="app-download">
+                <p>यी र यस्ता अन्य नोटहरू अफलाइन हेर्नका लागि हाम्रो एन्ड्रोइड एप डाउनलोड गर्नुहोस्।</p>
+                <a href="#" class="app-button">अहिले नै डाउनलोड गर्नुहोस्</a>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
