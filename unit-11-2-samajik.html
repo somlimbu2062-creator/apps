@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>आधुनिक र परम्परागत सेवा पद्धति</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&family=Lora:wght@700&display=swap');
+
+        :root {
+            --primary-color: #2e7d32; /* Dark Green */
+            --secondary-color: #a5d6a7; /* Light Green */
+            --background-color: #e8f5e9; /* Very Light Green */
+            --text-color: #1b5e20; /* Very Dark Green */
+            --light-text-color: #43a047; /* Medium Green */
+            --card-background: #ffffff;
+            --list-bullet-color: #66bb6a;
+            --border-radius: 12px;
+            --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --transition-speed: 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Mukta', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        header {
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary-color), var(--light-text-color));
+            color: #fff;
+            padding: 40px 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        header h1 {
+            font-family: 'Lora', serif;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .section {
+            background-color: var(--card-background);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            font-family: 'Lora', serif;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+
+        .question {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .question h4 {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        .question p, .question ul {
+            font-size: 1rem;
+            color: var(--text-color);
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .question ul {
+            margin-top: 10px;
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .question li {
+            position: relative;
+            margin-bottom: 8px;
+            padding-left: 25px;
+        }
+
+        .question li::before {
+            content: "•";
+            color: var(--list-bullet-color);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+            position: absolute;
+            left: 0;
+        }
+        
+        .question p strong {
+            color: var(--primary-color);
+        }
+        
+        .app-download {
+            text-align: center;
+            padding: 30px;
+            background-color: var(--primary-color);
+            color: #fff;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .app-download p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .app-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .app-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                gap: 20px;
+            }
+            header {
+                padding: 30px 15px;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            .section {
+                padding: 20px;
+            }
+            .section h2 {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+            }
+            .question h4 {
+                font-size: 1rem;
+            }
+            .app-download {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>आधुनिक र परम्परागत सेवा पद्धति</h1>
+            <p>कक्षा ११ - अर्थशास्त्र</p>
+        </header>
+
+        <main>
+            <div class="section">
+                <h2>अभ्यास</h2>
+
+                <div class="question">
+                    <h4>१. आयुर्वेदिक चिकित्सा पद्धतिका सकारात्मक पक्षहरू उल्लेख गर्नुहोस् ।</h4>
+                    <p>आयुर्वेदिक चिकित्सा पद्धति एक परम्परागत र प्राकृतिक उपचार विधि हो, जसका विभिन्न सकारात्मक पक्षहरू छन्:</p>
+                    <ul>
+                        <li>यो उपचार पद्धतिमा प्रयोग हुने जडीबुटीहरू देशमै पाइने भएकाले विदेशी उत्पादनमा निर्भर रहनु पर्दैन।</li>
+                        <li>यसमा रोगको लक्षणका आधारमा उपचार गरिने हुनाले महँगा परीक्षणहरू गराइरहनु पर्दैन।</li>
+                        <li>यो एक सरल उपचार पद्धति हो, जसमा धेरै उपकरणहरूको आवश्यकता पर्दैन।</li>
+                        <li>यो पद्धतिमा शल्यक्रिया वा चिरफारको सम्भावना कम हुन्छ।</li>
+                        <li>आयुर्वेदिक उपचारले रोगलाई नियन्त्रण मात्र नभएर जरैबाट निर्मूल गर्ने प्रयास गर्छ।</li>
+                        <li>यसको उपचार अवधि कहिलेकाहीँ लामो भए पनि रोग फेरि बल्झने सम्भावना कम हुन्छ।</li>
+                        <li>यसका औषधिहरूको नकारात्मक प्रभाव न्यून हुन्छ।</li>
+                        <li>यो आधुनिक उपचार पद्धतिको तुलनामा कम खर्चिलो हुन्छ।</li>
+                    </ul>
+                </div>
+
+                <div class="question">
+                    <h4>२. होमियोप्याथी कस्तो चिकित्सा पद्धति हो ?</h4>
+                    <p>होमियोप्याथी एक परम्परागत चिकित्सा पद्धति हो जुन सन् १७९६ मा जर्मन चिकित्सक सामुअल हन्नेमानले सुरु गरेका थिए। यो पद्धति 'समानलाई समानले निको पार्छ' (Like Cures Like) भन्ने सिद्धान्तमा आधारित छ। यसमा रोगीको लक्षण र चिह्न अनुसार अति कम मात्राका 'शक्तिवृत्त' औषधिहरू दिइन्छ। होमियोप्याथीले पनि रोगलाई नियन्त्रण मात्र नभई पूर्ण रूपमा निर्मूल गर्ने प्रयास गर्छ। यस उपचार पद्धतिमा महँगा परीक्षणहरूको आवश्यकता पर्दैन। नेपालमा वि.सं. २००० को दशकबाट यसको प्रचलन सुरु भएको हो। वि.सं. २०१० सालमा ललितपुरमा सरकारी स्तरमा पशुपति होमियोप्याथिक चिकित्सालयको स्थापना भएको थियो, जुन अहिलेसम्म पनि सञ्चालनमा छ।</p>
+                </div>
+
+                <div class="question">
+                    <h4>३. प्राकृतिक उपचार पद्धतिका विशेषताहरू उल्लेख गर्नुहोस् ।</h4>
+                    <p>प्राकृतिक उपचार पद्धति औषधिको प्रयोग नगरी गरिने एक प्राचीन उपचार विधि हो। यो मानव शरीरलाई पृथ्वी, जल, तेज (अग्नि), वायु र आकाश गरी पाँच महाभूतबाट बनेको मान्ने सिद्धान्तमा आधारित छ। यसका मुख्य विशेषताहरू निम्न छन्:</p>
+                    <ul>
+                        <li>यसले प्राकृतिक रूपमा पाइने वस्तुहरूको मिश्रणबाट उपचार गर्छ।</li>
+                        <li>यो पद्धतिमा योग, ध्यान, मालिस, एक्युप्रेसर, जल र माटोको उपचार (जल तथा मृतिका उपचार), उपवास र शारीरिक कसरत जस्ता विधिहरू प्रयोग गरिन्छ।</li>
+                        <li>यसले व्यक्तिलाई स्वस्थ जीवनशैली अपनाउन प्रेरित गर्छ, जसले रोग लाग्नबाट बचाउँछ।</li>
+                        <li>प्राकृतिक उपचारले दीर्घकालीन रोगहरूलाई पनि जरैबाट निको पार्ने विश्वास गरिन्छ।</li>
+                        <li>यसको मुख्य उद्देश्य व्यक्तिलाई निरोगी र दीर्घायु बनाउनु हो।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="app-download">
+                <p>यी र यस्ता अन्य नोटहरू अफलाइन हेर्नका लागि हाम्रो एन्ड्रोइड एप डाउनलोड गर्नुहोस्।</p>
+                <a href="#" class="app-button">अहिले नै डाउनलोड गर्नुहोस्</a>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
