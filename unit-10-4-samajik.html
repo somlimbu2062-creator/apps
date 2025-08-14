@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>स्थानीय, औपचारिक र अनौपचारिक कारोबार</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&family=Lora:wght@700&display=swap');
+
+        :root {
+            --primary-color: #388e3c; /* Dark Green */
+            --secondary-color: #a5d6a7; /* Light Green */
+            --background-color: #e8f5e9; /* Lighter Green */
+            --text-color: #1b5e20; /* Very Dark Green */
+            --light-text-color: #43a047; /* Medium Green */
+            --card-background: #ffffff;
+            --list-bullet-color: #66bb6a;
+            --border-radius: 12px;
+            --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --transition-speed: 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Mukta', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        header {
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary-color), var(--light-text-color));
+            color: #fff;
+            padding: 40px 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        header h1 {
+            font-family: 'Lora', serif;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .section {
+            background-color: var(--card-background);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            font-family: 'Lora', serif;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+
+        .question {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .question h4 {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        .question p, .question ul {
+            font-size: 1rem;
+            color: var(--light-text-color);
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .question ul {
+            margin-top: 10px;
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .question li {
+            position: relative;
+            margin-bottom: 8px;
+            padding-left: 25px;
+        }
+
+        .question li::before {
+            content: "•";
+            color: var(--list-bullet-color);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+            position: absolute;
+            left: 0;
+        }
+        
+        .question p strong {
+            color: var(--primary-color);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: #fff;
+            font-weight: bold;
+            font-family: 'Lora', serif;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2fbf2;
+        }
+
+        .app-download {
+            text-align: center;
+            padding: 30px;
+            background-color: var(--primary-color);
+            color: #fff;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .app-download p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .app-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .app-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                gap: 20px;
+            }
+            header {
+                padding: 30px 15px;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            .section {
+                padding: 20px;
+            }
+            .section h2 {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+            }
+            .question h4 {
+                font-size: 1rem;
+            }
+            .app-download {
+                padding: 20px;
+            }
+            th, td {
+                padding: 8px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>स्थानीय, औपचारिक र अनौपचारिक कारोबार</h1>
+            <p>कक्षा ११ - अर्थशास्त्र</p>
+        </header>
+
+        <main>
+            <div class="section">
+                <h2>अभ्यास</h2>
+
+                <div class="question">
+                    <h4>१. ‘अनौपचारिक कारोबार पद्धति बढ्नाले राज्यको अर्थतन्त्र डामाडोल हुन्छ र सामाजिक अस्थिरता पैदा हुन्छ।’ यस भनाइलाई पुष्टि गर्नुहोस्।</h4>
+                    <p>सरकारमा दर्ता नभई लुकिछिपी, अभिलेख बिना गरिने कारोबारलाई अनौपचारिक कारोबार भनिन्छ। यस्ता कारोबारमा तस्करी, जुवातास, लागूऔषधको व्यापार, घुसखोरी, चर्को ब्याजमा ऋण लगाउने आदि पर्दछन्। यस्तो कारोबार बढ्दा देशको अर्थतन्त्रमा नकारात्मक असर पर्छ किनभने:</p>
+                    <ul>
+                        <li><strong>राजस्वमा कमी:</strong> अनौपचारिक कारोबारको कुनै अभिलेख नहुँदा सरकारले कर प्राप्त गर्दैन। यसले राष्ट्रिय आयमा वृद्धि हुन पाउँदैन र विकास निर्माणका लागि आवश्यक रकमको अभाव हुन्छ।</li>
+                        <li><strong>आर्थिक डामाडोल:</strong> सरकारले राजस्व नपाउँदा सार्वजनिक सुरक्षा, शिक्षा, स्वास्थ्य जस्ता महत्त्वपूर्ण क्षेत्रमा पर्याप्त लगानी गर्न सक्दैन। यसले देशको आर्थिक अवस्था डामाडोल हुन जान्छ।</li>
+                        <li><strong>सामाजिक अस्थिरता:</strong> अनौपचारिक कारोबारले अवैध र सामाजिक विकृति फैलाउने वस्तु तथा सेवाको बिक्री वितरणलाई प्रोत्साहन दिन्छ। यसले समाजमा आपराधिक गतिविधि बढ्न गई सामाजिक अस्थिरता पैदा हुन सक्छ।</li>
+                        <li><strong>वैध कारोबारलाई बाधा:</strong> कर नतिर्ने भएकाले अनौपचारिक कारोबारमा वस्तुहरूको मूल्य कम हुन्छ। यसले सरकारलाई कर तिरेर व्यवसाय गर्ने वैध व्यापारीहरूलाई प्रतिस्पर्धा गर्न गाह्रो बनाउँछ।</li>
+                    </ul>
+                </div>
+
+                <div class="question">
+                    <h4>२. तलको तालिका भर्नुहोस् :</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>स्थानीय कारोबारलाई औपचारिक कारोबारमा रूपान्तरण गर्ने उपाय</th>
+                                <th>अनौपचारिक कारोबारलाई नियन्त्रण गर्ने उपाय</th>
+                                <th>औपचारिक कारोबारलाई व्यवस्थित गर्ने उपायहरू</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li>स्थानीय कारोबारलाई गाउँपालिका वा नगरपालिकामा दर्ता गराउने।</li>
+                                        <li>स्थानीय तहमा कारोबार गरेबापत लाग्ने कर तिर्ने।</li>
+                                        <li>कारोबारको वार्षिक विवरण तथा वस्तुहरूको अभिलेख राख्ने।</li>
+                                        <li>कारोबारलाई करको दायराभित्र ल्याउने।</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>सीमामा निगरानी बढाउने र निश्चित समयमा मात्र नाका खोल्ने।</li>
+                                        <li>अवैध रूपमा हुने मालसामानको ओसारपसारमा कडा सजाय र बढी भन्सार शुल्क लगाउने।</li>
+                                        <li>आवश्यक उपभोग्य वस्तुमा भन्सार शुल्क कम गरी सहज आयातको वातावरण बनाउने।</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>औपचारिक कारोबारको अभिलेख व्यवस्थित राख्ने।</li>
+                                        <li>दर्ता प्रक्रिया सरल र सहज बनाउने।</li>
+                                        <li>कर तिर्ने प्रक्रियालाई सुविधाजनक बनाउने।</li>
+                                        <li>समुदायलाई हित हुने र आवश्यक वस्तुहरूको औपचारिक कारोबारलाई प्रोत्साहन गर्ने।</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="question">
+                    <h4>३. औपचारिक कारोबारलाई देशको अर्थतन्त्र विकासको मुख्य आधार मानिन्छ, किन ?</h4>
+                    <p>औपचारिक कारोबारलाई अर्थतन्त्र विकासको मुख्य आधार मानिन्छ किनभने यो कानुनी रूपमा दर्ता भई सञ्चालन हुन्छ र यसबाट प्राप्त आम्दानीमा सरकारलाई कर प्राप्त हुन्छ। यसका केही प्रमुख कारणहरू यस प्रकार छन्:</p>
+                    <ul>
+                        <li><strong>राजस्व संकलन:</strong> औपचारिक कारोबारबाट सरकारले इजाजत शुल्क, नवीकरण शुल्क, र विभिन्न प्रकारका करहरू (जस्तै: आयकर, भन्सार शुल्क) संकलन गर्छ। यसबाट सरकारी आय बढ्छ।</li>
+                        <li><strong>विकासमा सहयोग:</strong> सरकारी आय बढ्दा सरकारले शिक्षा, स्वास्थ्य, यातायात, पूर्वाधार निर्माण जस्ता विकासका काममा बढी खर्च गर्न सक्छ, जसले समग्र राष्ट्रको विकासमा योगदान पुर्‍याउँछ।</li>
+                        <li><strong>पारदर्शिता र नियमन:</strong> औपचारिक कारोबारको अभिलेख हुने भएकाले यसलाई सजिलै नियमन गर्न सकिन्छ। यसले गर्दा देशमा व्यापारिक पारदर्शिता बढ्छ र अवैध गतिविधि नियन्त्रण गर्न सहयोग पुग्छ।</li>
+                        <li><strong>राष्ट्रिय आयमा वृद्धि:</strong> औपचारिक कारोबार बढ्दा देशको कुल गार्हस्थ्य उत्पादन (GDP) र राष्ट्रिय आयमा वृद्धि हुन्छ, जसले देशको आर्थिक अवस्थालाई मजबुत बनाउँछ।</li>
+                    </ul>
+                </div>
+
+                <div class="question">
+                    <h4>४. स्थानीय कारोबारलाई सबल र प्रभावकारी बनाउन के गर्नुपर्दछ ?</h4>
+                    <p>स्थानीय कारोबारलाई सबल र प्रभावकारी बनाउन निम्न उपायहरू अपनाउन सकिन्छ:</p>
+                    <ul>
+                        <li><strong>स्थानीय उत्पादनमा जोड:</strong> स्थानीय आवश्यकतालाई पूर्ति गर्न स्थानीय स्तरमै उत्पादनमा जोड दिनुपर्छ।</li>
+                        <li><strong>हाटबजारको व्यवस्थापन:</strong> स्थानीय व्यापारीहरूलाई प्रोत्साहन गर्न साप्ताहिक हाटबजारको व्यवस्थापन गर्नुपर्छ र त्यसलाई व्यवस्थित बनाउनुपर्छ।</li>
+                        <li><strong>तालिम र सीप विकास:</strong> स्थानीय उत्पादन बढाउनका लागि कृषि, पशुपालन र अन्य व्यवसायमा छोटो अवधिको तालिम दिनुपर्छ।</li>
+                        <li><strong>व्यवस्थित शुल्क संकलन:</strong> हाटबजारमा व्यापारीहरू र पशु बिक्रीबाट निश्चित शुल्क संकलन गर्ने व्यवस्था मिलाउनुपर्छ।</li>
+                        <li><strong>स्थानीय तहको सक्रिय भूमिका:</strong> स्थानीय बजारलाई व्यवस्थित गर्न र स्थानीय उत्पादनको बजारीकरणमा स्थानीय सरकारले सक्रिय भूमिका निर्वाह गर्नुपर्छ।</li>
+                        <li><strong>कारोबारको अभिलेखीकरण:</strong> स्थानीय कारोबारलाई पनि स्थानीय तहमा दर्ता गराई अभिलेख राख्नुपर्छ, जसले गर्दा यसलाई औपचारिक स्वरूप दिन सकिन्छ।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="app-download">
+                <p>यी र यस्ता अन्य नोटहरू अफलाइन हेर्नका लागि हाम्रो एन्ड्रोइड एप डाउनलोड गर्नुहोस्।</p>
+                <a href="#" class="app-button">अहिले नै डाउनलोड गर्नुहोस्</a>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
