@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>नेपालमा निर्वाचन प्रणाली - नेपाली नोटस्</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&family=Lora:wght@700&display=swap');
+
+        :root {
+            --primary-color: #2e7d32; /* Dark Green */
+            --secondary-color: #81c784; /* Light Green */
+            --background-color: #e8f5e9; /* Lightest Green */
+            --text-color: #1b5e20; /* Darker Green */
+            --light-text-color: #43a047; /* Medium Green */
+            --card-background: #ffffff;
+            --table-header-bg: #4caf50;
+            --table-border: #a5d6a7;
+            --border-radius: 12px;
+            --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --transition-speed: 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Mukta', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        header {
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary-color), #81c784);
+            color: #fff;
+            padding: 40px 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        header h1 {
+            font-family: 'Lora', serif;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .section {
+            background-color: var(--card-background);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            font-family: 'Lora', serif;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+
+        .question {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .question h4 {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .question p, .question ul, .question table {
+            font-size: 1rem;
+            color: var(--light-text-color);
+            margin-bottom: 15px;
+        }
+
+        .question ul {
+            margin-top: 10px;
+            list-style-type: disc;
+            padding-left: 40px;
+        }
+
+        .question li {
+            margin-bottom: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid var(--table-border);
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: var(--table-header-bg);
+            color: #fff;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #e8f5e9;
+        }
+
+        tr:hover {
+            background-color: #c8e6c9;
+        }
+
+        .app-download {
+            text-align: center;
+            padding: 30px;
+            background-color: var(--primary-color);
+            color: #fff;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .app-download p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .app-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .app-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                gap: 20px;
+            }
+            header {
+                padding: 30px 15px;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            .section {
+                padding: 20px;
+            }
+            .section h2 {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+            }
+            .question h4 {
+                font-size: 1rem;
+            }
+            .app-download {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>नेपालमा निर्वाचन प्रणाली</h1>
+            <p>कक्षा ११ - नेपाली</p>
+        </header>
+
+        <main>
+            <div class="section">
+                <h2>अभ्यास</h2>
+
+                <div class="question">
+                    <h4>१. पहिलो हुने निर्वाचित हुने निर्वाचन पद्धतिको वर्णन गर्नुहोस् ।</h4>
+                    <p><strong>पहिलो हुने निर्वाचित हुने (First Past the Post)</strong> निर्वाचन पद्धतिमा मतदाताले मतदान केन्द्रमा गई आफूले रोजेको उम्मेदवारलाई सिधै भोट दिन्छन् । निर्वाचनपछि मत गन्ती गर्दा जुन उम्मेदवारले सबैभन्दा धेरै मत प्राप्त गर्छ, उसैलाई विजयी घोषणा गरिन्छ । यो प्रणालीमा सबैभन्दा धेरै मत ल्याउने उम्मेदवारले निर्वाचन जित्छ, चाहे उसले कुल मतको ५० प्रतिशतभन्दा कमै किन नल्याओस्। यो सरल र बुझ्न सजिलो प्रणाली हो।</p>
+                </div>
+
+                <div class="question">
+                    <h4>२. समानुपातिक निर्वाचन पद्धतिका विशेषताहरू उल्लेख गर्नुहोस् ।</h4>
+                    <p><strong>समानुपातिक निर्वाचन पद्धति (Proportional Representation)</strong> मा अल्पसङ्ख्यक वर्गको पनि प्रतिनिधित्व सुनिश्चित गर्न यो प्रणाली अपनाइन्छ । यस प्रणालीमा मतदाताले उम्मेदवारलाई नभई राजनीतिक दललाई मत दिन्छन् । दलले प्राप्त गरेको कुल मतको अनुपातमा प्रतिनिधिहरूको छनोट गर्छ ।</p>
+                    <p>यस प्रणालीका केही विशेषताहरू:</p>
+                    <ul>
+                        <li>यस प्रणालीमा अल्पसङ्ख्यक समूहको पनि उचित प्रतिनिधित्व हुन्छ ।</li>
+                        <li>यसमा एउटै दलको मात्र प्रभुत्व रहँदैन ।</li>
+                        <li>शासनमा सबै वर्गको प्रतिनिधित्व हुन्छ ।</li>
+                        <li>मतदाताले राजनीतिक दलको छनोट गर्न पाउँछन् ।</li>
+                        <li>साधारण जनताले राजनीतिक शिक्षा प्राप्त गर्छन्।</li>
+                    </ul>
+                </div>
+
+                <div class="question">
+                    <h4>३. पहिलो हुने निर्वाचन प्रणाली र समानुपातिक निर्वाचन प्रणालीबिचको समानता एवम् भिन्नता छुट्याउनुहोस्।</h4>
+                    <p><strong>समानता:</strong></p>
+                    <ul>
+                        <li>दुवै प्रणाली प्रतिनिधि छान्ने काममा प्रयोग हुन्छन् ।</li>
+                        <li>दुवैमा मतदाताहरूले आफ्नो मत दिन्छन् ।</li>
+                        <li>दुवै निर्वाचन पद्धतिका महत्वपूर्ण अङ्ग हुन् ।</li>
+                        <li>दुवैमा राजनीतिक दलहरू सहभागी हुन्छन् ।</li>
+                        <li>दुवैले मतदाताहरूमा राजनीतिक सचेतना वृद्धि गर्छन् ।</li>
+                    </ul>
+                    <p><strong>भिन्नता:</strong></p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>पहिलो हुने निर्वाचन प्रणाली</th>
+                                <th>समानुपातिक निर्वाचन प्रणाली</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>सबैभन्दा बढी मत ल्याउने उम्मेदवार विजयी हुन्छ ।</td>
+                                <td>दलले प्राप्त गरेको मतको अनुपातमा प्रतिनिधि छानिन्छन् ।</td>
+                            </tr>
+                            <tr>
+                                <td>मतदाताले उम्मेदवारलाई ध्यानमा राखेर मत दिन्छन् ।</td>
+                                <td>मतदाताले राजनीतिक दललाई मत दिन्छन् ।</td>
+                            </tr>
+                            <tr>
+                                <td>निर्दलीय उम्मेदवार पनि सहभागी हुन सक्छन् ।</td>
+                                <td>निर्दलीयको स्थान हुँदैन ।</td>
+                            </tr>
+                            <tr>
+                                <td>रिक्त स्थानमा उपचुनाव गराइन्छ ।</td>
+                                <td>रिक्त स्थानका लागि उपचुनाव हुँदैन ।</td>
+                            </tr>
+                            <tr>
+                                <td>यो प्रणाली सरल हुन्छ ।</td>
+                                <td>यो प्रणाली केही जटिल हुन्छ ।</td>
+                            </tr>
+                            <tr>
+                                <td>जनता र प्रतिनिधिबीच सिधा सम्पर्क हुन्छ ।</td>
+                                <td>जनता र प्रतिनिधिबीच सिधा सम्पर्क हुँदैन ।</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="question">
+                    <h4>४. प्रवासमा बसेका नेपालीले पनि मतदानमा भाग लिन पाउनुपर्दछ भन्ने माग बढ्दै गएको छ। यसका लागि के के गर्नुपर्ला, आफ्ना विचारहरू लेख्नुहोस् ।</h4>
+                    <p>कामको खोजीमा विदेशिएका नेपालीहरूले नेपालको आर्थिक विकासमा ठूलो योगदान पुर्याएका छन् । त्यसैले उनीहरूलाई पनि निर्वाचनमा मताधिकार प्रयोग गर्न दिनुपर्छ भन्ने माग बढ्दै गएको छ । नेपालको समृद्धिमा सहयोग पुर्याउने यस्ता प्रवासी नेपालीलाई असल उम्मेदवार छनोट गर्न मत दिने अधिकार दिनु उचित हुन्छ । यसका लागि निम्न कदमहरू चाल्न सकिन्छ:</p>
+                    <ul>
+                        <li>प्रवासी नेपालीहरूलाई प्रतिनिधिसभा, प्रदेश सभा वा स्थानीय तहको निर्वाचनमा सहभागी गराउन सकिन्छ ।</li>
+                        <li>उनीहरूलाई सामाजिक र आर्थिक गतिविधिमा सहभागी गराउनका लागि मताधिकार प्रयोग गर्न दिनुपर्छ ।</li>
+                        <li>प्रवासी नेपालीहरूलाई सर्तसहित मताधिकार प्रयोग गर्न दिन सकिन्छ ।</li>
+                        <li>मतदान प्रक्रियालाई प्रविधिमैत्री बनाएर विदेशमा रहेका नेपालीले पनि सहजै मतदान गर्न सक्ने व्यवस्था मिलाउनुपर्छ ।</li>
+                    </ul>
+                    <p>यद्यपि, उनीहरूलाई राजनीतिक अधिकारको रूपमा निर्वाचनमा उम्मेदवारी दिन निषेध गर्नुपर्छ र राजनीतिक गतिविधिमा सहभागी हुन अधिकार दिनु हुँदैन ।</p>
+                </div>
+            </div>
+
+            <div class="app-download">
+                <p>यी र यस्ता अन्य नोटहरू अफलाइन हेर्नका लागि हाम्रो एन्ड्रोइड एप डाउनलोड गर्नुहोस्।</p>
+                <a href="#" class="app-button">अहिले नै डाउनलोड गर्नुहोस्</a>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
