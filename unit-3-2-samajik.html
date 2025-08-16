@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>पाठ-२: समस्या समाधान</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&display=swap');
+
+        :root {
+            --primary-color: #f44336; /* Red */
+            --secondary-color: #ffebee; /* Light Red */
+            --text-color: #333;
+            --heading-color: #c62828;
+            --card-bg: #ffffff;
+            --border-radius: 12px;
+            --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --sub-heading-color: #d32f2f;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Mukta', sans-serif;
+            line-height: 1.8;
+            color: var(--text-color);
+            background-color: var(--secondary-color);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background-color: var(--card-bg);
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--heading-color));
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        main {
+            padding: 30px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            font-size: 1.8rem;
+            color: var(--heading-color);
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+        
+        .section h3 {
+            color: var(--sub-heading-color);
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        .content-card {
+            background-color: #fff8f8;
+            padding: 20px;
+            border-radius: var(--border-radius);
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .content-card p {
+            margin-bottom: 15px;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+
+        ul li {
+            position: relative;
+            margin-bottom: 8px;
+        }
+
+        ul li::before {
+            content: "•";
+            color: var(--primary-color);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        
+        .table-container {
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95rem;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: white;
+            font-family: 'Mukta', sans-serif;
+        }
+
+        tr:nth-child(even) {
+            background-color: var(--secondary-color);
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            .section h2 {
+                font-size: 1.5rem;
+            }
+            main {
+                padding: 15px;
+            }
+            th, td {
+                padding: 8px;
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>पाठ-२: समस्या समाधान</h1>
+            <p>अभ्यास</p>
+        </header>
+
+        <main>
+            <div class="section">
+                <h2>१. समस्या भनेको के हो ?</h2>
+                <div class="content-card">
+                    <p><strong>समस्या</strong> भनेको विचार वा ज्ञान ग्रहणमा आइपर्ने कठिनाइको अवस्था हो। यो एक व्यक्ति र अर्को व्यक्तिबीचको फरक विचार, काम पूरा गर्न नसक्ने अवस्था वा बुझाइमा आएको अवरोधका कारण उत्पन्न हुन सक्छ। कहिलेकाहीँ नकारात्मक सोच पनि समस्याको जड बन्न सक्छ।</p>
+                    <p>कुनै कुरालाई समस्या मान्ने वा नमान्ने भन्ने कुरा मानिसको उमेर, क्षमता, अनुभव र ज्ञानमा निर्भर गर्छ। यदि कसैले कुनै विषयलाई समाधान गर्न सक्छ भने त्यो उसको लागि समस्या हुँदैन, तर यदि ऊ समाधान गर्न सक्षम छैन भने त्यो समस्या बन्छ।</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>२. समस्या कसरी पहिचान गरिन्छ ?</h2>
+                <div class="content-card">
+                    <p>समस्यालाई विभिन्न तरिकाले पहिचान गर्न सकिन्छ। जब कुनै काम, विषय वा पेसा गर्न सकिँदैन, वा विचारमा भिन्नता आएर विवादको अवस्था उत्पन्न हुन्छ, तब समस्याको पहिचान हुन्छ। आफूले चाहेको वातावरण नपाउँदा, काम गर्ने तरिकामा भिन्नता आउँदा, वा आफूलाई थाहा नभएको काम आइपर्दा पनि समस्याको अवस्था सिर्जना हुन्छ। यसैले, जब बुझाइ वा विचार ग्रहणमा कठिनाइ आउँछ, तब त्यस अवस्थाको विश्लेषण गरेर समस्या पहिचान गर्नुपर्छ।</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>३. समस्या समाधानका मुख्य चरण के-के हुन् ।</h2>
+                <div class="content-card">
+                    <p>समस्या समाधानका मुख्य चरणहरू निम्न तालिकामा दिइएका छन्:</p>
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>चरण</th>
+                                    <th>प्रक्रिया</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>समस्या पहिचान र परिभाषा</strong></td>
+                                    <td>समस्या के हो, कसरी र किन सिर्जना भयो भन्ने प्रश्नहरूको मूल कारण पत्ता लगाउने।</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>परिकल्पना</strong></td>
+                                    <td>समस्या समाधानका लागि तार्किक, सिर्जनात्मक र सकारात्मक विकल्पहरूको खोजी गरी उपयुक्त विकल्प छनोट गर्ने र त्यसको सम्भाव्य प्रभावबारे विश्लेषण गर्ने।</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>तथ्य सङ्कलन</strong></td>
+                                    <td>पहिचान गरिएका विकल्पहरूसँग सम्बन्धित आवश्यक तथ्यहरू खोज्ने र तिनीहरूलाई कसरी प्रयोग गर्ने भन्ने तरिकाको विकास गर्ने।</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>विश्लेषण</strong></td>
+                                    <td>पहिचान गरिएका विभिन्न विकल्पहरूको तथ्य र सूचनामा आधारित भई गहिरो विश्लेषण गर्ने।</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>निष्कर्ष</strong></td>
+                                    <td>समस्याको कारण, छनोट गरिएका विकल्प र ती विकल्पसँग सम्बन्धित तथ्यका आधारमा समस्या समाधानको निष्कर्ष निकाल्ने।</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>प्रयोग</strong></td>
+                                    <td>समस्या समाधानका लागि निकालिएको निष्कर्षलाई प्रयोगमा ल्याउने वा छनोट गरिएको उत्तम विकल्पको माध्यमबाट समस्या समाधान गर्ने।</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>४. समस्याको निष्कर्ष कसरी निकालिन्छ ?</h2>
+                <div class="content-card">
+                    <p>समस्याको निष्कर्ष निकाल्नका लागि पहिले समस्या सिर्जना भएको कारण र विभिन्न पक्षहरूको पहिचान गर्नुपर्छ। यसपछि, समस्या समाधानका लागि तार्किक, औचित्यपूर्ण, सिर्जनात्मक र सकारात्मक विकल्पहरूको खोजी गर्नुपर्छ। यो कुरामा ध्यान दिनुपर्छ कि समाधानपछि सो समस्या फेरि नदोहोरियोस् र सबै सरोकारवाला पक्षहरू सन्तुष्ट हुन सकून्।</p>
+                    <p>सम्भाव्य विकल्पहरूको बारेमा तथ्य र प्रभावको खोजी गरी गहन विश्लेषण गर्नुपर्छ। जुन विकल्पको सबैभन्दा कम नकारात्मक प्रभाव हुन्छ, त्यही विकल्प उत्तम हुन्छ। यसरी विश्लेषण गरी उत्तम विकल्प छनोट गरेपछि समस्याको निष्कर्ष निकालिन्छ।</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
