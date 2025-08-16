@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 6: Web Technology - I</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+
+        :root {
+            --primary-color: #3f51b5; /* Indigo */
+            --secondary-color: #e8eaf6; /* Light Indigo */
+            --text-color: #1a237e; /* Dark Indigo */
+            --heading-color: #303f9f;
+            --card-bg: #ffffff;
+            --border-radius: 12px;
+            --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --code-bg: #f5f5f5;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.8;
+            color: var(--text-color);
+            background-color: var(--secondary-color);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background-color: var(--card-bg);
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--heading-color));
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        main {
+            padding: 30px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8rem;
+            color: var(--heading-color);
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+        
+        .section h3 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--primary-color);
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        .content-card {
+            background-color: #f6f8ff;
+            padding: 20px;
+            border-radius: var(--border-radius);
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .content-card p {
+            margin-bottom: 15px;
+        }
+
+        .content-card code {
+            background-color: var(--code-bg);
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: var(--heading-color);
+        }
+
+        .table-container {
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95rem;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        tr:nth-child(even) {
+            background-color: var(--secondary-color);
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+
+        ul li {
+            position: relative;
+            margin-bottom: 8px;
+        }
+
+        ul li::before {
+            content: "•";
+            color: var(--primary-color);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        
+        .note {
+            background-color: #fff9c4;
+            border-left: 5px solid #ffeb3b;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            .section h2 {
+                font-size: 1.5rem;
+            }
+            main {
+                padding: 15px;
+            }
+            th, td {
+                padding: 8px;
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Chapter 6: Web Technology - I</h1>
+            <p>An introduction to the Internet and HTML.</p>
+        </header>
+
+        <main>
+            <div class="section">
+                <h2>Introduction to the Internet</h2>
+                <div class="content-card">
+                    <p>The **Internet** is a global network of interconnected computers. It's a vast collection of networks that link devices worldwide, allowing for the exchange of data and information. The basic components required for an Internet connection include a **TCP/IP** enabled computer, an account with an **ISP**, a telephone line, a **MODEM**, and a computer with sufficient hardware capacity.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Internet Services and Applications</h2>
+                <div class="content-card">
+                    <ul>
+                        <li><strong>World Wide Web (WWW):</strong> A series of interconnected services through hypertext, providing links in web documents. It uses the **Hypertext Transfer Protocol (HTTP)**.</li>
+                        <li><strong>Web Browser:</strong> A software program that allows users to access and display web pages. Examples include Google Chrome, Mozilla Firefox, and Safari.</li>
+                        <li><strong>FTP (File Transfer Protocol):</strong> A tool for transferring files between computers over the Internet.</li>
+                        <li><strong>E-mail:</strong> The most widely used Internet feature for sending and receiving messages and digital data electronically.</li>
+                        <li><strong>Voicemail:</strong> A service that answers phone calls and records audio messages.</li>
+                        <li><strong>USENET:</strong> A bulletin board service (BBS) that organizes messages into thousands of newsgroups.</li>
+                        <li><strong>Chat:</strong> A feature for real-time text-based communication.</li>
+                        <li><strong>Video Conferencing:</strong> A service that enables real-time face-to-face communication with both sound and video.</li>
+                        <li><strong>URL (Universal Resource Locator):</strong> A unique address that identifies a specific location on the Internet, such as <code>https://www.example.com</code>.</li>
+                        <li><strong>E-Fax:</strong> A service to send and receive faxes directly on a computer via the Internet.</li>
+                        <li><strong>TELNET:</strong> Allows users to log in to a remote computer system.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Internet Terminologies</h2>
+                <div class="content-card">
+                    <ul>
+                        <li><strong>ISP:</strong> Internet Service Provider, a company that provides Internet access.</li>
+                        <li><strong>Link:</strong> A quick route to jump from one web page to another.</li>
+                        <li><strong>Search Engine:</strong> Software that searches websites for specific information (e.g., Yahoo, Google).</li>
+                        <li><strong>Domain Name and IP Address:</strong> A domain name (e.g., <code>google.com</code>) is a unique, human-readable name for a website, which corresponds to a numerical **IP Address**.</li>
+                        <li><strong>Web Server:</strong> A site where web pages are stored. It responds to requests from web browsers.</li>
+                        <li><strong>POP/SMTP Servers:</strong> **POP (Post Office Protocol)** servers store incoming mail, while **SMTP (Simple Mail Transfer Protocol)** servers transfer electronic mail between computers.</li>
+                        <li><strong>HTTP:</strong> A protocol that web browsers and web servers use to communicate.</li>
+                        <li><strong>Proxy Server:</strong> A server that improves access speed and updates information.</li>
+                        <li><strong>Internet Roaming:</strong> A facility to use your Internet account from a different country.</li>
+                    </ul>
+                    <p>Example of an email address: <code>krishna@wlink.com.np</code> where <code>krishna</code> is the username, <code>@</code> separates the username and domain, <code>wlink</code> is the ISP name, <code>.com</code> indicates a commercial organization, and <code>.np</code> is the country code.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Introduction to HTML</h2>
+                <div class="content-card">
+                    <p><strong>HTML</strong> stands for **HyperText Markup Language**. It's the language used to create web pages. An HTML file is a text file that contains several **tags** and **attributes** which are interpreted and displayed by a web browser. HTML was developed by **Tim Berners-Lee**.</p>
+                    <h3>Uses of HTML</h3>
+                    <ul>
+                        <li>To create the basic layout and structure of a web page.</li>
+                        <li>To embed images, videos, and audio.</li>
+                        <li>To format text (e.g., bold, italic, underline).</li>
+                        <li>To create lists and hyperlinks.</li>
+                    </ul>
+                    <h3>Advantages of HTML</h3>
+                    <ul>
+                        <li>Easy to learn and use.</li>
+                        <li>Supported by all web browsers and operating systems.</li>
+                        <li>HTML files load quickly.</li>
+                    </ul>
+                    <h3>Disadvantages of HTML</h3>
+                    <ul>
+                        <li>Difficult to create attractive and dynamic web pages using only HTML.</li>
+                        <li>Not a programming language.</li>
+                        <li>Incompatibilities can exist across different versions.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>HTML Tags and Attributes</h2>
+                <div class="content-card">
+                    <p>An **HTML tag** is an instruction to the web browser to organize content. Tags are written inside angle brackets (<code>&lt;&gt;</code>). Tags and attributes are not case-sensitive.</p>
+                    <ul>
+                        <li><strong>Pair Tags:</strong> Tags that have both an opening tag (<code>&lt;tag&gt;</code>) and a closing tag (<code>&lt;/tag&gt;</code>). Also known as **container tags**. Example: <code>&lt;body&gt;...&lt;/body&gt;</code>.</li>
+                        <li><strong>Singular Tags:</strong> Tags that have only an opening tag and no closing tag. Also known as **empty tags**. Example: <code>&lt;br&gt;</code> (line break).</li>
+                    </ul>
+                    <p>An **attribute** is a descriptive property of an HTML tag, written within the tag itself. Attributes add extra features to tags, allowing for customization. For example, `bgcolor` is an attribute of the `<body>` tag to set the background color.</p>
+                    <p>To create an HTML document, you write the code in a text editor like Notepad, save it with a `.html` extension (e.g., `sample.html`), and then open it with a web browser to execute.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Web Designing Terminologies</h2>
+                <div class="content-card">
+                    <ul>
+                        <li><strong>Webpage:</strong> An HTML document that displays information on the web.</li>
+                        <li><strong>Website:</strong> A collection of interrelated web pages, all connected through hyperlinks.</li>
+                        <li><strong>Homepage:</strong> The main, introductory page of a website.</li>
+                        <li><strong>URL:</strong> Uniform Resource Locator, the unique address of a web page.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>DBMS (Database Management System)</h2>
+                <div class="content-card">
+                    <p><strong>Data</strong> are raw, unprocessed facts and figures. **Information** is meaningful data that has been processed. A **database** is a systematic collection of data. A **Database Management System (DBMS)** is a software system that manages the data stored in a database, allowing for quick and easy retrieval.</p>
+                    <h3>Advantages of DBMS</h3>
+                    <ul>
+                        <li>Quick and easy data searching.</li>
+                        <li>Reduces data redundancy and inconsistency.</li>
+                        <li>Enhances data security and privacy.</li>
+                        <li>Allows data sharing over a network.</li>
+                    </ul>
+                    <h3>Disadvantages of DBMS</h3>
+                    <ul>
+                        <li>Higher installation and operating costs.</li>
+                        <li>Requires more disk space.</li>
+                        <li>Requires a technical professional (DBA) to maintain.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Define CSS. Explain its type.</h2>
+                <div class="content-card">
+                    <p><strong>CSS</strong> stands for **Cascading Style Sheets**. It is a style sheet language used to describe the presentation of a document written in a markup language like HTML. CSS defines how elements should be displayed on a web page, including colors, fonts, layout, and other visual aspects. It allows designers to separate the content (HTML) from its visual design (CSS), making websites easier to manage and update.</p>
+                    <p>There are three main types of CSS:</p>
+                    <h3>1. Inline CSS</h3>
+                    <p>This type of CSS is applied directly to a single HTML element using the <code>style</code> attribute. It is useful for applying a unique style to a single instance of an element. For example: <code>&lt;p style="color: blue;"&gt;This text is blue.&lt;/p&gt;</code></p>
+                    <h3>2. Internal CSS (or Embedded CSS)</h3>
+                    <p>This is defined within the <code>&lt;head&gt;</code> section of an HTML document using the <code>&lt;style&gt;</code> tag. It applies styles to the entire web page. This is a good method for single-page websites or when styles are unique to a specific page. For example:</p>
+                    <pre><code>&lt;head&gt;
+  &lt;style&gt;
+    body {
+      background-color: lightblue;
+    }
+    h1 {
+      color: navy;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;</code></pre>
+                    <h3>3. External CSS</h3>
+                    <p>This is the most common and recommended method. Styles are defined in a separate `.css` file and linked to the HTML document using the <code>&lt;link&gt;</code> tag in the <code>&lt;head&gt;</code> section. This approach allows a single CSS file to control the styling of multiple web pages, which is highly efficient for large websites. For example:</p>
+                    <pre><code>&lt;head&gt;
+  &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;</code></pre>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
