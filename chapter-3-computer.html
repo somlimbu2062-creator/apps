@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Software & Operating System</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+
+        :root {
+            --primary-color: #00796b; /* Teal */
+            --secondary-color: #e0f2f1; /* Light Teal */
+            --text-color: #004d40; /* Dark Teal */
+            --heading-color: #004d40;
+            --card-bg: #ffffff;
+            --border-radius: 12px;
+            --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --code-bg: #f5f5f5;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.8;
+            color: var(--text-color);
+            background-color: var(--secondary-color);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background-color: var(--card-bg);
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--heading-color));
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        main {
+            padding: 30px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8rem;
+            color: var(--heading-color);
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+        
+        .section h3 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--primary-color);
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        .content-card {
+            background-color: #f6fdfd;
+            padding: 20px;
+            border-radius: var(--border-radius);
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .content-card p {
+            margin-bottom: 15px;
+        }
+
+        .content-card code {
+            background-color: var(--code-bg);
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: var(--heading-color);
+        }
+
+        .table-container {
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95rem;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        tr:nth-child(even) {
+            background-color: var(--secondary-color);
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+
+        ul li {
+            position: relative;
+            margin-bottom: 8px;
+        }
+
+        ul li::before {
+            content: "•";
+            color: var(--primary-color);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        
+        .note {
+            background-color: #ffecb3;
+            border-left: 5px solid #ffc107;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            .section h2 {
+                font-size: 1.5rem;
+            }
+            main {
+                padding: 15px;
+            }
+            th, td {
+                padding: 8px;
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Chapter 3: Computer Software & Operating System</h1>
+            <p>A guide to the programs that make computers work.</p>
+        </header>
+
+        <main>
+            <div class="section">
+                <h2>Introduction to Software</h2>
+                <div class="content-card">
+                    <p>A **computer software** is a collection of related programs and documents that instruct the computer hardware on what to do. Hardware alone is just a set of physical components; software is what brings it to life and makes it useful. Without software, hardware cannot function, and without hardware, software cannot be utilized. There are two main types of software: System Software and Application Software.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Types of Software</h2>
+                <div class="content-card">
+                    <h3>1. System Software</h3>
+                    <p>System software is designed to control and manage the overall operations of a computer system. It acts as an intermediary between the user and the computer hardware, supporting the running of other software and managing system resources. It is categorized into two main types:</p>
+                    <ul>
+                        <li><strong>System Management:</strong> These programs are responsible for the proper functioning of the computer. Examples include **Operating Systems**, **Utility Software** (e.g., antivirus, disk cleanup), and **Device Drivers**.</li>
+                        <li><strong>System Development:</strong> This software is used by programmers to develop new programs. Examples include **Programming Languages** (e.g., Python, C++) and **Language Translators** (e.g., compilers, interpreters).</li>
+                    </ul>
+                    
+                    <h3>2. Application Software</h3>
+                    <p>Application software is designed to perform specific tasks for the user. These programs fulfill user-oriented problems, such as preparing bills, creating documents, or editing photos. They are often developed using high-level programming languages.</p>
+                    <ul>
+                        <li><strong>Packaged Software:</strong> These are generalized, off-the-shelf programs designed for a broad audience. They are often large, advanced, and developed by reputable companies (e.g., Microsoft Office, Adobe Photoshop).</li>
+                        <li><strong>Customized (Tailored) Software:</strong> This software is developed specifically for a particular user or organization to perfectly match their unique requirements (e.g., payroll systems, school management software).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Operating System (OS)</h2>
+                <div class="content-card">
+                    <p>An **Operating System (OS)** is a core set of programs that manages all the hardware and software resources of a computer. It provides a platform for other applications to run and acts as an essential interface between the user and the computer hardware. The primary goal of an OS is to ensure the computer system operates efficiently and smoothly.</p>
+                    <h3>Key Functions of an OS</h3>
+                    <ul>
+                        <li><strong>Input-Output Management:</strong> Manages communication between the computer and peripheral devices.</li>
+                        <li><strong>User Interface (UI):</strong> Provides a way for users to interact with the computer. This can be a **Character User Interface (CUI)** like MS-DOS or a **Graphical User Interface (GUI)** like Windows.</li>
+                        <li><strong>Security:</strong> Protects the system from unauthorized access and threats through features like user accounts and passwords.</li>
+                        <li><strong>Process Management:</strong> Manages the execution of different programs and tasks.</li>
+                        <li><strong>Memory Management:</strong> Allocates and deallocates memory to programs as needed.</li>
+                        <li><strong>Data Management:</strong> Organizes data into logical groupings called files and directories.</li>
+                        <li><strong>Deadlock Prevention:</strong> Ensures that two processes don't get stuck waiting for each other to release resources.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Types of Operating Systems</h2>
+                <div class="content-card">
+                    <h3>A) Based on Processing</h3>
+                    <ul>
+                        <li><strong>Multi-programming OS:</strong> Allows multiple programs to be in the computer's memory at the same time, with a single CPU executing them concurrently.</li>
+                        <li><strong>Multi-tasking OS:</strong> Allows a single user to run more than one program at the same time (e.g., listening to music while typing a document).</li>
+                        <li><strong>Multi-processing OS:</strong> Uses more than one CPU to execute multiple programs simultaneously, dramatically increasing processing speed.</li>
+                        <li><strong>Time-sharing OS:</strong> Allows multiple users on different terminals to use the same computer system at the same time by sharing the CPU's processing time.</li>
+                        <li><strong>Batch Processing OS:</strong> Groups similar jobs together in a "batch" and processes them without user interaction.</li>
+                        <li><strong>Real-time OS:</strong> Designed for systems where tasks must be completed within a strict time frame (e.g., rocket launching, airline reservations).</li>
+                    </ul>
+                    <h3>B) Based on User Interface</h3>
+                    <ul>
+                        <li><strong>Character User Interface (CUI):</strong> Users interact with the computer by typing commands. It is faster but requires the user to remember commands (e.g., MS-DOS).</li>
+                        <li><strong>Graphical User Interface (GUI):</strong> Users interact with the computer using visual elements like icons, windows, and menus. It is very user-friendly but requires more memory (e.g., Windows, macOS).</li>
+                    </ul>
+                    <div class="table-container">
+                        <h3>CUI vs. GUI</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Character User Interface (CUI)</th>
+                                    <th>Graphical User Interface (GUI)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Command-driven interaction.</td>
+                                    <td>Graphics-driven interaction.</td>
+                                </tr>
+                                <tr>
+                                    <td>Single-tasking.</td>
+                                    <td>Multi-tasking.</td>
+                                </tr>
+                                <tr>
+                                    <td>Not user-friendly.</td>
+                                    <td>Very user-friendly.</td>
+                                </tr>
+                                <tr>
+                                    <td>Faster.</td>
+                                    <td>Slower.</td>
+                                </tr>
+                                <tr>
+                                    <td>Used on older systems.</td>
+                                    <td>Used on modern systems.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Key OS Terminologies</h2>
+                <div class="content-card">
+                    <ul>
+                        <li><strong>Spooling:</strong> A technique to manage the difference in speed between the fast CPU and slow I/O devices, especially in printing.</li>
+                        <li><strong>Process:</strong> A program in execution. It is dynamic, unlike a static program file.</li>
+                        <li><strong>Thread:</strong> A smaller sub-process within a main process. Multi-threading allows parts of a single program to run concurrently.</li>
+                        <li><strong>Scheduling:</strong> The process by which the OS decides which program to run next, using algorithms like **Priority Scheduling** or **Time-sharing Scheduling**.</li>
+                        <li><strong>Buffering:</strong> Using a temporary storage area (buffer) to hold data during I/O operations, helping to synchronize data flow.</li>
+                        <li><strong>Virtual Memory:</strong> A technique that uses a portion of the hard disk to temporarily store data from RAM, allowing the computer to run large programs even with limited physical memory.</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
