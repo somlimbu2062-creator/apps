@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 5: Programming Concepts and Logics</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Chapter 5: Programming Concepts and Logics</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <article>
+            <section>
+                <h2>Introduction</h2>
+                <p>As we know, every computerized device does not work by itself. They need to be given some sort of command that makes the computer work. These commands help to instruct the computer and program a specific action required by the user. Since the commands are given in the form of a computer language, we need programming languages to write the set of instructions which command the computer to perform certain actions, collectively called **programs**.</p>
+                <p>A program written in any programming language is not understood by the computer. Hence, we need some sort of language translator or processor, such as an **assembler**, **compiler**, and **interpreter**, which has the basic function of converting a program written in any type of language into **machine level language**.</p>
+                <p>The program written by the programmer is known as the **source program**. After converting it becomes an **object program**.</p>
+            </section>
+
+            <section>
+                <h2>Qualities of a Good Program</h2>
+                <ul>
+                    <li>It should be easily understood.</li>
+                    <li>A program should be correct; it should be error-free.</li>
+                    <li>It should be reliable.</li>
+                    <li>It should have an easily understandable user interface.</li>
+                    <li>It should be portable and flexible.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Programming Language</h2>
+                <p>In order to make communication between a user and a computer, we need a computer language that helps a user to generate commands to perform as per the requirement. This language, with which we can give instructions to the computer, is known as a **programming language**.</p>
+                <p>The process of writing a programming language is known as **programming**, and the person who writes programs is a **programmer**.</p>
+            </section>
+
+            <section>
+                <h2>Types of Programming Language</h2>
+                <p>There are several types of programming languages which can be categorized as follows:</p>
+                
+                <h3>1. Low-Level Language</h3>
+                <p>Low-level languages are machine-dependent languages, which means a program written for one type of system cannot be run on another. Programming in a low-level language is very difficult and time-consuming. Different types of low-level languages are:</p>
+                
+                <h4>a. Machine-Level Language (1GL)</h4>
+                <p>This language consists of a sequence of 0's and 1's to generate instructions. It has a higher execution speed as it is directly understood by the processor.</p>
+                <details>
+                    <summary>Advantages and Disadvantages</summary>
+                    <ul>
+                        <li>**Advantages:** Directly understood by the processor, no translator needed.</li>
+                        <li>**Disadvantages:** Difficult to develop and debug, machine-dependent.</li>
+                    </ul>
+                </details>
+
+                <h4>b. Assembly Language (2GL)</h4>
+                <p>In this language, instead of writing instructions in a series of 0's and 1's, we can use **mnemonics** (symbolic instructions) like `ADD`, `SUB`, etc. An **assembler** is needed to convert it into machine-level language.</p>
+                <details>
+                    <summary>Advantages and Disadvantages</summary>
+                    <ul>
+                        <li>**Advantages:** Easier to write and debug than machine language, faster execution than high-level languages.</li>
+                        <li>**Disadvantages:** Machine-dependent, complex mnemonics, difficult and time-consuming.</li>
+                    </ul>
+                </details>
+                
+                <h3>2. High-Level Language (HLL)</h3>
+                <p>This language is close to English and uses mathematical notations. It's a machine-independent language, making it easier to write and debug. A **compiler** or **interpreter** is needed to convert it into machine language. **FORTRAN** (Formula Translator) was the first high-level language.</p>
+                <details>
+                    <summary>Advantages and Disadvantages</summary>
+                    <ul>
+                        <li>**Advantages:** Easier to write, debug, and understand; machine-independent.</li>
+                        <li>**Disadvantages:** Slower execution speed, requires a language translator.</li>
+                    </ul>
+                </details>
+                
+                <h4>a. Procedural-Oriented Language (3GL)</h4>
+                <p>This language focuses on the procedure rather than the data. It follows a top-to-bottom approach and has less data security. Examples include C, FORTRAN, and QBasic.</p>
+                <details>
+                    <summary>Advantages and Disadvantages</summary>
+                    <ul>
+                        <li>**Advantages:** Easier to debug than low-level languages, machine-independent, general-purpose.</li>
+                        <li>**Disadvantages:** Slower execution, less data security.</li>
+                    </ul>
+                </details>
+
+                <h4>b. Problem/Object-Oriented Language (4GL)</h4>
+                <p>This is an advanced form of HLL that focuses on data rather than procedures. It follows a bottom-up approach and has features like data encapsulation and inheritance, making data more secure. Examples include C#, C++, and Java.</p>
+                <details>
+                    <summary>Advantages and Disadvantages</summary>
+                    <ul>
+                        <li>**Advantages:** Can develop advanced, user-friendly software and web-based applications, is machine-independent.</li>
+                        <li>**Disadvantages:** Slower execution, requires a language translator.</li>
+                    </ul>
+                </details>
+
+                <h4>c. Natural Language (5GL)</h4>
+                <p>This language uses simple statements from common communication languages. It is still in the developmental stage. An example is **PROLOG** (programming logic).</p>
+                <details>
+                    <summary>Advantages and Disadvantages</summary>
+                    <ul>
+                        <li>**Advantages:** Easier to develop and debug, machine-independent.</li>
+                        <li>**Disadvantages:** Still in development, slower execution.</li>
+                    </ul>
+                </details>
+            </section>
+            
+            <section>
+                <h2>Language Translator/Processor</h2>
+                <p>A language translator is a system software that converts a source program (assembly or high-level language) into a machine-understandable language (object program).</p>
+                
+                <h3>Assembler</h3>
+                <p>Converts assembly-level language into machine language at once. It's relatively fast since assembly language is closer to machine code.</p>
+                
+                <h3>Compiler</h3>
+                <p>Converts the entire program written in a high-level language into machine code at once. It finds errors after compiling the complete program, making debugging complex and time-consuming. Languages like C and C++ use compilers.</p>
+                
+                <h3>Interpreter</h3>
+                <p>Translates a high-level language program one statement at a time. This makes debugging easier and less time-consuming, but the program execution is slower than with a compiler. Languages like BASIC, C#, and PHP use interpreters.</p>
+                
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>S.N.</th>
+                                <th>Compiler</th>
+                                <th>Interpreter</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Translates the whole program at once.</td>
+                                <td>Translates one line at a time.</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Finds errors after compiling the complete program.</td>
+                                <td>Finds errors after translating a single line.</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Translation is incredibly faster.</td>
+                                <td>Translation is slower.</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Debugging is complex and difficult.</td>
+                                <td>Debugging is easier.</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Requires larger memory space.</td>
+                                <td>Requires less memory space.</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Older languages like C, C++, Java use it.</td>
+                                <td>Newer languages like BASIC, C#, PHP use it.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section>
+                <h2>Syntax and Semantics</h2>
+                <p>A program's **syntax** is the set of rules or structures governing the code. **Semantics** is the meaning attached to each word or symbol in the language.</p>
+                <div class="code-block">
+                    <pre><code>
+In q basic:
+Print” This is programming”; P
+Here, Print is Semantics and whole line is Structure (syntax)
+                    </code></pre>
+                </div>
+            </section>
+
+            <section>
+                <h2>Errors (Bugs)</h2>
+                <p>An error in a program is known as a **bug**. The process of removing errors is called **debugging**. There are three types of errors:</p>
+                
+                <h3>1. Syntax Error</h3>
+                <p>An error that arises from not following the proper rules or format of the programming language. These are detected by a language processor. For example, in C, if a statement doesn't end with a semicolon, it's a syntax error.</p>
+                
+                <h3>2. Logical Error</h3>
+                <p>An error due to poorly developed logic. This type of error is not detected by a language processor. For example, using the wrong formula to calculate simple interest would be a logical error.</p>
+                
+                <h3>3. Runtime Error</h3>
+                <p>An error that occurs while the program is running. It is also not detected by a language translator. An example is insufficient memory space or a peripheral device not being turned on.</p>
+            </section>
+
+            <section>
+                <h2>Common Terminology</h2>
+                <ul>
+                    <li>**Data Types:** Specifies the type of data to be used, such as **Numeric** (whole numbers) and **Character** (alphanumeric values).</li>
+                    <li>**Variable and Constant:** A **variable** can change its value during program execution, while a **constant** does not.</li>
+                    <li>**Operands and Operators:** In `S = A + B`, `S`, `A`, and `B` are **operands**, and `+` and `=` are **operators**.</li>
+                    <li>**Program Design Tools:** Includes **Algorithm**, **Flowchart**, and **Pseudocode**. An **algorithm** is a step-by-step procedure for solving a problem. A **flowchart** is a pictorial representation of these steps.</li>
+                </ul>
+                <div class="flowchart-section">
+                    <h4>Flowchart Symbols</h4>
+                    
+                </div>
+            </section>
+
+            <section>
+                <h2>C Programming Language</h2>
+                <p>A powerful high-level language developed by Dennis Ritchie at Bell Laboratories in 1970. It is often called a **Middle-Level Programming Language** because it supports both low-level and high-level programming.</p>
+                
+                <h3>Key Features of C Language</h3>
+                <ul>
+                    <li>It supports structured programming.</li>
+                    <li>It is portable.</li>
+                    <li>It has powerful tools and keywords.</li>
+                    <li>It is widely used for system programming.</li>
+                </ul>
+                <details>
+                    <summary>Advantages and Disadvantages</summary>
+                    <ul>
+                        <li>**Advantages:** Easy to learn, suitable for system programming, portable.</li>
+                        <li>**Disadvantages:** No strict data type checking, debugging can be complex.</li>
+                    </ul>
+                </details>
+            </section>
+
+            <section>
+                <h2>Fundamentals of C</h2>
+                <ul>
+                    <li>**Character Set:** The set of alphabets, digits, and symbols used in C.</li>
+                    <li>**Comments:** Text in a program that is not compiled or executed, used for information. Single-line comments start with `//`, and multi-line comments are enclosed in `/* ... */`.</li>
+                    <li>**C Tokens:** The smallest units in a C program with meaningful representations.</li>
+                    <li>**Identifiers and Keywords:** **Identifiers** are names for entities like variables and functions. **Keywords** are reserved words with pre-defined meanings.</li>
+                    <li>**Statements:** A set of tokens ending with a semicolon or a curly bracket.</li>
+                    <li>**Escape Sequences:** Special character combinations, like `\n` for a new line.</li>
+                    <li>**Operators:** Symbols used to perform operations, such as `+`, `-`, `*`, `/`.</li>
+                    <li>**Library Functions:** Pre-written functions stored in the C library.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Input/Output Functions</h2>
+                <ul>
+                    <li>`printf()`: A formatted output function.</li>
+                    <li>`scanf()`: A function to enter values into a program.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Program Examples</h2>
+                <p>Here are some examples of C programs. Note that `void main()` is a common syntax in some compilers, but `int main()` is the standard and recommended practice.</p>
+
+                <h3>Sum of Two Numbers</h3>
+                <div class="code-block">
+                    <pre><code>
+#include <stdio.h>
+void main()
+{
+    int a, b, s;
+    clrscr();
+    printf("Enter First Number: ");
+    scanf("%d", &a);
+    printf("Enter Second Number: ");
+    scanf("%d", &b);
+    s = a + b;
+    printf("The sum is %d", s);
+    getch();
+}
+                    </code></pre>
+                </div>
+
+                <h3>Area of a Rectangle</h3>
+                <div class="code-block">
+                    <pre><code>
+#include <stdio.h>
+void main()
+{
+    int l, b, a;
+    printf("Enter Length: ");
+    scanf("%d", &l);
+    printf("Enter Breadth: ");
+    scanf("%d", &b);
+    a = l * b;
+    printf("The area is %d", a);
+    getch();
+}
+                    </code></pre>
+                </div>
+                
+                <h3>Sum of N Natural Numbers</h3>
+                <div class="code-block">
+                    <pre><code>
+#include <stdio.h>
+int main()
+{
+    int n, i, s=0;
+    printf("Enter any number: ");
+    scanf("%d", &n);
+    for (i=1; i<=n; i++)
+    {
+        s=s+i;
+    }
+    printf("Sum of natural numbers is %d", s);
+    return 0;
+}
+                    </code></pre>
+                </div>
+            </section>
+
+            <section>
+                <h2>Control Structures in C</h2>
+                <p>These statements change the normal top-to-bottom flow of program execution.</p>
+                
+                <h3>A) Selection/Branching (Conditional)</h3>
+                <p>These statements execute a block of code based on a condition.</p>
+                
+                <h4>if statement</h4>
+                <p>Used for a single condition.</p>
+                <div class="code-block">
+                    <pre><code>
+if (condition)
+{
+    // Block of statements
+}
+                    </code></pre>
+                </div>
+
+                <h4>if...else statement</h4>
+                <p>Used for two conditions.</p>
+                <div class="code-block">
+                    <pre><code>
+if (condition)
+{
+    // Statements for true condition
+}
+else
+{
+    // Statements for false condition
+}
+                    </code></pre>
+                </div>
+
+                <h4>else if statement</h4>
+                <p>Used for multiple conditions.</p>
+                <div class="code-block">
+                    <pre><code>
+if (condition 1)
+{
+    // Statement Block 1
+}
+else if (condition 2)
+{
+    // Statement Block 2
+}
+...
+else
+{
+    // default statement
+}
+                    </code></pre>
+                </div>
+            </section>
+            
+            <section>
+                <h3>B) Unconditional Statements</h3>
+                <p>These statements break the program flow without a condition.</p>
+                
+                <h4>goto statement</h4>
+                <p>Transfers control to a labeled statement.</p>
+                <div class="code-block">
+                    <pre><code>
+label:
+// code
+goto label;
+                    </code></pre>
+                </div>
+            </section>
+
+            <section>
+                <h3>C) Looping</h3>
+                <p>The process of repeating a block of statements a given number of times or until a condition is met.</p>
+                
+                <h4>for loop</h4>
+                <p>Used when the number of iterations is known.</p>
+                <div class="code-block">
+                    <pre><code>
+for (initialization; condition; increment/decrement)
+{
+    // Statements
+}
+                    </code></pre>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer class="container">
+        <p>&copy; 2025 Programming Concepts and Logics</p>
+    </footer>
+
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-top: 2em;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2em;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 1.5em;
+            color: #e74c3c;
+        }
+        
+        h4 {
+            font-size: 1.2em;
+            color: #27ae60;
+        }
+        
+        p, li {
+            font-size: 1em;
+            margin-bottom: 1em;
+        }
+
+        strong {
+            color: #34495e;
+        }
+        
+        /* Layout & Sections */
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 40px 0;
+            border-bottom: 5px solid #3498db;
+        }
+
+        main {
+            padding: 20px 0;
+        }
+
+        section {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Lists */
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li::before {
+            content: '• ';
+            color: #3498db;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        
+        /* Code Blocks */
+        .code-block {
+            background-color: #2d2d2d;
+            color: #ccc;
+            padding: 15px;
+            border-radius: 6px;
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+        
+        .code-block pre {
+            margin: 0;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 0.9em;
+        }
+
+        /* Table */
+        .table-container {
+            overflow-x: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            font-weight: 600;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        /* Details (Accordion) */
+        details {
+            background-color: #ecf0f1;
+            border: 1px solid #bdc3c7;
+            border-radius: 6px;
+            padding: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        details summary {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        details[open] {
+            padding-bottom: 20px;
+        }
+
+        /* Images */
+        .flowchart-section {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .flowchart-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid #ccc;
+            margin-top: 20px;
+            color: #777;
+        }
+    </style>
+</body>
+</html>
