@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 8: Information Security and Cyber Law</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto+Mono:wght@400;700&display=swap');
+
+        :root {
+            --primary-color: #6a0dad; /* Purple */
+            --secondary-color: #f3e6ff; /* Light Lavender */
+            --text-color: #333;
+            --heading-color: #4b0082;
+            --card-bg: #ffffff;
+            --border-radius: 12px;
+            --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --code-bg: #f5e9ff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.8;
+            color: var(--text-color);
+            background-color: var(--secondary-color);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background-color: var(--card-bg);
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--heading-color));
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        main {
+            padding: 30px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.8rem;
+            color: var(--heading-color);
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+
+        .section h3 {
+            font-family: 'Poppins', sans-serif;
+            color: var(--primary-color);
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        .content-card {
+            background-color: #fcf8ff;
+            padding: 20px;
+            border-radius: var(--border-radius);
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .content-card p {
+            margin-bottom: 15px;
+        }
+
+        .content-card code {
+            background-color: var(--code-bg);
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: var(--heading-color);
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+
+        ul li {
+            position: relative;
+            margin-bottom: 10px;
+        }
+
+        ul li::before {
+            content: "•";
+            color: var(--primary-color);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        .note {
+            background-color: #fff9c4;
+            border-left: 5px solid #ffeb3b;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            .section h2 {
+                font-size: 1.5rem;
+            }
+            main {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Chapter 8: Information Security and Cyber Law</h1>
+            <p>Understanding the digital world and its rules.</p>
+        </header>
+
+        <main>
+            <div class="section">
+                <h2>1. What is Information Technology? Describe it with its social impacts.</h2>
+                <div class="content-card">
+                    <h3>Information Technology (IT)</h3>
+                    <p>Information Technology is the combined form of **Information and Communication Technology (ICT)**. It's a modern methodology for communication and information flow, making the world a smaller place by enabling instantaneous message transfer globally. IT is widely used in various sectors, including education, industry, banking, healthcare, and scientific research, where it acts as a tool for teaching, management, and experimentation.</p>
+                    
+                    <h3>Social Impacts of IT</h3>
+                    <p>IT has had both positive and negative impacts on society. While it has made learning and communication more accessible and efficient through concepts like e-learning and space technology, it has also introduced new challenges. The increasing use of IT has led to a rise in **cyber crimes**, where criminals can steal information, disclose secrets, and spread viruses, disrupting social peace and security.</p>
+
+                    <h3>Information Security</h3>
+                    <p>Information security is the practice of protecting a network and its data from unauthorized access, misuse, modification, or destruction. It aims to create a secure environment for computers, users, and programs.</p>
+                    <p>Key concepts in information security include:</p>
+                    <ul>
+                        <li><strong>Security Threats:</strong> Potential dangers that could cause harm or breach security.</li>
+                        <li><strong>Security Attacks:</strong> A deliberate attempt to gain unauthorized access to destroy, expose, or steal valuable data, often triggered by malware like viruses and trojans.</li>
+                    </ul>
+                    
+                    <p>Information security is built on three core objectives:</p>
+                    <ul>
+                        <li><strong>Confidentiality:</strong> Ensuring information is accessible only to authorized individuals.</li>
+                        <li><strong>Integrity:</strong> Maintaining the accuracy and completeness of data, preventing unauthorized modification.</li>
+                        <li><strong>Availability:</strong> Ensuring that information and systems are accessible to authorized users whenever needed.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Cryptography</h2>
+                <div class="content-card">
+                    <p>Derived from the Greek words for "secret writing," **cryptography** is the art and science of hiding information. It's crucial for secure communication in government, military, and personal use. The two main processes in cryptography are:</p>
+                    <ul>
+                        <li><strong>Encryption:</strong> The process of converting readable **plaintext** into an unreadable format called **ciphertext**, using special algorithms and keys.</li>
+                        <li><strong>Decryption:</strong> The reverse process of encryption, which converts the ciphertext back into readable plaintext.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>2. What is Digital Divide?</h2>
+                <div class="content-card">
+                    <p>The **digital divide** refers to the gap between people who have access to and knowledge of information technology (computer literate) and those who do not (computer illiterate). This division exists between urban and rural populations, the educated and uneducated, and the rich and poor. The term became popular in the mid-1990s and is now a global issue that governments are working to address by promoting digital literacy and access.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>3. What are the computer ethics or cyber ethics?</h2>
+                <div class="content-card">
+                    <p><strong>Computer ethics</strong>, or **cyber ethics**, are a set of moral principles and codes of conduct that computer users and professionals should follow to prevent criminal activities. Some examples of these ethical principles include:</p>
+                    <ul>
+                        <li>Do not use other people's passwords or steal their information.</li>
+                        <li>Do not use computers to harm others or disclose their secrets.</li>
+                        <li>Do not spread viruses or alter data without permission.</li>
+                        <li>Do not copy or use licensed software without paying for it.</li>
+                        <li>Do not misuse electronic transactions.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>4. What is cyber crime? List out some examples of cyber crimes.</h2>
+                <div class="content-card">
+                    <p>A **cyber crime** is any act of misusing computers, the Internet, or other electronic media. As IT use increases, so do cyber crimes. Some common examples include:</p>
+                    <ul>
+                        <li>Spreading viruses and other malware.</li>
+                        <li>Stealing or altering others' information without permission.</li>
+                        <li>Software piracy (copying licensed software).</li>
+                        <li>Hacking and cracking.</li>
+                        <li>**Denial of Service (DoS)** attacks.</li>
+                        <li>Forging documents or misusing electronic transactions.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>5. What is Cyber Law? Define and write some provisions of it.</h2>
+                <div class="content-card">
+                    <p><strong>Cyber law</strong> is the legal framework that governs the use of computers, the Internet, and other electronic media. While cyber ethics provides guidelines, cyber law enforces them by defining punishments for violations. It is a legal support system for cyber ethics.</p>
+                    <p>Nepal has its own cyber law, "The Electronic Transaction Ordinance, 2005," which was issued on March 18, 2005 (11th Falgun, 2061 BS). Its provisions include:</p>
+                    <ul>
+                        <li>Electronic and Digital Signature Law.</li>
+                        <li>Intellectual Property Law (e.g., Copyright, Trademark, Patent).</li>
+                        <li>Telecommunication Law.</li>
+                        <li>Data Protection and Privacy Law.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>6. Explain the different objectives of IT Policy of Nepal.</h2>
+                <div class="content-card">
+                    <p>The objectives of Nepal's IT Policy are aimed at making IT a high-priority sector and leveraging it for national development. These objectives include:</p>
+                    <ul>
+                        <li>To declare IT as a high-priority sector and make it practical for use.</li>
+                        <li>To establish knowledge-based industries to create employment opportunities.</li>
+                        <li>To use IT for effective and inclusive public services through **e-government**.</li>
+                        <li>To increase the productive use of IT in social, economic, and business organizations.</li>
+                        <li>To improve access to international IT developments.</li>
+                        <li>To make the **Government Integrated Data Center (GIDC)** an effective infrastructure for IT development.</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
