@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 4: Application Packages</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+
+        :root {
+            --primary-color: #2e8b57; /* Sea Green */
+            --secondary-color: #e8f5e9; /* Light Green */
+            --text-color: #004d40; /* Dark Teal */
+            --heading-color: #1b5e20; /* Dark Green */
+            --card-bg: #ffffff;
+            --border-radius: 12px;
+            --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --code-bg: #f0f4f7;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.8;
+            color: var(--text-color);
+            background-color: var(--secondary-color);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background-color: var(--card-bg);
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--heading-color));
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        main {
+            padding: 30px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8rem;
+            color: var(--heading-color);
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+
+        .section h3 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--primary-color);
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        .content-card {
+            background-color: #f7fcf9;
+            padding: 20px;
+            border-radius: var(--border-radius);
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .content-card p {
+            margin-bottom: 15px;
+        }
+
+        .content-card code {
+            background-color: var(--code-bg);
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: var(--heading-color);
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+
+        ul li {
+            position: relative;
+            margin-bottom: 8px;
+        }
+
+        ul li::before {
+            content: "•";
+            color: var(--primary-color);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        
+        .note {
+            background-color: #fff9c4;
+            border-left: 5px solid #ffeb3b;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            .section h2 {
+                font-size: 1.5rem;
+            }
+            main {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Chapter 4: Application Packages</h1>
+            <p>MS-Word, MS-Excel, and MS-PowerPoint</p>
+        </header>
+
+        <main>
+            <div class="section">
+                <h2>MS-Word (Word Processor)</h2>
+                <div class="content-card">
+                    <p><strong>MS-Word</strong> is a word processing software developed by Microsoft. It's used for creating, editing, and printing various documents like letters, reports, and brochures. Its files have a <code>.doc</code> or <code>.docx</code> extension. It's a key part of the MS-Office suite.</p>
+                    <h3>Features of MS-Word</h3>
+                    <ul>
+                        <li><strong>Fast Operation:</strong> Being a digital software, it's significantly faster than traditional writing methods.</li>
+                        <li><strong>Text Editing and Formatting:</strong> Allows easy insertion, deletion, and modification of text, along with formatting options like bold, italic, and different fonts.</li>
+                        <li><strong>Permanent Storage:</strong> Documents can be saved electronically and retrieved whenever needed.</li>
+                        <li><strong>Graphics and OLE:</strong> Supports inserting images and other objects, and uses **Object Linking and Embedding (OLE)** to share data between different programs.</li>
+                        <li><strong>Mail Merge:</strong> A powerful tool for creating multiple documents (e.g., letters, labels) from a single template and a data source.</li>
+                        <li><strong>Spelling & Grammar Check:</strong> Helps create professional, error-free documents by automatically identifying and suggesting corrections for spelling and grammar mistakes.</li>
+                        <li><strong>Thesaurus:</strong> Provides a built-in thesaurus to find synonyms and antonyms for words, improving writing quality.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>MS-Excel (Spreadsheet)</h2>
+                <div class="content-card">
+                    <p><strong>MS-Excel</strong> is a spreadsheet software used to store, organize, and analyze numerical and text data. It's ideal for tasks like financial analysis, budget preparation, and managing large datasets. Excel files have a <code>.xls</code> or <code>.xlsx</code> extension.</p>
+                    <h3>Common Terminologies</h3>
+                    <ul>
+                        <li><strong>Worksheet:</strong> A single page in a spreadsheet file, made up of rows and columns.</li>
+                        <li><strong>Workbook:</strong> An Excel file that contains one or more worksheets.</li>
+                        <li><strong>Cell:</strong> The intersection of a row and a column. It's the basic unit for storing data.</li>
+                    </ul>
+                    <h3>Features of MS-Excel</h3>
+                    <ul>
+                        <li><strong>Data Organization:</strong> Manages large volumes of data in a structured, row-and-column format.</li>
+                        <li><strong>Automatic Calculation:</strong> Performs complex mathematical and statistical calculations using formulas and functions.</li>
+                        <li><strong>Charts and Graphs:</strong> Converts data into various visual charts (e.g., bar, pie) for better analysis and presentation.</li>
+                        <li><strong>Sorting:</strong> Easily sorts data in ascending or descending order.</li>
+                        <li><strong>Cell Reference:</strong> The unique address of a cell, used in formulas to refer to its value.</li>
+                    </ul>
+                    <h3>Cell Reference in Excel</h3>
+                    <p>A cell reference is the combination of a column letter and a row number (e.g., <code>A1</code>, <code>C2</code>). There are two types:</p>
+                    <ul>
+                        <li><strong>Relative Cell Reference:</strong> The default reference. When a formula is copied to another cell, the reference adjusts automatically relative to the new position (e.g., if <code>=A1+B1</code> is copied down, it becomes <code>=A2+B2</code>).</li>
+                        <li><strong>Absolute Cell Reference:</strong> A fixed reference that does not change when the formula is copied. It is denoted by a dollar sign before the column and row (e.g., <code>=$A$1</code>).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>MS-PowerPoint (Presentation)</h2>
+                <div class="content-card">
+                    <p><strong>MS-PowerPoint</strong> is a presentation software that allows users to create dynamic and professional presentations. A presentation consists of a series of **slides** which can contain text, images, charts, audio, and video. It's a modern alternative to older visual aids like posters and handouts. Its files have a <code>.ppt</code> or <code>.pptx</code> extension.</p>
+                    <h3>Features of MS-PowerPoint</h3>
+                    <ul>
+                        <li><strong>Templates and Layouts:</strong> Provides pre-designed themes and layouts for faster development and a professional look.</li>
+                        <li><strong>Formatting:</strong> Offers a wide range of formatting tools for text and objects to make the presentation more attractive and effective.</li>
+                        <li><strong>Slide Transitions & Animations:</strong> Allows users to add visual effects between slides and animate elements within a slide to create a dynamic presentation.</li>
+                        <li><strong>Multimedia Support:</strong> Supports the inclusion of various media types, including graphs, charts, audio, and video.</li>
+                        <li><strong>Hyperlinks:</strong> Enables linking to other slides, documents, or websites for interactive presentations.</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
