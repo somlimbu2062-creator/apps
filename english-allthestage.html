@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All the World’s a Stage</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+        :root {
+            --primary-color: #34495e; /* A dark, professional blue */
+            --secondary-color: #2c3e50; /* An even darker shade */
+            --accent-color: #e74c3c; /* A dramatic red for emphasis */
+            --text-color: #444;
+            --light-bg: #ecf0f1;
+            --card-bg: #ffffff;
+            --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Merriweather', serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            padding: 25px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 3px solid var(--primary-color);
+            margin-bottom: 25px;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        
+        header h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1rem, 3vw, 1.5rem);
+            color: var(--secondary-color);
+            letter-spacing: 2px;
+        }
+
+        section {
+            padding: 20px 0;
+        }
+
+        h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        .summary p {
+            text-align: justify;
+            margin-bottom: 1em;
+            font-size: 1.05em;
+        }
+
+        .summary p:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .question-answer {
+            background-color: var(--light-bg);
+            border-left: 5px solid var(--accent-color);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .question-answer:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .question-answer::before {
+            content: '🎭';
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 2.5em;
+            color: var(--accent-color);
+            opacity: 0.2;
+            pointer-events: none;
+        }
+
+        .question-answer h4 {
+            font-weight: bold;
+            color: var(--primary-color);
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .question-answer p {
+            font-size: 1em;
+            color: var(--text-color);
+            margin-top: 5px;
+            text-align: justify;
+        }
+
+        .question-answer .sub-question p {
+            margin-bottom: 5px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            border-top: 2px solid var(--secondary-color);
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: var(--secondary-color);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            header h1 {
+                font-size: 2.5rem;
+            }
+            
+            h3 {
+                font-size: 1.7rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2>Chapter - 3</h2>
+            <h1>All the World’s a Stage</h1>
+        </header>
+
+        <section id="summary">
+            <h3>Summary</h3>
+            <div class="summary">
+                <p>"All the World's a Stage" is a poem written by William Shakespeare, and it is often considered one of his most famous works. The poem is a monologue that reflects on the stages of life and the human experience. It is written in the form of a metaphor, where the world is compared to a stage, and people are compared to actors.</p>
+                <p>In the first stanza, the speaker introduces the metaphor of life as a stage and the different ages of man as the seven acts of a play. The first act is infancy, where a person is a helpless baby, crying and cooing. The second act is childhood, where a person is a schoolboy, full of excitement and curiosity. The third act is adolescence, where a person is a lover, filled with passion and desire.</p>
+                <p>In the second stanza, the speaker moves on to describe the fourth act of middle age, where a person is a soldier, full of bravery and courage. The fifth act is old age, where a person is a justice, with a long white beard and a wise demeanor. The sixth act is second childhood, where a person is a lean and slippered pantaloon, full of foolishness and jest.</p>
+                <p>In the final stanza, the speaker concludes by saying that the last act of life is death, where a person is a mere player, who has played their part and must now exit the stage. The speaker reflects on the fleeting nature of life and how all people, regardless of their station, must eventually pass away. The poem ends with the lines, "And then is heard no more: it is a tale / Told by an idiot, full of sound and fury, / Signifying nothing."</p>
+                <p>The poem is a powerful reflection on the stages of life and the human experience. Shakespeare uses vivid imagery and clever metaphors to express the idea that life is fleeting and that all people will eventually pass away. The poem is a reminder to live life to the fullest, to cherish the moments we have, and to embrace the journey of life.</p>
+            </div>
+        </section>
+
+        <section id="understanding-text">
+            <h3>Understanding the text</h3>
+            <div class="question-answer">
+                <h4>a. Why does the poet compare the world with a stage?</h4>
+                <p>The poet compares the world to a stage because he sees life as a series of events that are performed for an audience. The stage represents the world and the actors represent people who play different roles in life.</p>
+            </div>
+            <div class="question-answer">
+                <h4>b. What is the first stage in a human’s life? In what sense can it be a troubling stage?</h4>
+                <p>The first stage of life is **infancy**, which is characterized as the stage where the actor is crying and crying. This stage can be seen as a troubling stage because babies are dependent on others and their cries can be seen as a cry for help.</p>
+            </div>
+            <div class="question-answer">
+                <h4>c. Describe the second stage of life based on the poem.</h4>
+                <p>The second stage of life is that of the **schoolboy**, who is eager to learn and play. The actor in this stage is described as wearing a "sadder visage," indicating that this stage is more serious than the previous one.</p>
+            </div>
+            <div class="question-answer">
+                <h4>d. Why is the last stage called second childhood?</h4>
+                <p>The last stage is called second childhood because the actor in this stage is described as having "white hairs" and being "bare of foot." This stage represents old age, where people become more dependent on others, much like a child.</p>
+            </div>
+            <div class="question-answer">
+                <h4>e. In what sense are we the players in the world stage?</h4>
+                <p>In the poem, the poet says that all people are players in the world stage. People play different roles throughout their lives and must perform for the audience, which is made up of the people around them. Just as actors on a stage must perform for the audience, people in life must also perform for those around them, whether it is in their family, work, or community.</p>
+            </div>
+        </section>
+
+        <section id="reference-context">
+            <h3>Reference to the context</h3>
+            <div class="question-answer">
+                <h4>a. Explain the following lines:</h4>
+                <p><i>All the world's a stage,<br>And all the men and women merely players</i></p>
+                <p>These lines are from William Shakespeare's poem "All the World's a Stage". The poet is comparing the world to a stage and people to actors who play different parts or roles in their lifetime. The line "They have their exits and their entrances" means that the actors in a play have specific times to enter and exit the stage. The line "And one man in his time plays many parts" means that a single person goes through various stages of life and has different roles to play at different times. This highlights the idea that life is like a theatrical play and people play various parts or roles during their lifetime.</p>
+            </div>
+            <div class="question-answer">
+                <h4>b. Explain the following lines briefly with reference to the context.</h4>
+                <p><i>They have their exits and their entrances;<br>And one man in his time plays many parts,</i></p>
+                <p>These lines refer to the idea that **life is like a play**, and that individuals are like actors on a stage. The line "they have their exits and their entrances" refers to the entrances and exits that actors make onto the stage in a play. The line "and one man in his time plays many parts" emphasizes that each person plays many different roles or parts throughout their life, just as actors play different characters in a play. The poet is making a comparison between the different stages of a person's life and the different parts played by an actor in a play.</p>
+            </div>
+            <div class="question-answer">
+                <h4>c. Read the given lines and answer the questions that follow.</h4>
+                <p><i>Then the whining schoolboy, with his satchel<br>And shining morning face, creeping like snail<br>Unwillingly to school.</i></p>
+                <div class="sub-question">
+                    <p><b>i. Which stage of life is being referred to here by the poet?</b></p>
+                    <p>The poet is referring to the stage of life in which one is a schoolboy.</p>
+                    <p><b>ii. Which figure of speech has been employed in the second line?</b></p>
+                    <p>The figure of speech used in the second line is **simile**, where the schoolboy is compared to a snail.</p>
+                    <p><b>iii. Who is compared to the snail?</b></p>
+                    <p>The **schoolboy** is compared to a snail.</p>
+                    <p><b>iv. Does the boy go to the school willingly?</b></p>
+                    <p>No, the boy does not go to the school willingly, he is referred to as "whining" and "unwillingly."</p>
+                </div>
+            </div>
+            <div class="question-answer">
+                <h4>d. Simile and metaphor are the two major poetic devices used in this poem. Explain citing examples of each.</h4>
+                <p>In the poem "All the World's a Stage" by William Shakespeare, both simile and metaphor are used to convey the poet's ideas and emotions. A **simile** is a figure of speech that compares two things using the words "like" or "as". In this poem, the poet uses a simile to describe the schoolboy "creeping like snail" unwillingly to school. This simile helps the reader to visualize the boy's reluctance to go to school. A **metaphor** is a figure of speech that compares two things without using the words "like" or "as". In this poem, the poet uses a metaphor to compare the world to a stage and all people to players. This metaphor helps the reader to understand the poet's view of life, that life is a play and people play different roles in it. Both simile and metaphor are important literary devices in the poem "All the World's a Stage". These devices help the poet to express his ideas and emotions more effectively and allow the reader to understand the poem on a deeper level.</p>
+            </div>
+            <div class="question-answer">
+                <h4>e. Which style does the poet use to express his emotions about how he thinks that the world is a stage and all the people living in it are mere players?</h4>
+                <p>In "All the World's a Stage," the poet, William Shakespeare, uses the dramatic metaphor to express his emotions about how he sees the world as a stage and all the people living in it as mere players. The poem is written in rhymed couplets with a strong sense of rhythm, which creates a musical, musical-like quality. The use of metaphor, simile, and other literary devices such as personification and alliteration further reinforce the poet's idea that the world is a stage and that life is a series of plays that we perform. The style is imaginative, thought-provoking, and creates a sense of introspection and reflection in the reader.</p>
+            </div>
+            <div class="question-answer">
+                <h4>f. What is the theme of this poem?</h4>
+                <p>The theme of the poem "All the World's a Stage" by William Shakespeare is the **transitory nature of life** and the idea that life is a performance. Shakespeare uses the metaphor of the world as a stage and people as actors to illustrate how people play different roles throughout their lives and eventually move on from one stage to another, ultimately facing death. The poem explores the idea that all human experiences and relationships are fleeting, and people's lives can be seen as a series of performances on the stage of life. The theme is a reminder to make the most of our time on the stage and to cherish the memories we make along the way.</p>
+            </div>
+        </section>
+
+        <section id="reference-beyond-text">
+            <h3>Reference beyond the text</h3>
+            <div class="question-answer">
+                <h4>a. Describe the various stages of a human’s life picturised in the poem “All the World’s a Stage.”</h4>
+                <p>In "All the World's a Stage," William Shakespeare picturizes the various stages of a human's life as different acts in a drama performance. The first stage is the stage of **infancy**, where a person is depicted as a crying and helpless baby. The second stage is the stage of **youth**, where a person is depicted as a schoolboy who is forced to go to school unwillingly. The third stage is the stage of **adulthood**, where a person is depicted as a lover who is passionate and impulsive. The fourth stage is the stage of **middle age**, where a person is depicted as a soldier who is courageous and brave. The fifth stage is the stage of **old age**, where a person is depicted as a lean and slippered pantaloon who is wise but also weak. The final stage is the stage of **second childhood**, where a person is depicted as a mere shadow of their former selves, and the world has lost its charm for them.</p>
+            </div>
+            <div class="question-answer">
+                <h4>b. Is Shakespeare’s comparison of human’s life with a drama stage apt? How?</h4>
+                <p>Yes, Shakespeare's comparison of human life with a drama stage is apt. In many ways, a human's life can be seen as a performance with various acts and scenes, each with its own unique challenges and experiences. Just as actors have to take on different roles in a play, people have to take on different roles in their lives, such as a son or daughter, a student, a lover, a parent, a friend, and so on. These different roles require a person to play different parts and act in different ways, much like actors in a play. Moreover, just as a play has a beginning, a middle, and an end, a human's life also has a beginning, a middle, and an end, with each stage bringing new experiences and challenges. Overall, the comparison of human life with a drama stage is fitting because it highlights the idea that life is a journey with its own unique challenges and experiences.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>Created with ❤️ for students everywhere.</p>
+        </footer>
+    </div>
+</body>
+</html>
