@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who are you, little i?</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+        :root {
+            --primary-color: #583d72; /* A deep purple */
+            --secondary-color: #7b59a6; /* A lighter shade of purple */
+            --accent-color: #f7a616; /* A bright, sunny yellow */
+            --text-color: #333;
+            --light-bg: #fafafa;
+            --card-bg: #ffffff;
+            --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Merriweather', serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            padding: 25px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 3px solid var(--primary-color);
+            margin-bottom: 25px;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        header h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1rem, 3vw, 1.5rem);
+            color: var(--secondary-color);
+            letter-spacing: 2px;
+        }
+
+        section {
+            padding: 20px 0;
+        }
+
+        h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        .summary p {
+            text-align: justify;
+            margin-bottom: 1em;
+            font-size: 1.05em;
+        }
+
+        .summary p:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .question-answer {
+            background-color: var(--light-bg);
+            border-left: 5px solid var(--accent-color);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .question-answer:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .question-answer::before {
+            content: '🌳';
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 2.5em;
+            color: var(--accent-color);
+            opacity: 0.2;
+            pointer-events: none;
+        }
+
+        .question-answer h4 {
+            font-weight: bold;
+            color: var(--primary-color);
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .question-answer p {
+            font-size: 1em;
+            color: var(--text-color);
+            margin-top: 5px;
+            text-align: justify;
+        }
+
+        .question-answer .sub-question p {
+            margin-bottom: 5px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            border-top: 2px solid var(--secondary-color);
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: var(--secondary-color);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            header h1 {
+                font-size: 2.5rem;
+            }
+            
+            h3 {
+                font-size: 1.7rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2>Chapter - 4</h2>
+            <h1>Who are you, little i?</h1>
+        </header>
+
+        <section id="summary">
+            <h3>Summary</h3>
+            <div class="summary">
+                <p>"Who are you, little i" is a poem by E. E. Cummings, one of the most innovative and experimental poets of the 20th century. This poem, like many of Cummings’ works, features unique syntax and typography, which contributes to its distinctiveness and impact.</p>
+                <p>The poem explores the theme of identity, as the speaker appears to be addressing a small "i" in the title. The speaker asks the "little i" who they are, and the tone is one of curiosity and wonder. The poem reflects the idea that one's identity is often elusive, and that it is difficult to truly know oneself.</p>
+                <p>In the first stanza, the speaker observes the "little i" and wonders about its identity. The poem uses imagery to suggest that the "little i" is small, fragile, and in a sense, vulnerable. The speaker is struck by the "little i's" simplicity, yet at the same time, its complexity and mystery.</p>
+                <p>The second stanza of the poem features a series of questions that the speaker asks of the "little i." The speaker wonders whether the "little i" is happy, if it has ever felt lonely, and if it has ever been in love. The questions suggest that the speaker is searching for some kind of understanding or insight into the "little i's" identity.</p>
+                <p>In the final stanza, the speaker asserts that the "little i" is a part of the speaker, and that it is a symbol of the speaker's own identity. The speaker declares that the "little i" is in fact a reflection of the speaker's own soul, and that it represents the speaker's deepest thoughts, feelings, and desires. The poem thus suggests that one's identity is closely tied to one's own inner self, and that it is something that is difficult to define or understand.</p>
+                <p>In conclusion, "Who are you, little i" is a thought-provoking and introspective poem that explores the theme of identity. The poem's unique style, including its innovative syntax and typography, adds to its impact and contributes to its memorability. The poem is a testament to the enduring legacy of E. E. Cummings as a major literary figure of the 20th century.</p>
+            </div>
+        </section>
+
+        <section id="understanding-text">
+            <h3>Understanding the text</h3>
+            <div class="question-answer">
+                <h4>a. Who can be the speaker of this poem?</h4>
+                <p>The speaker of the poem "Who are you, little i?" is an adult or a grown-up who is looking back at his childhood and reminiscing about the days gone by.</p>
+            </div>
+            <div class="question-answer">
+                <h4>b. What is “little i” doing?</h4>
+                <p>"Little i" is described as doing "such big things" in the poem. It is not explicitly stated what these big things are, but the child is described as being adventurous and exploring the world.</p>
+            </div>
+            <div class="question-answer">
+                <h4>c. What can be the relationship between “little i” and the speaker of the poem?</h4>
+                <p>The relationship between the speaker and "little i" is likely that of a memory of the speaker's childhood self. The speaker is likely remembering a specific moment or moments in his childhood when he was similarly exploring the world and experiencing life.</p>
+            </div>
+            <div class="question-answer">
+                <h4>d. What is the speaker remembering from his childhood days in the poem?</h4>
+                <p>The speaker is remembering a time from his childhood days when he was full of curiosity and wonder. He is remembering the days when he was exploring the world, experiencing new things, and feeling free to be himself.</p>
+            </div>
+            <div class="question-answer">
+                <h4>e. What attitude does the speaker seem to have toward the child in the poem?</h4>
+                <p>The speaker seems to have a fond and nostalgic attitude toward the child in the poem. He seems to have a fond memory of his childhood and the adventures that he experienced during that time. He speaks about the child with a sense of wonder and admiration, and seems to be appreciative of the child's sense of freedom and creativity.</p>
+            </div>
+        </section>
+
+        <section id="reference-context">
+            <h3>Reference to the context</h3>
+            <div class="question-answer">
+                <h4>a. Why do you think Cummings has placed a semicolon between the words window and at?</h4>
+                <p>The placement of a semicolon between the words window and at could suggest a pause or a separation between the two elements of the sentence. It creates a pause that makes the reader reflect on what has just been said and what is coming next.</p>
+            </div>
+            <div class="question-answer">
+                <h4>b. If the speaker is the child grown up, why does he ask, “who are you”?</h4>
+                <p>If the speaker is the child grown up, then he is asking, “who are you” to himself as a child, trying to remember his childhood self. He is reflecting on his childhood and the changes that have taken place over time.</p>
+            </div>
+            <div class="question-answer">
+                <h4>c. In this poem, an adult reflects on the childhood experience. Based on that, what might be the theme of the lines: “(and feeling: that if day / has to become night / this is a beautiful way)”?</h4>
+                <p>The theme of the lines, “(and feeling: that if day / has to become night / this is a beautiful way)” might be the acceptance of change and growth. The speaker is reflecting on how day has to turn into night, and how this is a beautiful process, suggesting that change and growth can also be beautiful and meaningful experiences.</p>
+            </div>
+            <div class="question-answer">
+                <h4>d. What is the rhyme scheme used in the poem?</h4>
+                <p>The rhyme scheme used in the poem is not fixed. The lines do not follow a regular pattern of rhyming, instead the rhyming is used sparingly and with intention.</p>
+            </div>
+            <div class="question-answer">
+                <h4>e. Explain the pun in “little i” that is related to what he is doing.</h4>
+                <p>The pun in “little i” is related to the fact that “i” is a letter that represents both the self and the narrator in the poem. The use of “little” before “i” suggests that the narrator is looking at his childhood self in a nostalgic and sentimental manner.</p>
+            </div>
+            <div class="question-answer">
+                <h4>f. How does Cummings’s use of lowercase letters affect your understanding of the poem? Explain.</h4>
+                <p>Cummings’s use of lowercase letters affects the reader’s understanding of the poem by creating a sense of intimacy and informality. The lowercase letters make the poem feel more personal and conversational, allowing the reader to feel closer to the speaker and the subject matter of the poem. Additionally, the use of lowercase letters adds to the overall feeling of nostalgia and reflection that pervades the poem.</p>
+            </div>
+        </section>
+
+        <section id="reference-beyond-text">
+            <h3>Reference beyond the text</h3>
+            <div class="question-answer">
+                <h4>a. How does nature inspire the speaker in “who are you, little i”? Explain.</h4>
+                <p>In the poem "who are you, little i," nature inspires the speaker by providing a sense of calm and connection. The image of a tree outside the window, with its leaves rustling in the breeze, is described in a way that suggests it has a life of its own, separate from the child and the speaker. This connection with nature allows the speaker to feel a sense of peace and contentment, even as the child grows older and becomes more aware of the world around them.</p>
+            </div>
+            <div class="question-answer">
+                <h4>b. Recall a childhood moment when you felt closely connected with nature. Describe the time and place as well as your feelings and thoughts about it.</h4>
+                <p>I understand that many people have felt closely connected with nature in their childhood. One such moment could be playing outside on a warm summer day, feeling the sun on their skin and the breeze in their hair, surrounded by the sounds and sights of nature. They may have felt a sense of wonder and curiosity, experiencing a sense of belonging and connectedness with the world around them.</p>
+            </div>
+            <div class="question-answer">
+                <h4>c. Interpret the poem in any way you like.</h4>
+                <p>The poem "who are you, little i" can be interpreted in many different ways. On one hand, it could be seen as a nostalgic reflection on childhood and the fleeting nature of time. The adult speaker looks back on their childhood memories, remembering the innocence and freedom of being a child, and wonders what has become of that little person. On the other hand, the poem could also be seen as a meditation on the connection between nature and the human experience. The tree outside the window serves as a reminder of the natural world and its beauty, inspiring the speaker to reflect on their place in the world and their connection to all living things.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>Created with ❤️ for students everywhere.</p>
+        </footer>
+    </div>
+</body>
+</html>
