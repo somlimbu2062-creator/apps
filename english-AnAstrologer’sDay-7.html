@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>An Astrologer’s Day</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+        :root {
+            --primary-color: #5d4037; /* A rich, earthy brown */
+            --secondary-color: #8d6e63; /* A lighter brown */
+            --accent-color: #ffb300; /* A warm, golden yellow */
+            --text-color: #3e2723;
+            --light-bg: #f5f5f5;
+            --card-bg: #ffffff;
+            --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Merriweather', serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            padding: 25px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 3px solid var(--primary-color);
+            margin-bottom: 25px;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        header h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1rem, 3vw, 1.5rem);
+            color: var(--secondary-color);
+            letter-spacing: 1px;
+        }
+
+        section {
+            padding: 20px 0;
+        }
+
+        h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        .summary p {
+            text-align: justify;
+            margin-bottom: 1em;
+            font-size: 1.05em;
+        }
+
+        .summary p:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .question-answer {
+            background-color: var(--light-bg);
+            border-left: 5px solid var(--accent-color);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .question-answer:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .question-answer::before {
+            content: '🔮';
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 2.5em;
+            color: var(--accent-color);
+            opacity: 0.2;
+            pointer-events: none;
+        }
+
+        .question-answer h4 {
+            font-weight: bold;
+            color: var(--primary-color);
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .question-answer p {
+            font-size: 1em;
+            color: var(--text-color);
+            margin-top: 5px;
+            text-align: justify;
+        }
+
+        .question-answer .sub-question p {
+            margin-bottom: 5px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            border-top: 2px solid var(--secondary-color);
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: var(--secondary-color);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            header h1 {
+                font-size: 2.5rem;
+            }
+            
+            h3 {
+                font-size: 1.7rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2>Chapter - 7</h2>
+            <h1>An Astrologer’s Day</h1>
+        </header>
+
+        <section id="summary">
+            <h3>Summary</h3>
+            <div class="summary">
+                <p>"An Astrologer's Day" is a short story written by R.K. Narayan. It takes place in India and follows the story of an astrologer who travels from village to village offering his services to those who seek to know their fortunes. The astrologer is not well-regarded, and people often question his abilities. However, he is a skilled con-man, who uses his knowledge of human nature and his cunning wit to fool people into thinking he has supernatural powers.</p>
+                <p>One day, a man comes to the astrologer seeking answers about his missing brother. The astrologer uses his knowledge of the man's past to fabricate a story about the missing brother and manages to convince the man that his brother is still alive. The man is overjoyed, and the astrologer feels a sense of pride in his ability to bring happiness to others.</p>
+                <p>However, the astrologer's sense of pride is short-lived. Later in the day, the man who had come to him earlier returns with the news that his brother has been found dead. The astrologer is shattered, as he realizes that he has unintentionally brought false hope to the man, who was already grieving the loss of his brother.</p>
+                <p>The astrologer reflects on his own mortality, and the fact that his profession of astrology is nothing but a sham. He feels a deep sense of emptiness and realizes that he has been living a lie all his life. The story ends with the astrologer contemplating the ultimate purpose of his life, and questioning the value of his existence.</p>
+                <p>In conclusion, "An Astrologer's Day" is a thought-provoking story that explores the themes of truth, deceit, and the search for meaning in life. The story offers a powerful commentary on the power of the human mind and the dangers of living a life based on lies. Through its powerful narrative and insightful commentary, the story challenges us to examine our own beliefs, and the things we hold dear in life.</p>
+            </div>
+        </section>
+
+        <section id="understanding-text">
+            <h3>Understanding the text</h3>
+            <div class="question-answer">
+                <h4>a. How does the astrologer’s appearance help him attract customers? How does he help the customers satisfy their needs?</h4>
+                <p>The astrologer's appearance is unkempt and shabby, but he has a wise and kind look in his eyes that helps him attract customers. He helps customers by listening to their problems, interpreting their horoscopes, and providing them with advice and guidance that satisfies their emotional and psychological needs. He also provides them with a sense of comfort and hope, which helps them feel better about their situations.</p>
+            </div>
+            <div class="question-answer">
+                <h4>b. How do you characterise the astrologer’s attitude toward the stranger?</h4>
+                <p>In the story "An Astrologer's Day," the astrologer is initially depicted as being wary and suspicious of the stranger who approaches him. This is seen when the astrologer assesses the stranger's appearance and behavior, and then gives him vague and misleading answers to his initial questions. However, as the story progresses, the astrologer's attitude toward the stranger changes, and he becomes more open and friendly. He even goes so far as to offer the stranger detailed information about his past and future, seemingly in an attempt to gain his trust and win his business. Overall, the astrologer's attitude toward the stranger can be characterized as manipulative and opportunistic, with a clear desire to exploit his customer for financial gain.</p>
+            </div>
+            <div class="question-answer">
+                <h4>c. What details does the astrologer give the stranger about his past?</h4>
+                <p>In "An Astrologer's Day" by R.K. Narayan, the astrologer gives the stranger very vague and limited details about his past. When the stranger first comes to him, the astrologer seems to be more interested in making money than helping the stranger. The astrologer tells the stranger that he was born in a poor family, has suffered many hardships, and has learned astrology as a means of supporting himself. However, the astrologer's description of his own past is not particularly detailed or specific, and it's unclear how much of it is true and how much is simply a performance designed to gain the stranger's trust.</p>
+            </div>
+            <div class="question-answer">
+                <h4>d. Why does he advise the stranger to go home immediately?</h4>
+                <p>The astrologer advises the stranger to go home immediately because he believes that the stranger is in danger. According to the astrologer's astrological calculations, the stranger is going through a dangerous period in his life and it is best for him to return home as soon as possible. The astrologer's advice is based on the belief that astrology can predict the future and influence events. By giving this advice, the astrologer believes he is helping to protect the stranger from any potential harm that may come his way.</p>
+            </div>
+            <div class="question-answer">
+                <h4>e. What is your reaction to the conversation between the astrologer and his wife?</h4>
+                <p>The conversation between the astrologer and his wife can be interpreted in different ways by different readers. Some readers may view the conversation as humorous, while others may find it sad or revealing of the astrologer's relationship with his wife. The astrologer's wife is portrayed as a practical, no-nonsense woman who is aware of her husband's trickery and is not afraid to call him out on it. In the conversation, she shows her frustration with her husband's lies and his repeated promise to quit his job as an astrologer. The conversation may be seen as a commentary on the complex dynamics of relationships and the toll that dishonesty can take on them.</p>
+            </div>
+        </section>
+
+        <section id="reference-context">
+            <h3>Reference to the context</h3>
+            <div class="question-answer">
+                <h4>a. Suspense is the feeling of anticipation you may have as you read. In this story, what details contributed to your feelings of suspense and surprise? Explain.</h4>
+                <p>In "An Astrologer's Day," the astrologer's ability to predict the stranger's past and the stranger's reaction to it creates a feeling of suspense and surprise. The stranger's insistence on hearing what the astrologer has to say, despite his initial skepticism, adds to the sense of anticipation. The astrologer's seemingly supernatural ability to know the stranger's past and the stranger's disbelief and eventual realization that the astrologer was correct also contribute to the sense of surprise and suspense in the story.</p>
+            </div>
+            <div class="question-answer">
+                <h4>b. Analyze the conflicts in “An Astrologer’s Day.” Explain how the conflicts are resolved and what they reveal about the characters involved in the story.</h4>
+                <p>The main conflict in the story is the tension between the stranger's skepticism and the astrologer's claims of being able to predict the future. This conflict is resolved when the astrologer reveals the stranger's past to him, convincing him of the astrologer's powers. The resolution of this conflict reveals the astrologer's cunning and manipulative character, as well as the stranger's gullibility and willingness to be convinced.</p>
+            </div>
+            <div class="question-answer">
+                <h4>c. “All right. I will speak. But will you give me a rupee if what I say is convincing? Otherwise I will not open my mouth, and you may do what you like.”</h4>
+                <div class="sub-question">
+                    <p><b>i. Who is the speaker?</b></p>
+                    <p>The speaker in this quote is the astrologer.</p>
+                    <p><b>ii. Who is he speaking to?</b></p>
+                    <p>He is speaking to the stranger.</p>
+                    <p><b>iii. What does the expression ‘open my mouth’ mean?</b></p>
+                    <p>The expression "open my mouth" means to speak or to tell something.</p>
+                </div>
+            </div>
+            <div class="question-answer">
+                <h4>d. Description helps readers visualize what is happening in a story. What details and techniques does the author use to describe the astrologer?</h4>
+                <p>The author uses several details and techniques to describe the astrologer. The astrologer is described as being thin and emaciated with a face that is wrinkled with age. He is dressed in a tattered, brown cloth and carries a bag filled with astrological charts and other equipment. The author also uses the astrologer's mannerisms and speech patterns to further illustrate his character.</p>
+            </div>
+            <div class="question-answer">
+                <h4>e. Irony is a contrast between appearances and reality. What is ironic about Guru Nayak’s meeting with the astrologer?</h4>
+                <p>It is ironic that Guru Nayak, a man who is searching for answers about his future, ends up meeting an astrologer who is not capable of predicting his own future. This contrast between appearances and reality highlights the absurdity of the astrologer's profession and the limitations of his powers.</p>
+            </div>
+            <div class="question-answer">
+                <h4>f. How does the astrologer’s manner of dress suit his character?</h4>
+                <p>The astrologer's manner of dress, which is described as tattered and worn, suits his character because it reflects his status as a poor, itinerant fortune-teller. The astrologer's ragged appearance also helps him to gain the sympathy and trust of his customers, as they are more likely to believe that he is a genuine seer if he appears to be in need of their help.</p>
+            </div>
+        </section>
+
+        <section id="reference-beyond-text">
+            <h3>Reference beyond the text</h3>
+            <div class="question-answer">
+                <h4>a. The astrologer attracts many customers in the street who are pleased and astonished by what he tells them. What does this tell you about the people of the town walking in the street?</h4>
+                <p>The fact that the astrologer attracts many customers in the street who are pleased and astonished by what he tells them reveals that the people of the town are likely to be superstitious and looking for answers and guidance in their lives. They may be searching for hope and comfort, or they may simply be curious about their future. Regardless of the reasons, their willingness to seek the astrologer's advice shows that they have a level of trust in his abilities and are open to the idea of fortune telling.</p>
+            </div>
+            <div class="question-answer">
+                <h4>b. Why do most people want to know their future? Do you think astrologers can really help them know their future?</h4>
+                <p>Most people want to know their future for various reasons such as to make important life decisions, to prepare for potential challenges, or simply to satisfy their curiosity. Whether astrologers can really help them know their future is a matter of personal belief. Some people believe that astrologers have the ability to predict the future based on the alignment of stars and planets, while others believe that astrology is simply a form of entertainment and that the future is not set in stone.</p>
+            </div>
+            <div class="question-answer">
+                <h4>c. Is astrology a good practice of fortune telling or is it just a blind faith? Give reasons.</h4>
+                <p>Whether astrology is a good practice of fortune telling or just a blind faith is a matter of personal belief and opinion. Some people believe that astrology is a valid way of predicting the future based on the alignment of stars and planets, while others believe that it is just a form of entertainment and has no scientific basis. Those who believe in astrology argue that it provides a deeper understanding of human nature and can offer insight into a person's strengths, weaknesses, and potential life path. On the other hand, those who believe that it is just a form of entertainment argue that astrology is based on outdated beliefs and has no scientific evidence to support its predictions.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>Created with ❤️ for students everywhere.</p>
+        </footer>
+    </div>
+</body>
+</html>
