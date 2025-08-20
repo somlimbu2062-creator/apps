@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Gift in Wartime</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+        :root {
+            --primary-color: #7f0000; /* A dark, somber red */
+            --secondary-color: #a30000; /* A slightly brighter red */
+            --accent-color: #ffc200; /* A hopeful gold */
+            --text-color: #333;
+            --light-bg: #f5f5f5;
+            --card-bg: #ffffff;
+            --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Merriweather', serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            padding: 25px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 3px solid var(--primary-color);
+            margin-bottom: 25px;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        header h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1rem, 3vw, 1.5rem);
+            color: var(--secondary-color);
+            letter-spacing: 1px;
+        }
+
+        section {
+            padding: 20px 0;
+        }
+
+        h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        .summary p {
+            text-align: justify;
+            margin-bottom: 1em;
+            font-size: 1.05em;
+        }
+
+        .summary p:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .question-answer {
+            background-color: var(--light-bg);
+            border-left: 5px solid var(--accent-color);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .question-answer:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .question-answer::before {
+            content: '🕊️';
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 2.5em;
+            color: var(--accent-color);
+            opacity: 0.2;
+            pointer-events: none;
+        }
+
+        .question-answer h4 {
+            font-weight: bold;
+            color: var(--primary-color);
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .question-answer p {
+            font-size: 1em;
+            color: var(--text-color);
+            margin-top: 5px;
+            text-align: justify;
+        }
+
+        .question-answer .sub-question p {
+            margin-bottom: 5px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            border-top: 2px solid var(--secondary-color);
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: var(--secondary-color);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            header h1 {
+                font-size: 2.5rem;
+            }
+            
+            h3 {
+                font-size: 1.7rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2>Chapter - 5</h2>
+            <h1>The Gift in Wartime</h1>
+        </header>
+
+        <section id="summary">
+            <h3>Summary</h3>
+            <div class="summary">
+                <p>"The Gift in Wartime" is a poem by Tran Mong Tu, translated into English by Vann Phan. The poem reflects on the loss and hardship that war brings to people and society, and how people find solace and hope amidst the chaos.</p>
+                <p>The poem begins with a description of the war, with bombs exploding and buildings collapsing. The war has brought much destruction and pain to the people. Despite this, the speaker notes that people still find moments of beauty and kindness amidst the chaos, as they hold onto their hope and love for one another.</p>
+                <p>The speaker then reflects on a specific act of kindness, a gift given to them in wartime. The gift symbolizes hope and love, and serves as a reminder that there is still good in the world even in the midst of war and destruction.</p>
+                <p>The poem continues to explore the theme of the power of love and hope to bring light to the darkness of war. The gift serves as a symbol of this power, and reminds the reader that even in the darkest of times, hope and love can always be found.</p>
+                <p>The poem ends with the speaker expressing gratitude for the gift, and reflecting on the idea that amidst the chaos of war, it is the small acts of kindness and love that bring hope and light to the darkness.</p>
+                <p>Overall, "The Gift in Wartime" is a powerful and moving poem that explores the impact of war on society, and the power of hope and love to bring light to the darkness. It serves as a reminder that even in the darkest of times, there is always the potential for kindness and love to bring hope and healing to those who are suffering.</p>
+            </div>
+        </section>
+
+        <section id="understanding-text">
+            <h3>Understanding the text</h3>
+            <div class="question-answer">
+                <h4>a. Who is the speaker addressing and why can that person not hear or understand what she is saying?</h4>
+                <p>In the poem "The Gift in Wartime" by Tran Mong Tu, the speaker is addressing a person who is far away, possibly in a war zone. The person cannot hear or understand the speaker because they are separated by distance and the noise of the war.</p>
+            </div>
+            <div class="question-answer">
+                <h4>b. What can you infer about the speaker’s feelings for the person addressed as “you”?</h4>
+                <p>The speaker's feelings for the person addressed as "you" can be inferred as being deep and emotional. The speaker is concerned about this person and their safety, and is expressing her love and affection for them. The use of the word "dear" in the poem suggests a close and affectionate relationship between the speaker and the person being addressed. Additionally, the speaker's expression of concern for the person's safety and well-being indicates a deep level of love and care for this person.</p>
+            </div>
+            <div class="question-answer">
+                <h4>c. What is the speaker’s attitude toward war?</h4>
+                <p>In the poem "The Gift in Wartime" by Tran Mong Tu, the speaker's attitude toward war is one of sorrow and loss. The speaker is addressing someone who has been affected by war and is no longer able to hear or understand her words. The speaker's tone suggests that she is mourning the loss of this person, who is no longer able to experience the beauty of the world or receive her gift. This suggests that the speaker is against war and the harm it causes to people and their relationships.</p>
+            </div>
+            <div class="question-answer">
+                <h4>d. In what ways do you think this person’s fate has affected the speaker?</h4>
+                <p>It is not specified in the poem who the speaker is addressing or the fate of the person addressed as "you." However, we can infer that the speaker is deeply affected by the person's fate, as the speaker expresses a strong emotional attachment and concern for their well-being. The speaker also seems to have a negative attitude toward war, as they describe it as a cruel and destructive force that separates people and causes suffering.</p>
+            </div>
+            <div class="question-answer">
+                <h4>e. What does the speaker promise at the end of the poem? Why do you think the speaker does this?</h4>
+                <p>In the end of the poem, the speaker promises to tell the story of "you" even if the person can no longer hear or understand her. This promise is made as a way for the speaker to cope with the pain and loss she feels due to the person's fate, which was affected by war. The speaker wants to keep the memory of the person alive and commemorate their story, which she believes deserves to be remembered and honored.</p>
+            </div>
+        </section>
+
+        <section id="reference-context">
+            <h3>Reference to the context</h3>
+            <div class="question-answer">
+                <h4>a. What is the theme of the poem?</h4>
+                <p>The theme of the poem "The Gift in Wartime" by Tran Mong Tu (translated by Vann Phan) is the **power of love and hope in difficult times**, specifically during war.</p>
+            </div>
+            <div class="question-answer">
+                <h4>b. What imagery from the poem made the greatest impression on you? Why?</h4>
+                <p>The imagery that made the greatest impression on me is the line **"I offer you my life, drop by drop, like rain,"** as it conveys the selflessness and devotion of the speaker towards the person addressed.</p>
+            </div>
+            <div class="question-answer">
+                <h4>c. Which figurative language is used in the poem? Explain with examples.</h4>
+                <p>Figurative language used in the poem is **metaphor and personification**. An example of metaphor is "I offer you my life, drop by drop, like rain." It compares the speaker's life to raindrops, conveying their selflessness and devotion towards the person addressed. An example of personification is "My voice does not reach you." It gives voice to the speaker's feelings and implies that they are powerless to reach the person addressed.</p>
+            </div>
+            <div class="question-answer">
+                <h4>d. What does the speaker “offer” in this poem? What does the person addressed as “you” give in return?</h4>
+                <p>The speaker offers their **life**, drop by drop, like rain to the person addressed, while the person addressed gives the speaker **hope** in return.</p>
+            </div>
+            <div class="question-answer">
+                <h4>e. An apostrophe is a literary device in which a writer or speaker addresses an absent person or an abstract idea in such a way as if it were present and can understand. Discuss the poem in relation to apostrophe.</h4>
+                <p>The poem is an example of **apostrophe** as the speaker addresses the person addressed as "you" in a way as if they were present and could understand. The speaker's use of apostrophe conveys the depth of their feelings towards the person addressed and their wish to connect with them.</p>
+            </div>
+        </section>
+
+        <section id="reference-beyond-text">
+            <h3>Reference beyond the text</h3>
+            <div class="question-answer">
+                <h4>a. One way to get relief from grief is to write or talk about it. In your opinion, how might the speaker in this poem have benefitted from saying what she did? Explain.</h4>
+                <p>Writing about one's emotions and experiences can be a cathartic process and can help relieve feelings of grief. The speaker in this poem is addressing a person who is not present, but she is able to express her feelings and emotions through the use of language. By doing so, the speaker may have been able to process her feelings and come to terms with the person's fate. This can be a therapeutic process, as it allows the speaker to express her feelings in a safe and controlled environment.</p>
+            </div>
+            <div class="question-answer">
+                <h4>b. Write an essay on the effects of war</h4>
+                <p>War has a profound and lasting effect on people and communities. The physical and emotional toll of war is devastating, and many people never fully recover from its effects. War can cause physical injury and death, as well as emotional trauma and psychological damage. It can also lead to loss of property, displacement, and economic hardship. In addition, war can tear apart families and communities, leaving individuals feeling isolated and alone.</p>
+                <p>The impact of war is not limited to those who are directly involved. War can have a ripple effect, affecting generations to come. Children who grow up in war-torn countries often experience trauma, poverty, and a lack of access to education and healthcare. They may also be forced to participate in the conflict, which can have lifelong consequences.</p>
+                <p>In addition to the physical and emotional toll of war, it can also have a devastating impact on the environment. War can lead to the destruction of natural habitats and wildlife, as well as the pollution of air, water, and soil. This can have long-lasting consequences for the health of individuals and ecosystems.</p>
+                <p>Overall, the effects of war are far-reaching and deeply damaging. It is important for individuals, communities, and nations to work towards peace and find alternative solutions to conflicts in order to minimize the impact of war on people and the planet.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>Created with ❤️ for students everywhere.</p>
+        </footer>
+    </div>
+</body>
+</html>
