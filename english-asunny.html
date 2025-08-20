@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Sunny Morning</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+        :root {
+            --primary-color: #2E8B57; /* Sea Green for a sunny, nature theme */
+            --secondary-color: #3CB371; /* Medium Sea Green */
+            --accent-color: #FFD700; /* Gold for sunlight */
+            --text-color: #333;
+            --light-bg: #F0FFF0; /* Honeydew */
+            --card-bg: #ffffff;
+            --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Merriweather', serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            padding: 25px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 3px solid var(--primary-color);
+            margin-bottom: 25px;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        header h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1rem, 3vw, 1.5rem);
+            color: var(--secondary-color);
+            letter-spacing: 1px;
+        }
+
+        section {
+            padding: 20px 0;
+        }
+
+        h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        .summary p {
+            text-align: justify;
+            margin-bottom: 1em;
+            font-size: 1.05em;
+        }
+
+        .summary p:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .question-answer {
+            background-color: var(--light-bg);
+            border-left: 5px solid var(--accent-color);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .question-answer:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .question-answer::before {
+            content: '☀️';
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 2.5em;
+            color: var(--accent-color);
+            opacity: 0.2;
+            pointer-events: none;
+        }
+
+        .question-answer h4 {
+            font-weight: bold;
+            color: var(--primary-color);
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .question-answer p, .question-answer ul {
+            font-size: 1em;
+            color: var(--text-color);
+            margin-top: 5px;
+            text-align: justify;
+        }
+
+        .question-answer ul {
+            margin-left: 20px;
+            list-style-type: disc;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            border-top: 2px solid var(--secondary-color);
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: var(--secondary-color);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            header h1 {
+                font-size: 2.5rem;
+            }
+            
+            h3 {
+                font-size: 1.7rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2>Chapter - 2</h2>
+            <h1>A Sunny Morning</h1>
+        </header>
+
+        <section id="summary">
+            <h3>Summary</h3>
+            <div class="summary">
+                <p>"A Sunny Morning" is a play written by Serafin and Joaquin Alvarez Quintero. Unfortunately, as a language model AI, I do not have any specific information about the play. However, I can provide general information about the Quintero brothers. The Quintero brothers were Spanish playwrights and theater directors who were born in the 19th century and were active in the Spanish theater scene. They are known for their works in the Spanish Renaissance theater and are regarded as some of the most important playwrights in Spanish theater history. Their plays are characterized by their use of humor and satire, as well as their social commentary on Spanish society. If you have any specific questions about "A Sunny Morning", I would be happy to help.</p>
+            </div>
+        </section>
+
+        <section id="understanding-text">
+            <h3>Understanding the text</h3>
+            <div class="question-answer">
+                <h4>a. Do you believe that Mrs. Wright killed her husband? Explain.</h4>
+                <p>Yes, I believe that Mrs. Wright killed her husband. The two women's conversation reveals the tragic story of Mrs. Wright's life before and after her marriage. Her life was lively before marriage but became dull and isolated afterward. Mr. Wright's abusive nature and the murder of her singing bird drove her to seek revenge, leading to her husband's death.</p>
+            </div>
+            <div class="question-answer">
+                <h4>b. Do you think Mr. Wright’s death would have been uncovered if Mr. Hale hadn’t stopped by the Wrights’ home?</h4>
+                <p>No, I don't believe Mr. Wright's death would have been discovered if Mr. Hale hadn't visited the Wrights' house. The house was located quite a distance from the road, and the news of his death would have remained suppressed. Mr. Hale's visit was the key factor in the discovery of the murder.</p>
+            </div>
+            <div class="question-answer">
+                <h4>c. Why does Mrs. Hale think that Mrs. Wright’s worries about her preserves indicate her innocence?</h4>
+                <p>Mrs. Hale thinks that Mrs. Wright's worries about her preserves indicate her innocence because they show her concern for mundane household matters, which seems inconsistent with the image of a cold-blooded murderer. This concern for something as simple as preserves suggests a more caring and sensitive side to her character.</p>
+            </div>
+            <div class="question-answer">
+                <h4>d. How does Mrs. Peters’ homesteading experience connect her to Mrs. Wright?</h4>
+                <p>Mrs. Peters' homesteading experience connects her to Mrs. Wright by providing a shared understanding of the isolation and hardships faced by women in rural life. This empathy leads Mrs. Peters to make the conscious decision to protect Mrs. Wright by hiding the strangled canary, which would have been crucial evidence against her. This act of solidarity shows how their shared experiences unite them against the male-dominated justice system.</p>
+            </div>
+            <div class="question-answer">
+                <h4>e. How do the women’s perspectives on men differ?</h4>
+                <p>The women's perspectives on men differ from the men's perspectives on women. The women believe that men are strong and have become foolish and lazy, while women, lacking physical power, use their intelligence to manipulate men. The play highlights how men are preoccupied with trivial matters, while women notice the crucial emotional details that lead to a deeper understanding of the situation.</p>
+            </div>
+        </section>
+
+        <section id="reference-context">
+            <h3>Reference to the context</h3>
+            <div class="question-answer">
+                <h4>a. “MRS. PETERS:(glancing around). Seems funny to think of a bird here. But she must have had one, or why would she have a cage? I wonder what happened to it? MRS. HALE: I s’pose maybe the cat got it.”</h4>
+                <ul>
+                    <li>**i. Who does ‘she’ refer to?**<br>‘She’ refers to Mrs. Wright.</li>
+                    <li>**ii. What does the word ‘one’ stand for?**<br>The word ‘one’ stands for a bird.</li>
+                    <li>**iii. What is the full form of “s’pose”**<br>The full form of "s’pose" is "suppose."</li>
+                    <li>**iv. What do you mean when Mrs. Hale says, “the cat got it”?**<br>When Mrs. Hale says, "the cat got it," she means that the cat must have caught the bird.</li>
+                </ul>
+            </div>
+            <div class="question-answer">
+                <h4>b. “MRS. HALE: Wright was close. …… she used to wear pretty clothes and be lively, when she was Minnie Foster, one of the town girls singing in the choir But that— oh, that was thirty years ago.”</h4>
+                <ul>
+                    <li>**i. Why does Mrs. Hale refer to Mrs. Wright as “Minnie Foster”?**<br>Mrs. Hale refers to Mrs. Wright as "Minnie Foster" because it was her name before she got married to Mr. Wright. This is a reference to her past self, when she was lively and happy.</li>
+                    <li>**ii. What does her description tell you about Mrs. Wright?**<br>Mrs. Hale's description tells us that Mrs. Wright was a beautiful and lively person before her marriage. Her life changed dramatically after she married Mr. Wright.</li>
+                    <li>**iii. What does Mrs. Hale mean by “that was thirty years ago”?**<br>By "that was thirty years ago," Mrs. Hale is referring to the time when Mrs. Wright was still Minnie Foster, unmarried, and leading a happy life. It emphasizes how much Mrs. Wright has changed over the years.</li>
+                </ul>
+            </div>
+            <div class="question-answer">
+                <h4>c. What is the main theme of the play?</h4>
+                <p>The main themes in "Trifles" are **gender, isolation, and justice**.</p>
+                <ul>
+                    <li>**Gender:** The play highlights the different perspectives of men and women. The men focus on finding physical evidence, while the women, through their understanding of domestic life, uncover the emotional motives behind the crime.</li>
+                    <li>**Isolation:** The play portrays the intense loneliness of Mrs. Wright, who was isolated from her family and friends by her controlling and abusive husband. This isolation contributes to her emotional suffering.</li>
+                    <li>**Justice:** The play presents two different concepts of justice. The men believe in legal justice, based on evidence and conviction. The women, however, believe in a form of emotional justice, where they hide the evidence because they understand the years of abuse Mrs. Wright suffered.</li>
+                </ul>
+            </div>
+            <div class="question-answer">
+                <h4>d. Discuss the symbolism used in the play.</h4>
+                <p>The play uses various symbols to represent underlying meanings and concepts:</p>
+                <ul>
+                    <li>**The preservative jars:** They symbolize the cold and broken marriage between Mr. and Mrs. Wright. The broken jars represent the ruined state of their relationship.</li>
+                    <li>**Singing Canary bird:** The canary symbolizes Mrs. Wright's former freedom and joyful self before she was trapped in a loveless marriage.</li>
+                    <li>**The birdcage:** The cage symbolizes the trapped life of Mrs. Wright after her marriage to Mr. Wright, who restricted her life and freedom.</li>
+                    <li>**Wrung neck of a canary:** The strangled bird's neck symbolizes Mr. Wright's cruelty and the emotional abuse he inflicted on his wife. It also serves as a direct parallel to how he was murdered.</li>
+                    <li>**Knot in a quilt:** This symbolizes the murder of Mr. Wright. The women's discussion about Mrs. Wright's quilting technique—whether she was going to "quilt it" or "knot it"—subtly alludes to how she used a rope to "knot" her husband's neck.</li>
+                </ul>
+            </div>
+            <div class="question-answer">
+                <h4>e. Discuss the setting of the play. Does it have an impact on the theme of the play?</h4>
+                <p>The setting of the play is a desolate, lonely farmhouse in a rural location. Yes, the setting has a significant impact on the play's themes. The isolated environment of the farmhouse mirrors the **emotional and social isolation of Mrs. Wright**. The vast distance between neighbors and the isolated nature of the farm life emphasize her loneliness. The setting also allows the women to have their private space to uncover the evidence and connect with Mrs. Wright on a deeper level, away from the men's prying eyes and rigid ways of thinking.</p>
+            </div>
+        </section>
+
+        <section id="reference-beyond-text">
+            <h3>Reference beyond the text</h3>
+            <div class="question-answer">
+                <h4>a. The credibility of a character is determined not only by the character’s thoughts and actions but also by what other characters say and think about him or her. Discuss in relation to the characters of Trifles.</h4>
+                <p>In "Trifles," the credibility of the characters, particularly Mrs. Wright, is heavily influenced by what other characters say about her. Since Mrs. Wright never appears on stage, our understanding of her is shaped entirely by the dialogue of Mrs. Hale and Mrs. Peters. Their conversations reveal her past as Minnie Foster, a lively and beautiful singer, and contrast it with her present life of isolation and suffering due to her abusive husband. This portrayal by other characters makes Mrs. Wright a sympathetic figure for the audience, even though she is accused of murder. The women's perspective validates her actions and makes her a credible character in their eyes, and by extension, in ours. </p>
+            </div>
+            <div class="question-answer">
+                <h4>b. Dramatic irony occurs when the reader or audience has information that is unknown to the characters in a play; it creates tension and suspense. Analyse the play discussing the author’s use of dramatic irony based on these questions:</h4>
+                <ul>
+                    <li>**i. What information is crucial to the play Trifles?**<br>The crucial information is the **dead bird** and the way Mr. Wright was killed (strangled by a rope), which the women discover but the men do not. The audience is aware of these details.</li>
+                    <li>**ii. How does the playwright use this information to create dramatic irony?**<br>The playwright uses this information to create dramatic irony by showing the men consistently dismissing the women's findings as "trifles." For example, the County Attorney's condescending remarks about the women worrying over a quilt or a messy kitchen. The audience knows these "trifles" are the very clues that will lead to the murderer's motive.</li>
+                    <li>**iii. What effect does the dramatic irony have on the audience and on the play?**<br>The dramatic irony creates **tension and suspense**, as the audience waits to see if the men will ever realize the significance of the women's discoveries. It also highlights the theme of gender roles, as the audience is given insight into how women's knowledge and perception of domestic life are dismissed by men. This makes the audience feel a sense of camaraderie with the women and increases the emotional impact of the play.</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer>
+            <p>Created with ❤️ for students everywhere.</p>
+        </footer>
+    </div>
+</body>
+</html>
