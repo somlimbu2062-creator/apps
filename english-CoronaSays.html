@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corona Says</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+        :root {
+            --primary-color: #212121; /* A strong, deep black */
+            --secondary-color: #424242; /* A slightly lighter grey for text */
+            --accent-color: #009688; /* A calming teal */
+            --light-bg: #f9f9f9;
+            --card-bg: #ffffff;
+            --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Merriweather', serif;
+            line-height: 1.6;
+            color: var(--secondary-color);
+            background-color: var(--light-bg);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            padding: 25px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 3px solid var(--primary-color);
+            margin-bottom: 25px;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        
+        header h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1rem, 3vw, 1.5rem);
+            color: var(--accent-color);
+            letter-spacing: 2px;
+        }
+
+        section {
+            padding: 20px 0;
+        }
+
+        h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            color: var(--accent-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        .summary p {
+            text-align: justify;
+            margin-bottom: 1em;
+            font-size: 1.05em;
+            line-height: 1.8;
+        }
+
+        .summary p:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .question-answer {
+            background-color: var(--light-bg);
+            border-left: 5px solid var(--accent-color);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .question-answer:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .question-answer::before {
+            content: '🦠';
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 2.5em;
+            color: var(--accent-color);
+            opacity: 0.2;
+            pointer-events: none;
+        }
+
+        .question-answer h4 {
+            font-weight: bold;
+            color: var(--primary-color);
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .question-answer p {
+            font-size: 1em;
+            color: var(--secondary-color);
+            margin-top: 5px;
+            text-align: justify;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            border-top: 2px solid var(--secondary-color);
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: var(--secondary-color);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            header h1 {
+                font-size: 2.5rem;
+            }
+            
+            h3 {
+                font-size: 1.7rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2>Chapter - 1</h2>
+            <h1>Corona Says</h1>
+        </header>
+
+        <section id="summary">
+            <h3>Summary</h3>
+            <div class="summary">
+                <p>The poem "Corona Says" by Vishnu S. Rai is a reflection on humanity and its relationship with the natural world. The speaker, who takes on the voice of the coronavirus, addresses human beings and tells them to stop crying and cursing the virus. The speaker explains that they did not come of their own free will but were invited, and that they are merely trying to show humanity the consequences of their actions.</p>
+                <p>The speaker questions the notion that humans are the "crown of creation" and wonders about the lives of other beings, such as animals and plants, that also inhabit the earth. The speaker also points out that the earth is not just humanity's property, but belongs to all creatures as well.</p>
+                <p>The speaker says that they are not there to give humanity a test, but rather to allow the earth to have a rest from human destruction. The speaker also warns that there are many other viruses like them, and if humanity does not change its ways, they will continue to face such challenges in the future.</p>
+                <p>In conclusion, the poem is a call to action for humanity to reflect on its actions and to consider the impact they have on the environment and other beings. The poem encourages humanity to rid itself of its ego and to consider the earth and its inhabitants as fellow inhabitants of the planet.</p>
+            </div>
+        </section>
+
+        <section id="questions-answers">
+            <h3>Questions and Answers</h3>
+            <div class="question-answer">
+                <h4>a. Who is the speaker in the poem?</h4>
+                <p>The speaker in the poem "Corona Says" by Vishnu S. Rai is the **coronavirus itself**. The speaker takes on the voice of the virus and addresses humanity in the first person.</p>
+            </div>
+            <div class="question-answer">
+                <h4>b. Who claim that they are superior to all?</h4>
+                <p>In the poem "Corona Says" by Vishnu S. Rai, **humanity claims that they are superior to all other beings** on earth. The speaker, taking on the voice of the coronavirus, questions this notion and points out that humans consider themselves to be "the crown of creation". The speaker asks about the lives and well-being of other creatures such as animals, plants, and sources of oxygen, and suggests that humans see them as mere slaves to be sold or killed at will.</p>
+            </div>
+            <div class="question-answer">
+                <h4>c. Why has the speaker come to the Earth?</h4>
+                <p>The speaker has come to Earth as a result of the **abuse of nature by people**.</p>
+            </div>
+            <div class="question-answer">
+                <h4>d. What positive changes have occurred on Earth after the speaker's visit?</h4>
+                <p>After the speaker’s visit, the **sky has been clean** without dust and smoke. People have felt like caged animals do in a zoo. The disease has **allowed the earth to have a little rest**.</p>
+            </div>
+        </section>
+
+        <section id="reference-context">
+            <h3>Reference to the context</h3>
+            <div class="question-answer">
+                <h4>a. What does the speaker mean when he says:</h4>
+                <p><i>But have you ever counted<br>How many have died so far<br>Because of you and your wars?</i></p>
+                <p>The speaker is asking the listeners to consider how many lives have been lost due to **human conflict and war**. He is suggesting that humans should reflect on their actions and the consequences they have had on the world and its inhabitants.</p>
+            </div>
+            <div class="question-answer">
+                <h4>b. Explain the following:</h4>
+                <p><i>I will depart one day.<br>But remember<br>There’re many others like me.<br>They’ll come too.<br>If you don’t get rid of your inflated ego,<br>You’ll be back to your cave time<br>That you endured<br>Long, l o n g, l o n g ago …</i></p>
+                <p>In these lines, the speaker is warning that there will be **other similar events or disasters** that will come if humans don't change their ways. The speaker is suggesting that humans need to get rid of their egoistic attitudes and act more responsibly towards the planet and its other inhabitants. If they don't, they will eventually face similar consequences as they did in the past, possibly reverting back to a more primitive state.</p>
+            </div>
+            <div class="question-answer">
+                <h4>c. What does the speaker mean in the following lines? Explain.</h4>
+                <p><i>The earth is not your property alone -<br>It’s as much ours as yours</i></p>
+                <p>In these lines, the speaker is suggesting that the **Earth is not just the property of humans, but also of other living beings and nature**. The speaker is advocating for a more equitable and sustainable relationship between humans and the planet, where humans recognize and respect the rights and needs of other forms of life.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>Created with ❤️ for students everywhere.</p>
+        </footer>
+    </div>
+</body>
+</html>
