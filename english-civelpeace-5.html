@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Civil Peace</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+        :root {
+            --primary-color: #212121; /* A strong, modern black */
+            --secondary-color: #757575; /* A soft grey for subheadings and borders */
+            --accent-color: #ffc107; /* A bright gold for highlights */
+            --text-color: #424242;
+            --light-bg: #f5f5f5;
+            --card-bg: #ffffff;
+            --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Merriweather', serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            padding: 25px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 3px solid var(--primary-color);
+            margin-bottom: 25px;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        
+        header h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1rem, 3vw, 1.5rem);
+            color: var(--secondary-color);
+            letter-spacing: 2px;
+        }
+
+        section {
+            padding: 20px 0;
+        }
+
+        h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        .summary p {
+            text-align: justify;
+            margin-bottom: 1em;
+            font-size: 1.05em;
+            line-height: 1.8;
+        }
+
+        .summary p:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .question-answer {
+            background-color: var(--light-bg);
+            border-left: 5px solid var(--accent-color);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .question-answer:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .question-answer::before {
+            content: '✓';
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 2.5em;
+            color: var(--accent-color);
+            opacity: 0.2;
+            pointer-events: none;
+        }
+
+        .question-answer h4 {
+            font-weight: bold;
+            color: var(--primary-color);
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+
+        .question-answer p {
+            font-size: 1em;
+            color: var(--text-color);
+            margin-top: 5px;
+            text-align: justify;
+        }
+
+        .question-answer p i {
+            font-style: italic;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            border-top: 2px solid var(--secondary-color);
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: var(--secondary-color);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            header h1 {
+                font-size: 2.5rem;
+            }
+            
+            h3 {
+                font-size: 1.7rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2>Chapter - 5</h2>
+            <h1>Civil Peace</h1>
+        </header>
+
+        <section id="summary">
+            <h3>Summary</h3>
+            <div class="summary">
+                <p>"Civil Peace" is a short story by Nigerian author Chinua Achebe. The story takes place in a post-war Nigeria, following the end of the Biafran conflict. The main character, Jonathan Iwegbu, is a survivor of the war and is now trying to rebuild his life.</p>
+                <p>Jonathan is a happy man, despite the fact that he has lost all of his possessions during the war. He is excited about the opportunities that the new Nigeria has to offer, and is optimistic about the future. He has found a job, and is earning enough money to provide for his family. Despite this, however, he is constantly faced with obstacles and challenges.</p>
+                <p>One day, Jonathan's bicycle is stolen, and he is forced to walk to work. Along the way, he is stopped by a soldier who demands a bribe. Jonathan refuses to pay the bribe and is beaten as a result. Despite this, he remains hopeful and optimistic.</p>
+                <p>A few days later, Jonathan is approached by a former schoolmate, who is now a successful businessman. The businessman offers Jonathan a job, and promises to help him rebuild his life. Jonathan is overjoyed at the opportunity, and accepts the job.</p>
+                <p>However, Jonathan soon discovers that the businessman is involved in illegal activities, and he is forced to make a difficult decision. He decides to leave the job, and to return to his previous life. Despite this setback, Jonathan remains positive and optimistic, and is determined to rebuild his life again.</p>
+                <p>The story concludes with Jonathan reflecting on his experiences, and realizing that happiness comes from within. He realizes that he does not need material possessions or wealth to be happy, and that he is grateful for the peace and stability that he now enjoys.</p>
+                <p>"Civil Peace" is a powerful and thought-provoking story that highlights the resilience and determination of the human spirit. It is a story about hope, perseverance, and the importance of inner peace.</p>
+            </div>
+        </section>
+
+        <section id="questions-answers">
+            <h3>Questions and Answers</h3>
+            <div class="question-answer">
+                <h4>a. Why did Jonathan think of himself as 'extraordinarily lucky'?</h4>
+                <p>Jonathan thinks of himself as 'extraordinarily lucky' because he has managed to survive the Nigerian Civil War with his family intact and his house still standing. Despite the chaos and destruction of the war, he has managed to keep his job as a motorcycle taxi driver and has even been able to buy a bicycle, which he sees as a symbol of his good fortune. Throughout the story, Jonathan is grateful for the "five blessings" in his life: his family, his house, his job, his bicycle, and his peace of mind. This positive outlook and gratitude help him to see the good in his life, even in the midst of difficult circumstances.</p>
+            </div>
+            <div class="question-answer">
+                <h4>b. What are the ‘five blessings’ for which Jonathan is grateful?</h4>
+                <p>In the short story "Civil Peace" by Chinua Achebe, the protagonist, Jonathan, considers himself to be "extraordinarily lucky" because he has survived the Nigerian Civil War and has "five blessings." The five blessings are: His wife Maria is still alive, his children are all alive, he has a bicycle, he has a job as a teacher and is earning money, and he still has his house, although it is partially destroyed. Jonathan is grateful for these things because during the war, many people lost their lives and their homes, so the fact that he has survived and still has these blessings is a source of gratitude for him.</p>
+            </div>
+            <div class="question-answer">
+                <h4>c. Why did Jonathan mistrust the officer who wanted to take his bicycle? What does this tell you about the situation in Nigeria?</h4>
+                <p>Jonathan mistrusts the officer who wants to take his bicycle because the situation in Nigeria was chaotic and uncertain in the aftermath of the civil war. The country was in disarray and there was a lack of security, with many people taking advantage of the chaos to enrich themselves. Jonathan is afraid that the officer might be one of these opportunists who are trying to take advantage of the situation, and so he mistrusts him and is wary of giving him his bicycle. This mistrust of the authorities and the general uncertainty in the country highlights the instability and lack of security in Nigeria during this time.</p>
+            </div>
+            <div class="question-answer">
+                <h4>d. What visitors might be at the door? Are Jonathan and his wife completely surprised? Explain.</h4>
+                <p>In "Civil Peace" by Chinua Achebe, the visitors at the door are likely to be thieves, but it is not specified. Jonathan and his wife are not completely surprised when they hear the pounding on the door because they are aware of the unrest and lawlessness that is prevalent in Nigeria following the civil war. However, they still feel nervous and uncertain about who the visitors might be and what they want. This tension and fear reflects the unstable and insecure state of the country after the war, as well as the widespread distrust of people in positions of authority.</p>
+            </div>
+            <div class="question-answer">
+                <h4>e. Why does no one in the neighbourhood respond when the thieves pound on Jonathan’s door? Why do the thieves call for the police?</h4>
+                <p>In the story "Civil Peace" by Chinua Achebe, the reason why no one in the neighborhood responds when the thieves pound on Jonathan's door is because they are afraid to get involved. The situation in Nigeria after the civil war is still unstable and people are wary of getting involved in any kind of trouble. They prefer to keep a low profile and stay out of trouble. This is why the thieves call for the police. The situation in Nigeria is still uncertain and people are scared of getting into trouble, so they avoid getting involved in any situation that might bring them to the attention of the authorities.</p>
+            </div>
+        </section>
+
+        <section id="reference-context">
+            <h3>Reference to the context</h3>
+            <div class="question-answer">
+                <h4>a. What does Jonathan mean by his expression “Nothing puzzles God”? What does this expression reveal about his character? Explain by citing details from the story.</h4>
+                <p>Jonathan's expression "Nothing puzzles God" reflects his strong faith in God, which he relies on to help him through difficult times. He believes that God is capable of solving even the most complex of problems, and this expression reveals his character as a person who is religious, optimistic, and resilient. Throughout the story, Jonathan faces various challenges, including theft, unemployment, and financial difficulties. Despite these hardships, he remains optimistic and is grateful for the small blessings in his life. He believes that everything happens for a reason and that God has a plan for him, which is why he feels confident in his ability to overcome the challenges he faces.</p>
+            </div>
+            <div class="question-answer">
+                <h4>b. How does Jonathan change as he experiences the conflicts in his life? Explain.</h4>
+                <p>At the beginning of the story, Jonathan is depicted as a content and grateful person, who is thankful for his five blessings and is optimistic about his future. However, as he experiences the conflicts in his life, he begins to change and is faced with new challenges and obstacles. Despite these difficulties, he remains determined to overcome them and maintain his positive outlook. Throughout the story, Jonathan's character is shown to be strong, resilient, and resourceful, and his experiences serve to strengthen his faith in God and his resolve to overcome adversity.</p>
+            </div>
+            <div class="question-answer">
+                <h4>c. Read the extract and answer the questions below.</h4>
+                <p><i>“To God who made me; if you come inside and find one hundred pounds, take it and shoot me and shoot my wife and children. I swear to God. The only money I have in this life is this twenty pounds egg-rasher they gave me today ...”</i></p>
+                <p><b>i. Who is the speaker?</b></p>
+                <p>The speaker is Jonathan.</p>
+                <p><b>ii. Who is the speaker talking to?</b></p>
+                <p>The speaker is talking to God.</p>
+                <p><b>iii. Who does “they” refer to?</b></p>
+                <p>"They" refers to the people who gave Jonathan the twenty pounds egg-rasher.</p>
+            </div>
+            <div class="question-answer">
+                <h4>d. Nigerian English has words like soja 'soldier' and katakata 'confusion', 'trouble' derived apparently from English words but transformed by native languages' phonologies. What does the author’s use of dialect here add to the story?</h4>
+                <p>The author's use of dialect adds authenticity and cultural context to the story. By using words like <i>soja</i> and <i>katakata</i>, the author is able to create a sense of place and give the reader a glimpse into the unique linguistic and cultural landscape of Nigeria. The use of dialect also serves to humanize the characters and make them more relatable, as it allows the reader to connect with the story on a deeper level. By incorporating elements of Nigerian English, the author is able to create a rich and immersive storytelling experience that transports the reader to a different world.</p>
+            </div>
+            <div class="question-answer">
+                <h4>e. Why do you think the thieves who come to rob Jonathan speak English with a heavier African accent than Jonathan does?</h4>
+                <p>The thieves who come to rob Jonathan may speak English with a heavier African accent than Jonathan does because they come from a different background and may not have had the same level of education or exposure to Standard English. This difference in accents highlights the social and economic divide between Jonathan and the thieves, as Jonathan is depicted as being better educated and more affluent. Additionally, the use of a heavy African accent also serves to distinguish the thieves from Jonathan and create a sense of tension and conflict between the two characters.</p>
+            </div>
+            <div class="question-answer">
+                <h4>f. The title of the story "Civil Peace" itself is ironical as there is little to differentiate ‘civil peace’ from ‘civil war’. Do you think that the title of this story is appropriate, or would “Civil War” have been a better title? Explain.</h4>
+                <p>The title "Civil Peace" is appropriate as it reflects the irony in the situation. The concept of civil peace in the aftermath of a civil war is meant to bring stability, security, and peace to the citizens, but the reality is often different. In the story, Jonathan experiences many challenges despite the supposed civil peace, including having his bicycle taken away by an officer and being visited by thieves. The use of the word "peace" highlights the contrast between what is promised and what is actually experienced by the characters, making it an effective and appropriate title.</p>
+                <p>However, an argument could be made for "Civil War" as an alternative title, as the events in the story highlight the ongoing struggles and challenges that exist even after the official end of a conflict. The choice of title ultimately depends on the perspective of the reader and the purpose of the story.</p>
+            </div>
+        </section>
+
+        <section id="reference-beyond-text">
+            <h3>Reference beyond the text</h3>
+            <div class="question-answer">
+                <h4>a. How would you describe the civil peace in Nigeria?</h4>
+                <p>The civil peace in Nigeria is depicted as a fragile state of affairs in Chinua Achebe's short story "Civil Peace". The country has recently emerged from a brutal civil war, but the aftermath of the conflict is still felt in the form of widespread poverty, corruption, and insecurity. Despite this, Jonathan Iwegbu, the protagonist of the story, considers himself to be lucky and sees hope in the present circumstances.</p>
+            </div>
+            <div class="question-answer">
+                <h4>b. What kind of attitude towards life do you think you would have if your situation was similar to that of Jonathan’s?</h4>
+                <p>If one's situation was similar to that of Jonathan's, one might adopt a resilient and optimistic attitude towards life. Jonathan's resilience in the face of adversity is a testament to the strength of the human spirit. Despite the challenges he faces, he remains positive and grateful for what he has, rather than dwelling on what he has lost. This kind of attitude would be essential for anyone in a similar situation, as it would provide a sense of hope and help them to keep going in the face of adversity.</p>
+            </div>
+            <div class="question-answer">
+                <h4>c. Draw the character sketch of Jonathan Iwegbu.</h4>
+                <p>Jonathan Iwegbu is the protagonist of Chinua Achebe's short story "Civil Peace". He is a former soldier who has recently returned home after the civil war. Despite having lost most of his possessions, Jonathan is grateful for what he still has and sees the present situation as an opportunity for a fresh start. He is hardworking, honest, and optimistic, and he values his family above all else. Despite facing challenges and corruption in the aftermath of the civil war, Jonathan remains resilient and hopeful, showing a strong spirit and a positive attitude towards life.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>Created with ❤️ for students everywhere.</p>
+        </footer>
+    </div>
+</body>
+</html>
