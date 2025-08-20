@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wish</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+        :root {
+            --primary-color: #00796b; /* A calm, deep teal */
+            --secondary-color: #e65100; /* A vibrant orange for highlights */
+            --text-color: #333;
+            --light-bg: #f3fcfb;
+            --card-bg: #ffffff;
+            --shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Merriweather', serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 3px solid var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        
+        header h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1rem, 3vw, 1.5rem);
+            color: var(--secondary-color);
+        }
+
+        section {
+            padding: 20px 0;
+        }
+
+        h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        .question-answer {
+            background-color: var(--light-bg);
+            border-left: 5px solid var(--primary-color);
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .question-answer:hover {
+            transform: translateY(-5px);
+        }
+
+        .question-answer::before {
+            content: '✨';
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 2em;
+            opacity: 0.2;
+            pointer-events: none;
+        }
+
+        .question-answer h4 {
+            font-weight: bold;
+            color: var(--primary-color);
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+
+        .question-answer p {
+            font-size: 1em;
+            color: var(--text-color);
+            margin-top: 5px;
+        }
+        
+        .summary p {
+            text-align: justify;
+            margin-bottom: 1em;
+            font-size: 1.05em;
+        }
+
+        .summary p:last-of-type {
+            margin-bottom: 0;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            border-top: 2px solid var(--primary-color);
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        /* Mobile-specific adjustments */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2>Chapter - 4</h2>
+            <h1>The Wish</h1>
+        </header>
+
+        <section id="summary">
+            <h3>Summary</h3>
+            <div class="summary">
+                <p>"The Wish" is a short story by the British author Roald Dahl. It is a fantasy story that explores the idea of making wishes and the consequences that can come with them. The story is centered around a young girl named Elizabeth, who is granted three wishes by a magical fairy.</p>
+                <p>At first, Elizabeth is thrilled to have her wishes granted and uses them to her advantage. She uses her first wish to become the most beautiful girl in the world, and her second wish to become the richest person in the world. However, as she starts to enjoy her newfound fame and wealth, she realizes that the people around her are not treating her the same way they used to. They are now envious and resentful of her success, and she starts to feel lonely and isolated.</p>
+                <p>Elizabeth begins to regret her wishes and decides to use her final wish to undo all the previous wishes. She wishes to be her old self again, and her wish is granted. She discovers that her old friends are still her friends, and she is happy to be surrounded by love and kindness once again.</p>
+                <p>The story serves as a cautionary tale about the dangers of making wishes and the importance of being content with what one has. It suggests that material wealth and beauty are not enough to bring happiness and that true happiness comes from within. The story also touches on the idea that sometimes, in the pursuit of wealth and power, people can forget what truly matters in life, and it takes a moment of reflection and self-awareness to understand the true value of friendship, love, and kindness.</p>
+                <p>In conclusion, "The Wish" is a heartwarming and thought-provoking story that teaches valuable lessons about the importance of contentment and the dangers of greed.</p>
+            </div>
+        </section>
+
+        <section id="understanding-text">
+            <h3>Understanding the text</h3>
+            <div class="question-answer">
+                <h4>a. What did the child do to the scab on his knee?</h4>
+                <p>The child gently picked the scab off his cut with his finger nails and put it on his thigh. Finally he flipped it with his finger.</p>
+            </div>
+            <div class="question-answer">
+                <h4>b. What kind of effect did the carpet have on the child?</h4>
+                <p>The child became extremely amazed to see the red carpet. He had never really notice it before in such a way. The different colors of carpet seemed to brighten mysteriously and spring out at him in a most dazzling way. He was thoroughly lost in those colors and his imagination.</p>
+            </div>
+            <div class="question-answer">
+                <h4>c. What was he afraid of while walking across the carpet?</h4>
+                <p>He was afraid of the black poisonous snakes and the red coals while walking across the carpet.</p>
+            </div>
+            <div class="question-answer">
+                <h4>d. What motivated and encouraged the child to start and continue on his journey?</h4>
+                <p>His wish of getting a puppy on his birthday or as a birthday gift motivated and encouraged the child to start and continue on his journey.</p>
+            </div>
+            <div class="question-answer">
+                <h4>e. What did the child see as he looked down on the black patterns of the carpet?</h4>
+                <p>The child saw different colours brightening mysteriously. He was lost in different colours’ spots. He kept on thinking in his imagination about the colours and their different forms. Hence, the child saw the poisonous snake with the oily body of snake arising to catch or bite him as he looked down on the black patterns of the carpet.</p>
+            </div>
+        </section>
+
+        <section id="reference-context">
+            <h3>Reference to the context</h3>
+            <div class="question-answer">
+                <h4>a. The writer creates two voices in the story. Who are they?</h4>
+                <p>The two voices in the story "The Wish" by Roald Dahl are the narrator and the child.</p>
+            </div>
+            <div class="question-answer">
+                <h4>b. Read the extracts given below and answer the questions that follow.</h4>
+                <p><i>“…the black parts are snakes, poisonous snakes, adders mostly, and cobras, thick like tree-trunks round the middle, and if I touch one of them, I'll be bitten and I'll die before tea time. And if I get across safely, without being burnt and without being bitten, I will be given a puppy for my birthday tomorrow.”</i></p>
+                <p><b>i. What does ‘the black part’ mean?</b></p>
+                <p>"The black parts" refer to the dark patterns on the carpet that the child is walking on.</p>
+                <p><b>ii. Who is the speaker?</b></p>
+                <p>The speaker is the child.</p>
+                <p><b>iii. Why doesn’t the speaker want to be burnt?</b></p>
+                <p>The child doesn't want to be burnt because the carpet is described as hot and the child is afraid of being burnt if they touch it.</p>
+            </div>
+            <div class="question-answer">
+                <h4>c. Which images and metaphors are used in the story?</h4>
+                <p>The writer uses the images and metaphors of snakes, poison, adders, cobras, tree-trunks, and birthday gifts to create a sense of danger and excitement for the child.</p>
+            </div>
+            <div class="question-answer">
+                <h4>d. Summarise the short story “The Wish” in about 200 words.</h4>
+                <p>In "The Wish," a child is walking across a hot carpet and must avoid being bitten by the snakes depicted in the dark patterns. The child is motivated to continue the journey because they have been promised a puppy for their birthday if they make it to the other side safely. The child overcomes their fears and successfully reaches the other side, but the story ends with the child's disappointment as they discover that there was never a puppy waiting for them.</p>
+            </div>
+            <div class="question-answer">
+                <h4>e. The story shows the events through the eyes of the narrator and the child. Comparing the two styles, who presents more interesting or effective view for the readers? Why?</h4>
+                <p>Both the narrator's and the child's perspectives are interesting and effective in their own ways. The narrator provides a detached and objective view of the events, while the child's perspective provides a more emotional and subjective view of the events, which allows readers to experience the fear and excitement that the child is feeling.</p>
+            </div>
+            <div class="question-answer">
+                <h4>f. Is “The Wish” a story about self-confidence overcoming fear or about greed? Give your arguments</h4>
+                <p>The story can be interpreted as both about self-confidence overcoming fear and about greed. On one hand, the child overcomes their fear and successfully completes the journey, showing their growth in self-confidence. On the other hand, the child's motivation for the journey is driven by their desire for a puppy, indicating their greed. Ultimately, the reader can decide for themselves which interpretation they believe to be the most accurate.</p>
+            </div>
+        </section>
+
+        <section id="reference-beyond-text">
+            <h3>Reference beyond the text</h3>
+            <div class="question-answer">
+                <h4>a. Do you think our wish can be fulfilled? Why or why not?</h4>
+                <p>The question of whether our wishes can be fulfilled is a complex one and depends on many factors. Some people believe that with enough hard work and determination, we can make our wishes come true. Others believe that our fate is predetermined and that we have little control over what happens in our lives. Ultimately, whether or not our wishes can be fulfilled is a matter of personal belief and cannot be definitively answered.</p>
+            </div>
+            <div class="question-answer">
+                <h4>b. Why do you think some people might have a frightening nature? What would you suggest to them to overcome it?</h4>
+                <p>People might have a frightening nature due to a variety of reasons, such as past experiences, genetics, or cultural upbringing. To overcome fear, one can try various techniques such as exposure therapy, cognitive behavioral therapy, mindfulness, or self-help books. It's important to remember that fear is a normal and natural part of life, and it's okay to feel afraid at times. The key is to find ways to manage and overcome fear so that it doesn't hold us back from living our lives to the fullest.</p>
+            </div>
+            <div class="question-answer">
+                <h4>c. Write a folktale that you have heard or read.</h4>
+                <p>One folktale that I have heard is the story of "The Boy Who Cried Wolf." In this story, a young shepherd boy becomes bored with his job and decides to play a trick on the villagers by pretending that a wolf is attacking the sheep. The villagers come running, but when they find out that it was just a prank, they become angry and no longer trust the boy. Eventually, a real wolf does attack the sheep, but when the boy cries for help, the villagers don't believe him and the wolf carries off one of the sheep. The moral of the story is that lying has consequences and that people who consistently lie will not be believed even when they tell the truth.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>Created with ❤️ for students everywhere.</p>
+        </footer>
+    </div>
+</body>
+</html>
