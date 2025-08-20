@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refund</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+        :root {
+            --primary-color: #5D5C61; /* A neutral, professional grey */
+            --secondary-color: #7395AE; /* A calming, academic blue */
+            --accent-color: #B1A296; /* A subtle, earthy tone */
+            --text-color: #333;
+            --light-bg: #F9F7F3;
+            --card-bg: #ffffff;
+            --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Merriweather', serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            padding: 25px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 3px solid var(--primary-color);
+            margin-bottom: 25px;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        header h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1rem, 3vw, 1.5rem);
+            color: var(--secondary-color);
+            letter-spacing: 1px;
+        }
+
+        section {
+            padding: 20px 0;
+        }
+
+        h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        .summary p {
+            text-align: justify;
+            margin-bottom: 1em;
+            font-size: 1.05em;
+        }
+
+        .summary p:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .question-answer {
+            background-color: var(--light-bg);
+            border-left: 5px solid var(--accent-color);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .question-answer:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .question-answer::before {
+            content: '👨‍🏫';
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 2.5em;
+            color: var(--accent-color);
+            opacity: 0.2;
+            pointer-events: none;
+        }
+
+        .question-answer h4 {
+            font-weight: bold;
+            color: var(--primary-color);
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .question-answer p {
+            font-size: 1em;
+            color: var(--text-color);
+            margin-top: 5px;
+            text-align: justify;
+        }
+
+        .question-answer ul {
+            margin-left: 20px;
+            list-style-type: disc;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            border-top: 2px solid var(--secondary-color);
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: var(--secondary-color);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            header h1 {
+                font-size: 2.5rem;
+            }
+            
+            h3 {
+                font-size: 1.7rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2>Chapter - 3</h2>
+            <h1>Refund</h1>
+        </header>
+
+        <section id="understanding-text">
+            <h3>Understanding the text</h3>
+            <div class="question-answer">
+                <h4>a. Why does Wasserkopf demand a refund of his tuition fees from the school?</h4>
+                <p>Wasserkopf requests a tuition refund from the institution, claiming that he received no education there and that his 18 years of study have just turned him into an inept ass.</p>
+            </div>
+            <div class="question-answer">
+                <h4>b. Why does Wasserkopf consider himself good for nothing?</h4>
+                <p>Because he learned little in school and has failed several times to secure employment, Wasserkopf views himself as a good for nothing.</p>
+            </div>
+            <div class="question-answer">
+                <h4>c. What did the teachers decide to do when Wasserkopf asked for a refund?</h4>
+                <p>Even though Wasserkopf's answers were erroneous, the teachers granted his request for a retest and passed him in every subject. They promised to back up Wasserkopf's responses to their inquiries.</p>
+            </div>
+            <div class="question-answer">
+                <h4>d. Why did Wasserkopf give ridiculous answers? Why did the teachers accept these answers?</h4>
+                <p>Wasserkopf provided absurd responses in an effort to blatantly flunk the test and get a refund. Teachers accepted his responses because they wanted him to succeed on the test and maintain the school's good name.</p>
+            </div>
+            <div class="question-answer">
+                <h4>e. How does the Mathematics Master describe Wasserkopf’s character?</h4>
+                <p>Wasserkopf is portrayed by The Mathematics Master as a cunning and sneaky person who plans to purposefully fail his exam in order to recuperate his tuition cost. He is a special person that annoys all the teachers with his foul language.</p>
+            </div>
+            <div class="question-answer">
+                <h4>f. How did the teachers outwit Wasserkopf?</h4>
+                <p>He provided illogical and incorrect answers to ace the exam. But the professors were smarter than he was. After giving Wasserkopf the simple question, the math teacher informed him that he had failed the test and required him to figure out how much the school would have to return. He executed it expertly. He answered the challenging question, according to the math instructors, since he was a mathematical genius. He had passed the test, according to the teachers. They managed to outsmart Wasserkopf in this fashion.</p>
+            </div>
+            <div class="question-answer">
+                <h4>g. What is the final judgment on Waserkopf’s demand of refund?</h4>
+                <p>Finally, he receives no response to his refund request. The principal claims that Wasserkopf has earned the certificate they gave him at graduation and has completed the re-examination with distinction in every subject.</p>
+            </div>
+        </section>
+
+        <section id="reference-context">
+            <h3>In reference to the context</h3>
+            <div class="question-answer">
+                <h4>a. Read the extract from the play given below and answer the questions that follow: “It’s possible I’ve changed. What the hell…! Your class records will show I’ve got a right to come here.”</h4>
+                <ul>
+                    <li>**i. Who is the speaker? Who is he speaking to?**<br>Wasserkopf is the speaker. He’s speaking to the principal of his former school.</li>
+                    <li>**ii. Why is the speaker say these words?**<br>The speaker says these words because he is dissatisfied with his educational records from his previous school, which he obtained eighteen years ago.</li>
+                    <li>**iii. Where is the speaker at this moment?**<br>The speaker is in the Principal’s office at this moment.</li>
+                </ul>
+            </div>
+            <div class="question-answer">
+                <h4>b. Read the extract dialogue given below and answer the questions that follow: “THE STAFF: (bowing, heartily) How do you do? WASSERKOPF: Who the hell are you? Sit down, you loafers! (He grins, waiting to be thrown out) THE PRINCIPAL: How dare you –”</h4>
+                <ul>
+                    <li>**i. What is to be the response to ‘How do you do?’**<br>‘I am fine’ is to be the response to ‘How do you do’.</li>
+                    <li>**ii. Is Wasserkopf’s response polite enough to the staff?**<br>No, Wasserkopf’s response to the staff isn’t polite enough. He uses derogatory language against them.</li>
+                    <li>**iii. How does Wasserkopf rebuke the staff?**<br>Wasserkopf rebukes the staff, calling them "loafers" and asking, "Who the hell are you?"</li>
+                    <li>**iv. What does the principal mean by ‘How dare you -’?**<br>The Principal is referring to Wasserkopf’s dare to make abusive remarks about masters when he says, ‘How dare you?’</li>
+                </ul>
+            </div>
+            <div class="question-answer">
+                <h4>c. Explain the following line of the play: “Because I didn’t get my money’s worth, that’s why!”</h4>
+                <p>This line was spoken by the main character of the play, Wasserkopf. In this line, Wasserkopf explains his reason for his arrival and demand a refund to the school’s principal. According to him, his education from school did provide him nothing. He is fired from the job and is in financial crisis. Wasserkopf is, therefore, justified in claiming for a refund. He adds that a re-examination will prove that his demand is valid.</p>
+            </div>
+            <div class="question-answer">
+                <h4>d. What is the theme of the play?</h4>
+                <p>This play is a satire on today’s educational system, which has failed to prepare students for life. This play showcases teachers’ wit in the face of an ill-natured old pupil Wasserkopf who returns to his old school with an absurd demand of a refund as he has got nothing reading there.</p>
+            </div>
+            <div class="question-answer">
+                <h4>e. Sketch the character of Wasserkopf.</h4>
+                <p>The forty-year-old, ungrateful, and impoverished Wasserkopf was born in Hungary. He has a short fuse and a history of being fired due to his rudeness and lack of etiquette. Wasserkopf looks to be the kind of guy who shirks responsibility and places the blame elsewhere. He did not study very hard in school because all he wanted to do was pass. Even the concept of foreign exchange escapes him. He did not obtain a decent position as a result. He claims for himself that he is useless. Additionally, Wasserkopf comes out as a man who lacks discipline and decorum. He does not respect his teachers and uses bad words and derogatory language with them. He thinks that he is clever enough to get the refund but because of his foolishness and stupidity, he falls in his Mathematics teachers’ trap.</p>
+            </div>
+        </section>
+
+        <section id="reference-beyond-text">
+            <h3>Reference beyond the text</h3>
+            <div class="question-answer">
+                <h4>a. The play is a satire on the present day education system. Do you think that our education system does not prepare students for life? Discuss.</h4>
+                <p>Yes, I agree that pupils are not sufficiently prepared for life by our educational system. Our educational system, in my opinion, does not adequately prepare pupils for life. Memorization is the foundation of our educational system. Students hardly ever acquire practical skills. But genuine knowledge is likewise not important to today's kids. Instead of studying, they simply want to pass their tests with high grades. The courses emphasize theory over application. Our education does not equip us with the skills we will need to survive in the future. As an illustration, we are taught things that are worthless in actual life. It drabdens and saps kids' creativity in real-world situations. So, unfortunately, our educational system does not equip us for life.</p>
+            </div>
+            <div class="question-answer">
+                <h4>b. Our education system focuses on memorisation rather than creative thinking. Do you think the knowledge imparted by education may not have practical relevance in one’s day-to-day life? Who do you blame for this?</h4>
+                <p>Yes, I agree that information gained via school may not be applicable in real-world situations. Our educational system places a greater emphasis on memorizing than on teaching practical life skills. I believe that our government is mostly to blame for the issue. In order for students to learn something practically rather than only by writing it down on papers, the government should make the curriculum more practical than theoretical. Instead of acting imaginatively, students are more concerned with recalling information. They live lives where creativity has no place. They just want to pass the exams with good marks rather than learning. Students too are responsible for this because they are doing the things blindly whatever they are said and taught without focusing on learning things practically. They are doing their job as an elephant in a circus. Thus I blame the government and the students for this.</p>
+            </div>
+            <div class="question-answer">
+                <h4>c. Most of the students want to learn just for examination rather than knowledge. Do you think that certificate will help them in their future career?</h4>
+                <p>It's true that the majority of students choose to study for exams over gaining information. By any means necessary, they merely want to receive higher grades. However, that certificate won't be of any use to them in the future. Students who solely study for examinations won't benefit from credentials in their subsequent employment. Although they have no idea of information, they rely on fast fixes to help you pass your tests. Their future will not be benefited by the strategy they have selected. Since credentials can never prove actual proficiency, true knowledge will undoubtedly be absent in the future. Many certificate holders don’t get proper job due to insufficient skill and hence they are forced to do manual jobs in foreign countries although they have degree in Nepal. By this we can say that the certificate is just a piece of paper and gaining certificate by memorizing rather than learning would lead a person to a dead end.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>Created with ❤️ for students everywhere.</p>
+        </footer>
+    </div>
+</body>
+</html>
