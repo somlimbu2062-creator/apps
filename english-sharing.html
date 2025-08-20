@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharing Tradition</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+        :root {
+            --primary-color: #212F3D; /* Deep, earthy blue */
+            --secondary-color: #5D6D7E; /* A lighter, subtle grey-blue */
+            --accent-color: #F39C12; /* A warm, golden orange */
+            --text-color: #444;
+            --light-bg: #EAECEE;
+            --card-bg: #ffffff;
+            --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Merriweather', serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            padding: 25px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 3px solid var(--primary-color);
+            margin-bottom: 25px;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        header h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1rem, 3vw, 1.5rem);
+            color: var(--secondary-color);
+            letter-spacing: 2px;
+        }
+
+        section {
+            padding: 20px 0;
+        }
+
+        h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        .summary p {
+            text-align: justify;
+            margin-bottom: 1em;
+            font-size: 1.05em;
+        }
+
+        .summary p:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .question-answer {
+            background-color: var(--light-bg);
+            border-left: 5px solid var(--accent-color);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .question-answer:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .question-answer::before {
+            content: '📜';
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 2.5em;
+            color: var(--accent-color);
+            opacity: 0.2;
+            pointer-events: none;
+        }
+
+        .question-answer h4 {
+            font-weight: bold;
+            color: var(--primary-color);
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .question-answer p {
+            font-size: 1em;
+            color: var(--text-color);
+            margin-top: 5px;
+            text-align: justify;
+        }
+
+        .question-answer .sub-question p {
+            margin-bottom: 5px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            border-top: 2px solid var(--secondary-color);
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: var(--secondary-color);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            header h1 {
+                font-size: 2.5rem;
+            }
+            
+            h3 {
+                font-size: 1.7rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2>Chapter - 1</h2>
+            <h1>Sharing Tradition</h1>
+        </header>
+
+        <section id="summary">
+            <h3>Summary</h3>
+            <div class="summary">
+                <p>"Sharing Tradition" by Frank LaPena is a powerful essay about the importance of preserving and sharing cultural traditions and the impact it has on one's identity and sense of belonging. The author emphasizes that traditions are not only about the past, but also about the future, as they help to pass down cultural knowledge and values to future generations.</p>
+                <p>LaPena argues that traditions serve as a way to connect people to their cultural roots and provide a sense of identity, community, and stability. The author stresses that traditions can be passed down in many ways, such as through storytelling, music, dance, and crafts. These cultural practices allow people to understand their place in the world and the beliefs and values that shape their community.</p>
+                <p>However, LaPena also acknowledges the challenges of preserving cultural traditions in the modern world, where globalization and modernization can sometimes lead to the loss of cultural practices. He notes that it is important for individuals and communities to actively work to keep their traditions alive and relevant, so that future generations can continue to learn from them.</p>
+                <p>At end the author emphasizes that preserving and sharing cultural traditions is a vital aspect of maintaining cultural identity and promoting cultural understanding. By understanding the importance of cultural traditions and working to preserve them, people can continue to learn from the past and build a brighter future.</p>
+            </div>
+        </section>
+
+        <section id="understanding-text">
+            <h3>Understanding the text</h3>
+            <div class="question-answer">
+                <h4>a. According to LaPena, what is the importance of the oral tradition? To what extent do you agree with his opinions and why?</h4>
+                <p>According to LaPena, the importance of the oral tradition is that it helps to preserve and pass on the cultural heritage and knowledge of a community from generation to generation. He believes that the oral tradition is a vital aspect of a culture and it provides a way for people to understand their cultural identity and history. He also states that oral tradition helps to bring people together and strengthen the bonds within a community.</p>
+            </div>
+            <div class="question-answer">
+                <h4>b. Who preserve and pass on the oral tradition?</h4>
+                <p>In LaPena's opinion, the oral tradition is preserved and passed on by **elders, storytellers, and people who are dedicated to maintaining their cultural heritage**. They are the ones who are responsible for keeping the stories, songs, and traditions alive and passing them on to the next generation.</p>
+            </div>
+            <div class="question-answer">
+                <h4>c. What is the danger of not passing on information from generation to generation?</h4>
+                <p>The danger of not passing on information from generation to generation is that the **cultural heritage and knowledge will be lost**, and the cultural identity of the community will be threatened. Without oral tradition, important stories, songs, and traditions may be forgotten, and the cultural history of the community will be lost.</p>
+            </div>
+            <div class="question-answer">
+                <h4>d. What is the difference between oral tradition and literary tradition?</h4>
+                <p>The difference between oral tradition and literary tradition is that **oral tradition is passed down verbally** from generation to generation, while **literary tradition is passed down in writing**. The oral tradition is more personal, flexible, and adaptable than literary tradition, as it is shaped by the storytellers, who are free to add, subtract, or modify the stories as they see fit.</p>
+            </div>
+            <div class="question-answer">
+                <h4>e. How does LaPena establish a relationship between art and the oral tradition?</h4>
+                <p>LaPena establishes a relationship between art and the oral tradition by pointing out that the oral tradition has always been a source of inspiration for artists, who have used it to create new works of art. He believes that the oral tradition is an important part of the cultural heritage and should be preserved, just as the works of art created from it should be. By connecting the oral tradition and art, LaPena shows how they are interdependent and how each supports and enriches the other.</p>
+            </div>
+        </section>
+
+        <section id="reference-context">
+            <h3>Reference to the context</h3>
+            <div class="question-answer">
+                <h4>a. LaPena states that the oral tradition helps maintain the values of a culture. If you believe that the oral tradition is important, how would you maintain it?</h4>
+                <p>If I believed that the oral tradition is important, I would maintain it by actively participating in cultural events and sharing my experiences and knowledge with others. I would also make an effort to learn about the traditions of my ancestors and pass that knowledge down to future generations. Additionally, I would seek out opportunities to listen to and learn from elders within my community and support efforts to preserve their stories and teachings.</p>
+            </div>
+            <div class="question-answer">
+                <h4>b. “Not everyone is capable of fulfilling the roles of the elders.” Explain this statement with reference to the essay.</h4>
+                <p>This statement refers to the idea that **not everyone has the skills, knowledge, or experience necessary to fulfill the roles of the elders** within a cultural community. According to LaPena, the elders are responsible for preserving and passing on the oral tradition, and it is important that this responsibility is fulfilled by individuals who have the ability to do so effectively. If the role of the elders is not fulfilled, the oral tradition and the values of the culture may be lost over time.</p>
+            </div>
+            <div class="question-answer">
+                <h4>c. What is the controlling idea or thesis of this essay?</h4>
+                <p>The controlling idea or thesis of this essay is that the **oral tradition is an important aspect of preserving cultural values** and that it is the responsibility of the elders to maintain and pass on this tradition.</p>
+            </div>
+            <div class="question-answer">
+                <h4>d. How do topic sentences guide the reader through the essay? What would be lost without them?</h4>
+                <p>Topic sentences guide the reader through the essay by providing a clear and concise overview of the main ideas discussed in each paragraph. They help to organize the essay and make it easier for the reader to understand and follow the argument being presented. Without topic sentences, the essay would lack structure and coherence, and it would be more difficult for the reader to understand the author's intended message.</p>
+            </div>
+            <div class="question-answer">
+                <h4>e. What are the four major problems developed by LaPena with regard to maintaining the oral tradition. How are they used to structure the essay?</h4>
+                <p>The four major problems developed by LaPena with regard to maintaining the oral tradition are: 1) the decline of the oral tradition due to cultural assimilation and the influence of Western values; 2) the decline of the elder population and the loss of their knowledge and skills; 3) the lack of support for cultural traditions; and 4) the decline of cultural values due to globalization. These problems are used to structure the essay by providing a clear and organized overview of the challenges faced in maintaining the oral tradition. The essay is structured so that each problem is discussed in a separate paragraph, with the main argument of the essay being that it is the responsibility of the elders to preserve and pass on the oral tradition in order to overcome these challenges.</p>
+            </div>
+        </section>
+
+        <section id="reference-beyond-text">
+            <h3>Reference beyond the text</h3>
+            <div class="question-answer">
+                <h4>a. Write a paragraph or two explaining your attitude toward the oral tradition of passing along information.</h4>
+                <p>I believe that the oral tradition of passing along information is incredibly valuable. It allows knowledge and wisdom to be passed down from generation to generation, and helps preserve cultural values, norms, and beliefs. This type of tradition allows for a personal connection between the teller and the listener, creating a deeper understanding and appreciation of the information being shared. I think it's important to acknowledge the value of oral tradition and make an effort to preserve it, whether that be through sharing stories with family members, participating in cultural events, or documenting and sharing traditions with others.</p>
+            </div>
+            <div class="question-answer">
+                <h4>b. Our culture is our identity. Write a few paragraphs explaining how you intend to preserve your culture, values and norms.</h4>
+                <p>To preserve my culture, values, and norms, I plan to actively engage in activities and events that allow me to connect with my heritage. This can include attending cultural festivals, participating in traditional dances, and cooking dishes from my cultural background. I also plan to learn about my cultural history by reading books, watching documentaries, and speaking with older members of my community who can provide insights and stories about their experiences. Additionally, I think it's important to share my own experiences and knowledge with others, both within my community and beyond, in order to keep my cultural traditions alive and vibrant. By doing so, I hope to pass along my cultural heritage to future generations and keep my identity strong.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>Created with ❤️ for students everywhere.</p>
+        </footer>
+    </div>
+</body>
+</html>
