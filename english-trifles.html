@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trifles</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+        :root {
+            --primary-color: #2F4F4F; /* Dark slate grey, a bit somber */
+            --secondary-color: #708090; /* A lighter shade for contrast */
+            --accent-color: #D2691E; /* A warm, rustic orange */
+            --text-color: #333;
+            --light-bg: #F5F5F5;
+            --card-bg: #ffffff;
+            --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Merriweather', serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            padding: 25px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 3px solid var(--primary-color);
+            margin-bottom: 25px;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        header h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1rem, 3vw, 1.5rem);
+            color: var(--secondary-color);
+            letter-spacing: 1px;
+        }
+
+        section {
+            padding: 20px 0;
+        }
+
+        h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        .summary p {
+            text-align: justify;
+            margin-bottom: 1em;
+            font-size: 1.05em;
+        }
+
+        .summary p:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .question-answer {
+            background-color: var(--light-bg);
+            border-left: 5px solid var(--accent-color);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .question-answer:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .question-answer::before {
+            content: '🔍';
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 2.5em;
+            color: var(--accent-color);
+            opacity: 0.2;
+            pointer-events: none;
+        }
+
+        .question-answer h4 {
+            font-weight: bold;
+            color: var(--primary-color);
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .question-answer p {
+            font-size: 1em;
+            color: var(--text-color);
+            margin-top: 5px;
+            text-align: justify;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            border-top: 2px solid var(--secondary-color);
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: var(--secondary-color);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            header h1 {
+                font-size: 2.5rem;
+            }
+            
+            h3 {
+                font-size: 1.7rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2>Chapter - 1</h2>
+            <h1>Trifles</h1>
+        </header>
+
+        <section id="summary">
+            <h3>Summary</h3>
+            <div class="summary">
+                <p>"Trifles" is a one-act play written by Susan Glaspell in 1916. The play is set in a rural farmhouse in the early 1900s and follows a group of people as they investigate the death of John Wright, who has been murdered in his sleep. The group includes the county attorney, the sheriff, and two women, Mrs. Peters and Mrs. Hale.</p>
+                <p>As the men investigate the crime, they ignore the women and the small details they notice in the home. The women, on the other hand, take note of the small trifles, such as a broken birdcage and a box of cherries, that may hold clues to the murder. As they piece together the story, they begin to understand the motive behind the murder and come to the realization that the killer was not a stranger, but Mrs. Wright, John's wife.</p>
+                <p>In the end, the women decide to conceal the evidence they have discovered, recognizing the motive behind the murder and choosing to protect the reputation of a fellow woman. The play ultimately explores the theme of gender roles and the power of women in a male-dominated society.</p>
+            </div>
+        </section>
+
+        <section id="understanding-text">
+            <h3>Understanding the text</h3>
+            <div class="question-answer">
+                <h4>a. Do you believe that Mrs. Wright killed her husband? Explain.</h4>
+                <p>In "Trifles" by Susan Glaspell, there is **evidence that suggests Mrs. Wright killed her husband**. Throughout the play, the women uncover various pieces of evidence, such as a broken birdcage, a dead bird with a broken neck, and a rope used to strangle Mr. Wright, that seem to point to Mrs. Wright as the killer. However, it is ultimately left up to the interpretation of the reader or audience member to decide whether or not they believe Mrs. Wright was the one who killed her husband.</p>
+            </div>
+            <div class="question-answer">
+                <h4>b. Do you think Mr. Wright’s death would have been uncovered if Mr. Hale hadn’t stopped by the Wrights’ home?</h4>
+                <p>It is difficult to say for certain, but it is possible that Mr. Wright's death would have gone undiscovered if Mr. Hale had not stopped by the Wrights' home. In the play, it is implied that the men in the community were not taking Mr. Wright's death seriously and were not thoroughly investigating the circumstances surrounding his death. It was only after Mr. Hale's involvement that the investigation became more thorough and the evidence pointing to Mrs. Wright as the murderer was uncovered.</p>
+            </div>
+            <div class="question-answer">
+                <h4>c. Why does Mrs. Hale think that Mrs. Wright’s worries about her preserves indicate her innocence?</h4>
+                <p>Mrs. Hale believes that Mrs. Wright's worries about her preserves indicate her innocence because they show her concern for preserving her home and her reputation, even though she is going through a difficult time. Mrs. Hale sees this as an indication of her character, and as a contrast to the image of a murderer that the men in the play have painted of her. By focusing on the small, everyday details of Mrs. Wright's life, Mrs. Hale is able to see her as a human being and to sympathize with her situation. This contrast between the men's perspectives and the women's perspectives highlights the theme of gender roles and expectations in the play.</p>
+            </div>
+            <div class="question-answer">
+                <h4>d. How does Mrs. Peters’ homesteading experience connect her to Mrs. Wright?</h4>
+                <p>Mrs. Peters' homesteading experience likely connects her to Mrs. Wright because they both understand the isolation and loneliness of rural life. As women who have lived on farms, they are likely familiar with the hard work and lack of social interaction that often come with rural life. This understanding of their shared experiences may lead Mrs. Peters to feel a sense of empathy for Mrs. Wright and to see her as a fellow homesteader, rather than as a criminal. Additionally, Mrs. Peters may recognize that the circumstances of Mrs. Wright's life, including her marriage to Mr. Wright and her isolation, may have contributed to her situation.</p>
+            </div>
+            <div class="question-answer">
+                <h4>e. How do the women’s perspectives on men differ?</h4>
+                <p>It is not specified in Susan Glaspell's play "Trifles" how the women's perspectives on men differ. The play focuses on the investigation of Mr. Wright's murder and the discovery of evidence by the women while the men search for physical evidence. The women's conversations and actions in the play provide insight into their individual experiences and attitudes, but their perspectives on men are not explicitly discussed.</p>
+            </div>
+        </section>
+
+        <section id="reference-context">
+            <h3>Reference to the context</h3>
+            <div class="question-answer">
+                <h4>a. “MRS. PETERS:(glancing around). Seems funny to think of a bird here. But she must have had one, or why would she have a cage? I wonder what happened to it? MRS. HALE: I s’pose maybe the cat got it.”</h4>
+                <div class="sub-question">
+                    <p><b>i. Who does ‘she’ refer to?</b></p>
+                    <p>'She' refers to Mrs. Wright.</p>
+                    <p><b>ii. What does the word ‘one’ stand for?</b></p>
+                    <p>'One' refers to a bird.</p>
+                    <p><b>iii. What is the full form of “s’pose”</b></p>
+                    <p>"S'pose" is short for "suppose".</p>
+                    <p><b>iv. What do you mean when Mrs. Hale says, “the cat got it”?</b></p>
+                    <p>Mrs. Hale means that the cat might have eaten the bird.</p>
+                </div>
+            </div>
+            <div class="question-answer">
+                <h4>b. “MRS. HALE: Wright was close. …… she used to wear pretty clothes and be lively, when she was Minnie Foster, one of the town girls singing in the choir. But that— oh, that was thirty years ago.”</h4>
+                <div class="sub-question">
+                    <p><b>i. Why does Mrs. Hale refer to Mrs. Wright as “Minnie Foster”?</b></p>
+                    <p>Mrs. Hale refers to Mrs. Wright as "Minnie Foster" because it was her name before she got married.</p>
+                    <p><b>ii. What does her description tell you about Mrs. Wright?</b></p>
+                    <p>Mrs. Hale's description tells the reader that Mrs. Wright used to be a lively and fashionable person, but now she is a quiet and reserved person.</p>
+                    <p><b>iii. What does Mrs. Hale mean by “that was thirty years ago”?</b></p>
+                    <p>Mrs. Hale means that what she is describing happened thirty years ago and that Mrs. Wright has changed over time.</p>
+                </div>
+            </div>
+            <div class="question-answer">
+                <h4>c. What is the main theme of the play?</h4>
+                <p>The main theme of the play is the **subjugation of women and their lack of agency in a male-dominated society**.</p>
+            </div>
+            <div class="question-answer">
+                <h4>d. Discuss the symbolism used in the play.</h4>
+                <p>The play uses various symbols to enhance the theme, such as the birdcage, the quilt, and the preserves. The **birdcage** symbolizes the restriction and oppression of women, the **quilt** represents the women's emotional state and their shared experiences, and the **preserves** represent Mrs. Wright's personal feelings and emotional state.</p>
+            </div>
+            <div class="question-answer">
+                <h4>e. Discuss the setting of the play. Does it have an impact on the theme of the play?</h4>
+                <p>The setting of the play is a farmhouse in the countryside in the early 20th century. The setting has an impact on the theme of the play as it highlights the isolation and loneliness of women in rural areas and the limited opportunities available to them.</p>
+            </div>
+        </section>
+
+        <section id="reference-beyond-text">
+            <h3>Reference beyond the text</h3>
+            <div class="question-answer">
+                <h4>a. The credibility of a character is determined not only by the character’s thoughts and actions but also by what other characters say and think about him or her. Discuss in relation to the characters of Trifles.</h4>
+                <p>The credibility of a character in Trifles, like in any play, is determined by a variety of factors. One of these factors is the character's thoughts and actions, as these give insight into the character's motivations, beliefs, and values. However, the credibility of a character is also shaped by what other characters say and think about them. In Trifles, the attitudes and opinions of the other characters towards Mrs. Wright play a crucial role in shaping the audience's understanding of her character. The way that the other characters talk about her and the assumptions they make about her guilt or innocence based on her behavior, as well as their perceptions of her as a wife and homemaker, all contribute to our understanding of her character.</p>
+            </div>
+            <div class="question-answer">
+                <h4>b. Dramatic irony occurs when the reader or audience has information that is unknown to the characters in a play; it creates tension and suspense. Analyse the play discussing the author’s use of dramatic irony based on these questions:</h4>
+                <div class="sub-question">
+                    <p><b>i. What information is crucial to the play Trifles?</b></p>
+                    <p>The crucial information is the **dead bird with the twisted neck** and the fact that the **women discover this evidence** while the men remain oblivious.</p>
+                    <p><b>ii. How does the playwright use this information to create dramatic irony?</b></p>
+                    <p>The playwright uses this information to create dramatic irony by showing the men's dismissive attitude towards the women's findings, while the audience knows the significance of these "trifles." This contrast between what the characters know and what the audience knows builds suspense and tension.</p>
+                    <p><b>iii. What effect does the dramatic irony have on the audience and on the play?</b></p>
+                    <p>The dramatic irony makes the audience feel a sense of investment in the women's actions. We are aware of Mrs. Wright's motive and the evidence against her, which makes the men's investigation seem foolish and highlights the women's superior understanding of the situation. This effect strengthens the play's themes of gender roles and the power of women's insights.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Created with ❤️ for students everywhere.</p>
+        </footer>
+    </div>
+</body>
+</html>
