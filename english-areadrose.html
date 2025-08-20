@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Red, Red Rose</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+        :root {
+            --primary-color: #9b2226; /* A deep, rich red, like a rose */
+            --secondary-color: #6a040f; /* A darker shade for contrast */
+            --accent-color: #ffb3b3; /* A soft pink for highlights */
+            --text-color: #333;
+            --light-bg: #fdf5f5;
+            --card-bg: #ffffff;
+            --shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Merriweather', serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            padding: 25px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 3px solid var(--primary-color);
+            margin-bottom: 25px;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        header h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1rem, 3vw, 1.5rem);
+            color: var(--secondary-color);
+            letter-spacing: 2px;
+        }
+
+        section {
+            padding: 20px 0;
+        }
+
+        h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        .summary p {
+            text-align: justify;
+            margin-bottom: 1em;
+            font-size: 1.05em;
+        }
+
+        .summary p:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .question-answer {
+            background-color: var(--light-bg);
+            border-left: 5px solid var(--accent-color);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .question-answer:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .question-answer::before {
+            content: '🌹';
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 2.5em;
+            color: var(--accent-color);
+            opacity: 0.2;
+            pointer-events: none;
+        }
+
+        .question-answer h4 {
+            font-weight: bold;
+            color: var(--primary-color);
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .question-answer p {
+            font-size: 1em;
+            color: var(--text-color);
+            margin-top: 5px;
+            text-align: justify;
+        }
+
+        .question-answer .sub-question p {
+            margin-bottom: 5px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            border-top: 2px solid var(--secondary-color);
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: var(--secondary-color);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            header h1 {
+                font-size: 2.5rem;
+            }
+            
+            h3 {
+                font-size: 1.7rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2>Chapter - 2</h2>
+            <h1>A Red, Red Rose</h1>
+        </header>
+
+        <section id="summary">
+            <h3>Summary</h3>
+            <div class="summary">
+                <p>"A Red, Red Rose" is a poem written by Robert Burns. The poem is a love song that speaks of the speaker's deep and passionate love for someone. The speaker describes his love as a "red, red rose" that is just starting to bloom and will never fade away. The speaker promises his love to this person, saying that he will love her "till the seas gang dry." He also says that if his love ever were to change, the "sands of life" would run out before that happened.</p>
+                <p>Throughout the poem, the speaker uses vivid imagery and metaphors to express his love. For example, he describes his love as a "newly sprung" rose, symbolizing the freshness and newness of his feelings. He also says that his love is like the "sweetest flower" that grows in the meadow, symbolizing its beauty and fragrance.</p>
+                <p>The poem has a timeless quality, as it speaks to the eternal nature of love and the deep emotions that it can evoke. The use of vivid imagery and metaphors makes the poem accessible to readers of all ages and cultures, allowing them to relate to the speaker's feelings and experiences.</p>
+                <p>In conclusion, "A Red, Red Rose" is a powerful expression of love and devotion that speaks to the human experience of love in all its complexities and beauty.</p>
+            </div>
+        </section>
+
+        <section id="understanding-text">
+            <h3>Understanding the text</h3>
+            <div class="question-answer">
+                <h4>a. To which two things does the speaker compare his love in the first stanza?</h4>
+                <p>In the first stanza of "A Red, Red Rose," the speaker compares his love to a "red, red rose" that is just starting to bloom and a "newly sprung" rose.</p>
+            </div>
+            <div class="question-answer">
+                <h4>b. What does the speaker promise in the second and third stanzas?</h4>
+                <p>In the second and third stanzas, the speaker promises his love to the person he is addressing, saying that he will love her "till the seas gang dry" and that if his love ever were to change, the "sands of life" would run out before that happened.</p>
+            </div>
+            <div class="question-answer">
+                <h4>c. What imagery does he use in his promise, and why do you think he uses such language?</h4>
+                <p>The speaker uses vivid imagery and metaphors to make his promise more powerful and memorable. For example, he says that his love is like the "sweetest flower" that grows in the meadow, which symbolizes its beauty and fragrance. The use of this kind of language helps the speaker express his feelings in a more emotional and evocative way.</p>
+            </div>
+            <div class="question-answer">
+                <h4>d. In the last stanza, what event is about to happen by mentioning the number of miles?</h4>
+                <p>In the last stanza, the speaker mentions the number of miles between them, suggesting that there is some physical distance between the speaker and the person he loves. This could imply that they are separated or that they are about to be separated.</p>
+            </div>
+            <div class="question-answer">
+                <h4>e. Which image in the poem do you find the most memorable or surprising and why?</h4>
+                <p>The image that I find the most memorable or surprising in the poem is the image of the "red, red rose" that is just starting to bloom. This image is memorable because it captures the freshness and newness of the speaker's feelings, while also suggesting that his love will continue to grow and flourish over time. It is also surprising because it is an unexpected comparison to make, which makes it stand out and adds to the overall impact of the poem.</p>
+            </div>
+        </section>
+
+        <section id="reference-context">
+            <h3>Reference to the context</h3>
+            <div class="question-answer">
+                <h4>a. What can you infer about the speaker’s devotion to his beloved from the following lines?</h4>
+                <p><i>And I will come again, my love,<br>Tho’ it were ten thousand mile!</i></p>
+                <p>From the lines "And I will come again, my love, / Tho’ it were ten thousand mile!" the speaker's devotion to his beloved can be inferred as being very strong. The speaker's willingness to travel a long distance to be with his beloved shows that he values their relationship and is committed to it.</p>
+            </div>
+            <div class="question-answer">
+                <h4>b. What is the theme of the poem?</h4>
+                <p>The theme of the poem is the speaker's deep love for his beloved and his commitment to maintain that love, no matter what obstacles may arise.</p>
+            </div>
+            <div class="question-answer">
+                <h4>c. Paraphrase the whole poem into simple prose form.</h4>
+                <p>The speaker is expressing his love for someone, saying that no matter how far away she is, he will always come back to her. He promises to love her forever and states that if his love were to change, the seas would dry up and the sands of life would run out before that happened. He compares his love to a red, red rose that is just starting to bloom and promises to come back to her, even if it were ten thousand miles.</p>
+            </div>
+            <div class="question-answer">
+                <h4>d. Literary devices are tools that enable the writers to present their ideas, emotions, and feelings and also help the readers understand those more profound meanings. Analyse the poem in terms of the literary devices such as simile, symbolism, imagery, alliteration, and assonance.</h4>
+                <p>In terms of literary devices, the poem uses **simile**, with the speaker comparing his love to a red, red rose. There is also **symbolism**, as the rose symbolizes the speaker's love and its bloom represents the growth of that love over time. The poem also uses **imagery**, with the speaker painting a picture of a beautiful rose and a long distance journey. There is **alliteration** in the phrase "red, red rose." Additionally, there is **assonance** in the repetition of the "o" sound in the phrase "come again, my love."</p>
+            </div>
+            <div class="question-answer">
+                <h4>e. What is hyperbole? Explain its purpose citing examples of hyperbole used in the poem.</h4>
+                <p>Hyperbole is a figure of speech that uses exaggerated statements or claims to make a point. In the poem, the speaker uses hyperbole when he says that if his love were to change, the seas would dry up and the sands of life would run out. This is an exaggerated statement used to emphasize the speaker's commitment to loving his beloved forever.</p>
+            </div>
+            <div class="question-answer">
+                <h4>f. What is refrain? Why is it used in the poem? Explain citing an example from the poem.</h4>
+                <p>Refrain is a repeated phrase or line in a poem that helps to establish its rhythm and structure. In the poem "A Red, Red Rose," the refrain is "I will love you till the seas gang dry." This refrain is used to reinforce the speaker's promise of eternal love and to give the poem a sense of repetition and structure.</p>
+            </div>
+        </section>
+
+        <section id="reference-beyond-text">
+            <h3>Reference beyond the text</h3>
+            <div class="question-answer">
+                <h4>a. What kind of love is expressed in "A Red, Red Rose"?</h4>
+                <p>The kind of love expressed in "A Red, Red Rose" is **passionate, intense, and eternal love**. The speaker expresses his deep and unending love for his beloved, stating that he will love her "till a’ the seas gang dry."</p>
+            </div>
+            <div class="question-answer">
+                <h4>b. Do you think that love has power? Why do the poets compose poems addressing their beloved?</h4>
+                <p>Yes, love has power. Poets compose poems addressing their beloved as a way to express their feelings and emotions. Love is often the source of inspiration for many poets and composing poems is a way for them to express their feelings and thoughts towards their beloved. It is also a way to immortalize their love and to share it with others.</p>
+            </div>
+            <div class="question-answer">
+                <h4>c. Poetry is the expression of feeling and emotions. Explain.</h4>
+                <p>Poetry is indeed the expression of feeling and emotions. Through the use of language, imagery, and literary devices, poets are able to express the depth and intensity of their feelings, emotions, and thoughts. Poetry provides a way for people to connect with their emotions, experiences, and imagination, and it allows the poet to share their emotions and experiences with others. Poetry is a form of art that enables people to express their thoughts and emotions in a way that is both powerful and beautiful.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>Created with ❤️ for students everywhere.</p>
+        </footer>
+    </div>
+</body>
+</html>
